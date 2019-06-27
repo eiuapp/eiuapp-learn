@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>galera on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/galera.html</link>
+    <description>Recent content in galera on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 12:49:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/galera/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mariadb Galera From Docker to Bare</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:49:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html</guid>
+      <description>mysql系列之 从 docker+Galera 转到 Galera(去除 docker)
+context 之前在 docker之docker-mariadb-galera(panubo版) 中成功在 docker 中安装了 Galera, 突然, 由于业务调整, 需要把 Galera 从docker中脱离出来, 直接在 裸机 上跑..
+node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)
+step  [在node0, node1, node2上]把 Galera 从 docker 中删除
+docker stop abcd
+ [node0上]然后, 我尝试重新启动 MariaDB-Galera-cluster, 怎么重启, 那自然是参考 mysql系列之集群 MariaDB Galera Cluster 部署
+  来到 node0上,
+sudo /etc/init.d/mysql status sudo /etc/init.d/mysql start --wsrep-new-cluster  发现, 直接报错了..
+[tom@mariadb-node-0 ~]$ sudo /etc/init.d/mysql start --wsrep-new-cluster Starting MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Cluster Install Faq Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-faq-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:44:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-faq-base-centos.html</guid>
+      <description>mysql系列之集群 MariaDB-Galera-cluster 报错
+报错1, /etc/my.cnf.d/下 有一个 不应该存在的 .cnf 错误原因：
+mysql 加载了 /etc/my.cnf.d/下的所有 *.cnf 文件，其中又有一个之前的不应该存在的 *.cnf。
+正确情况下，应该只有4个.cnf文件。 [spa@s11 ~]$ ls /etc/my.cnf.d/ client.cnf mysql-clients.cnf server.cnf tokudb.cnf [spa@s11 ~]$
+错误情况：
+[tom@kube-node-13 ~]$ sudo /etc/init.d/mysql start --wsrep-new-cluster Starting MySQL.161116 17:44:54 mysqld_safe Logging to &#39;/data/mariadb/mysql/kube-node-13.err&#39;. . SUCCESS! [tom@kube-node-13 ~]$ mysql -u root -p -e &amp;quot;show status like &#39;wsrep%&#39;&amp;quot; Enter password: +--------------------------+----------------------+ | Variable_name | Value | +--------------------------+----------------------+ | wsrep_cluster_conf_id | 18446744073709551615 | | wsrep_cluster_size | 0 | | wsrep_cluster_state_uuid | | | wsrep_cluster_status | Disconnected | | wsrep_connected | OFF | | wsrep_local_bf_aborts | 0 | | wsrep_local_index | 18446744073709551615 | | wsrep_provider_name | | | wsrep_provider_vendor | | | wsrep_provider_version | | | wsrep_ready | ON | | wsrep_thread_count | 0 | +--------------------------+----------------------+ [tom@kube-node-13 ~]$  解决过程：</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Cluster Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:43:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-base-centos.html</guid>
+      <description>mysql系列之集群 MariaDB Galera Cluster 部署
+参考 How To Setup MariaDB Galera Cluster 10.0 On CentOS http://www.unixmen.com/setup-mariadb-galera-cluster-10-0-centos/
+安装 过程 MariaDB is a relational database management system (RDBMS) and MariaDB Galera Cluster is a synchronous multi-master cluster for MariaDB. It is available on Linux only, and only supports the XtraDB/InnoDB storage engines. This article explains how to setup MariaDB Galera Cluster 10.0 with 3 nodes running on CentOS 6.5(tom注：在CentOS 7.0上也成功) x86_64 resulting in a HA (high-availability) database cluster.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo2 Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:26:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)(2017-02)
+ref  https://github.com/panubo/docker-mariadb-galera  env  node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)  step  拉取 (panubo版)git 代码, 取 image  三台机器, 各运行一下
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/ &amp;amp;&amp;amp; docker pull panubo/mariadb-galera   设置环境变量  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.13.110 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-0 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.15.240 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-1 EOF source ~/.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:32:52 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)
+env  node0, 10.10.12.17 node1, 10.10.12.18 node2, 10.10.13.10(这一台暂时没用上)  step  拉取 (panubo版)git 代码
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/
+ 设置环境变量
+  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.17 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.18 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc   Running Garbd  在 node0 上:
+docker run -d --net host --name galera-garbd \ -e WSREP_CLUSTER_ADDRESS=$WSREP_CLUSTER_ADDRESS \ panubo/mariadb-galera \ garbd   运行container  在node0上:</description>
+    </item>
+    
+  </channel>
+</rss>

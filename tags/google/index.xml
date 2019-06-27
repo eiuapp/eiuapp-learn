@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/google.html</link>
+    <description>Recent content in google on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 14 Jun 2018 20:53:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Chrome Setup</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/google-chrome-setup.html</link>
+      <pubDate>Thu, 14 Jun 2018 20:53:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/google-chrome-setup.html</guid>
+      <description> 通过这个小小的设置，能让我的mac不再那么热，不再那么响，说明优化chrome是一件值得做的事情。
+11 Chrome Settings You Should Change Now! 看视频吧
+ 设置已不存在。 打开chrome://flags/ Show Saved Copy Button,选择Enabled:Primary Parallel downloading设置成 Enabled 设置已不存在。 设置已不存在。 Omnibox UI Show Suggestion Favicons,设置成Enabled Automatic tab discarding，设置成Enabled Tab audio muting UI control =》 Disabled, 无需修改 Fast tab/window close =》 Disabled, 无需修改 Scroll Anchoring，设置成Enabled  </description>
+    </item>
+    
+    <item>
+      <title>Google Chrome Helper</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/google-chrome-helper.html</link>
+      <pubDate>Thu, 14 Jun 2018 20:17:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/google-chrome-helper.html</guid>
+      <description>google chrome helper占用超多CPU资源
+Env  os: mac  看视频的同学要先做到科学上网
+Step 2014年前的chrome 如果能看视频的朋友，点这里
+有一篇文章提过这个问题，这里面提到的解决方案如下
+First, shut down all your Chrome windows without quitting the program. In the Chrome menu, go to “Preferences,” scroll all the way down in the menu, and click on “Show advanced settings…” The first item in the expanded advanced settings list will be “Privacy,” and click on the “Content Settings” button right under that. About halfway down the content settings list is a “Plug-ins” entry, which will likely be set to “Run automatically.</description>
+    </item>
+    
+  </channel>
+</rss>

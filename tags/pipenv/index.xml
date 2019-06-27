@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pipenv on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/pipenv.html</link>
+    <description>Recent content in pipenv on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/pipenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pipenv install 报错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/pipenv-install-failed.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/pipenv-install-failed.html</guid>
+      <description>在某个项目中遇到了出错，如下：
+(saleor) ➜ saleor git:(master) pipenv install --dev Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS =1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning. Installing dependencies from Pipfile.lock (0c0b26)… An error occurred while installing yarl==1.3.0 ; python_version &amp;gt;= &#39;3.</description>
+    </item>
+    
+  </channel>
+</rss>

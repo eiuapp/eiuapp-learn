@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iphone on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/iphone.html</link>
+    <description>Recent content in iphone on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 May 2018 16:14:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Network Proxy Iphone</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-iphone.html</link>
+      <pubDate>Mon, 28 May 2018 16:14:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-iphone.html</guid>
+      <description>通过手机实现FQ
+env 国外安装了代理网络的服务器一台
+ ip: ... port: 443 passwd: ********  iphone一台
+ APP安装：ShadowBroken  step 先保证在windows中能够使用Shadowsocks客户端实现科学上网
+打开 ShadowBroken，把配置写入，然后，连接。现在可以KXSW了。
+todo 在 超哥 提供的jumper机器上，实现一个科学上网吧。</description>
+    </item>
+    
+  </channel>
+</rss>

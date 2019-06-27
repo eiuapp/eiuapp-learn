@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>architect on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/architect.html</link>
+    <description>Recent content in architect on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 13 Feb 2018 21:14:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/architect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software Architect</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/software-architect.html</link>
+      <pubDate>Tue, 13 Feb 2018 21:14:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/software-architect.html</guid>
+      <description>c4model</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/ruby.html</link>
+    <description>Recent content in ruby on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gem Install Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ruby/gem-install-faq.html</link>
+      <pubDate>Mon, 26 Feb 2018 09:23:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ruby/gem-install-faq.html</guid>
+      <description>faq, ruby.h not found ubuntu@VM-0-12-ubuntu:~/registry/tomtsang-rootsongjc-cheatsheet$ bundle install ... ... To see why this extension failed to compile, please check the mkmf.log which can be found here: /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/extensions/x86_64-linux/2.3.0/nokogiri-1.8.0/mkmf.log extconf failed, exit code 1 Gem files will remain installed in /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/gems/nokogiri-1.8.0 for inspection. Results logged to /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/extensions/x86_64-linux/2.3.0/nokogiri-1.8.0/gem_make.out An error occurred while installing nokogiri (1.8.0), and Bundler cannot continue. Make sure that `gem install nokogiri -v &#39;1.8.0&#39;` succeeds before bundling. In Gemfile: github-pages was resolved to 156, which depends on jekyll-mentions was resolved to 1.</description>
+    </item>
+    
+    <item>
+      <title>Bundle Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ruby/bundle-install.html</link>
+      <pubDate>Sat, 24 Feb 2018 09:24:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ruby/bundle-install.html</guid>
+      <description> env mac book air
+step 安装 bundle
+➜ ~ sudo gem install bundler Password: Fetching: bundler-1.16.1.gem (100%) Successfully installed bundler-1.16.1 Parsing documentation for bundler-1.16.1 Installing ri documentation for bundler-1.16.1 1 gem installed ➜ ~ ➜ tomtsang-rootsongjc-cheatsheet git:(master) which bundle /usr/local/bin/bundle ➜ tomtsang-rootsongjc-cheatsheet git:(master)  ref  mac 下应该怎么安装 bundle  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ruby/install-rvm-with-ubuntu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ruby/install-rvm-with-ubuntu.html</guid>
+      <description>install rvm with ubuntu
+去 https://github.com/rvm/rvm#installing-rvm
+vagrant@ubuntu-xenial:~$ curl -L https://get.rvm.io | bash -s stable % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 194 100 194 0 0 29 0 0:00:06 0:00:06 --:--:-- 48 100 24168 100 24168 0 0 1908 0 0:00:12 0:00:12 --:--:-- 6628 Downloading https://github.com/rvm/rvm/archive/1.29.7.tar.gz Downloading https://github.com/rvm/rvm/releases/download/1.29.7/1.29.7.tar.gz.asc gpg: directory `/home/vagrant/.gnupg&#39; created gpg: new configuration file `/home/vagrant/.gnupg/gpg.conf&#39; created gpg: WARNING: options in `/home/vagrant/.</description>
+    </item>
+    
+  </channel>
+</rss>

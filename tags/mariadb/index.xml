@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mariadb on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/mariadb.html</link>
+    <description>Recent content in mariadb on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 12:49:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mariadb Galera From Docker to Bare</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:49:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html</guid>
+      <description>mysql系列之 从 docker+Galera 转到 Galera(去除 docker)
+context 之前在 docker之docker-mariadb-galera(panubo版) 中成功在 docker 中安装了 Galera, 突然, 由于业务调整, 需要把 Galera 从docker中脱离出来, 直接在 裸机 上跑..
+node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)
+step  [在node0, node1, node2上]把 Galera 从 docker 中删除
+docker stop abcd
+ [node0上]然后, 我尝试重新启动 MariaDB-Galera-cluster, 怎么重启, 那自然是参考 mysql系列之集群 MariaDB Galera Cluster 部署
+  来到 node0上,
+sudo /etc/init.d/mysql status sudo /etc/init.d/mysql start --wsrep-new-cluster  发现, 直接报错了..
+[tom@mariadb-node-0 ~]$ sudo /etc/init.d/mysql start --wsrep-new-cluster Starting MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:45:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</guid>
+      <description>mysql系列之mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Cluster Install Faq Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-faq-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:44:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-faq-base-centos.html</guid>
+      <description>mysql系列之集群 MariaDB-Galera-cluster 报错
+报错1, /etc/my.cnf.d/下 有一个 不应该存在的 .cnf 错误原因：
+mysql 加载了 /etc/my.cnf.d/下的所有 *.cnf 文件，其中又有一个之前的不应该存在的 *.cnf。
+正确情况下，应该只有4个.cnf文件。 [spa@s11 ~]$ ls /etc/my.cnf.d/ client.cnf mysql-clients.cnf server.cnf tokudb.cnf [spa@s11 ~]$
+错误情况：
+[tom@kube-node-13 ~]$ sudo /etc/init.d/mysql start --wsrep-new-cluster Starting MySQL.161116 17:44:54 mysqld_safe Logging to &#39;/data/mariadb/mysql/kube-node-13.err&#39;. . SUCCESS! [tom@kube-node-13 ~]$ mysql -u root -p -e &amp;quot;show status like &#39;wsrep%&#39;&amp;quot; Enter password: +--------------------------+----------------------+ | Variable_name | Value | +--------------------------+----------------------+ | wsrep_cluster_conf_id | 18446744073709551615 | | wsrep_cluster_size | 0 | | wsrep_cluster_state_uuid | | | wsrep_cluster_status | Disconnected | | wsrep_connected | OFF | | wsrep_local_bf_aborts | 0 | | wsrep_local_index | 18446744073709551615 | | wsrep_provider_name | | | wsrep_provider_vendor | | | wsrep_provider_version | | | wsrep_ready | ON | | wsrep_thread_count | 0 | +--------------------------+----------------------+ [tom@kube-node-13 ~]$  解决过程：</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Cluster Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:43:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-cluster-install-base-centos.html</guid>
+      <description>mysql系列之集群 MariaDB Galera Cluster 部署
+参考 How To Setup MariaDB Galera Cluster 10.0 On CentOS http://www.unixmen.com/setup-mariadb-galera-cluster-10-0-centos/
+安装 过程 MariaDB is a relational database management system (RDBMS) and MariaDB Galera Cluster is a synchronous multi-master cluster for MariaDB. It is available on Linux only, and only supports the XtraDB/InnoDB storage engines. This article explains how to setup MariaDB Galera Cluster 10.0 with 3 nodes running on CentOS 6.5(tom注：在CentOS 7.0上也成功) x86_64 resulting in a HA (high-availability) database cluster.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-base-centos.html</guid>
+      <description>mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Infile Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-infile-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-infile-base-centos.html</guid>
+      <description>mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>java源码找到mysql用户密码</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/find-mysql-password-with-java-source-code.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/find-mysql-password-with-java-source-code.html</guid>
+      <description>在有java源码的情况下，找到mysql用户密码
+进入项目查找 mysql ip 字符串 lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./bin/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./conf/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./lib/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./webapps/ ./webapps/lcnxdata/WEB-INF/classes/applicationContext.xml:30: &amp;lt;value&amp;gt;jdbc:mysql://rm-wz95k1f761xu890f3.mysql.rds.aliyuncs.com:3306/lcnx&amp;lt;/value&amp;gt; lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ cat ./webapps/lcnxdata/WEB-INF/classes/applicationContext.xml &amp;lt;bean id=&amp;quot;dataSource&amp;quot; class=&amp;quot;org.logicalcobwebs.proxool.ProxoolDataSource&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;driver&amp;quot;&amp;gt; &amp;lt;value&amp;gt;com.mysql.jdbc.Driver&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property name=&amp;quot;driverUrl&amp;quot;&amp;gt; &amp;lt;!-- &amp;lt;value&amp;gt;jdbc:mysql://192.168.0.188:3306/nemmp&amp;lt;/value&amp;gt; --&amp;gt; &amp;lt;value&amp;gt;jdbc:mysql://rm-wz95k1f761xu890f3.mysql.rds.aliyuncs.com:3306/lcnx&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property name=&amp;quot;user&amp;quot; value=&amp;quot;*********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;password&amp;quot; value=&amp;quot;**********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;alias&amp;quot; value=&amp;quot;*********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;prototypeCount&amp;quot; value=&amp;quot;150&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;maximumConnectionCount&amp;quot; value=&amp;quot;1100&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;minimumConnectionCount&amp;quot; value=&amp;quot;300&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;simultaneousBuildThrottle&amp;quot; value=&amp;quot;300&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;houseKeepingTestSql&amp;quot; value=&amp;quot;select CURRENT_DATE&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;trace&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt; lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$  确认mysql可通后，用帐号密码连接就可以了。</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:56:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-install-base-centos.html</guid>
+      <description>mysql系列之集群 MariaDB-Galera-server 安装
+MariaDB Galera Cluster 部署
+参考 http://www.linuxidc.com/Linux/2015-07/119512.htm
+安装 安装mariadb10.0  官方的通过yum安装教程
+根据不同的系统来下载repo吧，更多的MariaDB.repo
+ 或者，查看之前的 mariadb安装教程，就可以了。
+具体，我的是这样的。 1. MariaDB.repo
+[cdn@test_240 yum.repos.d]$ cat /etc/yum.repos.d/MariaDB.repo # MariaDB 10.0 CentOS repository list - created 2016-11-16 02:27 UTC # http://downloads.mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/10.0/centos7-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1  2. 安装数据库 sudo yum clean all sudo yum install MariaDB-Galera-server MariaDB-client galera -y  卸载 sudo yum remove MariaDB-server MariaDB-client sudo yum remove MariaDB-common -y</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:55:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install-base-centos.html</guid>
+      <description>mysql-0mysql系列之mariadb-install
+ref  http://blog.csdn.net/renfufei/article/details/17616549  过程 说明: 首先必须能链接外网. 如果不能直接访问,那也可以设置代理,请参考: 在内网机器上设置yum代理 使用 yum 的权限要求是 root 用户,如果你不是,那么可以需要 在 shell命令之前加上 sudo, 或者 su root 切换到 super 管理员进行操作. 并可能需要输入密码.
+1. 添加 yum 数据源  安装mariadb10.1 官方的通过yum安装教程
+根据不同的系统来下载repo吧，更多的MariaDB.repo
+ 建议命名为 MariaDB.repo 类似的名字：
+cd /etc/yum.repos.d/ vim /etc/yum.repos.d/MariaDB.repo  然后,写入文件内容:(建议使用 10.0)
+# MariaDB 10.0 CentOS repository list - created 2015-08-12 10:59 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/10.0/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1  这个baseurl可以通过浏览器打开，然后在 http://yum.mariadb.org/10.0/centos7-amd64/rpms/ 中 可以看到这里面有些什么 .</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:54:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install.html</guid>
+      <description> mariadb install </description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo2 Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:26:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)(2017-02)
+ref  https://github.com/panubo/docker-mariadb-galera  env  node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)  step  拉取 (panubo版)git 代码, 取 image  三台机器, 各运行一下
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/ &amp;amp;&amp;amp; docker pull panubo/mariadb-galera   设置环境变量  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.13.110 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-0 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.15.240 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-1 EOF source ~/.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Base Docker Coreos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:36:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</guid>
+      <description>MariaDB Galera cluster running on CoreOS using the official Docker images
+env Coreos + any public cloud (Azure, AWS, Google, etc)
+step 开端口:
+sudo firewall-cmd --permanent --add-port=4567/udp; sudo firewall-cmd --permanent --add-port=4567/tcp; sudo firewall-cmd --permanent --add-port=4568/tcp; sudo firewall-cmd --permanent --add-port=4444/tcp; sudo firewall-cmd --permanent --add-port=3306/tcp; sudo firewall-cmd --reload; sudo firewall-cmd --permanent --list-port  检查mysql 是不是起来了:
+sudo yum install -y telnet telnet 127.0.0.1 22 Telnet 127.0.0.1 3306
+检查日志
+docker logs -f mariadb-container-0</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:32:52 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)
+env  node0, 10.10.12.17 node1, 10.10.12.18 node2, 10.10.13.10(这一台暂时没用上)  step  拉取 (panubo版)git 代码
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/
+ 设置环境变量
+  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.17 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.18 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc   Running Garbd  在 node0 上:
+docker run -d --net host --name galera-garbd \ -e WSREP_CLUSTER_ADDRESS=$WSREP_CLUSTER_ADDRESS \ panubo/mariadb-galera \ garbd   运行container  在node0上:</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:31:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker.html</guid>
+      <description> docker之docker-mariadb-galera各种策略汇总
+使用 FROM mariadb:10.1 的几个docker  https://github.com/EgoAleSum/mariadb-cluster  http://withblue.ink/2016/03/09/galera-cluster-mariadb-coreos-and-docker-part-1.html
+Coreos + any public cloud (Azure, AWS, Google, etc)
+ https://github.com/dial-once/docker-mariadb-galera  使用 Docker Cloud/Docker Compose YML
+ https://github.com/toughIQ/docker-mariadb-cluster  Swarm
+Consider this a POC and not a production ready system!
+Built for use with Docker 1.12.1+ in Swarm Mode
+ https://github.com/panubo/docker-mariadb-galera  Galera Arbitrator (aka garbd)
+end </description>
+    </item>
+    
+  </channel>
+</rss>

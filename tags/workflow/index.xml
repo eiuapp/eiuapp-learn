@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workflow on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/workflow.html</link>
+    <description>Recent content in workflow on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 29 Jun 2018 09:08:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gitlab Workflow</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-workflow.html</link>
+      <pubDate>Fri, 29 Jun 2018 09:08:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-workflow.html</guid>
+      <description> gitlab流程
+Env    Step Ref  https://www.cnblogs.com/coderzl/p/7491143.html https://blog.csdn.net/liumiaocn/article/details/79256312  </description>
+    </item>
+    
+    <item>
+      <title>Git Workflow</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/git-workflow.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:42:26 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/git-workflow.html</guid>
+      <description>gitlab系列之workflow
+本文是 官方 workflow 的中文翻译
+参考 https://docs.gitlab.com/ee/workflow/gitlab_flow.html
+中文 介绍 使用git进行版本管理使得分支和合并比旧版本系统（如SVN）容易得多。 这允许多种分支策略和工作流程。 几乎所有这些都是对git之前使用的方法的改进。 但是许多组织最终没有明确定义，过于复杂或没有与问题跟踪系统（issue tracking systems）集成的，工作流。 因此，我们建议GitLab flow作为明确定义的一套最佳实践。 它结合了功能驱动开发和功能分支的问题跟踪。
+来自其他版本控制系统的组织经常发现很难开发有效的工作流。 本文介绍“将git工作流与问题跟踪系统集成”的GitLab流程。 它提供了一个简单，透明和有效的方式使用git。
+当转换到git时，你必须习惯于在与同事共享提交之前有三个步骤。 大多数版本控制系统只有一个步骤，从工作副本提交到共享服务器。 在git中，您可以将文件从工作副本添加到暂存区域。 之后，你提交他们到本地回购。 第三步是推送到共享远程存储库。 在习惯了这三个步骤之后，分支模型成为挑战。
+因为许多组织，对于git是新认识，没有公约如何使用它，那么很快git变成一团糟。 他们遇到的最大的问题是，许多长期运行的分支，每个包含了一部分的变化。 人们很难确定他们应该开发或部署到生产的是哪个分支。 通常对这个问题的反应是采用标准化模式，例如git流和GitHub流。 我们认为仍有改进的余地，并将详细介绍一组我们称为GitLab流程的做法。
+Git flow and its problems Git流是一个第一建议使用git分支的vcs，它得到了很多的关注。它主张一个主分支、一个单独开发分支以及支持特性功能开发，发布版本和修补程序的其它分支。开发发生在开发分支上，移动到发布分支，并最终合并到主分支。 Git流是有一个定义良好的标准，但它的复杂性引入了两个问题。第一个问题是开发人员必须使用develop分支而不是master，master是保留给用于发布生产版本的代码。这是一个约定，称默认分支为master，并主要从此master分支，合并到此master。由于大多数工具自动使master分支成为默认分支，并在默认情况下显示该分支，因此必须切换到另一个分支。git流的第二个问题是修补程序和发布分支引入的复杂性。这些分支对于一些组织来说可能是一个好主意，但对于绝大多数组织来说是过分了。现在大多数组织实施持续交付，这意味着可以部署您的默认master分支。这意味着要prevented修补程序和发布分支，包括它们引入的所有仪式（ceremony）。这个仪式的一个例子是合并发布分支。虽然存在专门的工具来解决这个问题，但它们需要文档并增加复杂性。开发人员经常犯错误，例如更改只会合并到master中，而不会合并到develop分支中。这些错误的根本原因是git流对于大多数用例来说太复杂了。并且发布并不自动意味着也做修补程序。
+GitHub flow as a simpler alternative 在对git流的应对中，一个更简单的选择是，详细的GitHub流。 此流仅具有特征分支和master分支。 这是非常简单和干净，许多组织已经采用它与巨大的成功。 Atlassian推荐一个类似的策略，虽然他们rebase特征分支。 将所有内容合并到主分支并经常部署,意味着您最小化“库存”中的代码量，这符合精益和持续交付最佳实践。 但是这个流程仍然有许多关于部署，环境，发布和问题集成的问题。 使用GitLab流程，我们为这些问题提供额外的指导。
+Production branch with GitLab flow GitHub流假设你能够在每次合并特性分支时都部署到生产环境。这对于SaaS应用程序是可能的，但在许多情况下，这是不可能的。一种情况是，你不能控制确切的发布时刻，例如需要通过App Store验证的iOS应用程序。另一个例子是，当您有部署窗口时间（工作日从上午10点到下午4点，当操作团队满员时），但您也可以在其他时间合并代码。在这些情况下，您可以创建一个反映部署代码的生产分支。您可以通过将master合并到生产（production）分支来部署新版本。如果你需要知道在生产分支中是什么代码，你可以只是checkout到生产分支看看。部署的大致时间，很容易显示为版本控制系统中的合并提交时间。如果您自动部署生产分支，这一时间是相当准确的。如果您需要更准确的时间，您可以让部署脚本在每个部署中创建一个tag。此流防止了，git流的发布，标记和合并的开销。
+Environment branches with GitLab flow 建立一个自动更新到master分支的环境可能是个好主意。只有在这种情况下，此环境的名称可能与分支名称不同。假设您有一个暂存环境（staging environment），一个预生产环境和一个生产环境。在这种情况下，主分支将部署在暂存环境。当有人想要部署到预生产时，他们创建从主分支到预生产分支的合并请求。并且通过合并预生产分支到生产分支。此工作流只提交下游流确保一切都已在所有环境中测试过。如果您需要使用修补程序选择一个提交，通常在特性分支上进行开发，并将其与合并请求合并到master中，不要删除特性分支。如果master是好的（它应该是好的，如果你是连续交付的），然后将它合并到其他分支（也就是合并到预生产环境和生产环境）。如果这是不可能的（因为可能需要更多的手动测试），您可以将功能分支的合并请求发送到下游分支。 环境分支的一个“极端”版本，就是，正在为Teatro所做的，每个功能分支设置一个环境。
+Release branches with GitLab flow 只有在需要将软件发布到外部世界的情况下，您才需要使用版本发布分支。在这种情况下，每个分支包含次要版本（2-3稳定版，2-4稳定版等）。稳定分支使用master作为起点，并尽可能晚地创建。通过尽可能晚的提交分支，您必须将错误修复应用到多个分支的时间最小化。在发布了一个发布分支后，只有严重的错误修复包括在发布分支中。如果可能的话，这些错误修复首先合并到master中，然后进入发布分支。这种方式下，你不能忘记cherry-picked他们进 master 和 遇到相同的bug的后续版本。这称为“上游第一”策略，也是由Google和Red Hat实施的。每次在发布分支中包括错误修复时，通过设置新标签来提高补丁版本（以符合语义版本控制）。一些项目也有一个稳定的分支，指向与最新发布的分支相同的提交。在这个流程中，有一个生产分支（或git flow master分支）是不常见的。</description>
+    </item>
+    
+  </channel>
+</rss>

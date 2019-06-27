@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crawler on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/crawler.html</link>
+    <description>Recent content in crawler on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 09 Mar 2018 11:22:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/crawler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stock Iwencai Crawler</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/stock-iwencai-crawler.html</link>
+      <pubDate>Fri, 09 Mar 2018 11:22:53 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/stock-iwencai-crawler.html</guid>
+      <description> iwencai爬虫
+以下这几个, 记得回来, 找时间 coding
+github  https://github.com/GraySilver/wencai-master https://github.com/zhangzheng88/iwencai_spider https://github.com/wuxiaoxiaoshen/WenCai https://github.com/HiddenStrawberry/iWencai  自写  base headless-chrome-crawler  这个部分的示例代码,请看 仓库
+ crawler, 这个是失败的, 不用再试了  </description>
+    </item>
+    
+  </channel>
+</rss>

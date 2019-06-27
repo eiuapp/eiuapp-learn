@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ip on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/ip.html</link>
+    <description>Recent content in ip on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 16 Jun 2018 21:52:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/ip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Static Ip Ubuntu18</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/static-ip-ubuntu18.html</link>
+      <pubDate>Sat, 16 Jun 2018 21:52:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/static-ip-ubuntu18.html</guid>
+      <description>ubuntu18设置固态IP
+Env  os: ubuntu18  Step ubuntu16 ubuntu16是在/etc/network/interfaces 文件中设置固态IP 设置的方式类似下面
+source /etc/network/interfaces.d/* # The loopback network interface auto lo iface lo inet loopback # The primary network interface auto ens160 #iface ens160 inet dhcp iface ens160 inet static address 192.168.31.120 gateway 192.168.31.1 #这个地址你要确认下 网关是不是这个地址 netmask 255.255.255.0 network 192.168.31.0 broadcast 192.168.31.255 dns-nameservers 202.96.134.133  ubuntu17及以上 但是，ubuntu17起，改成了etc/netplan/*.yaml来配置。
+配置方式类似下面
+tom@tom:~$ cat /etc/netplan/50-cloud-init.yaml # This file is generated from information provided by # the datasource.</description>
+    </item>
+    
+  </channel>
+</rss>

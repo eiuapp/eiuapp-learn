@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yasnippet on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/yasnippet.html</link>
+    <description>Recent content in yasnippet on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/yasnippet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>yasnippet-setup</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/yasnippet.html</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/yasnippet.html</guid>
+      <description> 功能  可以实现各种代码模板，包括注释模板。 可以参考emacs自带的yasnippet文档。命令是：c-h f yas-minor-mode 可以利用emacs的elisp代码，实现功能命令输出。  You can also include lisp code in your template. For example, you might want to have a date stamp. Here’s a example that insert user’s email address and datestamp.
+`user-mail-address` `(current-time-string)`
+直接看完下文就可以基本了解了：
+在Spacemacs中为Yasnippet添加自定义snippet
+Ref  https://blog.csdn.net/u011729865/article/details/53240101 在Spacemacs中为Yasnippet添加自定义snippet https://github.com/joaotavora/yasnippet http://joaotavora.github.io/yasnippet/  </description>
+    </item>
+    
+  </channel>
+</rss>

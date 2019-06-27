@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>categories on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/categories.html</link>
+    <description>Recent content in categories on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 04 Oct 2018 11:23:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用hugo的jane主题时，categories 书写不规范</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-transmitter-from-beautifulhugo.html</link>
+      <pubDate>Thu, 04 Oct 2018 11:23:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-transmitter-from-beautifulhugo.html</guid>
+      <description>categories 不是列表 ➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo server Building sites … ERROR 2018/11/26 01:07:40 Error while rendering &amp;quot;page&amp;quot; in &amp;quot;posts/&amp;quot;: template: _default/single.html:11:5: executing &amp;quot;_default/single.html&amp;quot; at &amp;lt;partial &amp;quot;head.html&amp;quot; ...&amp;gt;: error calling partial: template: partials/head.html:28:16: executing &amp;quot;partials/head.html&amp;quot; at &amp;lt;index ($.Site.Data.a...&amp;gt;: error calling index: value has type []string; should be string ERROR 2018/11/26 01:07:40 Error while rendering &amp;quot;page&amp;quot; in &amp;quot;post/&amp;quot;: template: post/single.html:14:21: executing &amp;quot;content&amp;quot; at &amp;lt;.&amp;gt;: range can&#39;t iterate over cloud-native ERROR 2018/11/26 01:07:40 in .</description>
+    </item>
+    
+  </channel>
+</rss>

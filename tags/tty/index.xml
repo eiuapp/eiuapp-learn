@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tty on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/tty.html</link>
+    <description>Recent content in tty on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 19 Jun 2018 17:41:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/tty/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Kill Tty</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-kill-tty.html</link>
+      <pubDate>Tue, 19 Jun 2018 17:41:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-kill-tty.html</guid>
+      <description>linux 如何杀掉 tty终端
+Step 1、用w -s命令可以得到终端名 root@bitzone:~# w 17:37:05 up 164 days, 1:13, 2 users, load average: 1.47, 0.83, 0.66 USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT root pts/0 121.34.147.224 17:36 0.00s 0.02s 0.00s w root pts/2 121.34.147.224 11:58 5:37m 0.04s 0.04s -bash root@bitzone:~# w -s 17:38:38 up 164 days, 1:15, 2 users, load average: 0.65, 0.69, 0.62 USER TTY FROM IDLE WHAT root pts/0 121.34.147.224 2.00s w -s root pts/2 121.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resource on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/resource.html</link>
+    <description>Recent content in resource on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/resource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/emacs.html</link>
+      <pubDate>Wed, 01 Aug 2018 00:09:53 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/emacs.html</guid>
+      <description> Step  Emacs 快速指南 - 原生中文手册 怎样学习 Emacs？ ergoemacs.org popkit evil  已经看过的  spacemacs 快捷键 spacemacs快捷键2 Emacs中那些不常用的行操作命令 写给 Pythonist 的 Spacemacs 入门指北 Spacemacs 使用总结  21天学会Emacs  21天学会Emacs http://book.emacs-china.org/  spacemacs  Spacemacs 使用总结 Spacemacs 基础 spacemacs 系列&amp;ndash;安装和基础配置  Ref  https://sam217pa.github.io/2016/09/13/from-helm-to-ivy/  </description>
+    </item>
+    
+    <item>
+      <title>Erp Golang</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/erp-golang.html</link>
+      <pubDate>Mon, 02 Jul 2018 16:51:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/erp-golang.html</guid>
+      <description>Any ERP system written in Go
+非开源 https://www.obs2go.com/
+open source https://golanglibs.com/search?q=erp&amp;amp;sort=top
+中英文 https://getqor.com/cn https://github.com/qor/qor https://github.com/reechou/erp
+中文版 https://github.com/hexiaoyun128/ERP.git https://www.ctolib.com/hexiaoyun128-ERP.html
+hexya 无中文 http://hexya.io/
+中文版 https://github.com/JoyiSystem/goerp
+golang-erp https://github.com/odenktools/golang-erp</description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/mac.html</link>
+      <pubDate>Sat, 30 Jun 2018 10:46:27 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/mac.html</guid>
+      <description> Env    Step mysql  sequelpro  Karabiner Elements  https://pqrs.org/osx/karabiner/ Karabiner Elements 键位定制神器 https://www.jianshu.com/p/47d5de7f12bc https://github.com/tekezo/Karabiner-Elements https://note.wuze.me/liu-shui/macos-zhi-wai-jie-hhkb-jian-pan-karabiner-elements-pei-zhi  ###
+ Manico, 一款快速启动及切换 Mac App 的工具 KeyCastr: 录屏好帮手，实时显示按键操作的小工具
+ dash
+  Ref  https://zhuanlan.zhihu.com/p/29982257  </description>
+    </item>
+    
+    <item>
+      <title>Ddos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/ddos.html</link>
+      <pubDate>Tue, 19 Jun 2018 19:45:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/ddos.html</guid>
+      <description> 公司被另一家公司给抄袭了。老板很生气。
+Env 比特空间 site
+ http://www.bitspace.link/ http://bitone.cc/#/  抄袭者 site
+ http://www.vac-china.com/ https://vacc.vip/  IP
+ 104.18.42.57 47.90.52.55 香港特别行政区 阿里云  Step 为了防止我们被攻击，要做实验了。
+ping攻击 无效。
+DDos攻击 zanyarjamal的github 还真有一点干货。
+先用xerxes
+Ref  xerxes  </description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/python.html</link>
+      <pubDate>Tue, 03 Apr 2018 23:00:53 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/python.html</guid>
+      <description>金角大王等待唐僧的日子
+ipython - bpython 一直用的是 ipython，感觉比 bpython 好些，
+关于它们之间对比可以参看 http://stackoverflow.com/questions/4232923/ipython-or-bpython</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/kubernetes.html</link>
+      <pubDate>Mon, 02 Apr 2018 22:41:53 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/kubernetes.html</guid>
+      <description>docker8.com/
+ k8s.docker8.com/
+ feiskyer/kubernetes-handbook
+ ctolib.com-kubernetes-handbook/introduction
+ ctolib.com-kubernetes-handbook
+ magicsandbox,边做边学K8S,Learn Kubernetes by doing.
+ KeKe-Li/kubernetes-tutorial
+ StudyXX/google-containers
+  https://github.com/gjmzj/kubeasz
+rootsongjc 的 kubernetes-vagrant-centos-cluster</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/nodejs.html</link>
+      <pubDate>Fri, 23 Feb 2018 15:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/nodejs.html</guid>
+      <description>Node.js ES2015 Support</description>
+    </item>
+    
+    <item>
+      <title>Blockchain Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/blockchain.html</link>
+      <pubDate>Fri, 23 Feb 2018 10:08:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/blockchain.html</guid>
+      <description>如何学习区块链技术？
+coinmarketcap
+BitUP Intelligent Digital Asset Management, BitUP平台推出的产品都将基于量化交易来实现操作。基于增强学习的自动化交易等
+metastablecapital We Manage Crypto Asset Hedge Funds
+chia, Chia will be available to the public in the summer of 2018
+币界网
+数字货币导航网
+AICoin
+开发 Node.js开发加密货币
+bitcoin  https://www.gdax.com/trade/BTC-USD  区块链浏览器  searchain Tokenview qukuai ChainFlyer btc.com BlockTrail Blockchair Blockchain  1.我见过的里面最酷炫的，日本BitFlyer交易所的ChainFlyer：https://chainflyer.bitflyer.jp 尤其是创世区块…… 优点：很直观地区分了SW交易和非SW交易；脚本解析看上去做得很棒，非常清晰；OP_RETURN还被显示为消息气泡，细节很赞；收录了历史上的双花交易，并没有把它们直接丢弃。 缺点：好像没有显示矿池的名字。 2.国内的大矿池自带的，访问速度很快：https://btc.com 优点：访问速度快、带有未确认交易内存池统计、算力占比统计等丰富统计数据；还有手续费估计等实用功能；脚本显示也比较清晰。 缺点：属于“矿霸”比特大陆旗下（额这个也算缺点么）；再硬扯一条吧：自带的交易加速功能价格太贵。 3.BlockTrail：https://www.blocktrail.com/BTC 优点：可以直观地显示交易有没有启用Opt-in RBF。 缺点：被比特大陆收购（又来了）；会把原生SW地址的输出脚本错误解析为OP_RETURN。 4.Blockchair：https://blockchair.com/bitcoin 优点：筛选和统计功能非常强大，可以导出CSV数据；数据超级详细；搜索也很强大。 缺点：访问好像有点慢。 5.Blockchain：https://blockchain.info/ 优点：貌似比较老牌；自带各种统计图表，而且可以导出CSV数据；实时滚动更新的未确认交易名单（貌似是没X用的功能？）；还有收录历史上的孤块（双花交易似乎就直接丢了） 缺点：太老，代码更新好像跟不上了，貌似连原生SW地址都没好好兼容；前一阵子发生的“矿工搞丢12.5BTC区块奖励”事件中也崩过一次。  比特币区块链浏览器 简介：
+ https://blockchain.</description>
+    </item>
+    
+    <item>
+      <title>Docker Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/docker.html</link>
+      <pubDate>Fri, 23 Feb 2018 10:08:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/docker.html</guid>
+      <description> 如何使用 DockerHub  </description>
+    </item>
+    
+    <item>
+      <title>Golang Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/golang.html</link>
+      <pubDate>Sat, 10 Feb 2018 10:57:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/golang.html</guid>
+      <description> golang-wiki
+gowalker
+PackageManagementTools
+godoc
+gometalinter,golang代码质量检查分析工具
+https://github.com/itcloudy/go-view
+Ref  https://segmentfault.com/a/1190000013553309  </description>
+    </item>
+    
+    <item>
+      <title>Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/resource.html</link>
+      <pubDate>Sun, 04 Feb 2018 21:59:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/resource.html</guid>
+      <description>综合  21运维
+ 程序员在线工具, 这个比较叼了, 好多有用的工具
+ RedHat Developers
+ 发现用MkDocs来写教程也还挺爽的,还真心不错,示例有TDD开发容器化的Python微服务应用
+ 用OpenSWAN做Linux下的IPSec VPN的详细配置指南
+ filebeat + logstash + kafka + logstash + kibana + grafana 支持异地多机房, 来源 k8s技术圈的紫木
+ helm 完成 dashboard 点击安装应用APP, 如 点击安装 redis, mysql等
+ gitops, jenkins, rancher, GoCD, 完成基于kubernetes的CI/CD框架
+ 讨论群 gitter, 好处, 不需要wechat或者facebook
+ 脚本之家book
+ 清华大学开源软件镜像站
+ github-format-syntax
+ GitLab Flavored Markdown (GFM)
+ 真正的inotify+rsync实时同步 彻底告别同步慢
+ jpg to png
+  api  apiview</description>
+    </item>
+    
+  </channel>
+</rss>

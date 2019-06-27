@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/org.html</link>
+    <description>Recent content in org on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 12 Nov 2018 10:20:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于 hugo, easy-hugo, ox-hugo, spacemacs 集成相关的问题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/easy-hugo-and-ox-hugo-qa.html</link>
+      <pubDate>Mon, 12 Nov 2018 10:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/easy-hugo-and-ox-hugo-qa.html</guid>
+      <description>ox-hugo，easy-hugo, spacemacs的集成 ox-hugo 写文档 这里，在写文档的时候，配置好就可以了,无需修改 spacemacs的配置。
+具体的配置，见 ox-hugo-example-2.org, aa.org, ox-hugo-example-1.org
+导出至easy-hugo的content/xxx文件夹中 这一步，可以被 auto-save 函数替换了。
+C-c C-e H H
+easy-hugo preview C-c e p
+用 easy-hugo preview 有时会因为缓存问题，而失真哟 当时有一个 pages/about.md 文件导致的失真。在右上角的Menu中始终存在。
+解决方式，清缓存。
+EXPORT_HUGO_SECTION 失效 当 content 下，没有pages文件夹时，在 *.org 的
+:EXPORT_HUGO_SECTION: pages  会失效，且，.md 文件会在 easy-hugo 的配置项 easy-hugo-postdir（我这里设置的是 content/posts/）下 .
+同时有 .org 和 .md 文件，.org 有效，.md 失效 当 content/posts/ 下同时有 .org 和 .md 文件，则 .org 文件有效，.md 失效</description>
+    </item>
+    
+    <item>
+      <title>org-折行显示</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org-visual-line-navigation.html</link>
+      <pubDate>Tue, 13 Nov 2018 14:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org-visual-line-navigation.html</guid>
+      <description>  M-x spacemacs/toggle-visual-line-navigation-on
+ Ref  https://emacs-china.org/t/spacemacs-org/428  </description>
+    </item>
+    
+    <item>
+      <title>使用org-mode和ox-hugo写文档</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/blogging-with-org-mode-and-ox-hugo.html</link>
+      <pubDate>Mon, 12 Nov 2018 09:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/blogging-with-org-mode-and-ox-hugo.html</guid>
+      <description>Env  os: mac Emacs: 26.1 Spacemacs: 0.300.0 Org: 9.1.2 Hugo: v0.41 ox-hugo: 20181106.2350 prodigy: 20180511.938  Step Part 1: Blog Setup Download Hugo pacman -S hugo  Initialize Project hugo new site test-blog cd test-blog git init  Download a Theme (YMMV) This seems like a clean, simple theme.
+You can use a submodule like this:
+git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic  Or you can just clone it</description>
+    </item>
+    
+    <item>
+      <title>shane sveller blog 笔记</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/shane-sveller-blog-about-ox-hugo.html</link>
+      <pubDate>Wed, 14 Nov 2018 23:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/shane-sveller-blog-about-ox-hugo.html</guid>
+      <description>notes Blogging with org-mode and ox-hugo 这篇文章，写得很好，主要讲了下面几点。
+ install Global settings and metadatad STARTUP: content AUTHOR: Shane Sveller HUGO_BASE_DIR: . HUGO_AUTO_SET_LASTMOD: t Creating posts Setup hugo project category and tag. Excluding/heading sub-headings from export（it’s a :noexport: tag） Automatic export on save Marking a post as a Draft Optional: Live reload without a separate shell tab Emacs Lisp Snippets  其中几个说明一下。
+Automatic export on save  * Footnotes * COMMENT Local Variables :ARCHIVE: # Local Variables: # eval: (add-hook &#39;after-save-hook #&#39;org-hugo-export-wim-to-md :append :local) # eval: (auto-fill-mode 1) # End:   其中，查一下函数（SPC h d f) 知道，要把 org-hugo-export-wim-to-md-after-save 修改成 org-hugo-export-wim-to-md。</description>
+    </item>
+    
+    <item>
+      <title>org-mode-set-org-directory</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org-mode-set-org-directory.html</link>
+      <pubDate>Tue, 13 Nov 2018 14:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org-mode-set-org-directory.html</guid>
+      <description>做 软连接 这个方法比较方便，不需要另外再去修改spacemacs或emacs配置。
+➜ tomtsang-rootsongjc-hugo git:(master) ✗ echo `pwd`/org /Users/tomtsang/bitbucket/qqbb/tomtsang-rootsongjc-hugo/org ➜ tomtsang-rootsongjc-hugo git:(master) ✗ ln -s `pwd`/org/ ~/org ➜ tomtsang-rootsongjc-hugo git:(master) ✗ l ~/org lrwxr-xr-x 1 tomtsang 60 Nov 13 14:55 /Users/tomtsang/org -&amp;gt; /Users/tomtsang/bitbucket/qqbb/tomtsang-rootsongjc-hugo/org/ ➜ tomtsang-rootsongjc-hugo git:(master) ✗ l ~/org/ total 48K drwxr-xr-x 13 tomtsang 416 Nov 13 14:53 . drwxr-xr-x 24 tomtsang 768 Nov 12 01:56 .. -rw-r--r-- 1 tomtsang 1.5K Nov 13 14:52 all-posts.org -rw-r--r-- 1 tomtsang 758 Nov 13 00:27 emacs-install-base-ubuntu.</description>
+    </item>
+    
+    <item>
+      <title>quickly create a new draft post</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/ox-hugo-quickly-create-a-draft-post.html</link>
+      <pubDate>Mon, 12 Nov 2018 09:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/ox-hugo-quickly-create-a-draft-post.html</guid>
+      <description>Of course I’m using a handy capture template, as provided by the ox-hugo docs. This lets me type `C-c c h` to quickly create a new draft post.
+(with-eval-after-load &#39;org-capture (defun org-hugo-new-subtree-post-capture-template () &amp;quot;Returns `org-capture&#39; template string for new Hugo post. See `org-capture-templates&#39; for more information.&amp;quot; (let* ((title (read-from-minibuffer &amp;quot;Post Title: &amp;quot;)) ;Prompt to enter the post title (fname (org-hugo-slug title))) (mapconcat #&#39;identity `( ,(concat &amp;quot;* TODO &amp;quot; title) &amp;quot;:PROPERTIES:&amp;quot; ,(concat &amp;quot;:EXPORT_FILE_NAME: &amp;quot; fname) &amp;quot;:END:&amp;quot; &amp;quot;%?</description>
+    </item>
+    
+  </channel>
+</rss>

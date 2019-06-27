@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>easy-hugo on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/easy-hugo.html</link>
+    <description>Recent content in easy-hugo on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 12 Nov 2018 10:20:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/easy-hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于 hugo, easy-hugo, ox-hugo, spacemacs 集成相关的问题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/easy-hugo-and-ox-hugo-qa.html</link>
+      <pubDate>Mon, 12 Nov 2018 10:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/easy-hugo-and-ox-hugo-qa.html</guid>
+      <description>ox-hugo，easy-hugo, spacemacs的集成 ox-hugo 写文档 这里，在写文档的时候，配置好就可以了,无需修改 spacemacs的配置。
+具体的配置，见 ox-hugo-example-2.org, aa.org, ox-hugo-example-1.org
+导出至easy-hugo的content/xxx文件夹中 这一步，可以被 auto-save 函数替换了。
+C-c C-e H H
+easy-hugo preview C-c e p
+用 easy-hugo preview 有时会因为缓存问题，而失真哟 当时有一个 pages/about.md 文件导致的失真。在右上角的Menu中始终存在。
+解决方式，清缓存。
+EXPORT_HUGO_SECTION 失效 当 content 下，没有pages文件夹时，在 *.org 的
+:EXPORT_HUGO_SECTION: pages  会失效，且，.md 文件会在 easy-hugo 的配置项 easy-hugo-postdir（我这里设置的是 content/posts/）下 .
+同时有 .org 和 .md 文件，.org 有效，.md 失效 当 content/posts/ 下同时有 .org 和 .md 文件，则 .org 文件有效，.md 失效</description>
+    </item>
+    
+    <item>
+      <title>使用org-mode和ox-hugo写文档</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/blogging-with-org-mode-and-ox-hugo.html</link>
+      <pubDate>Mon, 12 Nov 2018 09:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/blogging-with-org-mode-and-ox-hugo.html</guid>
+      <description>Env  os: mac Emacs: 26.1 Spacemacs: 0.300.0 Org: 9.1.2 Hugo: v0.41 ox-hugo: 20181106.2350 prodigy: 20180511.938  Step Part 1: Blog Setup Download Hugo pacman -S hugo  Initialize Project hugo new site test-blog cd test-blog git init  Download a Theme (YMMV) This seems like a clean, simple theme.
+You can use a submodule like this:
+git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic  Or you can just clone it</description>
+    </item>
+    
+  </channel>
+</rss>

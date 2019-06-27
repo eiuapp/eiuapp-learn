@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>images on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/images.html</link>
+    <description>Recent content in images on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 27 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>批量删除docker images</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-remove-images-multy.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-remove-images-multy.html</guid>
+      <description> docker ps -a | grep &amp;quot;Exited&amp;quot; | awk &#39;{print $1 }&#39;|xargs docker stop docker ps -a | grep &amp;quot;Exited&amp;quot; | awk &#39;{print $1 }&#39;|xargs docker rm docker images|grep none|awk &#39;{print $3 }&#39;|xargs docker rmi  Ref  https://blog.csdn.net/p656456564545/article/details/50097145  </description>
+    </item>
+    
+  </channel>
+</rss>

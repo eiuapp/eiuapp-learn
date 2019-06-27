@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongodb on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/mongodb.html</link>
+    <description>Recent content in mongodb on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:52:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mongodb Update</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-update.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:52:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-update.html</guid>
+      <description>mongodb系列之update
+只要是批量，后头加 {multi: true} 吧。
+批量，新增一个k-v db.Signals_Day.update({TrdDt:20161129}, {$set: {&amp;ldquo;Real&amp;rdquo;: true}}, {multi: true})
+testrs:PRIMARY&amp;gt; db.Signals_Day.update({TrdDt:20161129}, {$set: {&amp;quot;Real&amp;quot;: true}}, {multi: true}) WriteResult({ &amp;quot;nMatched&amp;quot; : 8935, &amp;quot;nUpserted&amp;quot; : 0, &amp;quot;nModified&amp;quot; : 8933 }) testrs:PRIMARY&amp;gt; db.Signals_Day.find({TrdDt:20161129}) { &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;583d27735868c24cb078e925&amp;quot;), &amp;quot;Type&amp;quot; : &amp;quot;NewHighLow&amp;quot;, &amp;quot;Sign&amp;quot; : -1, &amp;quot;ID&amp;quot; : &amp;quot;000785.SZ&amp;quot;, &amp;quot;TrdDt&amp;quot; : 20161129, &amp;quot;TrdTm&amp;quot; : 1500, &amp;quot;PrevClsPx&amp;quot; : 14.99, &amp;quot;LastPx&amp;quot; : 14.4, &amp;quot;Real&amp;quot; : true } { &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;583d27735868c24cb078e92a&amp;quot;), &amp;quot;Type&amp;quot; : &amp;quot;RSI&amp;quot;, &amp;quot;Sign&amp;quot; : -1, &amp;quot;ID&amp;quot; : &amp;quot;002117.</description>
+    </item>
+    
+    <item>
+      <title>Mongodb Distinct</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-distinct.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:51:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-distinct.html</guid>
+      <description>mongodb系列之distinct
+reference https://docs.mongodb.com/manual/reference/method/db.collection.distinct/
+http://www.jb51.net/article/65929.htm
+destinct  MongoDB的destinct命令是获取特定字段中不同值列表。该命令适用于普通字段，数组字段和数组内嵌文档.  mongodb的distinct的语句： db.users.distinct(&amp;lsquo;last_name&amp;rsquo;）;
+等同于 SQL 语句: select DISTINCT last_name from users;
+表示的是根据指定的字段返回不同的记录集。
+ 如果，有相关的查询，则放在后面。
+testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;LastPx&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161101, &amp;ldquo;ID&amp;rdquo;: &amp;ldquo;600650.SH&amp;rdquo;}) [ 25.88, 25.89, 25.87, 25.86 ] testrs:PRIMARY&amp;gt;
+示例  db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;).length 114 db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;)
+ testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161102, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1081 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161101, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1109 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161103, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1083 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161031, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1107 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161025, &amp;ldquo;ID&amp;rdquo;: /^60.</description>
+    </item>
+    
+    <item>
+      <title>Mongodb Findoneandupdate</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-findoneandupdate.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:50:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-findoneandupdate.html</guid>
+      <description>mongodb系列之findOneAndUpdate
+参考 http://mongodb.github.io/node-mongodb-native/2.2/api/Collection.html#findOneAndUpdate
+https://docs.mongodb.com/manual/reference/method/db.collection.findOneAndUpdate/
+示例 修改键（字段）的值,修改了{b:2}
+var MongoClient = require(&#39;mongodb&#39;).MongoClient; MongoClient.connect(&#39;mongodb://192.168.31.240:27017/test&#39;, function(err, db) { // Get the collection var col = db.collection(&#39;find_one_and_update&#39;); col.insertMany([{a:1, b:1}], {w:1}, function(err, r) { col.findOneAndUpdate({a:1} , {$set: {b:2}} , { upsert: true } , function(err, r) { db.close(); }); }); });  增加新的键，增加了{d:1}
+var MongoClient = require(&#39;mongodb&#39;).MongoClient, test = require(&#39;assert&#39;); MongoClient.connect(&#39;mongodb://192.168.31.240:27017/test&#39;, function(err, db) { // Get the collection var col = db.collection(&#39;find_one_and_update&#39;); col.insertMany([{a:1, b:1}], {w:1}, function(err, r) { col.</description>
+    </item>
+    
+    <item>
+      <title>Mongodb Replace</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-replace.html</link>
+      <pubDate>Wed, 28 Feb 2018 17:37:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-replace.html</guid>
+      <description>env jlch
+20180228, 江南嘉捷601313 变更为 三六零601360
+step testrs:PRIMARY&amp;gt; db.self_stock.find({&amp;quot;groups._sort&amp;quot;:/601313.SH/}) { &amp;quot;_id&amp;quot; : &amp;quot;oxKP9t4ipFn59N9tmGQjW1IB0d9M&amp;quot;, &amp;quot;groups&amp;quot; : [ { &amp;quot;_name&amp;quot; : &amp;quot;default0&amp;quot;, &amp;quot;_alias&amp;quot; : &amp;quot;default0&amp;quot;, &amp;quot;_sort&amp;quot; : &amp;quot;600696.SH|601313.SH|000023.SZ|002416.SZ|002180.SZ|002715.SZ|300104.SZ|002070.SZ|002455.SZ|399001.SZ|000001.SH|399006.SZ&amp;quot;, &amp;quot;_stocks&amp;quot; : [ &amp;quot;002416.SZ&amp;quot;, &amp;quot;002180.SZ&amp;quot;, &amp;quot;002715.SZ&amp;quot;, &amp;quot;300104.SZ&amp;quot;, &amp;quot;002070.SZ&amp;quot;, &amp;quot;002455.SZ&amp;quot;, &amp;quot;399001.SZ&amp;quot;, &amp;quot;000001.SH&amp;quot;, &amp;quot;399006.SZ&amp;quot;, &amp;quot;000023.SZ&amp;quot;, &amp;quot;601313.SH&amp;quot;, &amp;quot;600696.SH&amp;quot; ] } ] } { &amp;quot;_id&amp;quot; : &amp;quot;oxKP9t581mOc9_CslG6-7KzI2958&amp;quot;, &amp;quot;groups&amp;quot; : [ { &amp;quot;_name&amp;quot; : &amp;quot;default0&amp;quot;, &amp;quot;_alias&amp;quot; : &amp;quot;default0&amp;quot;, &amp;quot;_sort&amp;quot; : &amp;quot;000546.SZ|601313.SH|600367.SH|601890.SH|600311.SH|002447.SZ|399001.SZ|000001.SH|399006.SZ&amp;quot;, &amp;quot;_stocks&amp;quot; : [ &amp;quot;000546.SZ&amp;quot;, &amp;quot;601313.SH&amp;quot;, &amp;quot;600367.SH&amp;quot;, &amp;quot;601890.SH&amp;quot;, &amp;quot;600311.</description>
+    </item>
+    
+    <item>
+      <title>Mongodb Output Import</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-output-import.html</link>
+      <pubDate>Tue, 06 Feb 2018 11:12:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-output-import.html</guid>
+      <description>env 从 192.168.31.42/abc/Signals_1Min 转移mongodb数据 到 192.168.31.240/openQuote/Signals_1Min
+ref MongoDB导入导出以及数据库备份
+step mongoexport 导出 准备导出字段
+[jlch@check 42]$ cat field_Signals_1Min.txt _id Type Sign ID TrdDt TrdTm PrevClsPx LastPx TM Vol[jlch@check 42]$  导出
+[jlch@check 43]$ mongoexport -h 192.168.31.42 -d abc -c Signals_1Min -q &#39;{&amp;quot;TrdDt&amp;quot;:20180131, &amp;quot;TrdTm&amp;quot;:{$lt:141900}, &amp;quot;ID&amp;quot;:/SZ/ }&#39; --fieldFile=./field_Signals_1Min.txt --type=csv -o ./Signals_1Min.csv 2018-02-06T11:55:38.885+0800	connected to: 192.168.31.42 2018-02-06T11:55:39.053+0800	exported 3256 records [jlch@check 42]$ ls field_Signals_1Min.txt Signals_1Min.csv [jlch@check 42]$  此时生成 Signals_1Min.csv
+mongoimport 导入 [jlch@check 42]$ mongoimport -h 192.</description>
+    </item>
+    
+  </channel>
+</rss>

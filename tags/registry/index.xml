@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>registry on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/registry.html</link>
+    <description>Recent content in registry on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/registry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker registry</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry.html</guid>
+      <description>docker registry
+ 在 192.168.31.240 ， 10.10.12.17 中建立了 registry 输入用户zimug，密码zimug_password  192.168.31.171 client
+root 用户
+sudo mkdir -p /etc/docker/certs.d/reg.jlch.com:5000 sudo echo 192.168.31.240 reg.jlch.com &amp;gt;&amp;gt; /etc/hosts sudo scp -r tom@192.168.31.240:/home/tom/registry/certs/registry.crt /etc/docker/certs.d/reg.jlch.com:5000  root@k-m:/home/jlch# docker login reg.jlch.com:5000 Username: zimug Password: Login Succeeded root@k-m:/home/jlch# docker images REPOSITORY TAG IMAGE ID CREATED SIZE ceph/daemon latest dc9781d1d530 20 hours ago 983MB hello-world latest 1815c82652c0 4 months ago 1.84kB root@k-m:/home/jlch# docker tag ceph/daemon reg.jlch.com:5000/ceph/daemon:latest root@k-m:/home/jlch# docker push reg.</description>
+    </item>
+    
+    <item>
+      <title>docker registry ui</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-ui.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-ui.html</guid>
+      <description>http://blog.csdn.net/mideagroup/article/details/52052618
+env 192.168.31.240
+home/tom/hyper-docker-registry-web-config 下</description>
+    </item>
+    
+    <item>
+      <title>docker 登陆失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</guid>
+      <description>login failure - 代理问题 root@km:~/dockerRegistry# docker login reg.jlch.com:5000 Username (zimug): Password: Error response from daemon: Get https://reg.jlch.com:5000/v1/users/: EOF root@km:~/dockerRegistry# vi /lib/systemd/system/docker.service  重点把 reg.jlch.com 加入 Environment 中。
+root@km:~# cat /lib/systemd/system/docker.service [Unit] Description=Docker Application Container Engine Documentation=https://docs.docker.com After=network.target docker.socket firewalld.service Requires=docker.socket [Service] Type=notify # the default is not to use systemd for cgroups because the delegate issues still # exists and systemd currently does not support the cgroup feature set required # for containers run by docker Environment=&amp;quot;HTTP_PROXY=http://192.</description>
+    </item>
+    
+    <item>
+      <title>docker-registry-push-pull</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-push-pull.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-push-pull.html</guid>
+      <description>请查看
+https://gitee.com/tomt/tom%5Fdocker%5Fregistry%5Fpush%5Fpull.git</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install For Jlch</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:30:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral docker-registry  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 192.168.31.240 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.jlch.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码
+cd ~/registry&amp;amp;&amp;amp; mkdir auth;docker run --entrypoint htpasswd registry:2 -Bbn zimug zimug_password &amp;gt; auth/htpasswd;  用户：zimug 密码：zimug_password 可随便填写自己想填写的</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:38:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral
+ docker-registry
+  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 10.10.12.17 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.zimug.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码</description>
+    </item>
+    
+  </channel>
+</rss>

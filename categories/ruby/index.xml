@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/ruby.html</link>
+    <description>Recent content in ruby on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 26 Feb 2018 09:23:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gem Install Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ruby/gem-install-faq.html</link>
+      <pubDate>Mon, 26 Feb 2018 09:23:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ruby/gem-install-faq.html</guid>
+      <description>faq, ruby.h not found ubuntu@VM-0-12-ubuntu:~/registry/tomtsang-rootsongjc-cheatsheet$ bundle install ... ... To see why this extension failed to compile, please check the mkmf.log which can be found here: /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/extensions/x86_64-linux/2.3.0/nokogiri-1.8.0/mkmf.log extconf failed, exit code 1 Gem files will remain installed in /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/gems/nokogiri-1.8.0 for inspection. Results logged to /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/extensions/x86_64-linux/2.3.0/nokogiri-1.8.0/gem_make.out An error occurred while installing nokogiri (1.8.0), and Bundler cannot continue. Make sure that `gem install nokogiri -v &#39;1.8.0&#39;` succeeds before bundling. In Gemfile: github-pages was resolved to 156, which depends on jekyll-mentions was resolved to 1.</description>
+    </item>
+    
+  </channel>
+</rss>

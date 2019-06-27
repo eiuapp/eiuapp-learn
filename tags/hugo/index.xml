@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/hugo.html</link>
+    <description>Recent content in hugo on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 04 Oct 2018 11:23:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用hugo的jane主题时，categories 书写不规范</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-transmitter-from-beautifulhugo.html</link>
+      <pubDate>Thu, 04 Oct 2018 11:23:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-transmitter-from-beautifulhugo.html</guid>
+      <description>categories 不是列表 ➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo server Building sites … ERROR 2018/11/26 01:07:40 Error while rendering &amp;quot;page&amp;quot; in &amp;quot;posts/&amp;quot;: template: _default/single.html:11:5: executing &amp;quot;_default/single.html&amp;quot; at &amp;lt;partial &amp;quot;head.html&amp;quot; ...&amp;gt;: error calling partial: template: partials/head.html:28:16: executing &amp;quot;partials/head.html&amp;quot; at &amp;lt;index ($.Site.Data.a...&amp;gt;: error calling index: value has type []string; should be string ERROR 2018/11/26 01:07:40 Error while rendering &amp;quot;page&amp;quot; in &amp;quot;post/&amp;quot;: template: post/single.html:14:21: executing &amp;quot;content&amp;quot; at &amp;lt;.&amp;gt;: range can&#39;t iterate over cloud-native ERROR 2018/11/26 01:07:40 in .</description>
+    </item>
+    
+    <item>
+      <title>hugo-server-faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-server-faq.html</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-server-faq.html</guid>
+      <description> Error building site: EOF ➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo server Building sites … ERROR 2018/11/17 15:50:31 EOF for org/aaaa.org Total in 108 ms Error: Error building site: EOF ➜ tomtsang-rootsongjc-hugo git:(master) ✗  其实这个时候，查看一下 org/aaaa.org文件，没有内容，所以，删除了就可以 hugo server了的。
+➜ tomtsang-rootsongjc-hugo git:(master) ✗ cat content/org/aaaa.org #+TITLE: aaaa #+DATE: 2018-11-16T23:38:13+08:00 #+PUBLISHDATE: 2018-11-16T23:38:13+08:00 #+DRAFT: nil #+TAGS: nil, nil #+DESCRIPTION: Short description ➜ tomtsang-rootsongjc-hugo git:(master) ✗ rm -rf ./content/org ➜ tomtsang-rootsongjc-hugo git:(master) ✗  </description>
+    </item>
+    
+    <item>
+      <title>jane主题中安装百度统计</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-add-baidu-tongji.html</link>
+      <pubDate>Tue, 09 Oct 2018 10:10:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-add-baidu-tongji.html</guid>
+      <description>获取百度统计代码 登陆百度统计/管理/自有网站/获取代码, 得到形如
+&amp;lt;script&amp;gt; var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;quot;script&amp;quot;); hm.src = &amp;quot;https://hm.baidu.com/hm.js?9dd8aaaaaaaaaaa7a8bde80b13fe8eaf&amp;quot;; var s = document.getElementsByTagName(&amp;quot;script&amp;quot;)[0]; s.parentNode.insertBefore(hm, s); })(); &amp;lt;/script&amp;gt;  我们要的就是 &amp;ldquo;https://hm.baidu.com/hm.js?9dd8aaaaaaaaaaa7a8bde80b13fe8eaf&amp;rdquo; 中的 9dd8aaaaaaaaaaa7a8bde80b13fe8eaf
+放入config.toml 文件中 [params] baidu_push = false # baidu push # 百度 baidu_analytics = &amp;quot;9dd8aaaaaaaaaaa7a8bde80b13fe8eaf&amp;quot; # Baidu Analytics baidu_verification = &amp;quot;&amp;quot; # Baidu Verification  代码安装检查 登陆百度统计/管理/自有网站/代码检查, 得到形如：
+ 页面代码安装状态：代码安装正确  表示已经加入了百度统计。</description>
+    </item>
+    
+    <item>
+      <title>Hugo Install Base Win10</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-install-base-win10.html</link>
+      <pubDate>Wed, 11 Jul 2018 10:34:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-install-base-win10.html</guid>
+      <description> win10中安装hugo
+Env  os: win10 sh: bash  Step Chocolatey (Windows) If you are on a Windows machine and use Chocolatey for package management, you can install Hugo with the following one-liner:
+choco install hugo -confirm  安装之后，很重要的一步，是重启 git shell或者是cmd
+Ref  https://gohugo.io/getting-started/installing https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/  </description>
+    </item>
+    
+    <item>
+      <title>Hugo Gitment</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-gitment.html</link>
+      <pubDate>Wed, 04 Apr 2018 16:44:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-gitment.html</guid>
+      <description> Hugo 集成 Gitment 评论插件
+ref  Hugo 集成 Gitment 评论插件  </description>
+    </item>
+    
+    <item>
+      <title>Github Travis</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/github-travis.html</link>
+      <pubDate>Sun, 11 Feb 2018 15:29:53 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/github-travis.html</guid>
+      <description>Using Hugo with Travis CI on GitHub Pages
+martinliu-hugo</description>
+    </item>
+    
+  </channel>
+</rss>

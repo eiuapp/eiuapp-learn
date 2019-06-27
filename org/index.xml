@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/org.html</link>
+    <description>Recent content in org on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>org-折行显示</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org-visual-line-navigation.html</link>
+      <pubDate>Tue, 13 Nov 2018 14:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org-visual-line-navigation.html</guid>
+      <description>  M-x spacemacs/toggle-visual-line-navigation-on
+ Ref  https://emacs-china.org/t/spacemacs-org/428  </description>
+    </item>
+    
+    <item>
+      <title>使用org-mode和ox-hugo写文档</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/blogging-with-org-mode-and-ox-hugo.html</link>
+      <pubDate>Mon, 12 Nov 2018 09:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/blogging-with-org-mode-and-ox-hugo.html</guid>
+      <description>Env  os: mac Emacs: 26.1 Spacemacs: 0.300.0 Org: 9.1.2 Hugo: v0.41 ox-hugo: 20181106.2350 prodigy: 20180511.938  Step Part 1: Blog Setup Download Hugo pacman -S hugo  Initialize Project hugo new site test-blog cd test-blog git init  Download a Theme (YMMV) This seems like a clean, simple theme.
+You can use a submodule like this:
+git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic  Or you can just clone it</description>
+    </item>
+    
+    <item>
+      <title>org-mode-set-org-directory</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org-mode-set-org-directory.html</link>
+      <pubDate>Tue, 13 Nov 2018 14:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org-mode-set-org-directory.html</guid>
+      <description>做 软连接 这个方法比较方便，不需要另外再去修改spacemacs或emacs配置。
+➜ tomtsang-rootsongjc-hugo git:(master) ✗ echo `pwd`/org /Users/tomtsang/bitbucket/qqbb/tomtsang-rootsongjc-hugo/org ➜ tomtsang-rootsongjc-hugo git:(master) ✗ ln -s `pwd`/org/ ~/org ➜ tomtsang-rootsongjc-hugo git:(master) ✗ l ~/org lrwxr-xr-x 1 tomtsang 60 Nov 13 14:55 /Users/tomtsang/org -&amp;gt; /Users/tomtsang/bitbucket/qqbb/tomtsang-rootsongjc-hugo/org/ ➜ tomtsang-rootsongjc-hugo git:(master) ✗ l ~/org/ total 48K drwxr-xr-x 13 tomtsang 416 Nov 13 14:53 . drwxr-xr-x 24 tomtsang 768 Nov 12 01:56 .. -rw-r--r-- 1 tomtsang 1.5K Nov 13 14:52 all-posts.org -rw-r--r-- 1 tomtsang 758 Nov 13 00:27 emacs-install-base-ubuntu.</description>
+    </item>
+    
+    <item>
+      <title>使用Org写Blog</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org-blog-why.html</link>
+      <pubDate>Fri, 09 Nov 2018 23:32:18 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org-blog-why.html</guid>
+      <description> Env    Step why  http://ju.outofmemory.cn/entry/204743  Ref  http://ju.outofmemory.cn/entry/204743  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org.html</guid>
+      <description>org</description>
+    </item>
+    
+  </channel>
+</rss>

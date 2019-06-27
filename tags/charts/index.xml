@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>charts on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/charts.html</link>
+    <description>Recent content in charts on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 14 Jun 2018 16:30:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/charts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Charts</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/charts.html</link>
+      <pubDate>Thu, 14 Jun 2018 16:30:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/charts.html</guid>
+      <description> tradingview，一个免费股票，数字货币图表网站 tradingview-cn  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>update-kernel on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/update-kernel.html</link>
+    <description>Recent content in update-kernel on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/update-kernel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ubuntu16.04升级内核至 4.10 以上</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu16-update-kernel.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu16-update-kernel.html</guid>
+      <description>ubuntu16.04 update-kernel env 192.168.31.118 192.168.31.119  step 浏览器打开 http://kernel.ubuntu.com/~kernel-ppa/mainline/
+找到适合的 内核版本（这时v4.12), 进入，
+找到合适的内核文件(linux-image-4.12.0-041200-generic_4.12.0-041200.201707022031_amd64.deb)
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.12/linux-image-4.12.0-041200-generic_4.12.0-041200.201707022031_amd64.deb  然后安装就可以了。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>check on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/check.html</link>
+    <description>Recent content in check on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/check/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shell(Bash)中如何判断是否存在某个命令</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/shell/how-to-check-if-a-program-exists-from-a-bash-script.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/shell/how-to-check-if-a-program-exists-from-a-bash-script.html</guid>
+      <description>在编写bash时，如果要判断某条命令是否存在，应该如何写呢？ 下面以 foo 代表某个命令（如：wget）. 我尝试了如下的写法，
+which foo &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 if [ $? == 0 ]; then echo &amp;quot;exist&amp;quot; else echo &amp;quot;dose not exist&amp;quot; fi  但是： 最好避免使用 which，做为一个外部的工具，并不一定存在，在发行版之间也会有区别，有的系统的 which 命令不会设置有效的 exit status，存在一定的不确定性。
+Bash 有提供一些内建命令如 hash、type、command 也能达到要求。
+$ command -v foo &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || { echo &amp;gt;&amp;amp;2 &amp;quot;I require foo but it&#39;s not installed. Aborting.&amp;quot;; exit 1; } $ type foo &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || { echo &amp;gt;&amp;amp;2 &amp;quot;I require foo but it&#39;s not installed.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qor on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/qor.html</link>
+    <description>Recent content in qor on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 04 Jul 2018 10:53:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/qor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qor Character Set Database Utf8</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-character-set-database-utf8.html</link>
+      <pubDate>Wed, 04 Jul 2018 10:53:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-character-set-database-utf8.html</guid>
+      <description>qor通过字符集解决输入中文报错
+Env  os: ubuntu16 go: 1.10.2  Step 输入中文会有 Error 1366: Incorrect string value: &#39;\xE4\xB8\xAD&#39; for column &#39;name&#39; at row 1这样的报错。
+这个错误主要的原因，就是插入数据的时候，数据库不认这个数据。那我们第一个想到的就是字符集的问题了。（可以先手动 insert into 方式测试）
+mysql 查看字符集 新安装的mysql数据库, 默认字符集是 latin1.
+mysql&amp;gt; show collation like &#39;gbk%&#39;; +----------------+---------+----+---------+----------+---------+ | Collation | Charset | Id | Default | Compiled | Sortlen | +----------------+---------+----+---------+----------+---------+ | gbk_chinese_ci | gbk | 28 | Yes | Yes | 1 | | gbk_bin | gbk | 87 | | Yes | 1 | +----------------+---------+----+---------+----------+---------+ 2 rows in set (0.</description>
+    </item>
+    
+    <item>
+      <title>Qor Admin Test Change Sidebar</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-admin-test-change-sidebar.html</link>
+      <pubDate>Tue, 03 Jul 2018 19:02:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-admin-test-change-sidebar.html</guid>
+      <description>qor/admin 项目的个性化配置(sidebar)
+这里使用 qor/admin 项目的 test 文件夹中的用例，启动。
+Env  os: ubuntu16 go: 1.10.2  Step 总共修改3个文件
+ dummy/admin.go dummy/models.go main.go  tom@tom-w10vbud16:~/golang/qor/src/qor/tom/admin/admin/tests$ git status On branch master Your branch is up-to-date with &#39;origin/master&#39;. Changes not staged for commit: (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed) (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory) modified: dummy/admin.go modified: dummy/models.go modified: main.go no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;) tom@tom-w10vbud16:~/golang/qor/src/qor/tom/admin/admin/tests$  修改 main.</description>
+    </item>
+    
+    <item>
+      <title>Qor Admin Test Change Title</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-admin-test-change-title.html</link>
+      <pubDate>Tue, 03 Jul 2018 18:45:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-admin-test-change-title.html</guid>
+      <description>qor/admin 项目的个性化配置(依赖包)
+这里使用 qor/admin 项目的 test 文件夹中的用例，启动。
+Env  os: ubuntu16 go: 1.10.2  Step 现在我们启动项目后，会先安装依赖，再配置依赖包。
+安装依赖 查看 test文件夹下的文件，找出依赖包，整理一下，安装
+go get github.com/qor/media go get github.com/jinzhu/gorm go get github.com/qor/admin go get github.com/qor/qor  个性化配置 找到go get文件 以我的代码习惯，go get文件放在了 $HOME/golang/lib 中
+所以qor/admin项目文件，就在 $HOME/golang/lib/src/github.com/qor/admin 中
+cd ~/golang/lib/src/github.com/qor/admin  配置logo logo 在 views/assets/images/logo.png 中，替换就可以了。
+配置左下角的 Powered by Powered by 在 views/shared/sidebar.tmpl
+配置标签页面的标题 标签页面的标题 在 views/layout.tmpl
+Command ubuntu@VM-0-12-ubuntu:~/golang/lib/src/github.com/qor/admin$ git status On branch master Your branch is up-to-date with &#39;origin/master&#39;.</description>
+    </item>
+    
+    <item>
+      <title>Qor Admin Test</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-admin-test.html</link>
+      <pubDate>Tue, 03 Jul 2018 18:16:42 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-admin-test.html</guid>
+      <description>qor/admin 项目的 test 文件夹中的用例
+Env  os: ubuntu16 go: 1.10.2  Step 安装依赖 查看 test文件夹下的文件，找出依赖包，整理一下，安装
+go get github.com/qor/media go get github.com/jinzhu/gorm go get github.com/qor/admin go get github.com/qor/qor  配置mysql tom@tom-w10vbud16:~/golang/qor/src/qor/tom/admin/admin/tests$ go run main.go Listening on: 3000 panic: Error 1045: Access denied for user &#39;qor&#39;@&#39;localhost&#39; (using password: YES) goroutine 1 [running]: github.com/qor/qor/test/utils.TestDB(0x30) /home/tom/golang/lib/src/github.com/qor/qor/test/utils/test_db.go:36 +0x585 github.com/qor/admin/tests/dummy.NewDummyAdmin(0xc42031bf1f, 0x1, 0x1, 0xa791a0) /home/tom/golang/lib/src/github.com/qor/admin/tests/dummy/admin.go:15 +0x37 main.main() /home/tom/golang/qor/src/qor/tom/admin/admin/tests/main.go:22 +0x187 exit status 2 tom@tom-w10vbud16:~/golang/qor/src/qor/tom/admin/admin/tests$  有报错了。报错，说明了，在我们的 go get github.</description>
+    </item>
+    
+    <item>
+      <title>Qor Doc Get Started</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-doc-get-started.html</link>
+      <pubDate>Mon, 02 Jul 2018 18:54:49 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-doc-get-started.html</guid>
+      <description>qor step by step
+Qor Doc中的Get Started
+Env  os: ubuntu16 go: 1.10.2  Step root@tom-w10vbud16:/home/tom/test# cd /home/tom/golang/ root@tom-w10vbud16:/home/tom/golang# mkdir qor/src -p root@tom-w10vbud16:/home/tom/golang# cd qor/src/ root@tom-w10vbud16:/home/tom/golang/qor/src# git clone https://github.com/qor/qor root@tom-w10vbud16:/home/tom/golang/qor/src# ls qor/ bower.json config.go context.go errors.go gulpfile.js LICENSE.txt package.json README.md resource test test_all.sh update_all_qor_repos.sh utils yarn.lock  get_started https://doc.getqor.com/get_started.html
+配置 GOPATH 把 /home/tom/golang/qor 加入 GOPATH
+root@tom-w10vbud16:/home/tom/golang/qor/src# vi ~/.bashrc root@tom-w10vbud16:/home/tom/golang/qor/src# source ~/.bashrc root@tom-w10vbud16:/home/tom/golang/qor/src# export | grep go declare -x GOPATH=&amp;quot;/home/tom/golang/lib:/home/tom/golang/goc2p:/home/tom/ztom/project/github/ERP/goERP:/home/tom/golang/qor&amp;quot; declare -x GOROOT=&amp;quot;/usr/local/go&amp;quot; declare -x OLDPWD=&amp;quot;/home/tom/golang&amp;quot; declare -x PATH=&amp;quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin:/home/tom/golang/lib/bin:/usr/local/go/bin:/home/tom/golang/lib/bin&amp;quot; declare -x PWD=&amp;quot;/home/tom/golang/qor/src&amp;quot;  root@tom-w10vbud16:/home/tom/golang/qor/src# vi main.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>telnet on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/telnet.html</link>
+    <description>Recent content in telnet on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 06 Feb 2018 10:33:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/telnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Telnet Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/telnet-install.html</link>
+      <pubDate>Tue, 06 Feb 2018 10:33:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/telnet-install.html</guid>
+      <description>telnet 安装 by rpm
+telnet下载</description>
+    </item>
+    
+  </channel>
+</rss>

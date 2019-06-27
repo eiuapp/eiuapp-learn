@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>主题 on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme.html</link>
+    <description>Recent content in 主题 on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 09 Sep 2018 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>academic主题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/academic.html</link>
+      <pubDate>Sun, 09 Sep 2018 21:07:13 +0100</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/academic.html</guid>
+      <description>主题介绍 academic是一个特别适合搭建内容相对比较丰富的网站的主题，如果我们hugo网站的内容不仅仅是博客，还有其他好几种样式的内容，那么academic会是一个很不错的选择。此外，academic主题简洁大方，也适合作为一个稍有规模的正式网站。
+ 官网介绍：https://themes.gohugo.io/academic/ 我用academic主题搭建的个人技术博客网站: https://skyao.io  准备工作 git仓库准备 以建立skyao.io这个网站为例，fork github项目：
+ https://github.com/gcushen/hugo-academic: 修改仓库名为hugo-academic，这是自行订制的主题仓库，加cn后缀名以示区别。 https://github.com/sourcethemes/academic-kickstart: 修改仓库名为skyao.io，这是存放站点内容的仓库，为了方便起见，从官方的kickstart仓库开始改起，也方便未来保持更新。   备注：实际证明，academic的版本变化非常大，fork出来之后，再修改，到升级版本时到处是冲突，极易出错，很难正确处理。最后还是不得不从头来过：取到最新版本，然后手工将原有的改动重新再做一遍。
+ kickstart 项目就没有必要再fork了，hugo-academic 还是需要 fork 的。
+本地仓库准备 clone下来 kickstart 的仓库到本地：
+# 本地准备好academic主题仓库 git clone https://github.com/skyao/hugo-academic.git # 直接获取kickstart的内容作为建站的基础 git clone https://github.com/sourcethemes/academic-kickstart.git skyao.io cd skyao.io/ rm -rf .git .gitmodules rm -r themes/academic/  修改.gitignore文件内容如下：
+.* !.gitignore public/ themes/  修改update_academic.sh文件内容如下：
+#!/bin/bash if [ ! -d &amp;quot;themes&amp;quot; ];then echo &amp;quot;No themes directory, create it&amp;quot; mkdir themes fi if [ -d &amp;quot;themes/academic&amp;quot; ];then echo &#39;Find directoy &amp;quot;themes/academic&amp;quot;, update by &amp;quot;git pull&amp;quot;&#39; cd themes/academic git pull cd .</description>
+    </item>
+    
+    <item>
+      <title>material-docs主题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/material-docs.html</link>
+      <pubDate>Sun, 09 Sep 2018 21:07:13 +0100</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/material-docs.html</guid>
+      <description>主题介绍 material-docs官网：
+http://themes.gohugo.io/theme/material-docs/
+这个主题非常适合用于文档，左边的导航栏支持多级菜单，样式也简单美观，而且对移动设备支持很好。
+我主要用它来做学习笔记，替代之前长期使用的gitbook（gitbook的问题主要是本地生成内容速度太慢，而gitbook官方网站访问速度又不好）。当前这个hugo学习笔记用的就是此主题。
+准备工作 Fork并定制 material-docs的github仓库已经有很长时间没有更新，基本停留在两年前。从实践中看，有很多问题，对新的hugo版本的支持也很不好。
+因此，采用fork的方式，建立自己的仓库：
+https://github.com/skyao/hugo-material-docs
+期间做了很多了更新：
+ PR那边有很多已经被发现而且修订提交的问题，但是一直没有merge，我手工合并到自己的仓库 弃用google统计，改用百度统计，具体做法和 academic 中的做法是一样的 同样进行了本地加速，参照 academic 中的做法 修改了layout文件，主要是删除了版权申明，作者信息，下载修改为意见反馈，现在的版面非常的干净，没有任何多余的东西 汉化，没有做标准的i18n，因为是给自己定制，因此直接在layout文件中修改为中文。 修改了exampleSite的内容，删除原有的页面和图片，改为学习笔记的常见页面如介绍，安装等，方便后续使用 提供了简单的gitbook模版文件支持，可以生成一个简单带有文字说明和链接的页面，以便将原有gitbook用户导流到新的hugo笔记  使用方式 以新建一个学习笔记为例，详细描述需要的步骤和命令。
+新建学习笔记  在github中新建仓库，名为 learning-cilium的Cilium学习笔记
+ 在本地新建一个hugo站点
+hugo new site learning-cilium cd learning-cilium  下载更新主题的脚本并执行
+wget https://raw.githubusercontent.com/skyao/hugo-material-docs/master/exampleSite/update_theme.sh chmod +x update_theme.sh ./update_theme.sh  命令完成之后，themes/hugo-material-docs目录下就有我们自己的主题文件内容。
+ 从exampleSite目录复制需要的站点初始化文件到新站点
+cd themes/hugo-material-docs # 复制config.toml文件 cp config.toml ../../../config.toml # 复制content目录和static目录 cp -r content/ ../../../content/ cp -r static/ ../../../static/ # 复制gitignore文件 cp gitignore-example .</description>
+    </item>
+    
+    <item>
+      <title>主题列表</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/theme.html</link>
+      <pubDate>Sun, 09 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/theme.html</guid>
+      <description> 在这里列出一些个人觉得不错的Hugo主题。
+门户类 文档类 可以看官网的分类：
+https://themes.gohugo.io/tags/documentation/
+列出一些觉得还不错的：
+ DocuAPI
+类slate风格，带code example列，特别适合API文档和配置文档。
+https://themes.gohugo.io/docuapi/
+看demo效果相当的不错！！
+ Material Docs
+非常漂亮的文档主题。
+https://themes.gohugo.io/material-docs/
+ docDock
+中规中矩，但是感觉界面不够精致，没有Material Docs的惊艳感。
+https://themes.gohugo.io/docdock/
+ Bootie Docs
+适合文档，尤其软件文档。
+https://themes.gohugo.io/bootie-docs/
+自带TOC功能。
+ simpledoc
+单页文档，适合Q&amp;amp;A之类。
+https://themes.gohugo.io/hugo-simpledoc-theme/
+ learn
+类似gitbook。
+https://themes.gohugo.io/hugo-theme-learn/
+ Alabaster
+类似gitbook，稍显呆板。
+https://themes.gohugo.io/hugo-alabaster-theme/
+ Kube
+带blog/faq，适合用于小型项目。
+https://themes.gohugo.io/kube/
+  </description>
+    </item>
+    
+    <item>
+      <title>主题比较</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/theme-compare.html</link>
+      <pubDate>Sun, 09 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/theme/theme-compare.html</guid>
+      <description>在这里列出一些个人觉得不错的Hugo主题。
+门户类 文档类 可以看官网的分类：
+https://themes.gohugo.io/tags/documentation/
+列出一些觉得还不错的：
+   主题\特性 TOC 评论 TAG SEARCH i18n Star Edit 总结     Learn Y   Y 原生 Y Y Y 类似gitbook   Beautiful Y   Y Y      Material Docs      Y N    DocuAPI        类slate风格，带code example列，特别适合API文档和配置文档。   Alabaster      Y     Bootie Docs Y 自带       自带TOC     DocuAPI</description>
+    </item>
+    
+  </channel>
+</rss>

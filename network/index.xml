@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/network.html</link>
+    <description>Recent content in network on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/proxy.html</link>
+      <pubDate>Fri, 10 Aug 2018 09:49:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/proxy.html</guid>
+      <description>正确的设置代理
+Env  os: linux  Step root@tom:~/proxy# cat ./proxy_on.sh #!/bin/sh # for terminal export proxyserveraddr=127.0.0.1 export proxyserverport=8118 export HTTP_PROXY=&amp;quot;http://$proxyserveraddr:$proxyserverport/&amp;quot; export HTTPS_PROXY=&amp;quot;https://$proxyserveraddr:$proxyserverport/&amp;quot; export FTP_PROXY=&amp;quot;ftp://$proxyserveraddr:$proxyserverport/&amp;quot; export SOCKS_PROXY=&amp;quot;socks://$proxyserveraddr:$proxyserverport/&amp;quot; export NO_PROXY=&amp;quot;localhost,127.0.0.1,localaddress,.localdomain.com,200.200..;11.11.0.0;&amp;quot; export http_proxy=&amp;quot;http://$proxyserveraddr:$proxyserverport/&amp;quot; export https_proxy=&amp;quot;https://$proxyserveraddr:$proxyserverport/&amp;quot; export ftp_proxy=&amp;quot;ftp://$proxyserveraddr:$proxyserverport/&amp;quot; export socks_proxy=&amp;quot;socks://$proxyserveraddr:$proxyserverport/&amp;quot; export no_proxy=&amp;quot;localhost,127.0.0.1,localaddress,.localdomain.com,200.200..;11.11.0.0,10.88..;&amp;quot; # for chrome,firefox gsettings set org.gnome.system.proxy ignore-hosts &amp;quot;[&#39;localhost&#39;, &#39;11.11.0.0/16&#39;, &#39;200.200.0.0/16&#39;, &#39;*.localdomain.com&#39;, &#39;10.88.0.0/16&#39;, &#39;10.88.88.116&#39; ]&amp;quot; # for apt-get cat &amp;lt;&amp;lt;-EOF| sudo tee /etc/apt/apt.conf Acquire::http::proxy &amp;quot;http://$proxyserveraddr:$proxyserverport/&amp;quot;; Acquire::https::proxy &amp;quot;https://$proxyserveraddr:$proxyserverport/&amp;quot;; Acquire::ftp::proxy &amp;quot;ftp://$proxyserveraddr:$proxyserverport/&amp;quot;; Acquire::socks::proxy &amp;quot;socks://$proxyserveraddr:$proxyserverport/&amp;quot;; EOF  root@tom:~/proxy# cat proxy_off.</description>
+    </item>
+    
+    <item>
+      <title>Privoxy Mac</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/privoxy-mac.html</link>
+      <pubDate>Sun, 15 Jul 2018 14:16:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/privoxy-mac.html</guid>
+      <description>mac osx 下面通过 privoxy 把shadowsocks 转换成http代理
+Env  os: mac  Step ➜ ~ brew install privoxy ... ... To have launchd start privoxy now and restart at login: brew services start privoxy Or, if you don&#39;t want/need a background service you can just run: privoxy /usr/local/etc/privoxy/config ==&amp;gt; Summary 🍺 /usr/local/Cellar/privoxy/3.0.26: 99 files, 2.2MB ==&amp;gt; Caveats ==&amp;gt; privoxy To have launchd start privoxy now and restart at login: brew services start privoxy Or, if you don&#39;t want/need a background service you can just run: privoxy /usr/local/etc/privoxy/config ➜ ~  修改配置文件/usr/local/etc/privoxy/config</description>
+    </item>
+    
+    <item>
+      <title>Network Proxy Shadowsocks Server</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-shadowsocks-server.html</link>
+      <pubDate>Mon, 11 Jun 2018 20:34:39 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-shadowsocks-server.html</guid>
+      <description> Env  cloud: aws os: ubuntu16 ip: 美国IP  Ref 直接看下面文章就可以了 - https://github.com/flyzy2005/ss-fly - https://www.flyzy2005.com/fan-qiang/shadowsocks/install-shadowsocks-in-one-command/#shadowsocks
+Step git clone https://github.com/Flyzy2005/ss-fly ss-fly/ss-fly.sh -i password 1024 ping www.youtube.com  修改配置文件：vim /etc/shadowsocks.json 停止ss服务：ssserver -c /etc/shadowsocks.json -d stop 启动ss服务：ssserver -c /etc/shadowsocks.json -d start 重启ss服务：ssserver -c /etc/shadowsocks.json -d restart  卸载ss服务
+ss-fly/ss-fly.sh -uninstall  Article 注意：在特殊时期，一般是大会期间，即使是设置好了 SS,但是还是不能科学上网。 比如，我就遇到了一次，在 上合组织峰会第十八次峰会-青岛峰会（2018年6月9日到10日）之后的，2018-06-11号，就出现了（大佬们，有没有哪位，和我类似）情况：
+ 美国IP 不能科学上网 香港IP 能科学上网  还有一种可能性，IP段中的其他同志的IP搞歪东西，把我给扯到了。 GXB直接封的IP段，这个时候，IP段中的新机器也不行。
+一键脚本搭建SS/搭建SSR服务并开启BBR加速
+Ref  https://blog.csdn.net/ZhangAdo/article/details/50663527 https://blog.csdn.net/f59130/article/details/74014415 https://blog.csdn.net/amoscn/article/details/79364599  </description>
+    </item>
+    
+    <item>
+      <title>Network Proxy Win10</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-win10.html</link>
+      <pubDate>Mon, 11 Jun 2018 10:10:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-win10.html</guid>
+      <description> 通过win10实现FQ
+Env  os: win10  Step 先配置Shadowsocks privoxy or not 方法1 不配置 privoxy 其实可以不配置privoxy,而使得socks5生效。
+具体步骤如下：
+配置的过程中，可以通过一个pac 文件过滤url,这个地方，怎么设置的呢？看下图
+方法2 配置 privoxy </description>
+    </item>
+    
+    <item>
+      <title>Network Proxy Iphone</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-iphone.html</link>
+      <pubDate>Mon, 28 May 2018 16:14:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-iphone.html</guid>
+      <description>通过手机实现FQ
+env 国外安装了代理网络的服务器一台
+ ip: ... port: 443 passwd: ********  iphone一台
+ APP安装：ShadowBroken  step 先保证在windows中能够使用Shadowsocks客户端实现科学上网
+打开 ShadowBroken，把配置写入，然后，连接。现在可以KXSW了。
+todo 在 超哥 提供的jumper机器上，实现一个科学上网吧。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/expressvpn-open-app-not-use-proxy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/expressvpn-open-app-not-use-proxy.html</guid>
+      <description>如何在打开VPN时正常访问国内网站 如何在打开VPN时正常访问国内网站
+把 firefox 加入，让其不再使用 expressvpn . 想听歌时，用firefox打开 https://y.qq.com/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/network.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/network.html</guid>
+      <description>network</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/privoxy-socks-to-https.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/privoxy-socks-to-https.html</guid>
+      <description>linux下使用privoxy将socks转为http代理
+https://www.cnblogs.com/liuxuzzz/p/5324749.html
+privoxy有将socks代理转为http代理的功能。
+1.开启shadowsocks，socks代理地址为127.0.0.1:1080。
+2.安装privoxy。
+$ sudo apt-get install privoxy
+3.更改provoxy配置，位置在“/etc/privoxy/config”。
+$ sudo vim /etc/privoxy/config
+在里面添加一条：
+在 froward-socks4下面添加一条socks5的，因为shadowsocks为socks5， 地址是127.0.0.1:1080。注意他们最后有一个“.” forward-socks4 / socks-gw.example.com:1080 . forward-socks5 / 127.0.0.1:1080 .
+下面还存在以下一条配置，表示privoxy监听本机8118端口， 把它作为http代理，代理地址为 http://localhost.8118/ 。 可以把地址改为 0.0.0.0:8118，表示外网也可以通过本机IP作http代理。 这样，你的外网IP为1.2.3.4，别人就可以设置 http://1.2.3.4:8118/ 为http代理。 listen-address localhost:8118
+4.然后重启privoxy。
+$ sudo systemctl restart privoxy
+5.现在你就可以使用http代理了，如果你要给系统设置http代理，就在~/.bashrc里添加一条http_proxy配置。
+$ vim ~/.bashrc
+添加：
+export http_proxy=http://127.0.0.1:8118/
+然后使用source是它立刻生效。
+$ source ~/.bashrc</description>
+    </item>
+    
+  </channel>
+</rss>

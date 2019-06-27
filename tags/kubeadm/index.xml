@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubeadm on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/kubeadm.html</link>
+    <description>Recent content in kubeadm on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 17:05:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/kubeadm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>更新kubeadm clusters 从v1.7.3至v1.8.3</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-clusters-upgrade-from-v173-to-v183.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:05:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-clusters-upgrade-from-v173-to-v183.html</guid>
+      <description>Upgrading kubeadm clusters from 1.7 to 1.8
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm-upgrade-1-8/
+env 192.168.31.120 km, master 192.168.31.119 kn1 192.168.31.118 kn2  下载 kubeadm  https://dl.k8s.io/release/v1.8.2/bin/linux/amd64/kubeadm
+ root@km:~# sudo chmod a+rx /usr/bin/kubeadm root@km:~# kubeadm version kubeadm version: &amp;amp;version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;8&amp;quot;, GitVersion:&amp;quot;v1.8.2&amp;quot;, GitCommit:&amp;quot;bdaeafa71f6c7c04636251031f93464384d54963&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2017-10-24T19:38:10Z&amp;quot;, GoVersion:&amp;quot;go1.8.3&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} root@km:~#  上传 root@km:~# kubeadm config upload from-file --config ./admin.conf unable to decode config from &amp;quot;./admin.conf&amp;quot; [no kind &amp;quot;Config&amp;quot; is registered for version &amp;quot;v1&amp;quot;]  不是这样的 conf 文件呀。</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装kubeadm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-base-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-base-ubuntu.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装kubeadm v1.8.4</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-v184-install-base-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-v184-install-base-ubuntu.html</guid>
+      <description>Environment  kubeadm: v1.8.4
+所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node   加代理 准备FQ网络
+ 命令行  加代理原因：kubeadm init 会去检查最新版本，及最新版本镜像是什么，镜像是否要更新。 如果本地有了相同的docker image id，就不会下载，不会更新。 这意味着，我们前几天的手工build kubeadm，达成 在 etc/kubernetes/mainfest 下的 *.yaml 文件 加上 &amp;ldquo;imagePullPolicy: IfNotPresent&amp;rdquo; , 没有意义了。
+root@km:~# export http_proxy=&amp;quot;http://192.168.31.239:8118/&amp;quot; root@km:~# export https_proxy=&amp;quot;http://192.168.31.239:8118/&amp;quot; root@km:~# export no_proxy=&amp;quot;localhost,127.0.0.1,192.168.31.120,10.96.0.10,github.com,ubuntu.com&amp;quot;   apt  加代理原因： apt update 要去 google.com 下载
+root@km:~# cat /etc/apt/apt.</description>
+    </item>
+    
+  </channel>
+</rss>

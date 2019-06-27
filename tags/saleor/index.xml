@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>saleor on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/saleor.html</link>
+    <description>Recent content in saleor on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/saleor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>saleor 设置 templates base</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-conf-templates-base.html</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-conf-templates-base.html</guid>
+      <description>安装完了 saleor ，下一步，自然就是修改一些我们自己的Logo，页脚之类的东西了。
+页脚COPYRIGHT (saleor) ➜ saleor git:(master) ✗ grep &amp;quot;COPYRIGHT © 2009–2019 MIRUMEE SOFTWARE&amp;quot; -rn ./ ./templates/base.html:296: &amp;lt;div class=&amp;quot;col-8 footer__copy-text&amp;quot;&amp;gt;COPYRIGHT © 2009–2019 MIRUMEE SOFTWARE&amp;lt;/div&amp;gt; (saleor) ➜ saleor git:(master) ✗  把这里修改成我们自己的
+(saleor) ➜ saleor git:(master) ✗ vi templates/base.html (saleor) ➜ saleor git:(master) ✗ grep &amp;quot;COPYRIGHT © 2009–2019 &amp;quot; -rn ./ ../../../templates/base.html:296: &amp;lt;div class=&amp;quot;col-8 footer__copy-text&amp;quot;&amp;gt;COPYRIGHT © 2009–2019 谦谦科技&amp;lt;/div&amp;gt; (saleor) ➜ images git:(master) ✗  页脚Logo 只要审查元素就知道，这个 LOGO是 SVG图像。
+&amp;lt;div class=&amp;quot;col-4&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;{% url &#39;home&#39; %}&amp;quot; class=&amp;quot;footer__logo float-md-left&amp;quot;&amp;gt; &amp;lt;svg data-src=&amp;quot;{% static &amp;quot;images/logo-document.</description>
+    </item>
+    
+    <item>
+      <title>docker 安装 saleor</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-docker.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-docker.html</guid>
+      <description>https://docs.getsaleor.com/en/latest/customization/docker.html
+安装后 完成步骤后的效果如下：
+(saleor) ➜ saleor git:(master) ✗ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 202bd2594ad9 saleor_web &amp;quot;python manage.py ru…&amp;quot; About a minute ago Up 33 seconds 0.0.0.0:8000-&amp;gt;8000/tcp saleor_web_1 af1d1c556b35 saleor_celery &amp;quot;celery -A saleor wo…&amp;quot; About a minute ago Up 33 seconds 8000/tcp saleor_celery_1 aa067abbd302 postgres:latest &amp;quot;docker-entrypoint.s…&amp;quot; About a minute ago Up 34 seconds 0.0.0.0:5432-&amp;gt;5432/tcp saleor_db_1 dfb447947378 redis:latest &amp;quot;docker-entrypoint.s…&amp;quot; About a minute ago Up 33 seconds 0.</description>
+    </item>
+    
+    <item>
+      <title>saleor 测试（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-tests.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-tests.html</guid>
+      <description>https://docs.getsaleor.com/en/latest/customization/tests.html
+(saleor) ➜ saleor git:(master) pipenv install --dev Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS =1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning. Installing dependencies from Pipfile.lock (0c0b26)… An error occurred while installing yarl==1.3.0 ; python_version &amp;gt;= &#39;3.</description>
+    </item>
+    
+  </channel>
+</rss>

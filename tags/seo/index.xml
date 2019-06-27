@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>seo on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/seo.html</link>
+    <description>Recent content in seo on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 27 Feb 2018 11:08:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nginx Seo</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nginx/nginx-seo.html</link>
+      <pubDate>Tue, 27 Feb 2018 11:08:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nginx/nginx-seo.html</guid>
+      <description> seo 优化去掉html 页面的后缀 .html ubuntu@VM-0-12-ubuntu:/etc/nginx/conf.d$ cat 8766.conf server { listen 8766; server_name localhost; #charset koi8-r; #access_log /var/log/nginx/host.access.log main; # seo 优化去掉html 页面的后缀 .html if (!-f $request_filename){ set $rule_0 1$rule_0; } if ($rule_0 = &amp;quot;1&amp;quot;){ rewrite ^/([^\.]+)$ /$1.html last; } location / { root /home/ubuntu/registry/tomtsang-rootsongjc-cheatsheet/_site; index index.html index.htm; # proxy_pass http://127.0.0.1:4001; } ...  </description>
+    </item>
+    
+  </channel>
+</rss>

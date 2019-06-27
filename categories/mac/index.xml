@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/mac.html</link>
+    <description>Recent content in mac on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 30 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac 上安装 sshpass</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/ssh/how-to-install-sshpass-on-mac.html</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/ssh/how-to-install-sshpass-on-mac.html</guid>
+      <description> brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb  Ref  https://stackoverflow.com/questions/32255660/how-to-install-sshpass-on-mac fs  </description>
+    </item>
+    
+    <item>
+      <title>Mac下为什么有的文件名后带一个*星号</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-file-name-end-with-asterisk.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-file-name-end-with-asterisk.html</guid>
+      <description> Mac下为什么有的文件名后带一个*星号？ 这个*号仅仅是ls命令显示的，表示有可执行权限，实际文件名不带*号。
+$ ls -F  可执行文件名后就会加*号。
+显示一个或多个文件的相关信息。 ls [options] [file-list]
+参数 默认情况下，ls按照文件名的字母顺序列出文件的信息，file-list可以是任意文件或目录 当file-list包含多个目录时，ls将显示目录的名称，不显示子目录和子文件 当file-list为普通文件时，ls则显示该文件的相关信息
+Ref  http://www.cnblogs.com/jackbo/p/7201885.html  </description>
+    </item>
+    
+    <item>
+      <title>在mac zsh下，ls只显示文件名</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-zsh-list-file-name-only.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-zsh-list-file-name-only.html</guid>
+      <description>ls只显示文件名
+$ ls -a1  </description>
+    </item>
+    
+    <item>
+      <title>mac 系统中文件的软链接、硬链接</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-hard-links-soft-links.html</link>
+      <pubDate>Sat, 01 Dec 2018 11:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-hard-links-soft-links.html</guid>
+      <description>最近有这么个需求，由于我在多台设备上使用 Surge ，因此我想把 Surge 的配置文件使用 Dropbox 进行同步，但是 Dropbox 的路径在 ~/User/slark/Dropbox/surge.conf 下，而 Surge 的配置文件位于 ~/.surge.conf，每次修改 .surge.conf 后，我都会手动把文件另存到 Dropbox 中，比较麻烦。
+开始想用一款本地文件同步工具来满足这个需求，比如 GoodSync，这个工具也确实能满足需求，但是就这么小的需求也要用软件来实现？经过 Google 后，发现可以通过创建文件的 硬链接 来完美满足这个需求。
+文件的 软链接 和 硬链接 在 Unix 系统中，可以对文件创建 硬链接 和 软链接。简单来说，链接就是可以指向文件系统中其他位置的一个快捷方式，比如 Windows 系统下的快捷方式。那么，硬链接和软链接有什么区别呢？
+硬链接 硬链接是一个目录条目，它指具有同一个 i-node（硬盘上的物理位置）的另一个文件，事实上只存在一个文件，比如我对 Dropbox 中的 surge.conf 文件创建一个硬链接：
+格式：ln [原文件] [硬链接文件] ln ~/Dropbox/surge.conf ~/.surge.conf  原文件和硬链接的详细信息对比：
+硬链接有这么几个特点：
+ 文件的所有的硬链接指向的是同一个文件，硬盘中只实际只存储一份文件； 所有硬链接与原文件的大小，修改时间，权限都相同；  因为是硬链接，所以 ~/Dropbox/surge.conf 和 ~/.surge.conf 指向的是同一个文件，删除任何一个链接都不会真正的删除文件。
+可以这么理解，在 Unix 系统下，任何文件的实际路径都是一个硬链接，该文件的硬链接数为 1，每创建一个硬链接后，硬链接数 +1，删除一个硬链接，硬链接数 -1，硬链接数为 0 时这个文件实际就被删除了。好比程序中的指针，实际的对象只有一份，指向这个对象的指针却有多个，删除任何一个指针并不会删除这个对象，只有把最后一个指针删掉，这个对象才算是删除掉了。</description>
+    </item>
+    
+    <item>
+      <title>mac tips</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-tips.html</link>
+      <pubDate>Wed, 05 Dec 2018 22:40:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-tips.html</guid>
+      <description> 卸载软件 为什么在我的mac上面下了腾讯电脑管家就卸载不了了？点击没有小叉叉也不能移到废纸篓.
+finder－应用程序－右键－移到废纸篓  </description>
+    </item>
+    
+    <item>
+      <title>Mac Sed</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-sed.html</link>
+      <pubDate>Mon, 08 Oct 2018 12:08:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-sed.html</guid>
+      <description>由于Mac OS X自带的sed等命令行工具是基于BSD的，有一些缺陷和不足，比如sed不支持\t来表示TAB
+Env  os: mac  报错如下：
+➜ home git:(master) ✗ grep &amp;quot;finsoft.info&amp;quot; -rl ./CNAME ./CNAME ➜ home git:(master) ✗ ➜ home git:(master) ✗ grep &amp;quot;finsoft.info&amp;quot; -rl ./CNAME | xargs sed -i &amp;quot;s/finsoft.info/qqbb.app/g&amp;quot; sed: 1: &amp;quot;./CNAME&amp;quot;: invalid command code . ➜ home git:(master) ✗  Step ➜ ~ brew install coreutils ➜ ~ vi ~/.zshrc ➜ ~ source ~/.zshrc ➜ ~ tail ~/.zshrc ## coreutil export PATH=&amp;quot;$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH&amp;quot; export MANPATH=&amp;quot;$(brew --prefix coreutils)/libexec/gnuman:$MANPATH&amp;quot; ➜ ~ brew install gnu-sed --with-default-names ➜ ~  Ref  https://blog.</description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/mac.html</link>
+      <pubDate>Sat, 30 Jun 2018 10:46:27 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/mac.html</guid>
+      <description> Env    Step mysql  sequelpro  Karabiner Elements  https://pqrs.org/osx/karabiner/ Karabiner Elements 键位定制神器 https://www.jianshu.com/p/47d5de7f12bc https://github.com/tekezo/Karabiner-Elements https://note.wuze.me/liu-shui/macos-zhi-wai-jie-hhkb-jian-pan-karabiner-elements-pei-zhi  ###
+ Manico, 一款快速启动及切换 Mac App 的工具 KeyCastr: 录屏好帮手，实时显示按键操作的小工具
+ dash
+  Ref  https://zhuanlan.zhihu.com/p/29982257  </description>
+    </item>
+    
+    <item>
+      <title>Mac Rar Unrar</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-rar-unrar.html</link>
+      <pubDate>Tue, 12 Jun 2018 17:15:24 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-rar-unrar.html</guid>
+      <description> Mac上rar文件命令解压和压缩
+Env  os: macOS  Step rar和unrar命令需要自己安装
+可以直接通过brew安装，如果不清楚brew安装命令，可以查看《mac上安装类似 apt-get 的软件包管理器 &amp;ndash; Homebrew》
+下面说下另外一种简单安装方式
+1.下载mac上对应rar版本
+http://www.rarlab.com/download.htm
+2.利用tar名解压下载的rarosx-5.4.0.tar.gz，版本可能会更新
+tar xzvf arosx-5.4.0.tar.gz . #解压到当前目录  3.安装rar和unrar命令
+sudo install -c -o $USER rar /usr/local/bin/ ＃安装rar sudo install -c -o $USER unrar /usr/local/bin ＃安装unrar  如果安装失败可以看看/usr/local/bin 目录是不是存在rar或unrar的软链接
+4.利用rar和unrar压缩和解压文件
+rar和unrar文件的参数也很多，就不在一一介绍了，直接在Ternimal执行对应命令就能看到所有参数选项，下面列举几个常用的
+解压文件：unrar x test.rar 压缩文件A和B：rar a 压缩后.rar A B
+Ref  http://www.rarlab.com/download.htm https://blog.csdn.net/yin1031468524/article/details/68955194?locationNum=12&amp;amp;fps=1  </description>
+    </item>
+    
+    <item>
+      <title>Mac Iterm2 Ohmyzsh Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-iterm2-ohmyzsh-install.html</link>
+      <pubDate>Tue, 12 Jun 2018 11:48:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-iterm2-ohmyzsh-install.html</guid>
+      <description> Mac下如何安装iTerm2并使用zsh iTerm2
+Env  os: macOS  Step 安装iterm2 安装iterm2只需要下载，解压安装就可以了。
+安装zsh 方式1 brew install zsh zsh-completions  无brew的请先安装Homebrew，mac上的一个包管理工具，很有必要安装，省去安装软件的麻烦。
+方式2 直接上官网查看安装方式
+zsh --version  配置zsh 创建一个zsh的配置文件 注意:如果你已经有一个~/.zshrc文件的话，建议你先做备份。使用以下命令
+cp ~/.zshrc ~/.zshrc.orig  然后开始创建zsh的配置文件
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc  设置zsh为你的默认的shell chsh -s /bin/zsh  然后退出iterm2，再重启就ok。
+期间报的问题不要管直接按照步骤来就行了。
+Ref  http://www.jianshu.com/p/77a4349bf67b https://blog.csdn.net/sufubo/article/details/54988457  </description>
+    </item>
+    
+    <item>
+      <title>Mac Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-faq.html</link>
+      <pubDate>Thu, 15 Mar 2018 16:33:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-faq.html</guid>
+      <description>how-to-open-app-from-unidentified-developer-in-mac-os-x how-to-open-app-from-unidentified-developer-in-mac-os-x
+https://zhidao.baidu.com/question/466554299.html</description>
+    </item>
+    
+    <item>
+      <title>Mac Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac.html</link>
+      <pubDate>Thu, 15 Mar 2018 16:33:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac.html</guid>
+      <description>mac</description>
+    </item>
+    
+    <item>
+      <title>Mac Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mac.html</link>
+      <pubDate>Fri, 23 Feb 2018 17:08:40 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mac.html</guid>
+      <description>brew brew install node brew upgrade node  Mac OS 如何更改文件的默认打开方式 如何显示Mac OS X上的隐藏文件和文件夹 如何显示Mac OS X上的隐藏文件和文件夹
+https://wenku.baidu.com/view/ce92f3b877232f60dccca1e0.html</description>
+    </item>
+    
+  </channel>
+</rss>

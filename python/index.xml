@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/python.html</link>
+    <description>Recent content in python on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pipenv install 报错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/pipenv-install-failed.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/pipenv-install-failed.html</guid>
+      <description>在某个项目中遇到了出错，如下：
+(saleor) ➜ saleor git:(master) pipenv install --dev Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS =1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning. Installing dependencies from Pipfile.lock (0c0b26)… An error occurred while installing yarl==1.3.0 ; python_version &amp;gt;= &#39;3.</description>
+    </item>
+    
+    <item>
+      <title>python面试准备roadmap</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-interview-roadmap.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-interview-roadmap.html</guid>
+      <description>step1 https://www.cnblogs.com/Vito2008/p/5044251.html
+#!/Users/tomtsang/.virtualenvs/quant-py3/bin/python # -*- coding:utf-8 -*- # Author: zengyunlong # 补充缺失的代码 def print_directory_contents(sPath): &amp;quot;&amp;quot;&amp;quot; 这个函数接受文件夹的名称作为输入参数， 返回该文件夹中文件的路径， 以及其包含文件夹中文件的路径。 &amp;quot;&amp;quot;&amp;quot; import os for sChild in os.listdir(sPath): sChildPath = os.path.join(sPath , sChild) if os.path.isdir(sChildPath): print_directory_contents(sChildPath) else: print(sChildPath) print(&amp;quot;this is before if __name__:%s&amp;quot;%__name__) if __name__==&#39;__main__&#39;: print(&amp;quot;this is after if __name__:%s&amp;quot;%__name__) print(print_directory_contents(&amp;quot;.&amp;quot;))  TODO step2 https://www.cnblogs.com/goodhacker/p/3366618.html
+TODO step3 https://blog.csdn.net/weixin%5F41666747/article/details/79942847</description>
+    </item>
+    
+    <item>
+      <title>mac中python安装pyenv</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-pyenv-install-with-mac.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-pyenv-install-with-mac.html</guid>
+      <description>pyenv 用于同时管理多个python版本，它可以为每个工作目录设定使用指定的py版本，在不同目录下使用不同的版本可以同时开发不同版本的项目。
+Ubuntu安装 ➜ oscar git:(master) ✗ git clone https://github.com/pyenv/pyenv ~/.pyenv Cloning into &#39;/Users/tomtsang/.pyenv&#39;... remote: Enumerating objects: 63, done. remote: Counting objects: 100% (63/63), done. remote: Compressing objects: 100% (37/37), done. remote: Total 16547 (delta 24), reused 50 (delta 20), pack-reused 16484 Receiving objects: 100% (16547/16547), 3.24 MiB | 497.00 KiB/s, done. Resolving deltas: 100% (11211/11211), done. ➜ oscar git:(master) ✗ git clone https://github.com/pyenv/pyenv-virtualenv ~/.pyenv/plugins/pyenv-virtualenv Cloning into &#39;/Users/tomtsang/.pyenv/plugins/pyenv-virtualenv&#39;... remote: Enumerating objects: 2027, done.</description>
+    </item>
+    
+    <item>
+      <title>python小技巧</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-tips.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-tips.html</guid>
+      <description> Python查看安装路径 &amp;gt;&amp;gt;&amp;gt; import sys &amp;gt;&amp;gt;&amp;gt; sys.path  </description>
+    </item>
+    
+    <item>
+      <title>Jaqs安装笔记</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-jaqs-install.html</link>
+      <pubDate>Tue, 16 Oct 2018 11:38:26 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-jaqs-install.html</guid>
+      <description>Env    Step ## 下载并安装 Anaconda chmod +x Anaconda3-5.3.0-MacOSX-x86_64.sh which sh sh ./Anaconda3-5.3.0-MacOSX-x86_64.sh ## 配置环境 cat /Users/tomtsang/.bash_profile source /Users/tomtsang/.bash_profile which python which python3 which python2 ## 这个还是原来的路径 python3 python which ipython ipython workon quant-py3 ## 验证，不影响其它环境 which python which python3 which python2 which deactivate deactivate ## 退出 virtualenv ## 安装依赖 snappy brew install snappy CPPFLAGS=&amp;quot;-I/usr/local/include -L/usr/local/lib&amp;quot; pip install python-snappy pip install PyHamcrest ## 安装 jaqs pip install jaqs ## 验证 ipython ## 输入 import jaqs ##  Ref  https://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>python搭建多个互不干扰的开发环境</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-env-virtualenv.html</link>
+      <pubDate>Mon, 15 Oct 2018 11:47:30 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-env-virtualenv.html</guid>
+      <description>Env  os: mac  Step 安装 python3 Mac安装Python2和Python3、pip2和pip3、ipython2和ipython3
+一、Homebrew的安装及使用  Homebrew的安装 Homebrew的使用  安装软件：brew install 软件名，例：brew install wget 搜索软件：brew search 软件名，例：brew search wget 卸载软件：brew uninstall 软件名，例：brew uninstall wget 更新所有软件：brew update ⚠️通过 update 可以把包信息更新到最新，不过包更新是通过git命令，所以要先通过 brew install git 命令安装git。 安装git 更新具体软件：brew upgrade 软件名 ，例：brew upgrade git 显示已安装软件：brew list 查看软件信息：brew info／home 软件名 ，例：brew info git ／ brew home git ⚠️brew home指令是用浏览器打开官方网页查看软件信息 查看那些已安装的程序需要更新： brew outdated 显示包依赖：brew reps  二、安装Python3和pip3  安装Python3
+  brew install python   测试  安装pip2</description>
+    </item>
+    
+    <item>
+      <title>Python Install Pip With Get Pip Py</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip-with-get-pip-py.html</link>
+      <pubDate>Wed, 13 Jun 2018 13:12:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip-with-get-pip-py.html</guid>
+      <description> 通过 get-pip.py 安装 pip
+Env  os: ubuntu16  Step curl https://bootstrap.pypa.io/get-pip.py | sudo python  Ref  https://pip.pypa.io/en/stable/installing/  </description>
+    </item>
+    
+    <item>
+      <title>Python Faq Openssl</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-faq-openssl.html</link>
+      <pubDate>Wed, 13 Jun 2018 13:00:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-faq-openssl.html</guid>
+      <description>Env  os: ubuntu16  出错 /alg -Iscrypt-1.2.1/libcperciva/util -Iscrypt-1.2.1/libcperciva/crypto -I/usr/local/include -I/usr/include -I/usr/include/python2.7 -c scrypt-1.2.1/libcperciva/crypto/crypto_aes.c -o build/temp.linux-x86_64-2.7/scrypt-1.2.1/libcperciva/crypto/crypto_aes.o -O2 scrypt-1.2.1/libcperciva/crypto/crypto_aes.c:6:25: fatal error: openssl/aes.h: No such file or directory compilation terminated. error: command &#39;x86_64-linux-gnu-gcc&#39; failed with exit status 1 ---------------------------------------- Command &amp;quot;/usr/bin/python -u -c &amp;quot;import setuptools, tokenize;__file__=&#39;/tmp/pip-install-qN0XHo/scrypt/setup.py&#39;;f=getattr(tokenize, &#39;open&#39;, open)(__file__);code=f.read().replace(&#39;\r\n&#39;, &#39;\n&#39;);f.close();exec(compile(code, __file__, &#39;exec&#39;))&amp;quot; install --record /tmp/pip-record-8LxwEK/install-record.txt --single-version-externally-managed --compile&amp;quot; failed with error code 1 in /tmp/pip-install-qN0XHo/scrypt/ root@ip-172-31-23-102:/home/ubuntu/rpc#  Step 看错误。这里看的错误，不应该是error: command &#39;x86_64-linux-gnu-gcc&#39; failed with exit status 1,而应该是fatal error: openssl/aes.</description>
+    </item>
+    
+    <item>
+      <title>Python Pip Install Virtualenv</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-pip-install-virtualenv.html</link>
+      <pubDate>Mon, 04 Jun 2018 15:56:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-pip-install-virtualenv.html</guid>
+      <description>python源码安装pip后，安装virtualenv环境
+Step 源码安装pip后, pip会在 /usr/local/python27/bin/ 下，且由pip安装的模块下的命令文件（如下文中的virtualenvwrapper.sh)，也会在这里哟。
+环境变量加 pip which pip
+[root@bitspace ~]# tail -1 ~/.bashrc export PATH=$PATH:/usr/local/python27/bin [root@bitspace ~]# which pip /usr/local/python27/bin/pip [root@bitspace ~]#  环境变量加 virtualenvwrapper.sh which virtualenvwrapper.sh
+[root@bitspace ~]# which virtualenvwrapper.sh /usr/local/python27/bin/virtualenvwrapper.sh [root@bitspace ~]#  加环境变量
+[root@bitspace ~]# tail -3 ~/.bashrc export WORKON_HOME=$HOME/.virtualenvs export PROJECT_HOME=$HOME/workspace source /usr/local/python27/bin/virtualenvwrapper.sh [root@bitspace ~]#  这个时候，已经可以使用mkvirtualenv,workon等下列命令了（但是which会不成功的，一定要注意了）。
+mkvirtualenv zqxt：创建运行环境zqxt workon zqxt: 工作在 zqxt 环境 或 从其它环境切换到 zqxt 环境 deactivate: 退出终端环境 其它的： rmvirtualenv ENV：删除运行环境ENV mkproject mic：创建mic项目和运行环境mic mktmpenv：创建临时运行环境 lsvirtualenv: 列出可用的运行环境 lssitepackages: 列出当前环境安装了的包  创建的环境是独立的，互不干扰，无需sudo权限即可使用 pip 来进行包的管理。</description>
+    </item>
+    
+    <item>
+      <title>Python Pip Install Ssl Module Not Available</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-pip-install-ssl-module-not-available.html</link>
+      <pubDate>Mon, 04 Jun 2018 15:08:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-pip-install-ssl-module-not-available.html</guid>
+      <description>先看报错
+[root@bitspace pip-10.0.1]# python -m pip install virtualenv virtualenvwrapper pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available. Collecting virtualenv Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;SSLError(&amp;quot;Can&#39;t connect to HTTPS URL because the SSL module is not available.&amp;quot;,)&#39;: /simple/virtualenv/ Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;SSLError(&amp;quot;Can&#39;t connect to HTTPS URL because the SSL module is not available.</description>
+    </item>
+    
+    <item>
+      <title>Python Install Setuptools</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-setuptools.html</link>
+      <pubDate>Mon, 04 Jun 2018 14:29:49 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-setuptools.html</guid>
+      <description> 源码安装 pip 时，出错，并提示ImportError: No module named setuptools解决方法
+Env  python: 2.7.9  Step 安装过程详见这篇博客： http://www.ttlsa.com/python/how-to-install-and-use-pip-ttlsa/
+安装后运行到：python setup.py install出现错误，错误图片如下所示：
+[root@localhost pip-1.5.4]# python setup.py install Traceback (most recent call last): File “setup.py”, line 6, in from setuptools import setup, find_packages ImportError: No module named setuptools  解决方法
+wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz tar zxvf setuptools-0.6c11.tar.gz cd setuptools-0.6c11 python setup.py build python setup.py install  之后就可以开心的使用pip了
+Ref  https://blog.csdn.net/yangbodong22011/article/details/52456581  </description>
+    </item>
+    
+    <item>
+      <title>Python Zlib Module Missing</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-zlib-module-missing.html</link>
+      <pubDate>Mon, 04 Jun 2018 14:22:38 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-zlib-module-missing.html</guid>
+      <description>Traceback (most recent call last): File &amp;quot;setup.py&amp;quot;, line 94, in &amp;lt;module&amp;gt; scripts = scripts, File &amp;quot;/usr/local/lib/python2.7/distutils/core.py&amp;quot;, line 152, in setup dist.run_commands() File &amp;quot;/usr/local/lib/python2.7/distutils/dist.py&amp;quot;, line 953, in run_commands self.run_command(cmd) File &amp;quot;/usr/local/lib/python2.7/distutils/dist.py&amp;quot;, line 972, in run_command cmd_obj.run() File &amp;quot;/home/rohan/setuptools-0.6c11/setuptools/command/install.py&amp;quot;, line 76, in run self.do_egg_install() File &amp;quot;/home/rohan/setuptools-0.6c11/setuptools/command/install.py&amp;quot;, line 96, in do_egg_install self.run_command(&#39;bdist_egg&#39;) File &amp;quot;/usr/local/lib/python2.7/distutils/cmd.py&amp;quot;, line 326, in run_command self.distribution.run_command(command) File &amp;quot;/usr/local/lib/python2.7/distutils/dist.py&amp;quot;, line 972, in run_command cmd_obj.run() File &amp;quot;/home/rohan/setuptools-0.6c11/setuptools/command/bdist_egg.py&amp;quot;, line 236, in run dry_run=self.</description>
+    </item>
+    
+    <item>
+      <title>Python Install Pip</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip.html</link>
+      <pubDate>Mon, 04 Jun 2018 14:22:12 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip.html</guid>
+      <description>Env  os: centos6.9 python: 2.7.9  step 首先安装Python 我安装了两个版本:
+　Python-2.7.10.tgz
+首先看一下系统自带的Python版本：
+[root@zk src]# python -V Python 2.6.6  安装Python2.7版本：
+参考 在centos中python从2.6升级到2.7
+开始安装pip 打开 https://pypi.org/search/?q=pip, 点击 pip 10.0.1， 点击 Download files, 右键Copy link address
+下载pip [root@zk src]# wget &amp;quot;https://files.pythonhosted.org/packages/ae/e8/2340d46ecadb1692a1e455f13f75e596d4eab3d11a57446f08259dee8f02/pip-10.0.1.tar.gz&amp;quot; [root@zk src]# tar -zxvf pip-1.5.4.tar.gz [root@zk src]# cd pip-1.5.4 [root@zk pip-1.5.4]# python setup.py install  如果出现下面错误
+[root@zk pip-1.5.4]# python setup.py install Traceback (most recent call last): File &amp;quot;setup.py&amp;quot;, line 6, in &amp;lt;module&amp;gt; from setuptools import setup, find_packages ImportError: No module named setuptools  看到ImportError: No module named setuptools，缺少setuptools模块</description>
+    </item>
+    
+    <item>
+      <title>Python Upgrade Version Base on Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-upgrade-version-base-on-centos.html</link>
+      <pubDate>Mon, 04 Jun 2018 10:06:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-upgrade-version-base-on-centos.html</guid>
+      <description>概要
+CentOS 6.9中预安装了Python-2.6.6，其比较新的Python-2.7.9(CentOS 7预装版本)主要区别在于新版本的Python导入了更丰富的模块功能。对于初学者而言这一般不会有太大的影响，相对而言这些新模块在某些特定的编译环境下却是不可或缺的。例如：使用Devstack all-in-one模式进行安装OpenStack开发调试平台，需要Python-2.7及以上的支持，这样可以省去很多缺失模块的麻烦。
+Env  os: centos6.9 python: 2.6.6 =&amp;gt; 2.7.9  step 1.查看当前系统的Python Version
+[root@jmilk ~]# python --version Python 2.6.6  2.下载Python-2.7.9
+wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz  3.安装Python
+a. 解压
+tar -Jxvf Python-2.7.9.tar.xz -C /usr/src/  b. 安装
+mkdir /usr/local/python27 cd /usr/src/Python-2.7.9/ ./configure --prefix=/usr/local/python27 &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install  c. 将系统python指令默认指向Python-2.7.9版本
+CentOS6.9中YUM需要Python-2.6.6支持，所以不建议卸载老版本。
+mv /usr/bin/python /usr/bin/python266 ln -s /usr/local/python27/bin/python2.7 /usr/bin/python python --version  解决YUM与Python2.7.9的兼容问题 因为YUM需要python-2.6.6的支持，CentOS 6.9中YUM却不兼容Python-2.7，导致YUM不可用。
+[root@bitspace ~]# yum install python-pip -y There was a problem importing one of the Python modules required to run yum.</description>
+    </item>
+    
+    <item>
+      <title>Python Install Uwsgi</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-uwsgi.html</link>
+      <pubDate>Tue, 17 Apr 2018 23:51:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-uwsgi.html</guid>
+      <description>env  IP: home, 192.168.31.109 OS: ubuntu, 16.04.03  step pip install uwsgi==2.0.17时出错: lto1: fatal error: bytecode stream generated with LTO version 6.0 instead of the expected 4.1 (saleor-a-1) tom@saleor-a:~/saleor$ pip install uwsgi==2.0.17 _offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -rdynamic -ldl -L/home/tom/anaconda3/lib -lpcre -L/home/tom/anaconda3/lib -lxml2 -L/home/tom/anaconda3/lib -lz -L/home/tom/anaconda3/lib -llzma -L/home/tom/anaconda3/lib -L/home/tom/anaconda3/lib -licui18n -licuuc -licudata -lm -ldl -lpthread -ldl -lutil -lrt -lm /home/tom/anaconda3/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6m.a -lutil -lcrypt lto1: fatal error: bytecode stream generated with LTO version 6.</description>
+    </item>
+    
+    <item>
+      <title>Microservices Python</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/microservices-python.html</link>
+      <pubDate>Tue, 06 Feb 2018 00:08:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/microservices-python.html</guid>
+      <description>TDD开发容器化的Python微服务应用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/pip-install-memcache.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/pip-install-memcache.html</guid>
+      <description>python2 通过 pip 安装 memcache
+env os: ubuntu server 16.04 python: 2.7.12
+step pip install python-memcached 而不是 pip install memcache
+root@ubuntu:~# pip install memcache /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/__init__.py:83: RequestsDependencyWarning: Old version of cryptography ([1, 2, 3]) may cause slowdown. warnings.warn(warning, RequestsDependencyWarning) DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won&#39;t be maintained after that date. A future version of pip will drop support for Python 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-error-m-bad-interpreter-duplicate.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-error-m-bad-interpreter-duplicate.html</guid>
+      <description> /usr/bin/python^M: bad interpreter [duplicate] If you are using Vim, just enter the following command:
+:set fileformat=unix  ref  https://stackoverflow.com/questions/9975011/pycharm-usr-bin-pythonm-bad-interpreter  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-struct-module.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-struct-module.html</guid>
+      <description>python：struct模块的pack、unpack
+Python是一门非常简洁的语言，对于数据类型的表示，不像其他语言预定义了许多类型（如：在C#中，光整型就定义了8种）
+它只定义了六种基本类型：字符串，整数，浮点数，元组（set），列表（array），字典（key/value）
+通过这六种数据类型，我们可以完成大部分工作。但当Python需要通过网络与其他的平台进行交互的时候，必须考虑到将这些数据类型与其他平台或语言之间的类型进行互相转换问题。打个比方：C++写的客户端发送一个int型(4字节)变量的数据到Python写的服务器，Python接收到表示这个整数的4个字节数据，怎么解析成Python认识的整数呢？ Python的标准模块struct就用来解决这个问题。
+官网地址： https://docs.python.org/2/library/struct.html
+示例 # ref: http://blog.csdn&amp;lt;a href=&amp;quot;http://lib.csdn.net/base/dotnet&amp;quot; class=&#39;replace_word&#39; title=&amp;quot;.NET知识库&amp;quot; target=&#39;_blank&#39; style=&#39;color:#df3434; font-weight:bold;&#39;&amp;gt;.NET&amp;lt;/a&amp;gt;/JGood/archive/2009/06/22/4290158.aspx import struct #pack - unpack print print &#39;===== pack - unpack =====&#39; str = struct.pack(&amp;quot;ii&amp;quot;, 20, 400) print &#39;str:&#39;, str print &#39;len(str):&#39;, len(str) # len(str): 8 a1, a2 = struct.unpack(&amp;quot;ii&amp;quot;, str) print &amp;quot;a1:&amp;quot;, a1 # a1: 20 print &amp;quot;a2:&amp;quot;, a2 # a2: 400 print &#39;struct.calcsize:&#39;, struct.calcsize(&amp;quot;ii&amp;quot;) # struct.calcsize: 8 #unpack print print &#39;===== unpack =====&#39; string = &#39;test astring&#39; format = &#39;5s 4x 3s&#39; print struct.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python.html</guid>
+      <description>python</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/ubuntu-install-pip.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/ubuntu-install-pip.html</guid>
+      <description>ubuntu 安装 pip
+env os: ubuntu server 16.04
+step root@ubuntu:~# sudo apt-get install python-pip python-dev build-essential Reading package lists... Done Building dependency tree Reading state information... Done build-essential is already the newest version (12.1ubuntu2). python-dev is already the newest version (2.7.12-1~16.04). The following NEW packages will be installed: python-pip 0 upgraded, 1 newly installed, 0 to remove and 98 not upgraded. Need to get 0 B/144 kB of archives. After this operation, 635 kB of additional disk space will be used.</description>
+    </item>
+    
+  </channel>
+</rss>

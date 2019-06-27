@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apt on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/apt.html</link>
+    <description>Recent content in apt on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 29 Nov 2018 17:39:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>set apt source</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-set-apt-source.html</link>
+      <pubDate>Thu, 29 Nov 2018 17:39:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-set-apt-source.html</guid>
+      <description>https://github.com/vnpy/vnpy/wiki/Ubuntu%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85</description>
+    </item>
+    
+  </channel>
+</rss>

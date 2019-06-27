@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macos on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/macos.html</link>
+    <description>Recent content in macos on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在mac zsh下，ls只显示文件名</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-zsh-list-file-name-only.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-zsh-list-file-name-only.html</guid>
+      <description>ls只显示文件名
+$ ls -a1  </description>
+    </item>
+    
+    <item>
+      <title>Mac下为什么有的文件名后带一个*星号</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-file-name-end-with-asterisk.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-file-name-end-with-asterisk.html</guid>
+      <description> Mac下为什么有的文件名后带一个*星号？ 这个*号仅仅是ls命令显示的，表示有可执行权限，实际文件名不带*号。
+$ ls -F  可执行文件名后就会加*号。
+显示一个或多个文件的相关信息。 ls [options] [file-list]
+参数 默认情况下，ls按照文件名的字母顺序列出文件的信息，file-list可以是任意文件或目录 当file-list包含多个目录时，ls将显示目录的名称，不显示子目录和子文件 当file-list为普通文件时，ls则显示该文件的相关信息
+Ref  http://www.cnblogs.com/jackbo/p/7201885.html  </description>
+    </item>
+    
+    <item>
+      <title>mac 系统中文件的软链接、硬链接</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-hard-links-soft-links.html</link>
+      <pubDate>Sat, 01 Dec 2018 11:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-hard-links-soft-links.html</guid>
+      <description>最近有这么个需求，由于我在多台设备上使用 Surge ，因此我想把 Surge 的配置文件使用 Dropbox 进行同步，但是 Dropbox 的路径在 ~/User/slark/Dropbox/surge.conf 下，而 Surge 的配置文件位于 ~/.surge.conf，每次修改 .surge.conf 后，我都会手动把文件另存到 Dropbox 中，比较麻烦。
+开始想用一款本地文件同步工具来满足这个需求，比如 GoodSync，这个工具也确实能满足需求，但是就这么小的需求也要用软件来实现？经过 Google 后，发现可以通过创建文件的 硬链接 来完美满足这个需求。
+文件的 软链接 和 硬链接 在 Unix 系统中，可以对文件创建 硬链接 和 软链接。简单来说，链接就是可以指向文件系统中其他位置的一个快捷方式，比如 Windows 系统下的快捷方式。那么，硬链接和软链接有什么区别呢？
+硬链接 硬链接是一个目录条目，它指具有同一个 i-node（硬盘上的物理位置）的另一个文件，事实上只存在一个文件，比如我对 Dropbox 中的 surge.conf 文件创建一个硬链接：
+格式：ln [原文件] [硬链接文件] ln ~/Dropbox/surge.conf ~/.surge.conf  原文件和硬链接的详细信息对比：
+硬链接有这么几个特点：
+ 文件的所有的硬链接指向的是同一个文件，硬盘中只实际只存储一份文件； 所有硬链接与原文件的大小，修改时间，权限都相同；  因为是硬链接，所以 ~/Dropbox/surge.conf 和 ~/.surge.conf 指向的是同一个文件，删除任何一个链接都不会真正的删除文件。
+可以这么理解，在 Unix 系统下，任何文件的实际路径都是一个硬链接，该文件的硬链接数为 1，每创建一个硬链接后，硬链接数 +1，删除一个硬链接，硬链接数 -1，硬链接数为 0 时这个文件实际就被删除了。好比程序中的指针，实际的对象只有一份，指向这个对象的指针却有多个，删除任何一个指针并不会删除这个对象，只有把最后一个指针删掉，这个对象才算是删除掉了。</description>
+    </item>
+    
+    <item>
+      <title>mac tips</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-tips.html</link>
+      <pubDate>Wed, 05 Dec 2018 22:40:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-tips.html</guid>
+      <description> 卸载软件 为什么在我的mac上面下了腾讯电脑管家就卸载不了了？点击没有小叉叉也不能移到废纸篓.
+finder－应用程序－右键－移到废纸篓  </description>
+    </item>
+    
+    <item>
+      <title>Mac Sed</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-sed.html</link>
+      <pubDate>Mon, 08 Oct 2018 12:08:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-sed.html</guid>
+      <description>由于Mac OS X自带的sed等命令行工具是基于BSD的，有一些缺陷和不足，比如sed不支持\t来表示TAB
+Env  os: mac  报错如下：
+➜ home git:(master) ✗ grep &amp;quot;finsoft.info&amp;quot; -rl ./CNAME ./CNAME ➜ home git:(master) ✗ ➜ home git:(master) ✗ grep &amp;quot;finsoft.info&amp;quot; -rl ./CNAME | xargs sed -i &amp;quot;s/finsoft.info/qqbb.app/g&amp;quot; sed: 1: &amp;quot;./CNAME&amp;quot;: invalid command code . ➜ home git:(master) ✗  Step ➜ ~ brew install coreutils ➜ ~ vi ~/.zshrc ➜ ~ source ~/.zshrc ➜ ~ tail ~/.zshrc ## coreutil export PATH=&amp;quot;$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH&amp;quot; export MANPATH=&amp;quot;$(brew --prefix coreutils)/libexec/gnuman:$MANPATH&amp;quot; ➜ ~ brew install gnu-sed --with-default-names ➜ ~  Ref  https://blog.</description>
+    </item>
+    
+    <item>
+      <title>Iterm2 Hotkey</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/iterm2-hotkey.html</link>
+      <pubDate>Wed, 13 Jun 2018 16:15:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/iterm2-hotkey.html</guid>
+      <description>Env  os: macOS  Content 标签 新建标签：command + t 关闭标签：command + w 切换标签：command + 数字 command + 左右方向键 切换全屏：command + enter 查找：command + f  分屏 垂直分屏：command + d 水平分屏：command + shift + d 切换屏幕：command + option + 方向键 command + [ 或 command + ] 查看历史命令：command + ; 查看剪贴板历史：command + shift + h  其他 清除当前行：ctrl + u 到行首：ctrl + a 到行尾：ctrl + e 前进后退：ctrl + f/b (相当于左右方向键) 上一条命令：ctrl + p 搜索命令历史：ctrl + r 删除当前光标的字符：ctrl + d 删除光标之前的字符：ctrl + h 删除光标之前的单词：ctrl + w 删除到文本末尾：ctrl + k 交换光标处文本：ctrl + t 清屏1：command + r 清屏2：ctrl + l  自带有哪些很实用的功能/快捷键 ⌘ + 数字在各 tab 标签直接来回切换 选择即复制 + 鼠标中键粘贴，这个很实用 ⌘ + f 所查找的内容会被自动复制 ⌘ + d 横着分屏 / ⌘ + shift + d 竖着分屏 ⌘ + r = clear，而且只是换到新一屏，不会想 clear 一样创建一个空屏 ctrl + u 清空当前行，无论光标在什么位置 输入开头命令后 按 ⌘ + ; 会自动列出输入过的命令 ⌘ + shift + h 会列出剪切板历史 可以在 Preferences &amp;gt; keys 设置全局快捷键调出 iterm，这个也可以用过 Alfred 实现  常用的一些快捷键 ⌘ + 1 / 2 左右 tab 之间来回切换，这个在 前面 已经介绍过了 ⌘← / ⌘→ 到一行命令最左边/最右边 ，这个功能同 C+a / C+e ⌥← / ⌥→ 按单词前移/后移，相当与 C+f / C+b，其实这个功能在Iterm中已经预定义好了，⌥f / ⌥b，看个人习惯了 好像就这几个 设置方法如下 当然除了这些可以自定义的也不能忘了 linux 下那些好用的组合 C+a / C+e 这个几乎在哪都可以使用 C+p / !</description>
+    </item>
+    
+    <item>
+      <title>Mac Rar Unrar</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-rar-unrar.html</link>
+      <pubDate>Tue, 12 Jun 2018 17:15:24 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-rar-unrar.html</guid>
+      <description> Mac上rar文件命令解压和压缩
+Env  os: macOS  Step rar和unrar命令需要自己安装
+可以直接通过brew安装，如果不清楚brew安装命令，可以查看《mac上安装类似 apt-get 的软件包管理器 &amp;ndash; Homebrew》
+下面说下另外一种简单安装方式
+1.下载mac上对应rar版本
+http://www.rarlab.com/download.htm
+2.利用tar名解压下载的rarosx-5.4.0.tar.gz，版本可能会更新
+tar xzvf arosx-5.4.0.tar.gz . #解压到当前目录  3.安装rar和unrar命令
+sudo install -c -o $USER rar /usr/local/bin/ ＃安装rar sudo install -c -o $USER unrar /usr/local/bin ＃安装unrar  如果安装失败可以看看/usr/local/bin 目录是不是存在rar或unrar的软链接
+4.利用rar和unrar压缩和解压文件
+rar和unrar文件的参数也很多，就不在一一介绍了，直接在Ternimal执行对应命令就能看到所有参数选项，下面列举几个常用的
+解压文件：unrar x test.rar 压缩文件A和B：rar a 压缩后.rar A B
+Ref  http://www.rarlab.com/download.htm https://blog.csdn.net/yin1031468524/article/details/68955194?locationNum=12&amp;amp;fps=1  </description>
+    </item>
+    
+    <item>
+      <title>Mac Iterm2 Ohmyzsh Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-iterm2-ohmyzsh-install.html</link>
+      <pubDate>Tue, 12 Jun 2018 11:48:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-iterm2-ohmyzsh-install.html</guid>
+      <description> Mac下如何安装iTerm2并使用zsh iTerm2
+Env  os: macOS  Step 安装iterm2 安装iterm2只需要下载，解压安装就可以了。
+安装zsh 方式1 brew install zsh zsh-completions  无brew的请先安装Homebrew，mac上的一个包管理工具，很有必要安装，省去安装软件的麻烦。
+方式2 直接上官网查看安装方式
+zsh --version  配置zsh 创建一个zsh的配置文件 注意:如果你已经有一个~/.zshrc文件的话，建议你先做备份。使用以下命令
+cp ~/.zshrc ~/.zshrc.orig  然后开始创建zsh的配置文件
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc  设置zsh为你的默认的shell chsh -s /bin/zsh  然后退出iterm2，再重启就ok。
+期间报的问题不要管直接按照步骤来就行了。
+Ref  http://www.jianshu.com/p/77a4349bf67b https://blog.csdn.net/sufubo/article/details/54988457  </description>
+    </item>
+    
+    <item>
+      <title>Macos Apple Id America</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/macos-apple-id-america.html</link>
+      <pubDate>Mon, 11 Jun 2018 20:02:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/macos-apple-id-america.html</guid>
+      <description> 申请美国apple id
+Env  os: macOS cloud: aws  Step Ref  https://zhuanlan.zhihu.com/p/36574047 https://www.zhihu.com/question/20422874/answer/413390698 https://blog.csdn.net/amoscn/article/details/79364599 https://zhuanlan.zhihu.com/p/33150135  </description>
+    </item>
+    
+    <item>
+      <title>Mac Install Software</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-install-software.html</link>
+      <pubDate>Mon, 11 Jun 2018 19:54:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-install-software.html</guid>
+      <description>记录mac-pro安装软件
+安装截图 安装  git (直接输入git version) 这个时候，会自动安装Xcode的组件，请保持网络稳定且快速。 搜狗五笔拼音 homebrew [telnet]() brew install telnet Visual Studio Code hugo  这个时候，你需要的是科学上网
+ shadowsocks chrome(美国版)，这里一定不要是google.cn下载的中文版。  无需科学上网
+ [百度网盘](https://pan.baidu.com/download#pan） iterm2, 下载，解压，安装就行了，不是brew安装的 oh my zsh安装 RARLAB-osx用于解压rar文件  设置 mac输入法切换快捷键设置</description>
+    </item>
+    
+    <item>
+      <title>Mac上SSH-Key对应多个github账号</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-ssh-github.html</link>
+      <pubDate>Sat, 07 Apr 2018 22:30:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-ssh-github.html</guid>
+      <description>Mac 上SSH-Key对应多个github账号
+当然, 也不单是github帐号, gitlab或者其它账号都是可以的哟&amp;hellip;
+前言 因为最近在其他公司帮忙，而其公司用的是他们自己的git服务器，自己本公司又有自己的git服务器，然后自己还用github，造成三个git账号的都要ssh-key，而在网上一搜生成ssh-key的方法都是直接就给你弄全局了，然后肯定又会覆盖原有的ssh-key，所以查了一下关于同机器多账号的ssh-key配置，在此记录一下。
+操作步骤 如果我们Mac上面已经有了ssh-key再创建ssh-key的话，需要给我们的ssh-key文件取不同的名字，默认是id_rsa，如果不重新起名的话，会把原有的给覆盖掉。
+1.新建ssh-key&amp;amp;重新命名 //切换到ssh目录 cd ~/.ssh //新建ssh-key ssh-keygen -t rsa -C &amp;quot;mywork@email.com&amp;quot; //为新建的ssh-key重新命名 Enter file in which to save the key (/Users/bombvote-zql/.ssh/id_rsa):id_ras_bill_github  2.新ssh-key添加到ssh agent中 因为默认只读取id_rsa，为了让SSH识别新的私钥，需将其添加到SSH agent中：
+ssh-add ~/.ssh/id_ras_bill_github  3.配置 将不同账号的工程图服务器与ssh-key关联 #thub user(first@email.com) Host github1 HostName git.some.com/ User git IdentityFile /Users/bombvote-zql/.ssh/id_rsa # second user(second@email.com) # 建一个github别名，新建的帐号使用这个别名做克隆和更新 Host github2 HostName github.com User git IdentityFile /Users/bombvote-zql/.ssh/id_ras_bill_github  4.在git服务器上添加公钥 vim ~/.ssh/id_rsa_bill_github.pub  然后将内容复制添加到服务器账号里面 其规则就是：从上至下读取config的内容，在每个Host下寻找对应的私钥。这里将GitHub SSH仓库地址中的git@github.</description>
+    </item>
+    
+    <item>
+      <title>Mac Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-faq.html</link>
+      <pubDate>Thu, 15 Mar 2018 16:33:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-faq.html</guid>
+      <description>how-to-open-app-from-unidentified-developer-in-mac-os-x how-to-open-app-from-unidentified-developer-in-mac-os-x
+https://zhidao.baidu.com/question/466554299.html</description>
+    </item>
+    
+    <item>
+      <title>Mac Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac.html</link>
+      <pubDate>Thu, 15 Mar 2018 16:33:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac.html</guid>
+      <description>mac</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-navicat-mysql-61-error-code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-navicat-mysql-61-error-code.html</guid>
+      <description> mac 本机安装 mysql8.0 后，navicat 连接 mysql 后报 61 错误码。怎么办？
+env mac下mysql无法开启或者关闭
+step 在terminal中查看mysql的所有进程：ps aux |grep mysq*
+查找到进程编号，使用kill ****关闭进程，如果没有权限在前面添加sudo，完成！
+第一步：
+点击系统偏好设置-&amp;gt;最下边点MySQL，在弹出页面中，关闭服务
+第二步：
+进入终端输入：cd /usr/local/mysql/bin/ 回车后 登录管理员权限 sudo su 回车后输入以下命令来禁止mysql验证功能 ./mysqld_safe &amp;ndash;skip-grant-tables &amp;amp; 回车后mysql会自动重启（偏好设置中mysql的状态会变成running）
+第三步：
+输入命令 ./mysql 回车后，输入命令 FLUSH PRIVILEGES; 回车后，输入命令 SET PASSWORD FOR &amp;lsquo;root&amp;rsquo;@&amp;lsquo;localhost&amp;rsquo; = PASSWORD(&amp;lsquo;你的新密码&amp;rsquo;);
+ref  https://blog.csdn.net/a787188834/article/details/76152735 https://blog.csdn.net/wujunwen/article/details/52039697  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-tools.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-tools.html</guid>
+      <description>dash</description>
+    </item>
+    
+  </channel>
+</rss>

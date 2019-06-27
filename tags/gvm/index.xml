@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gvm on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/gvm.html</link>
+    <description>Recent content in gvm on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Jul 2018 14:09:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/gvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang Gvm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-gvm.html</link>
+      <pubDate>Sun, 15 Jul 2018 14:09:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-gvm.html</guid>
+      <description>Go 语言多版本安装及管理利器 - GVM
+Env  golang  Step ### 安装指定版本 golang
+这里要科学上网
+通过 gvm 安装指定 go版本
+➜ ~ gvm install go1.10 Downloading Go source...  但是这个时候，没有指定你会使用哪个版本
+➜ ~ gvm list gvm gos (installed) go1.10 system ➜ ~  通过 gvm 指定 默认使用版本
+➜ ~ gvm use go1.10 --default Now using version go1.10 ➜ ~ gvm list gvm gos (installed) =&amp;gt; go1.10 system ➜ ~  看一下go的环境吧
+➜ ~ go env GOARCH=&amp;quot;amd64&amp;quot; GOBIN=&amp;quot;&amp;quot; GOCACHE=&amp;quot;/Users/tomtsang/Library/Caches/go-build&amp;quot; GOEXE=&amp;quot;&amp;quot; GOHOSTARCH=&amp;quot;amd64&amp;quot; GOHOSTOS=&amp;quot;darwin&amp;quot; GOOS=&amp;quot;darwin&amp;quot; GOPATH=&amp;quot;/Users/tomtsang/.</description>
+    </item>
+    
+  </channel>
+</rss>

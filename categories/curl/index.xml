@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>curl on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/curl.html</link>
+    <description>Recent content in curl on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 08 Mar 2018 17:47:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/curl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Curl</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/curl.html</link>
+      <pubDate>Thu, 08 Mar 2018 17:47:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/curl.html</guid>
+      <description>获取header env 要求发送get请求，只看服务器返回的头信息
+curl --head xxxx.com 这样可以看服务器返回的头信息，但是，发送的是head请求
+请问，怎么做？
+step ➜ ~ curl -X GET -I https://www.baidu.com/ HTTP/1.1 200 OK Server: nginx Date: Thu, 08 Mar 2018 09:46:48 GMT Content-Type: text/html;charset=utf-8 Content-Length: 491 Vary: Accept-Encoding Set-Cookie: vvvv=1; Path=/; Expires=Thu, 08-Mar-18 09:47:48 GMT Vary: Accept-Encoding X-Cache: MISS from bs88.10jqka.com.cn X-Cache: MISS from cachexs Via: 1.1 bs88.10jqka.com.cn (squid/3.5.20), 1.1 cachexs (squid/3.5.20) Connection: keep-alive ➜ ~  获取复杂URL内容 ➜ ~ curl -H &amp;quot;Content-Type:application/json&amp;quot; -X GET -sL https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

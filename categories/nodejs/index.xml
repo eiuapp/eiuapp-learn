@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/nodejs.html</link>
+    <description>Recent content in nodejs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>nodejs 一定要通过 nvm安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-install.html</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-install.html</guid>
+      <description>使用 nvm 管理不同版本的 node 与 npm
+step 补充说明：Mac 下通过 brew install nvm 所安装的 nvm ，由于安装路径不同，无法正确启用。建议使用 brew uninstall nvm 卸载掉之后，通过本文的方案重新安装一次。
+nvm 是 Mac 下的 node 管理工具，有点类似管理 Ruby 的 rvm，如果是需要管理 Windows 下的 node，官方推荐是使用 nvmw 或 nvm-windows 。
+以下具体说下 Mac 系统中的安装与使用细节（Windows 系统仅供类比参考）。
+一、卸载已安装到全局的 node/npm 如果之前是在官网下载的 node 安装包，运行后会自动安装在全局目录，其中
+ node 命令在 `/usr/local/bin/node` npm 命令在 `/usr/local/bin/npm` ，其实是 `/usr/local/lib/node_modules/npm/bin/npm-cli.js` 的软链接 全局 node_modules 目录在 `/usr/local/lib/node_modules/`  安装 nvm 之后最好先删除下已安装的 node 和全局 node 模块：
+npm ls -g --depth=0 #查看已经安装在全局的模块，以便删除这些全局模块后再按照不同的 node 版本重新进行全局安装 sudo rm -rf /usr/local/lib/node_modules #删除全局 node_modules 目录 sudo rm /usr/local/bin/node #删除 node cd /usr/local/bin &amp;amp;&amp;amp; ls -l | grep &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Npm Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/nodejs-npm.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:09:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/nodejs-npm.html</guid>
+      <description>nodejs系列之npm的常用命令
+ref  http://www.jb51.net/article/52409.htm  要点 分享几个npm的常用命令
+npm -v #显示版本，检查npm 是否正确安装。
+npm install express #安装express模块
+npm install -g express #全局安装express模块
+npm list #列出已安装模块
+npm show express #显示模块详情
+npm update #升级当前目录下的项目的所有模块
+npm update express #升级当前目录下的项目的指定模块
+npm update -g express #升级全局安装的express模块
+npm uninstall express #删除指定的模块</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Version</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-version.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:08:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-version.html</guid>
+      <description>nodejs系列之使用n管理nodejs版本
+ref  http://blog.csdn.net/jiangbo_phd/article/details/51476155  主要点 npm -g XXX :安装的XXX软件，在linux下的目录 /usr/lib/node_modules/
+sudo n :切换node版本
+n 切换之后的 node 默认装在 /usr/local/bin/node，你最好用 which node 检查一下当前使用的 node 是否是这个路径下的。
+问题  如果安装过程中因为某原因（主要是网络原因），未安装成功，则删除对应的目录，重新安装就可以了。
+tom@adata:~/Projects/OpenX/lib$ sudo n latest [sudo] password for tom:
+ install : node-v7.2.0 mkdir : /usr/local/n/versions/node/7.2.0 fetch : https://nodejs.org/dist/v7.2.0/node-v7.2.0-linux-x64.tar.gz  ###################################################### 75.1% curl: (56) GnuTLS recv error (-54): Error in the pull function.
+gzip: stdin: unexpected end of file tar: Unexpected EOF in archive tar: Unexpected EOF in archive tar: Error is not recoverable: exiting now cp: cannot stat &amp;lsquo;/usr/local/n/versions/node/7.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Mongodb</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-mongodb.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:07:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-mongodb.html</guid>
+      <description>nodejs系列之mongodb
+var mongodb = require(&amp;quot;mongodb&amp;quot;);  这个 mongodb 包的API文档：
+http://mongodb.github.io/node-mongodb-native/2.2/api/index.html</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Npm Faq 1</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-npm-faq-1.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:06:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-npm-faq-1.html</guid>
+      <description>nodejs系列之npm报错
+报错 报错1，permission denied, open &#39;/usr/local/lib/node_modules/npm/lib/ tom@adata:~/in/ttt$ npm i npm ERR! Linux 4.4.0-47-generic npm ERR! argv &amp;quot;/usr/local/bin/node&amp;quot; &amp;quot;/usr/local/bin/npm&amp;quot; &amp;quot;i&amp;quot; npm ERR! node v6.9.1 npm ERR! npm v3.10.8 npm ERR! path /usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js npm ERR! code EACCES npm ERR! errno -13 npm ERR! syscall open npm ERR! Error: EACCES: permission denied, open &#39;/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js&#39; npm ERR! at Error (native) npm ERR! at Object.fs.openSync (fs.js:640:18) npm ERR! at Object.fs.readFileSync (fs.js:508:33) npm ERR! at Object.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Tofixed</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-tofixed.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:05:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-tofixed.html</guid>
+      <description>nodejs系列之toFixed
+在遇到，4147.8015这样的浮点数时的，toFixed()的替代方案。
+通过下面这一段，应该知道，这里的toFixed2 中的 “9”（是可以设置成限定的位数的准确度的，不应该设置成“2”，“2”太小了，是有问题的，所以设置成大数“9”）。
+tom@adata:~/m6s/nodejs/module/toFixed$ node &amp;gt; var aux = Math.pow(0.1, 1 + 2) undefined &amp;gt; var number = 14.44999 undefined &amp;gt; number + aux 14.45099 &amp;gt; (number + aux).toFixed(1) &#39;14.5&#39;  下面，直接上代码吧。共2个js文件。写法不同，意思相同。
+toFixedTest1.js
+module.exports.MathHelper = MathHelper; var MathHelper = (function() { this.round = function(number, numberOfDecimals) { var aux = Math.pow(10, numberOfDecimals); return Math.round(number * aux) / aux; }; this.floor = function(number, numberOfDecimals) { var aux = Math.pow(10, numberOfDecimals); return Math.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Faq Unexpected Token Function</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-faq-unexpected-token-function.html</link>
+      <pubDate>Fri, 23 Feb 2018 15:42:10 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-faq-unexpected-token-function.html</guid>
+      <description>env 在 hugo-algolia -s命令运行时, 出现了 Unexpected token function 报错
+➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo-algolia -s /usr/local/lib/node_modules/hugo-algolia/lib/utils.js:11 async function copySynonyms(fromIndex, toIndex) { ^^^^^^^^ SyntaxError: Unexpected token function at Object.exports.runInThisContext (vm.js:78:16) at Module._compile (module.js:543:28) at Object.Module._extensions..js (module.js:580:10) at Module.load (module.js:488:32) at tryModuleLoad (module.js:447:12) at Function.Module._load (module.js:439:3) at Module.require (module.js:498:17) at require (internal/module.js:20:19) at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hugo-algolia/lib/index.js:11:52) at Module._compile (module.js:571:32) ➜ tomtsang-rootsongjc-hugo git:(master) ✗  step Unexpected token function 报错, 是指未预期的token 函数, 那先就要查一下, nodejs版本支持与否</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/nodejs.html</link>
+      <pubDate>Fri, 23 Feb 2018 15:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/nodejs.html</guid>
+      <description>Node.js ES2015 Support</description>
+    </item>
+    
+  </channel>
+</rss>

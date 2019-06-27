@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>extensions on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/extensions.html</link>
+    <description>Recent content in extensions on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:22:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/extensions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vscode Extensions</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vscode/vscode-extensions.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:22:22 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vscode/vscode-extensions.html</guid>
+      <description>用VS Code打造最佳Markdown编辑器</description>
+    </item>
+    
+  </channel>
+</rss>

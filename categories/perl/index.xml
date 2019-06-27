@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>perl on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/perl.html</link>
+    <description>Recent content in perl on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 01 Feb 2018 20:11:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/perl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perl Rpm Install Offline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/perl-rpm-install-offline.html</link>
+      <pubDate>Thu, 01 Feb 2018 20:11:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/perl-rpm-install-offline.html</guid>
+      <description>perl rpm install offline
+$ tar -xzf perl-5.x.y.tar.gz $ cd perl-5.x.y $ ./Configure -de $ make $ make test $ make install  </description>
+    </item>
+    
+  </channel>
+</rss>

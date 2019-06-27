@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xshell on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/xshell.html</link>
+    <description>Recent content in xshell on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 24 May 2018 11:19:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/xshell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Xshell Ubuntu Transmitter File</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/xshell-ubuntu-transmitter-file.html</link>
+      <pubDate>Thu, 24 May 2018 11:19:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/xshell-ubuntu-transmitter-file.html</guid>
+      <description> xshell + ubuntu 直接拖拽完成传输
+env  win10-xshell ubuntu  step ubunut 安装lrzsz软件
+ubuntu@ip-172-31-17-102:~$ sudo apt install lrzsz Reading package lists... Done Building dependency tree Reading state information... Done lrzsz is already the newest version (0.12.21-8). 0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded. ubuntu@ip-172-31-17-102:~$  如果第一次没有成功，则，直接再把上面的命令运行一次
+传输完成了，会显示如下内容
+ubuntu@ip-172-31-17-102:~$ rz -E rz waiting to receive. ubuntu@ip-172-31-17-102:~$  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/linux.html</link>
+    <description>Recent content in linux on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux 关闭SSH 连接用户</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-close-ssh-connection-user.html</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-close-ssh-connection-user.html</guid>
+      <description>1.查明登陆端口；
+$ who root pts/1 Apr 8 00:06 (172.29.0.29) root pts/2 Apr 8 04:15 (172.29.0.21)  2.通知该用户将要关闭他：
+$ echo &amp;quot;I will close your connection&amp;quot; &amp;gt; /dev/pts/2  这样他的终端将显示该信息。
+3.关闭用户连接
+$ fuser -k /dev/pts/2  这个在某些命令，导致ssh后续无法操作时，我们就可以使用这个方式。
+疑问：当有多个ssh 连接时，那怎么知道我们要kill 的是哪个 pts 呢？</description>
+    </item>
+    
+    <item>
+      <title>linux sed 批量替换字符串</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/sed-string-replace.html</link>
+      <pubDate>Mon, 12 Nov 2018 19:11:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/sed-string-replace.html</guid>
+      <description>Linux下批量替换多个文件中的字符串的简单方法。
+用sed命令可以批量替换多个文件中的字符串 命令如下：
+sed -i &amp;quot;s/原字符串/新字符串/g&amp;quot; `grep 原字符串 -rl 所在目录`  例如：我要把 charset=gb2312 替换为 charset=UTF-8，执行命令：
+sed -i &amp;quot;s/charset=gb2312/charset=UTF-8/g&amp;quot; `grep charset=gb2312 -rl /www`  即可。
+解释一下：
+-i 表示inplace edit，就地修改文件
+-r 表示搜索子目录
+-l 表示输出匹配的文件名
+这个命令组合很强大，要注意备份文件。
+关于 sed 的更多说明：  替换  sed &#39;y/1234567890/ABCDEFGHIJ/&#39; test_sed  test_sed的内容是：
+1234567890 2345678901 3456789012 4567890123  执行后，test_sed的内容是：
+ABCDEFGHIJ BCDEFGHIJA CDEFGHIJAB DEFGHIJABC  注意变换关系是按两个list的位置对应变换
+ 替换每行所有匹配  sed &amp;rsquo;s/01/Ab/g&amp;rsquo; test_sed
+1234567890
+23456789Ab
+3456789Ab2
+456789Ab23
+注意：第一行的0，1没有分别替换为A,b
+删除：d命令 $ sed &#39;2d&#39; example  删除example文件的第二行。</description>
+    </item>
+    
+    <item>
+      <title>linux 软连接 不能加/号</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-ln-s-make-soft-link.html</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-ln-s-make-soft-link.html</guid>
+      <description> 对某个目录创建符号连接
+[root@A home]# ln -s /home/kk /home/abc
+此命令表示在/home目录下创建一个链接到/home/kk目录的名字为abc的符号连接。
+注意：
+ 目标是一个软连接符号，所以不要带上 / 号。带上后，就是指把 软连接放在这个目录下  ➜ org git:(master) ✗ ln -s /home/ubuntu/tom/jinweilai/blog-jwl/org-jwl/org/ ~/org ➜ org git:(master) ✗ ln -s /home/ubuntu/tom/jinweilai/blog-jwl/org-jwl/org/ ~/org/ ➜ org git:(master) ✗ ls ~/org gtd.org org ➜ org git:(master) ✗  Ref  https://blog.csdn.net/liuzhenwen/article/details/8152764  </description>
+    </item>
+    
+    <item>
+      <title>命令行下如何安装或者更新 CA.crt 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line-2.html</link>
+      <pubDate>Thu, 29 Nov 2018 15:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line-2.html</guid>
+      <description>https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
+env 192.168.31.120
+step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.Debian.gz /usr/share/man /usr/share/man/man8 /usr/share/man/man8/update-ca-certificates.8.gz jlch@km:~$  那查一下 update-ca-certificates</description>
+    </item>
+    
+    <item>
+      <title>ubuntu 获取 系统版本信息</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-get-os-lsb-release.html</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-get-os-lsb-release.html</guid>
+      <description>(oscar) ➜ proxy-os git:(master) ✗ lsb_release --help Usage: lsb_release [options] Options: -h, --help show this help message and exit -v, --version show LSB modules this system supports -i, --id show distributor ID -d, --description show description of this distribution -r, --release show release number of this distribution -c, --codename show code name of this distribution -a, --all show all of the above information -s, --short show requested information in short format (oscar) ➜ proxy-os git:(master) ✗ lsb_release -a No LSB modules are available.</description>
+    </item>
+    
+    <item>
+      <title>mkfs.xfs command not found</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/mkfs-xfs-command-not-found.html</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/mkfs-xfs-command-not-found.html</guid>
+      <description> 如果 mkfs.xfs /dev/sdb1 出现 mkfs.xfs command not found , 则运行下面命令安装 mkfs.xfs
+apt-get install xfsprogs  ref  http://blog.51cto.com/yangzhiming/2117942  </description>
+    </item>
+    
+    <item>
+      <title>Linux No Passwd Login</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-no-passwd-login.html</link>
+      <pubDate>Sat, 14 Jul 2018 17:44:08 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-no-passwd-login.html</guid>
+      <description>关闭SSH传统密码登陆方式
+Env  os: linux  Step 加入登录公钥 自己创建 或 从其它地方导入 .ssh/authorized_keys 文件
+root@ubuntu:/home/ubuntu# mv ssh/ .ssh/ root@ubuntu:/home/ubuntu# chmod 600 .ssh/authorized_keys  修改SSH的配置文件/etc/ssh/sshd_config root@ubuntu:/home/ubuntu# vi /etc/ssh/sshd_config root@ubuntu:/home/ubuntu# grep PasswordAuthentication -rn /etc/ssh/sshd_config 52:#PasswordAuthentication yes 53:PasswordAuthentication no 83:# PasswordAuthentication. Depending on your PAM configuration, 87:# PAM authentication, then enable this but set PasswordAuthentication root@ubuntu:/home/ubuntu#  注意，这个地方，一定要把 .ssh 文件夹的属性设置正确，然后重启sshd服务，否则会有如下错误
+ubuntu@ubuntu:~$ sudo systemctl status sshd ● ssh.service - OpenBSD Secure Shell server Loaded: loaded (/lib/systemd/system/ssh.</description>
+    </item>
+    
+    <item>
+      <title>Grep Exclude Many File</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/grep-exclude-many-file.html</link>
+      <pubDate>Tue, 03 Jul 2018 11:20:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/grep-exclude-many-file.html</guid>
+      <description> grep 同时排除多个关键字,多个文件
+Step grep -v 排除文件 | grep -v 排除文件
+tom@tom-w10vbud16:~$ ifconfig | grep inet | grep -v inet6 | grep -v 127.0.0.1 inet addr:172.17.0.1 Bcast:0.0.0.0 Mask:255.255.0.0 inet addr:10.88.88.130 Bcast:10.88.88.255 Mask:255.255.255.0 inet addr:10.42.0.0 Bcast:0.0.0.0 Mask:255.255.255.255 tom@tom-w10vbud16:~$  Ref  https://blog.csdn.net/qq70945934/article/details/77573870  </description>
+    </item>
+    
+    <item>
+      <title>Linux Add Format Mount Harddisk</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-add-format-mount-harddisk.html</link>
+      <pubDate>Thu, 28 Jun 2018 14:16:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-add-format-mount-harddisk.html</guid>
+      <description>替 Linux 新增硬碟（磁碟分割、格式化與掛載）
+最近要替我的 Linux Server 增加一顆硬碟，一般若是在安裝 Linux 時就將硬碟裝上去的話，就可以直接在安裝時設定好硬碟的格式化與掛載，但若是後來要加掛新的硬碟，就要自己動手設定了。
+這裡示範在 Ubuntu Linux 下面新增加硬碟的做法，首先當然是買一顆新硬碟囉。
+Env  os: ubuntu16 新硬盘: sdb  Step 查看 root@ubuntu:~# fdisk -l Disk /dev/sda: 111.8 GiB, 120034123776 bytes, 234441648 sectors Units: sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disklabel type: gpt Disk identifier: 846C81DB-5DB9-4853-94E9-CC1192592FC9 Device Start End Sectors Size Type /dev/sda1 2048 1050623 1048576 512M EFI System /dev/sda2 1050624 2050047 999424 488M Linux filesystem /dev/sda3 2050048 234440703 232390656 110.</description>
+    </item>
+    
+    <item>
+      <title>Linux Swap</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-swap.html</link>
+      <pubDate>Fri, 22 Jun 2018 18:56:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-swap.html</guid>
+      <description> Env  os: linux  Step 有时运行大量的进程后swap大量占用，达到30%的话机器会变得很慢
+可以用以下两个命令清除刷新swap
+swapoff -a swapon -a  这样swap就还原到初始状态
+Ref  http://blog.163.com/zhao_jw/blog/static/18058736620121027102932108/  </description>
+    </item>
+    
+    <item>
+      <title>How to Install Certificates for Command Line</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line.html</link>
+      <pubDate>Thu, 21 Jun 2018 22:32:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line.html</guid>
+      <description>当你有一个 CA.crt 文件时，怎么安装它，然后使用呢？我遇到了这个问题。
+Env  os: ubuntu16 192.168.31.120  Step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.</description>
+    </item>
+    
+    <item>
+      <title>Linux Kill Tty</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-kill-tty.html</link>
+      <pubDate>Tue, 19 Jun 2018 17:41:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-kill-tty.html</guid>
+      <description>linux 如何杀掉 tty终端
+Step 1、用w -s命令可以得到终端名 root@bitzone:~# w 17:37:05 up 164 days, 1:13, 2 users, load average: 1.47, 0.83, 0.66 USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT root pts/0 121.34.147.224 17:36 0.00s 0.02s 0.00s w root pts/2 121.34.147.224 11:58 5:37m 0.04s 0.04s -bash root@bitzone:~# w -s 17:38:38 up 164 days, 1:15, 2 users, load average: 0.65, 0.69, 0.62 USER TTY FROM IDLE WHAT root pts/0 121.34.147.224 2.00s w -s root pts/2 121.</description>
+    </item>
+    
+    <item>
+      <title>Linux Http Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-http-proxy.html</link>
+      <pubDate>Thu, 24 May 2018 11:30:50 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-http-proxy.html</guid>
+      <description>linux-proxy 相关
+proxy FQ root@km:~# cat proxy.sh #!/bin/bash NO_PROXY=localhost,127.0.0.1/8,192.168.31.1/24 export NO_PROXY export http_proxy=http://192.168.31.10:1080/ export https_proxy=http://192.168.31.10:1080/ root@km:~#  这个问题，可以参考 https://blog.finsoft.info/posts/ubuntu-apt-http-proxy/#%E5%8F%96%E6%B6%88apt%E4%BB%A3%E7%90%86
+终端： [tom@mpro Desktop]$ export http_proxy=http://192.168.31.10:8031 # 这个 http://192.168.31.10:8031 是在 192.168.31.10的机器提供出来的 地址。 192.168.31.10的机器 是代理服务器。 [tom@mpro Desktop]$ export https_proxy=http://192.168.31.10:8031 [tom@mpro Desktop]$ ping www.google.com.hk # 代理后，ping 依然是不行的。呵呵 PING www.google.com.hk (93.46.8.89) 56(84) bytes of data. ^C --- www.google.com.hk ping statistics --- 6 packets transmitted, 0 received, 100% packet loss, time 4999ms [tom@mpro Desktop]$ wget www.</description>
+    </item>
+    
+    <item>
+      <title>Linux Wgetrc Wget Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-wgetrc-wget-proxy.html</link>
+      <pubDate>Thu, 24 May 2018 11:24:18 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-wgetrc-wget-proxy.html</guid>
+      <description> wgetrc打开 wget 的代理
+env  centos  step 通过 /etc/wgetrc 打开 wget 的代理
+[root@www ~]# vim /etc/wgetrc #http_proxy = http://proxy.yoyodyne.com:18023/ &amp;lt;==找到底下这几行，大约在 78 行 #ftp_proxy = http://proxy.yoyodyne.com:18023/ #use_proxy = on # 将他改成类似底下的模样，记得，你必须要有可接受的 proxy 主机才行！ http_proxy = http://192.168.31.10:8031/ use_proxy = on # use_proxy=off ## 关闭 [root@www ~]#  ref  http://cn.linux.vbird.org/linux_server/0140networkcommand.php#wget  </description>
+    </item>
+    
+    <item>
+      <title>Gcc Rpm Install Offline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/gcc-rpm-install-offline.html</link>
+      <pubDate>Fri, 02 Mar 2018 17:29:20 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/gcc-rpm-install-offline.html</guid>
+      <description>gcc rpm 安装包下载
+安装gcc, 下载
+[root@localhost jlch]# rpm -ivh gcc-4.8.5-16.el7_4.1.x86_64.rpm warning: gcc-4.8.5-16.el7_4.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY error: Failed dependencies: cpp = 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 glibc-devel &amp;gt;= 2.2.90-12 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libgcc &amp;gt;= 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libgomp = 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libmpc.so.3()(64bit) is needed by gcc-4.8.5-16.el7_4.1.x86_64 libmpfr.so.4()(64bit) is needed by gcc-4.8.5-16.el7_4.1.x86_64 [root@localhost jlch]#  所有的下载地址如下:
+http://mirror.centos.org/centos/7/os/x86_64/Packages/libgcc-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/gcc-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/cpp-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/glibc-devel-2.17-196.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/libgomp-4.8.5-16.el7.x86_64.rpm http://mirror.</description>
+    </item>
+    
+    <item>
+      <title>Linux Port Process</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-port-process.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:47:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-port-process.html</guid>
+      <description> linux系列之端口与进程
+linux如何查看端口被哪个进程占用 使用netstat 和lsof命令，并用grep来过滤你需要查看的端口。 例如查看tcp有哪些端口打开了：
+netstat -a| grep tcp  然后查看哪个进程占用了这些端口：
+lsof -i  如果要查看某个端口，比如80端口是哪个进程：
+lsof -i | grep :80  如果说，tom用户查到了一些端口号被占用，但是，用lsof却查不到。怎么办？ 则要考虑，是不是端口被root用户占用，没有权限。所以要再一次用sudo lsof来查一查。
+示例 netstat -ant | grep 8060 ps -aux | grep node lsof -i:8060 man lsof lsof -i lsof -i -n lsof -iTCP sudo lsof -i  </description>
+    </item>
+    
+    <item>
+      <title>Linux Install Ab Httpd Tools</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-install-ab-httpd-tools.html</link>
+      <pubDate>Thu, 01 Mar 2018 17:30:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-install-ab-httpd-tools.html</guid>
+      <description> env 长城证券 压力测试 要安装 ab
+step 离线安装 下载
+ httpd-tools libapr-1.so.0 libaprutil-1.so.0  安装
+rpm -ivh *.rpm which ab  </description>
+    </item>
+    
+    <item>
+      <title>Linux Change Disklabel</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-change-disklabel.html</link>
+      <pubDate>Wed, 28 Feb 2018 23:01:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-change-disklabel.html</guid>
+      <description> parted 來手動改變硬碟為 GPT(或msdos等) [anaconda root@localhost /]# parted /dev/sda GUN Parted 2.1 Using /dev/sda Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands. (parted) mklabel New disk label type?gpt Warning: The existing disk label on /dev/sda will be destroyed and all data on this disk will be lost. Do you want to continue? Yes/No?Yes (parted) q Information: You may need to update /etc/fstab.  </description>
+    </item>
+    
+    <item>
+      <title>Route</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/route.html</link>
+      <pubDate>Fri, 23 Feb 2018 12:25:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/route.html</guid>
+      <description>env 192.168.31.181 上 加一条 wifi 192.168.33.0/24 的路由规则
+ref Linux下route add 命令加入路由列表
+step [root@check ~]# ip a 1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet 127.0.0.1/8 scope host lo valid_lft forever preferred_lft forever inet6 ::1/128 scope host valid_lft forever preferred_lft forever 2: em1: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP qlen 1000 link/ether 44:a8:42:2b:e5:e3 brd ff:ff:ff:ff:ff:ff inet 192.168.31.181/24 brd 192.168.31.255 scope global em1 valid_lft forever preferred_lft forever inet6 fe80::46a8:42ff:fe2b:e5e3/64 scope link valid_lft forever preferred_lft forever 3: em2: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP qlen 1000 link/ether 44:a8:42:2b:e5:e4 brd ff:ff:ff:ff:ff:ff inet 10.</description>
+    </item>
+    
+    <item>
+      <title>Mount</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/mount.html</link>
+      <pubDate>Thu, 22 Feb 2018 10:20:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/mount.html</guid>
+      <description>通过 shell root@ud-31-193:~# mkdir /mnt/31.10.share root@ud-31-193:~# mount -t cifs -o username=share,password=&amp;quot;&amp;quot; //192.168.31.10/share /mnt/31.10.share/ root@ud-31-193:~#  通过 auto.misc [jlch@check conf.d]$ sudo cat /etc/auto.misc [sudo] password for jlch: # # This is an automounter map and it has the following format # key [ -mount-options-separated-by-comma ] location # Details may be found in the autofs(5) manpage #cd	-fstype=iso9660,ro,nosuid,nodev	:/dev/cdrom #dbf -fstype=cifs,rw,username=administrator,password=jlch@2016 ://10.10.14.11/hq share -fstype=cifs,rw,username=share,password= ://192.168.31.10/share 31245share -fstype=cifs,rw,username=share,password=Jlch1234 ://192.168.31.245/share 319share -fstype=cifs,rw,username=user01,password=User01 ://192.168.31.9/DataVol2/ dbf -fstype=cifs,rw,username=administrator,password=jlch333 ://10.</description>
+    </item>
+    
+    <item>
+      <title>Perl Rpm Install Offline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/perl-rpm-install-offline.html</link>
+      <pubDate>Thu, 01 Feb 2018 20:11:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/perl-rpm-install-offline.html</guid>
+      <description>perl rpm install offline
+$ tar -xzf perl-5.x.y.tar.gz $ cd perl-5.x.y $ ./Configure -de $ make $ make test $ make install  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/delete-end-of-line-when-unix-format.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/delete-end-of-line-when-unix-format.html</guid>
+      <description>Linux下删除^M文件的方法 Unix系统里，每行结尾只有“&amp;lt;换行&amp;gt;”，即“\n”；Windows系统里面，每行结尾是“&amp;lt;换行&amp;gt;&amp;lt;回车&amp;gt;”，即“\n\r”；Mac系统里，每行结尾是“&amp;lt;回车&amp;gt;”。
+1. 问题描述： 在windows下写的文件上传到Linux服务器之后,文件中多出了很多^M符号
+2. 原因分析： Linux和windows的文本中，对换行方式处理不同：
+&#39;\n&#39; 10 换行（newline） &#39;\r&#39; 13 回车（return）  | 系统 | 换行方式 | |&amp;mdash;&amp;mdash;&amp;mdash;-|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-:| | Windows | 结尾是&amp;lt;换行&amp;gt;&amp;lt;回车&amp;gt;,即“\n\r”| |linux/unix | 结尾是&amp;lt;换行&amp;gt;,即 “\n” | | Mac | 结尾是&amp;lt;回车&amp;gt;,即“\r” |
+所以windows下的文件，在Linux中会有^M，即回车符号
+参考：回车符和换行符的区别
+3.解决办法： 解决办法主要以下几个方案：
+注意： ^M要用Ctrl+v，&amp;lt;回车&amp;gt;代替
+| 命令 |
+|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-| |1. vim 中使用替换命令：:%s/^M//g | |2. 使用sed:sed &#39;s/^M//&#39; filename &amp;gt; newfile | |3. 使用tr删除“\r”：tr -d &amp;quot;\r&amp;quot; filename | |4. 使用dos2unix命令：dos2unix filename | |5. 在vim下：:set ff = unix（把dos文件类型变为unix）|</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/https%E8%AE%A4%E8%AF%81%E9%80%BB%E8%BE%91.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/https%E8%AE%A4%E8%AF%81%E9%80%BB%E8%BE%91.html</guid>
+      <description>https认证逻辑 https://blog.csdn.net/duanbokan/article/details/50847612 写的很好
+HTTP：明文传输所有数据，数据容易被篡改（运营商流量劫持）
+HTTPS单向认证：最常见的HTTP认证方式，客户端只需要验证服务器传输的证书是否为CA认证中心签发的有效证书，通过后开始传输对等秘钥并使用对等秘钥加密数据
+HTTPS双向认证：客户端验证服务器的证书后发送自己的证书给服务器验证，两次验证通过后才传输对等秘钥，一般用于安全性要求较高的场景（银行、金融）</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-cp-exclude-dir-or-exclude-file.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-cp-exclude-dir-or-exclude-file.html</guid>
+      <description>在linux中，如果你想cp一个文件夹，但是，又不想cp此文件夹下的某些文件或某些文件夹，则请往下看。
+step 方法一：cp &amp;amp; ls &amp;amp; grep 此方法，最好，简单直接。主要就是依赖grep去除
+cd spacemacs-private/ &amp;amp;&amp;amp; cp -rf `ls -a . | grep -E -v &amp;quot;^(.|..|.git|.gitignore)$&amp;quot;` ../../../submodule/test/  方法二：cp &amp;amp; find 说明：/home目录里面有data目录，data目录里面有a、b、c、d、e五个目录，现在要把data目录里面除过e目录之外的所有目录拷贝到/bak目录中
+终端命令行下执行以下命令
+cp -R `find /home/data -type d -path /home/data/e -prune -o -print | sed 1d ` /bak  脚本实现 脚本存放路径/home/osyunwei.sh
+$ cat /home/osyunwei.sh #编辑脚本，添加下面的代码 #!/bin/sh cp -R `find /home/data -type d -path /home/data/e -prune -o -print | sed 1d ` /bak $ chmod +x /home/osyunwei.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux.html</guid>
+      <description> Linux </description>
+    </item>
+    
+  </channel>
+</rss>

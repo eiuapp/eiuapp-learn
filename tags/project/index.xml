@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/project.html</link>
+    <description>Recent content in project on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 01 Mar 2018 16:50:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Project Ok</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/project-ok.html</link>
+      <pubDate>Thu, 01 Mar 2018 16:50:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/project-ok.html</guid>
+      <description>project 必须有以下内容
+ 文件  需求文档 技术文档 开发文档 测试文档 验收文件
+ 图  流程图 脑图
+ 其它  trello git docker README 笔记</description>
+    </item>
+    
+  </channel>
+</rss>

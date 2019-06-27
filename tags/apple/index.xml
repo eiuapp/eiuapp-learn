@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apple on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/apple.html</link>
+    <description>Recent content in apple on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 Jun 2018 10:42:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apple Id Register Hongkong</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/apple/apple-id-register-hongkong.html</link>
+      <pubDate>Sun, 24 Jun 2018 10:42:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/apple/apple-id-register-hongkong.html</guid>
+      <description>因为苹果ios系统升级的原因，之前的注册香港苹果ID的方法不再有效。本教程介绍一种新的注册香港苹果ID的方法。
+Env  电脑 iphone 香港信用卡虚拟卡  适应人群：不想淘宝买，想拥有属于自己的香港苹果ID的伙伴；需要经常使用非大陆苹果ID下载或者更新相关软件的伙伴。
+注意事项：
+ 1）本教程中的手机端完善时需要科学上网，电脑端注册时最好也是科学上网，PC+手机都科学上网可以提高注册成功的概率。 2）本方法相对于以前稍微复杂一些，不一定100%能注册成功 3）本人在实操时，使用的是英文版。  Step 本教程分为三部分：
+ 注册拍住赏TAP&amp;amp;GO免费获得一张香港信用卡虚拟卡 电脑端注册账号 退出原有APPLE ID 手机端完善账号  注册拍住赏TAP&amp;amp;GO免费获得一张香港信用卡虚拟卡 直接参考这里
+电脑端注册账号（最好科学上网） 1，百度苹果官网，点击进入
+2，进入官网后
+3, 下滑到页面最底部，点击右下角【中国】
+4, 选择【HongKong】
+注意，这里必须点击英文Hong Kong, 而不是中文香港。
+5, 申请ID页面
+点击后，会有新页面，https://appleid.apple.com/#!&amp;amp;page=signin ，下滑到最下方，点击Create your Apple ID
+6，资料填写
+这时我们到了 https://appleid.apple.com/account#!&amp;amp;page=create
+7，输入邮箱收到的验证码
+8，输入上面验证码后，页面自动跳到登录页面，输入账号密码，如果能登录表示注册成功。
+退出原有APPLE ID 打开手机，设置 &amp;gt; Apple ID &amp;gt; 退出（sign out)
+手机端完善账号（需要科学上网） 1，手机设置中退出原来apple id之后，打开Apple Store，点击右侧蓝色头像
+2，输入自己在电脑端注册的账号和密码
+3, 点击【检查】
+4, 同意协议，点击下一页
+5，选取先生或者女士，点击下一页
+6，付款方式选择信用卡/记账卡，姓名可以随便编写，街道可以写女人街，电话可以输入默认的号码。当然，你还可以通过百度地图，进入香港，在地图中选择一个地址和电话（区号是852)。如果完之后，点击下一页。
+7，出现下图，表示大功告成，注册成功！
+确认 退出科学上网（只有退出了，才能证明哈），退出网络，连接网络。</description>
+    </item>
+    
+    <item>
+      <title>Macos Apple Id America</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/macos-apple-id-america.html</link>
+      <pubDate>Mon, 11 Jun 2018 20:02:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/macos-apple-id-america.html</guid>
+      <description> 申请美国apple id
+Env  os: macOS cloud: aws  Step Ref  https://zhuanlan.zhihu.com/p/36574047 https://www.zhihu.com/question/20422874/answer/413390698 https://blog.csdn.net/amoscn/article/details/79364599 https://zhuanlan.zhihu.com/p/33150135  </description>
+    </item>
+    
+  </channel>
+</rss>

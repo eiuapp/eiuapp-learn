@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gcc on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/gcc.html</link>
+    <description>Recent content in gcc on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 17:29:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/gcc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gcc Rpm Install Offline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/gcc-rpm-install-offline.html</link>
+      <pubDate>Fri, 02 Mar 2018 17:29:20 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/gcc-rpm-install-offline.html</guid>
+      <description>gcc rpm 安装包下载
+安装gcc, 下载
+[root@localhost jlch]# rpm -ivh gcc-4.8.5-16.el7_4.1.x86_64.rpm warning: gcc-4.8.5-16.el7_4.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY error: Failed dependencies: cpp = 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 glibc-devel &amp;gt;= 2.2.90-12 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libgcc &amp;gt;= 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libgomp = 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libmpc.so.3()(64bit) is needed by gcc-4.8.5-16.el7_4.1.x86_64 libmpfr.so.4()(64bit) is needed by gcc-4.8.5-16.el7_4.1.x86_64 [root@localhost jlch]#  所有的下载地址如下:
+http://mirror.centos.org/centos/7/os/x86_64/Packages/libgcc-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/gcc-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/cpp-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/glibc-devel-2.17-196.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/libgomp-4.8.5-16.el7.x86_64.rpm http://mirror.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zsh on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/zsh.html</link>
+    <description>Recent content in zsh on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/zsh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/zsh/use-HOME-not-use-bolanghao-in-zshrc.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/zsh/use-HOME-not-use-bolanghao-in-zshrc.html</guid>
+      <description>在 编写 ~/.zshrc 的过程中，请不要使用 ~而改为使用 $HOME。
+请直接看下面示例：
+➜ ~ git:(master) ✗ tail -25 ~/.zshrc if [ -f &amp;quot;$HOME/.zshrc.local&amp;quot; ]; then echo &amp;quot;hello&amp;quot; else echo &amp;quot;no .zshrc.local&amp;quot; fi if [ -f &amp;quot;~/.zshrc.local&amp;quot; ]; then echo &amp;quot;hello &amp;quot; else echo &amp;quot;no .zshrc.local&amp;quot; fi echo `pwd` ➜ ~ git:(master) ✗ source ~/.zshrc hello no .zshrc.local /home/ubuntu ➜ ~ git:(master) ✗  使用 $HOME，正确。使用 ~，出错。</description>
+    </item>
+    
+  </channel>
+</rss>

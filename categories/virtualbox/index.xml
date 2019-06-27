@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtualbox on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/virtualbox.html</link>
+    <description>Recent content in virtualbox on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 03 Aug 2018 23:10:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu Share File to Virtulbox Win7</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/ubuntu-share-file-to-virtulbox-win7.html</link>
+      <pubDate>Fri, 03 Aug 2018 23:10:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/ubuntu-share-file-to-virtulbox-win7.html</guid>
+      <description> Env  宿主机: ubuntu desktop 16 虚拟机软件: virtualbox 虚拟机: win7  Step 思路1 因为虚拟机是win7,那就直接通过 ubuntu如何访问windows共享文件夹 完成就可以了。
+思路2  https://www.linuxidc.com/Linux/2012-11/74195p3.htm http://xylonwang.iteye.com/blog/2221475  上面的方法，尝试，没有成功。
+Ref  https://www.linuxidc.com/Linux/2012-11/74195p3.htm http://xylonwang.iteye.com/blog/2221475  </description>
+    </item>
+    
+    <item>
+      <title>Virtualbox Share Pasteboard</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-share-pasteboard.html</link>
+      <pubDate>Thu, 24 May 2018 11:37:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-share-pasteboard.html</guid>
+      <description> virtubox 共享剪切板
+env  host: win10 vbox-os: ubuntu18-desktop  step M1, OK 等我们启动虚拟机进入虚拟机后，在虚拟机的运行框的功能栏部分，如图所示点击设备，然后分别可以配置共享粘贴板和拖拽选项，也是可以配置功能的执行方向
+M2, not OK 我们可以在不启动虚拟机实例的进行设置，先鼠标左键点击选择一个创建好的实例，然后点击功能栏的设置图标，进入到设置的总体页面中,然后我们选择常规选项中的高级一栏，鼠标左键点击进入，我们可以看到有共享粘贴板和拖放两个配置项，其中每一个都可以进行单独设置，如图所示，分别可以设置从虚拟机到物理机，或者相反操作，或者双向操作，这里一般推荐设置双向操作，这样我们的虚拟机和物理机就可以无障碍的进行交互了
+ref  https://jingyan.baidu.com/article/4dc40848645918c8d846f14b.html  </description>
+    </item>
+    
+    <item>
+      <title>Virtualbox Share File</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-share-file.html</link>
+      <pubDate>Thu, 24 May 2018 11:35:21 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-share-file.html</guid>
+      <description> Virtualbox Ubuntu 共享文件夹（通过mount方式）
+env  host: win10 vbox-os: ubuntu18-desktop  step  win10  ref  分享Virtualbox Ubuntu 共享文件夹、自动挂载的一些问题  </description>
+    </item>
+    
+    <item>
+      <title>Virtualbox Install Ubuntu Desktop</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-install-ubuntu-desktop.html</link>
+      <pubDate>Thu, 01 Mar 2018 22:47:20 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-install-ubuntu-desktop.html</guid>
+      <description>在 ubuntu desktop 下安装virtualbox
+env 在 ubuntu desktop(硬盘9)中安装 virtualbox 总是不能启动
+step tom@ud-3-1:~$ which VirtualBox /usr/bin/VirtualBox  看一下启动文件
+tom@ud-3-1:~$ ll /usr/bin/VirtualBox lrwxrwxrwx 1 root root 4 3月 16 2017 /usr/bin/VirtualBox -&amp;gt; VBox* tom@ud-3-1:~$ ll /usr/bin/VBox -rwxr-xr-x 1 root root 4589 3月 16 2017 /usr/bin/VBox* tom@ud-3-1:~$ VirtualBox WARNING: The vboxdrv kernel module is not loaded. Either there is no module available for the current kernel (4.10.0-28-generic) or it failed to load. Please recompile the kernel module and install it by sudo /sbin/vboxconfig You will not be able to start VMs until this problem is fixed.</description>
+    </item>
+    
+    <item>
+      <title>virtualbox加载新的image</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-add-vbox.html</link>
+      <pubDate>Wed, 31 Jan 2018 12:26:38 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-add-vbox.html</guid>
+      <description>把 从其它地方复制过来的virtualbox 文件, 转移到此机器.
+env 把 harbor 转移
+step virtualbox/file/add, choose *.vbox
+发现当文件很大时, virtualbox所有的资源都给它了, 基本上就不能动了.
+从这里看出来, 在生产环境下, 不能使用 virtualbox 这样的形式, 一旦有了类似这样的占用cpu的操作, 其它机器都卡死了.</description>
+    </item>
+    
+  </channel>
+</rss>

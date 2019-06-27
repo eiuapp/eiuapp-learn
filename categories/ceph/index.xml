@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ceph on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/ceph.html</link>
+    <description>Recent content in ceph on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 30 Nov 2018 17:34:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/ceph/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ceph 安装，基于ubuntu, intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-intro.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:34:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-intro.html</guid>
+      <description>Contents:
+ README Preflight Storage Cluster Quick Start Block Device Quick Start Filesystem Quick Start Object Storage Quick Start  </description>
+    </item>
+    
+    <item>
+      <title>ceph 安装，基于ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:26:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu.html</guid>
+      <description>本次安装，完全按照 官方文档 进行。
+env 192.168.31.115 cephadmin 这个是admin节点 192.168.31.114 mon1 192.168.31.113 cephfsn2 192.168.31.173 cephfsn3  step 1 这里的配置注意点如下：
+ceph-admin 节点： 安装时， with a stable Ceph release (e.g., luminous.) ，安装 luminous 或以上版本。
+cephu@cephadmin:~/my-cluster$ sudo cat /etc/apt/sources.list.d/ceph.list deb https://download.ceph.com/debian-luminous/ xenial main cephu@cephadmin:~/my-cluster$  配置 ~/.ssh/config 方便后续安装
+cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config Host node0 Hostname cephadmin User cephu Host node1 Hostname mon1 User cephu Host node2 Hostname cephfsn2 User cephu Host node3 Hostname cephfsn3 User cephu cephu@cephadmin:~/my-cluster$  所有节点： cephu@cephadmin:~/my-cluster$ cat /etc/hosts 127.</description>
+    </item>
+    
+    <item>
+      <title>ceph 安装 intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-intro.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:13:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-intro.html</guid>
+      <description>Contents:
+ install-by-docker install.FAQ install-by-ubuntu/index  </description>
+    </item>
+    
+    <item>
+      <title>ceph intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-intro.html</link>
+      <pubDate>Fri, 30 Nov 2018 09:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-intro.html</guid>
+      <description>Contents:
+ cephfs/index install  </description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu READM</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-readme.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:37:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-readme.html</guid>
+      <description>本次安装，完全按照 官方文档 http://docs.ceph.com/docs/master/start/ 进行。
+env 192.168.31.115 cephadmin # 这个是admin节点 192.168.31.114 mon1 # 存储节点 192.168.31.113 cephfsn2 # 存储节点 192.168.31.173 cephfsn3 # 存储节点 192.168.31.172 ceph-client # 客户端节点  上面这几个，可以全部写进 /etc/hosts 中。且各节点的 hostname 必须对应相同（否则安装容易出错）。</description>
+    </item>
+    
+    <item>
+      <title>ceph安装，基于docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-docker.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:15:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-docker.html</guid>
+      <description>https://github.com/ceph/ceph-docker
+m1 http://ceph.com/planet/%E5%9F%BA%E4%BA%8Edocker%E9%83%A8%E7%BD%B2ceph%E4%BB%A5%E5%8F%8A%E4%BF%AE%E6%94%B9docker-image/
+http://www.sebastien-han.fr/blog/2015/06/23/bootstrap-your-ceph-cluster-in-docker/
+http://www.topjishu.com/10455.html
+http://ceph.com/planet/%E5%9F%BA%E4%BA%8Edocker-ui-%E9%85%8D%E7%BD%AEceph%E9%9B%86%E7%BE%A4/
+m2 http://www.dockerinfo.net/445.html
+m3 http://www.jianshu.com/p/f08ed7287416</description>
+    </item>
+    
+    <item>
+      <title>cephfs 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/cephfs-install.html</link>
+      <pubDate>Fri, 30 Nov 2018 09:36:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/cephfs-install.html</guid>
+      <description> 环境： 192.168.31.115 192.168.31.114 192.168.31.113  line1 官网, 成功安装 我的安装设计是这样的：
+admin-node, deploy-node(ceph-deploy)：192.168.31.115 cephfs5 mon.0: 192.168.31.114 cephfs4 osd.0: 192.168.31.113 cephfs3 osd.1: 192.168.31.115 cephfs5 mds.0: 192.168.31.113 cephfs3 mds.1: 192.168.31.114 cephfs4  还是要结合一下 https://linux.cn/article-8182-1.html
+line2 http://tonybai.com/2017/05/08/mount-cephfs-acrossing-nodes-in-kubernetes-cluster/
+over </description>
+    </item>
+    
+    <item>
+      <title>ceph安装FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-faq.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:19:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-faq.html</guid>
+      <description>Q1 ceph-deploy install ceph-admin ceph-osd1 ceph-osd2 mon1 ... [ceph-osd1][DEBUG ] Get:40 https://download.ceph.com/debian-jewel xenial/main amd64 python-rbd amd64 10.2.10-1xenial [1,449 kB] [ceph-osd1][DEBUG ] Get:41 https://download.ceph.com/debian-jewel xenial/main amd64 ceph-common amd64 10.2.10-1xenial [15.5 MB] [ceph-osd1][DEBUG ] Get:42 https://download.ceph.com/debian-jewel xenial/main amd64 ceph-base amd64 10.2.10-1xenial [50.5 MB] [ceph-osd1][WARNIN] No data was received after 300 seconds, disconnecting... [ceph-osd1][INFO ] Running command: sudo ceph --version [ceph-osd1][ERROR ] Traceback (most recent call last): [ceph-osd1][ERROR ] File &amp;quot;/usr/lib/python2.7/dist-packages/ceph_deploy/lib/vendor/remoto/process.py&amp;quot;, line 119, in run [ceph-osd1][ERROR ] reporting(conn, result, timeout) [ceph-osd1][ERROR ] File &amp;quot;/usr/lib/python2.</description>
+    </item>
+    
+    <item>
+      <title>ceph auth</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-auth.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:10:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-auth.html</guid>
+      <description>cephu@cephadmin:~/my-cluster$ ceph auth ls installed auth entries: mds.node1 key: AQADpu5ZJgEAAhAA6Om+UrlNn3s4v728UGIuTQ== caps: [mds] allow caps: [mon] allow profile mds caps: [osd] allow rwx osd.0 key: AQCAou5ZbAFBCRAANHUYj3trYJm+bbpzM68Czw== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * osd.1 key: AQCNou5Z0AEiChAAoXaQS1KsqnygVzIdK4LeBQ== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * osd.2 key: AQCaou5ZckceFxAArxSTMrgL94Pe9wGqhT2tGA== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * client.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu quick-start-preflight</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-quick-start-preflight.html</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-quick-start-preflight.html</guid>
+      <description>这里的配置注意点如下：
+ceph-admin 节点： 安装时， with a stable Ceph release (e.g., luminous.) ，安装 luminous 或以上版本。
+cephu@cephadmin:~/my-cluster$ sudo cat /etc/apt/sources.list.d/ceph.list deb https://download.ceph.com/debian-luminous/ xenial main cephu@cephadmin:~/my-cluster$  配置 ~/.ssh/config 方便后续安装
+cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config Host node0 Hostname cephadmin User cephu Host node1 Hostname mon1 User cephu Host node2 Hostname cephfsn2 User cephu Host node3 Hostname cephfsn3 User cephu cephu@cephadmin:~/my-cluster$  这里，我后来想了一下，应该把这个地方，修改成 全用 node0, node1, node2, node3, 然后，各节点的　Hostname 也修改成这些，这样子才是真的方便安装。如下：
+cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config Host node0 Hostname node0 User cephu Host node1 Hostname node1 User cephu Host node2 Hostname node2 User cephu Host node3 Hostname node3 User cephu cephu@cephadmin:~/my-cluster$  存储节点： cephu@cephadmin:~/my-cluster$ cat /etc/hosts 127.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Storage Cluster Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-storage-cluster-quick-start.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:51:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-storage-cluster-quick-start.html</guid>
+      <description>2.1 Create the cluster.
+ ceph-deploy new node1 不生效的，要写成 ceph-deploy new mon1
+ cephu@cephadmin:~/my-cluster$ ceph-deploy new mon1  2.2 - 2.3
+cephu@cephadmin:~/my-cluster$ cat ~/my-cluster/ceph.conf [global] fsid = d0aa5af1-4f8e-4953-9448-7f1b2448b8a5 mon_initial_members = mon1 mon_host = 192.168.31.114 auth_cluster_required = cephx auth_service_required = cephx auth_client_required = cephx public network = 192.168.31.1/24 ms bind ipv6 = true cephu@cephadmin:~/my-cluster$  2.4
+cephu@cephadmin:~/my-cluster$ ceph-deploy install node1 node2 node3  2.5
+cephu@cephadmin:~/my-cluster$ ceph-deploy mon create-initial  报错，然后，经过 农总在 https://my.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Filesystem Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-filesystem-quick-start.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:55:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-filesystem-quick-start.html</guid>
+      <description>http://docs.ceph.com/docs/master/start/quick-cephfs/
+PREREQUISITES admin 节点：
+ceph -s  看一下，是不是都正常。 这里是看不到 mds 的，要看，要去 moniter 节点
+moniter 节点： 我们环境的是 192.168.31.114
+cephu@mon1:~$ ps -ef | grep ceph root 7541 7227 0 Oct23 pts/0 00:00:00 su - cephu cephu 7542 7541 0 Oct23 pts/0 00:00:00 -su cephu 20793 7542 0 12:39 pts/0 00:00:00 ps -ef cephu 20794 7542 0 12:39 pts/0 00:00:00 grep --color=auto ceph ceph 21275 1 0 Oct23 ? 00:07:50 /usr/bin/ceph-mon -f --cluster ceph --id mon1 --setuser ceph --setgroup ceph ceph 22756 1 0 Oct24 ?</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Block Device Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-block-device-quick-start.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:27:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-block-device-quick-start.html</guid>
+      <description>env 192.168.31.172 ceph-client
+修改 hostname 为 ceph-client
+INSTALL CEPH admin 节点：
+ceph-deploy install ceph-client ceph-deploy admin ceph-client  ceph-client 节点：
+sudo chmod +r /etc/ceph/ceph.client.admin.keyring  CREATE A BLOCK DEVICE POOL admin 节点：
+原来在 admin 节点，是没有这个 rbd 命令的。
+要通过 sudo apt install ceph-common 之后，才会有。所以先运行一下。
+cephu@cephadmin:~/my-cluster$ sudo apt install ceph-common -y cephu@cephadmin:~/my-cluster$ rbd pool init jlch 2017-10-24 15:57:45.951917 7fde4fa6e0c0 -1 auth: unable to find a keyring on /etc/ceph/ceph.client.admin.keyring,/etc/ceph/ceph.keyring,/etc/ceph/keyring,/etc/ceph/keyring.bin,: (2) No such file or directory 2017-10-24 15:57:45.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Object Storage Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-object-storage-quick-start.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:29:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-object-storage-quick-start.html</guid>
+      <description>INSTALLING CEPH OBJECT GATEWAY ceph-client：
+cephu@ceph-client:~$ sudo ufw allow 7480 Rule added Rule added (v6) cephu@ceph-client:~$ sudo ufw status Status: active To Action From -- ------ ---- 22 ALLOW Anywhere 7480 ALLOW Anywhere 22 (v6) ALLOW Anywhere (v6) 7480 (v6) ALLOW Anywhere (v6) cephu@ceph-client:~$  ceph-admin:
+cephu@cephadmin:~/my-cluster$ ping ceph-client PING ceph-client (192.168.31.172) 56(84) bytes of data. 64 bytes from ceph-client (192.168.31.172): icmp_seq=1 ttl=64 time=0.558 ms ^C --- ceph-client ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.</description>
+    </item>
+    
+  </channel>
+</rss>

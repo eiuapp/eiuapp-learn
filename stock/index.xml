@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stock on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/stock.html</link>
+    <description>Recent content in stock on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/stock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>量化小学Lecture4的笔记</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/jaqs-lecture4.html</link>
+      <pubDate>Wed, 17 Oct 2018 09:18:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/jaqs-lecture4.html</guid>
+      <description>Env  os: mac  Step 尝试用python做个股票绘图软件，要用到 finance 库，于是开始导入：
+import matplotlib.finance as mpf  结果执行的时候直接报错：
+ModuleNotFoundError: No module named &#39;matplotlib.finance&#39;  那么我们可以到 ipython 环境中去测试一下。
+➜ ~ ipython Python 3.7.0 (default, Jun 28 2018, 07:39:16) Type &#39;copyright&#39;, &#39;credits&#39; or &#39;license&#39; for more information IPython 6.5.0 -- An enhanced Interactive Python. Type &#39;?&#39; for help. In [1]: from matplotlib.finance import candlestick_ohlc --------------------------------------------------------------------------- ModuleNotFoundError Traceback (most recent call last) &amp;lt;ipython-input-1-7ea83a59eaf3&amp;gt; in &amp;lt;module&amp;gt;() ----&amp;gt; 1 from matplotlib.</description>
+    </item>
+    
+    <item>
+      <title>Stock Iwencai Crawler</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/stock-iwencai-crawler.html</link>
+      <pubDate>Fri, 09 Mar 2018 11:22:53 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/stock-iwencai-crawler.html</guid>
+      <description> iwencai爬虫
+以下这几个, 记得回来, 找时间 coding
+github  https://github.com/GraySilver/wencai-master https://github.com/zhangzheng88/iwencai_spider https://github.com/wuxiaoxiaoshen/WenCai https://github.com/HiddenStrawberry/iWencai  自写  base headless-chrome-crawler  这个部分的示例代码,请看 仓库
+ crawler, 这个是失败的, 不用再试了  </description>
+    </item>
+    
+    <item>
+      <title>Stock Iwencai</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/stock-iwencai.html</link>
+      <pubDate>Thu, 08 Mar 2018 16:43:27 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/stock-iwencai.html</guid>
+      <description>搜索股票 env 搜索 &amp;ldquo;昨日涨停,今天涨幅&amp;gt;5%&amp;ldquo;的股票
+https://www.iwencai.com/stockpick/search?querytype=stock&amp;amp;tid=stockpick&amp;amp;w=&amp;quot;量价巨增，底部吸筹&amp;quot;
+step 准备URL  方法1  打开url解码工具
+昨日涨停,今天涨幅&amp;gt;5%  放到左边, 点击解码,得到
+%e6%98%a8%e6%97%a5%e6%b6%a8%e5%81%9c%2c%e4%bb%8a%e5%a4%a9%e6%b6%a8%e5%b9%85%3e5%25  把刚刚得到的结果, 替换到下面w后面的位置
+https://www.iwencai.com/stockpick/load-data?typed=0&amp;amp;preParams=&amp;amp;ts=1&amp;amp;f=1&amp;amp;qs=result_original&amp;amp;selfsectsn=&amp;amp;querytype=stock&amp;amp;searchfilter=&amp;amp;tid=stockpick&amp;amp;w=%E9%87%8F%E4%BB%B7%E5%B7%A8%E5%A2%9E%EF%BC%8C%E5%BA%95%E9%83%A8%E5%90%B8%E7%AD%B9&amp;amp;queryarea=  成
+https://www.iwencai.com/stockpick/load-data?typed=0&amp;amp;preParams=&amp;amp;ts=1&amp;amp;f=1&amp;amp;qs=result_original&amp;amp;selfsectsn=&amp;amp;querytype=stock&amp;amp;searchfilter=&amp;amp;tid=stockpick&amp;amp;w=%e6%98%a8%e6%97%a5%e6%b6%a8%e5%81%9c%2c%20%e4%bb%8a%e5%a4%a9%e6%b6%a8%e5%b9%85%3e5%25&amp;amp;queryarea=   方法2  把搜索条件 替换到下面w后面的位置
+https://www.iwencai.com/stockpick/load-data?typed=0&amp;amp;preParams=&amp;amp;ts=1&amp;amp;f=1&amp;amp;qs=result_original&amp;amp;selfsectsn=&amp;amp;querytype=stock&amp;amp;searchfilter=&amp;amp;tid=stockpick&amp;amp;w=%E9%87%8F%E4%BB%B7%E5%B7%A8%E5%A2%9E%EF%BC%8C%E5%BA%95%E9%83%A8%E5%90%B8%E7%AD%B9&amp;amp;queryarea=  成
+https://www.iwencai.com/stockpick/load-data?typed=0&amp;amp;preParams=&amp;amp;ts=1&amp;amp;f=1&amp;amp;qs=result_original&amp;amp;selfsectsn=&amp;amp;querytype=stock&amp;amp;searchfilter=&amp;amp;tid=stockpick&amp;amp;w=昨日涨停,今天涨幅&amp;gt;5%&amp;amp;queryarea=  得到股票  浏览器  然后, 打开刚刚得到的 url, 就能得到我们想要的股票了
+ curl  没成功
+➜ src git:(master) ✗ curl -sL https://www.iwencai.com/stockpick/load-data\?typed\=0\&amp;amp;preParams\=\&amp;amp;ts\=1\&amp;amp;f\=1\&amp;amp;qs\=result_original\&amp;amp;selfsectsn\=\&amp;amp;querytype\=stock\&amp;amp;searchfilter\=\&amp;amp;tid\=stockpick\&amp;amp;w\=昨日涨停,今天涨幅\&amp;gt;5%\&amp;amp;queryarea\= &amp;lt;html&amp;gt;&amp;lt;body&amp;gt; &amp;lt;script src=&amp;quot;//s.thsi.cn/js/chameleon/chameleon.min.1520561.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script language=&amp;quot;javascript&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt; window.location.href=&amp;quot;http://www.iwencai.com/stockpick/load-data?typed=0&amp;amp;preParams=&amp;amp;ts=1&amp;amp;f=1&amp;amp;qs=result_original&amp;amp;selfsectsn=&amp;amp;querytype=stock&amp;amp;searchfilter=&amp;amp;tid=stockpick&amp;amp;w=昨日涨停,今天涨幅&amp;gt;5%&amp;amp;queryarea=&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; ➜ src git:(master) ✗   crawler  这个部分见, stock-iwencai-crawler.</description>
+    </item>
+    
+    <item>
+      <title>Hedge Fund</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/hedge-fund.html</link>
+      <pubDate>Wed, 07 Mar 2018 10:48:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/hedge-fund.html</guid>
+      <description>Steve Cohen http://blog.sina.com.cn/s/blog_51fc34e90102wgw5.html
+https://www.zhihu.com/question/27100014
+https://wallstreetcn.com/articles/308468</description>
+    </item>
+    
+    <item>
+      <title>Stock Trade Discipline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/stock-trade-discipline.html</link>
+      <pubDate>Wed, 07 Feb 2018 10:15:52 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/stock-trade-discipline.html</guid>
+      <description> 不接飞刀 不买下跌股票 严格止损 盘前必读
+ 敬畏市场. 坚持被动交易, 定式交易,永远把保住本金放在第一位 计划交易. 每天写复盘日记,静态阅读市场.每个买卖决定对照交易模型审视确定,并排写计划表 交易计划. 盘前15分钟检查软硬件和盈损点.盘中不许临时起意,挂单撤单不犹豫.尽量使用隔夜挂单 加强保障. 生活节律,保证专注度   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/stock.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/stock.html</guid>
+      <description>stock</description>
+    </item>
+    
+  </channel>
+</rss>

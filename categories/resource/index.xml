@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resource on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/resource.html</link>
+    <description>Recent content in resource on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 04 Feb 2018 21:59:07 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/resource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/resource.html</link>
+      <pubDate>Sun, 04 Feb 2018 21:59:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/resource.html</guid>
+      <description>综合  21运维
+ 程序员在线工具, 这个比较叼了, 好多有用的工具
+ RedHat Developers
+ 发现用MkDocs来写教程也还挺爽的,还真心不错,示例有TDD开发容器化的Python微服务应用
+ 用OpenSWAN做Linux下的IPSec VPN的详细配置指南
+ filebeat + logstash + kafka + logstash + kibana + grafana 支持异地多机房, 来源 k8s技术圈的紫木
+ helm 完成 dashboard 点击安装应用APP, 如 点击安装 redis, mysql等
+ gitops, jenkins, rancher, GoCD, 完成基于kubernetes的CI/CD框架
+ 讨论群 gitter, 好处, 不需要wechat或者facebook
+ 脚本之家book
+ 清华大学开源软件镜像站
+ github-format-syntax
+ GitLab Flavored Markdown (GFM)
+ 真正的inotify+rsync实时同步 彻底告别同步慢
+ jpg to png
+  api  apiview</description>
+    </item>
+    
+  </channel>
+</rss>

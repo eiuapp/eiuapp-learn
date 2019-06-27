@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>search on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/search.html</link>
+    <description>Recent content in search on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 15 Nov 2018 11:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spacemacs Rocks Day 5, Find, Search and replace</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-5-notes.html</link>
+      <pubDate>Thu, 15 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-5-notes.html</guid>
+      <description>Evil search  Use / and * to start search. Use n &amp;amp; N to search forward and backward  进入 iedit 批量修改  * e
+ 修改的时候，按S则删除原单词，修改完成后，按ESC，2次，退出iedit模式回到Normal模式。
+选择匹配范围。 多次按 r 切换匹配区域（当前buffer, 当前屏幕，当前函数）
+ * r
+ 按 e 进入编辑模式，按 f 进入函数区域，按S开始修改。
+清除搜索下的高亮：evil-search-clear-highlight  SPC s c
+ Swiper  C-s to start search.  搜索到结果后，C-j, C-k, C-n, C-p 可以跳转
+ C-c C-o to enter ivy-occur  可以把当前的搜索项，罗列在另一个buffer中。
+Helm-swoop SPC s s/S to search search C-c C-e to enter edit mode SPC h l(helm-resume)</description>
+    </item>
+    
+  </channel>
+</rss>

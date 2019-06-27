@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>file on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/file.html</link>
+    <description>Recent content in file on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/file/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac下为什么有的文件名后带一个*星号</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-file-name-end-with-asterisk.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-file-name-end-with-asterisk.html</guid>
+      <description> Mac下为什么有的文件名后带一个*星号？ 这个*号仅仅是ls命令显示的，表示有可执行权限，实际文件名不带*号。
+$ ls -F  可执行文件名后就会加*号。
+显示一个或多个文件的相关信息。 ls [options] [file-list]
+参数 默认情况下，ls按照文件名的字母顺序列出文件的信息，file-list可以是任意文件或目录 当file-list包含多个目录时，ls将显示目录的名称，不显示子目录和子文件 当file-list为普通文件时，ls则显示该文件的相关信息
+Ref  http://www.cnblogs.com/jackbo/p/7201885.html  </description>
+    </item>
+    
+    <item>
+      <title>在mac zsh下，ls只显示文件名</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-zsh-list-file-name-only.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-zsh-list-file-name-only.html</guid>
+      <description>ls只显示文件名
+$ ls -a1  </description>
+    </item>
+    
+  </channel>
+</rss>

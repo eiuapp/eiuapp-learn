@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/hugo.html</link>
+    <description>Recent content in hugo on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于 hugo, easy-hugo, ox-hugo, spacemacs 集成相关的问题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/easy-hugo-and-ox-hugo-qa.html</link>
+      <pubDate>Mon, 12 Nov 2018 10:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/easy-hugo-and-ox-hugo-qa.html</guid>
+      <description>ox-hugo，easy-hugo, spacemacs的集成 ox-hugo 写文档 这里，在写文档的时候，配置好就可以了,无需修改 spacemacs的配置。
+具体的配置，见 ox-hugo-example-2.org, aa.org, ox-hugo-example-1.org
+导出至easy-hugo的content/xxx文件夹中 这一步，可以被 auto-save 函数替换了。
+C-c C-e H H
+easy-hugo preview C-c e p
+用 easy-hugo preview 有时会因为缓存问题，而失真哟 当时有一个 pages/about.md 文件导致的失真。在右上角的Menu中始终存在。
+解决方式，清缓存。
+EXPORT_HUGO_SECTION 失效 当 content 下，没有pages文件夹时，在 *.org 的
+:EXPORT_HUGO_SECTION: pages  会失效，且，.md 文件会在 easy-hugo 的配置项 easy-hugo-postdir（我这里设置的是 content/posts/）下 .
+同时有 .org 和 .md 文件，.org 有效，.md 失效 当 content/posts/ 下同时有 .org 和 .md 文件，则 .org 文件有效，.md 失效</description>
+    </item>
+    
+    <item>
+      <title>使用hugo的jane主题时，categories 书写不规范</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-transmitter-from-beautifulhugo.html</link>
+      <pubDate>Thu, 04 Oct 2018 11:23:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-transmitter-from-beautifulhugo.html</guid>
+      <description>categories 不是列表 ➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo server Building sites … ERROR 2018/11/26 01:07:40 Error while rendering &amp;quot;page&amp;quot; in &amp;quot;posts/&amp;quot;: template: _default/single.html:11:5: executing &amp;quot;_default/single.html&amp;quot; at &amp;lt;partial &amp;quot;head.html&amp;quot; ...&amp;gt;: error calling partial: template: partials/head.html:28:16: executing &amp;quot;partials/head.html&amp;quot; at &amp;lt;index ($.Site.Data.a...&amp;gt;: error calling index: value has type []string; should be string ERROR 2018/11/26 01:07:40 Error while rendering &amp;quot;page&amp;quot; in &amp;quot;post/&amp;quot;: template: post/single.html:14:21: executing &amp;quot;content&amp;quot; at &amp;lt;.&amp;gt;: range can&#39;t iterate over cloud-native ERROR 2018/11/26 01:07:40 in .</description>
+    </item>
+    
+    <item>
+      <title>hugo-server-faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-server-faq.html</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-server-faq.html</guid>
+      <description> Error building site: EOF ➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo server Building sites … ERROR 2018/11/17 15:50:31 EOF for org/aaaa.org Total in 108 ms Error: Error building site: EOF ➜ tomtsang-rootsongjc-hugo git:(master) ✗  其实这个时候，查看一下 org/aaaa.org文件，没有内容，所以，删除了就可以 hugo server了的。
+➜ tomtsang-rootsongjc-hugo git:(master) ✗ cat content/org/aaaa.org #+TITLE: aaaa #+DATE: 2018-11-16T23:38:13+08:00 #+PUBLISHDATE: 2018-11-16T23:38:13+08:00 #+DRAFT: nil #+TAGS: nil, nil #+DESCRIPTION: Short description ➜ tomtsang-rootsongjc-hugo git:(master) ✗ rm -rf ./content/org ➜ tomtsang-rootsongjc-hugo git:(master) ✗  </description>
+    </item>
+    
+    <item>
+      <title>jane主题中安装百度统计</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-add-baidu-tongji.html</link>
+      <pubDate>Tue, 09 Oct 2018 10:10:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-jane-add-baidu-tongji.html</guid>
+      <description>获取百度统计代码 登陆百度统计/管理/自有网站/获取代码, 得到形如
+&amp;lt;script&amp;gt; var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;quot;script&amp;quot;); hm.src = &amp;quot;https://hm.baidu.com/hm.js?9dd8aaaaaaaaaaa7a8bde80b13fe8eaf&amp;quot;; var s = document.getElementsByTagName(&amp;quot;script&amp;quot;)[0]; s.parentNode.insertBefore(hm, s); })(); &amp;lt;/script&amp;gt;  我们要的就是 &amp;ldquo;https://hm.baidu.com/hm.js?9dd8aaaaaaaaaaa7a8bde80b13fe8eaf&amp;rdquo; 中的 9dd8aaaaaaaaaaa7a8bde80b13fe8eaf
+放入config.toml 文件中 [params] baidu_push = false # baidu push # 百度 baidu_analytics = &amp;quot;9dd8aaaaaaaaaaa7a8bde80b13fe8eaf&amp;quot; # Baidu Analytics baidu_verification = &amp;quot;&amp;quot; # Baidu Verification  代码安装检查 登陆百度统计/管理/自有网站/代码检查, 得到形如：
+ 页面代码安装状态：代码安装正确  表示已经加入了百度统计。</description>
+    </item>
+    
+    <item>
+      <title>shane sveller blog 笔记</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/shane-sveller-blog-about-ox-hugo.html</link>
+      <pubDate>Wed, 14 Nov 2018 23:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/shane-sveller-blog-about-ox-hugo.html</guid>
+      <description>notes Blogging with org-mode and ox-hugo 这篇文章，写得很好，主要讲了下面几点。
+ install Global settings and metadatad STARTUP: content AUTHOR: Shane Sveller HUGO_BASE_DIR: . HUGO_AUTO_SET_LASTMOD: t Creating posts Setup hugo project category and tag. Excluding/heading sub-headings from export（it’s a :noexport: tag） Automatic export on save Marking a post as a Draft Optional: Live reload without a separate shell tab Emacs Lisp Snippets  其中几个说明一下。
+Automatic export on save  * Footnotes * COMMENT Local Variables :ARCHIVE: # Local Variables: # eval: (add-hook &#39;after-save-hook #&#39;org-hugo-export-wim-to-md :append :local) # eval: (auto-fill-mode 1) # End:   其中，查一下函数（SPC h d f) 知道，要把 org-hugo-export-wim-to-md-after-save 修改成 org-hugo-export-wim-to-md。</description>
+    </item>
+    
+    <item>
+      <title>emacs下使用hugo写文档</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-emacs.html</link>
+      <pubDate>Mon, 12 Nov 2018 20:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-emacs.html</guid>
+      <description> emacs下使用hugo写文档, 主要有以下几种方式
+无论是写哪种文档，都建议使用easy-mode创建,管理文档
+写org文档 用ox-hugo写org文档 安装 使用 用org-mode写org文档 TODO 直接用easy-mode创建新的.org文档，header不正常 看了一下代码，好像是源码里写死，没有使用到 archetype/default.org文件呀。
+ 直接用easy-mode preview
+可以看到，
+TODO 避免删除后重新安装
+这样子的信息。
+  导出成markdown 发现写成org文档后，导出成markdown，会有content-table,这样，会有2个大纲，且，文章的时间不对。
+直接导出成html 这时，没有大纲。但是，其它都还正常。
+TODO Orgmode利用ox-pandoc导出成markdown Orgmode利用ox-pandoc导出hugo博客的workflow
+写markdown文档 用markdown-mode写markdown文档 </description>
+    </item>
+    
+    <item>
+      <title>quickly create a new draft post</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/ox-hugo-quickly-create-a-draft-post.html</link>
+      <pubDate>Mon, 12 Nov 2018 09:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/ox-hugo-quickly-create-a-draft-post.html</guid>
+      <description>Of course I’m using a handy capture template, as provided by the ox-hugo docs. This lets me type `C-c c h` to quickly create a new draft post.
+(with-eval-after-load &#39;org-capture (defun org-hugo-new-subtree-post-capture-template () &amp;quot;Returns `org-capture&#39; template string for new Hugo post. See `org-capture-templates&#39; for more information.&amp;quot; (let* ((title (read-from-minibuffer &amp;quot;Post Title: &amp;quot;)) ;Prompt to enter the post title (fname (org-hugo-slug title))) (mapconcat #&#39;identity `( ,(concat &amp;quot;* TODO &amp;quot; title) &amp;quot;:PROPERTIES:&amp;quot; ,(concat &amp;quot;:EXPORT_FILE_NAME: &amp;quot; fname) &amp;quot;:END:&amp;quot; &amp;quot;%?</description>
+    </item>
+    
+    <item>
+      <title>Hugo Install Base Win10</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-install-base-win10.html</link>
+      <pubDate>Wed, 11 Jul 2018 10:34:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-install-base-win10.html</guid>
+      <description> win10中安装hugo
+Env  os: win10 sh: bash  Step Chocolatey (Windows) If you are on a Windows machine and use Chocolatey for package management, you can install Hugo with the following one-liner:
+choco install hugo -confirm  安装之后，很重要的一步，是重启 git shell或者是cmd
+Ref  https://gohugo.io/getting-started/installing https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/  </description>
+    </item>
+    
+    <item>
+      <title>Hugo Gitment</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-gitment.html</link>
+      <pubDate>Wed, 04 Apr 2018 16:44:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-gitment.html</guid>
+      <description> Hugo 集成 Gitment 评论插件
+ref  Hugo 集成 Gitment 评论插件  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-build-hugobook-with-theme-hugo-material-docs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo-build-hugobook-with-theme-hugo-material-docs.html</guid>
+      <description>使用hugo的hugo-material-docs主题模板来构建书籍
+下载仓库 git clone https://github.com/skyao/learning-istio  创建文件夹 mkdir themes public node_modules _book  下载themes 这里应当使用skyao的修改后的themes
+# cd themes &amp;amp;&amp;amp; git clone https://github.com/digitalcraftsman/hugo-material-docs git clone https://github.com/skyao/hugo-material-docs themes/hugo-material-docs  增加内容  删除原content下内容 增加 _index.md, index.md 等内容   .gitignore hugo serve git 修改 rm -rf .git/ git init git remote add origin XXXXXXXXXXXXX git add -A git commit -m &amp;quot;init&amp;quot; git push origin master  .travis.yml 利用Travis CI和Hugo將Blog自動部署到Github Pages
+思路 https://zyfdegh.github.io/post/201705-how-i-setup-hugo/ https://blog.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/hugo/hugo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/hugo/hugo.html</guid>
+      <description>hugo</description>
+    </item>
+    
+  </channel>
+</rss>

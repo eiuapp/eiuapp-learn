@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yum on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/yum.html</link>
+    <description>Recent content in yum on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:46:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/yum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centos Yum</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-yum.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:46:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-yum.html</guid>
+      <description>centos系列之yum
+yum安装的软件在哪? linux下如何查看某个软件 是否安装？安装路径在哪? linux下如何查看某个软件 是否安装？安装路径在哪
+使用sudo rpm -qa来查看通过 yum安装的软件
+[tom@kube-node-11 ~]$ sudo rpm -qa | grep Maria MariaDB-client-10.1.19-1.el7.centos.x86_64 MariaDB-common-10.1.19-1.el7.centos.x86_64 MariaDB-Galera-server-10.0.28-1.el7.centos.x86_64 MariaDB-shared-10.1.19-1.el7.centos.x86_64  linux 通过 yum search 得到，在当前情况下，能安装哪些软件，哪些软件安装不了。 如下面 这个地方，显示 MariaDB-Galera-server 找不到。
+[cdn@test_240 ~]$ sudo yum install MariaDB-Galera-server MariaDB-client galera -y Loaded plugins: fastestmirror, langpacks Loading mirror speeds from cached hostfile * base: mirrors.cn99.com * extras: mirrors.cn99.com * updates: mirrors.cn99.com No package MariaDB-Galera-server available. Package MariaDB-client-10.1.19-1.el7.centos.x86_64 already installed and latest version Package galera-25.</description>
+    </item>
+    
+  </channel>
+</rss>

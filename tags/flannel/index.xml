@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flannel on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/flannel.html</link>
+    <description>Recent content in flannel on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 16:53:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/flannel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>flannel网络模式下ping出错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</link>
+      <pubDate>Sun, 25 Nov 2018 16:53:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</guid>
+      <description>Environment 所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  问题 网络出了问题了，ping 不了 kn1, kn2 中的pod的IP
+解决 https://github.com/coreos/flannel/blob/476abd9ef37e7111a1268c41afbd7154046b492a/Documentation/troubleshooting.md#firewalls
+root@km:~# k get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE default cephfs-provisioner-cff8d95c-6tgcs 1/1 Running 2 11d 10.244.1.90 kn1 default mysql-0 2/2 Running 2 22h 10.244.1.87 kn1 default mysql-1 2/2 Running 0 22h 10.244.2.243 kn2 default mysql-2 2/2 Running 2 22h 10.</description>
+    </item>
+    
+  </channel>
+</rss>

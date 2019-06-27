@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tour on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/tour.html</link>
+    <description>Recent content in tour on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 21 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/tour/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>go-tour-zh离线安装(本地安装)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/go-tour-zh-local-install.html</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/go-tour-zh-local-install.html</guid>
+      <description>中文文档 最近尝试学习golang，在某个网站（真忘了）上发现gotour是一款灰常叼的教程&amp;amp;指南，之后搜索发现有前辈给出了本地安装离线gotour的方法，但实际安装过程中发现一些问题：
+1.通过go get bitbucket.org/mikespook/go-tour-zh/gotour 命令安装时报错，提示missing Mercurial command，原来是先需要安装Mercurial；
+➜ bitbucket git:(master) ✗ go get bitbucket.org/mikespook/go-tour-zh/gotour go: missing Mercurial command. See https://golang.org/s/gogetcmd package bitbucket.org/mikespook/go-tour-zh/gotour: exec: &amp;quot;hg&amp;quot;: executable file not found in $PATH ➜ bitbucket git:(master) ✗ brew install mercurial Updating Homebrew... ==&amp;gt; Downloading https://homebrew.bintray.com/bottles/mercurial-4.8.mojave.bottle.tar.gz ######################################################################## 100.0% ==&amp;gt; Pouring mercurial-4.8.mojave.bottle.tar.gz ==&amp;gt; Caveats Bash completion has been installed to: /usr/local/etc/bash_completion.d zsh completions have been installed to: /usr/local/share/zsh/site-functions ==&amp;gt; Summary 🍺 /usr/local/Cellar/mercurial/4.8: 618 files, 9.</description>
+    </item>
+    
+  </channel>
+</rss>

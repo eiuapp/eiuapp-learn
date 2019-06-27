@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yaml on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/yaml.html</link>
+    <description>Recent content in yaml on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 17:47:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>k8s 中 cephfs 成功的 yaml 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-yaml.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:47:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-yaml.html</guid>
+      <description>https://github.com/kubernetes-incubator/external-storage/tree/master/ceph/cephfs
+对 我们好不容易成功安装的 k8s-cephfs 进行一个记录呀！
+环境 k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 cephfs-admin 192.168.31.115 cephfs-monitor 192.168.31.114 cephfs-client 192.168.31.172  git remote jlch@km:~/cephfs$ git remote -v origin https://github.com/kubernetes-incubator/external-storage (fetch) origin https://github.com/kubernetes-incubator/external-storage (push) jlch@km:~/cephfs$ git log | head commit f1eb2a4ddf944fdd35a16e686ae104c1db8753b2 Merge: 06aaf46 52a4da4 Author: Matthew Wong &amp;lt;mawong@redhat.com&amp;gt; Date: Tue Nov 21 01:48:43 2017 -0500 Merge pull request #468 from sathieu/patch-1 flex: Fix file shbang commit 06aaf46950c9f6f741b34afc1d9f7807bdbe078c jlch@km:~/cephfs$  git status 记录一下主要的修改点</description>
+    </item>
+    
+  </channel>
+</rss>

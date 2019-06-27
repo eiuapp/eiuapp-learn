@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zsh on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/zsh.html</link>
+    <description>Recent content in zsh on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 22 Dec 2018 09:44:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eshell 中 没有完全加载 .zshrc 中的配置</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/eshell-zshrc-cannot-ok.html</link>
+      <pubDate>Sat, 22 Dec 2018 09:44:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/eshell-zshrc-cannot-ok.html</guid>
+      <description>Env 下面是终端上 zsh 的输出：
+➜ ~ cat /etc/shells # List of acceptable shells for chpass(1). # Ftpd will not allow users to connect who are not using # one of these shells. /bin/bash /bin/csh /bin/ksh /bin/sh /bin/tcsh /bin/zsh ➜ ~ echo $SHELL /bin/zsh ➜ ~ which js-beautify /usr/local/bin/js-beautify ➜ ~  下面是emacs中 eshell(`SPC &amp;lsquo;`开启)的输出：
+Welcome to the Emacs shell ~/org:master*? λ echo /etc/shells /etc/shells ~/org:master*? λ cat /etc/shells # List of acceptable shells for chpass(1).</description>
+    </item>
+    
+    <item>
+      <title>Mac Iterm2 Ohmyzsh Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-iterm2-ohmyzsh-install.html</link>
+      <pubDate>Tue, 12 Jun 2018 11:48:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-iterm2-ohmyzsh-install.html</guid>
+      <description> Mac下如何安装iTerm2并使用zsh iTerm2
+Env  os: macOS  Step 安装iterm2 安装iterm2只需要下载，解压安装就可以了。
+安装zsh 方式1 brew install zsh zsh-completions  无brew的请先安装Homebrew，mac上的一个包管理工具，很有必要安装，省去安装软件的麻烦。
+方式2 直接上官网查看安装方式
+zsh --version  配置zsh 创建一个zsh的配置文件 注意:如果你已经有一个~/.zshrc文件的话，建议你先做备份。使用以下命令
+cp ~/.zshrc ~/.zshrc.orig  然后开始创建zsh的配置文件
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc  设置zsh为你的默认的shell chsh -s /bin/zsh  然后退出iterm2，再重启就ok。
+期间报的问题不要管直接按照步骤来就行了。
+Ref  http://www.jianshu.com/p/77a4349bf67b https://blog.csdn.net/sufubo/article/details/54988457  </description>
+    </item>
+    
+  </channel>
+</rss>

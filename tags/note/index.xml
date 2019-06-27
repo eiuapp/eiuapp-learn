@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>note on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/note.html</link>
+    <description>Recent content in note on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 16 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>health</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-health.html</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-health.html</guid>
+      <description>健身前 热身  充分热身，如：拉伸身体各部位。 部分运动，请找好队友。如：卧推。  心态  告诉自己：自我感觉身体不适，请停止运动。 健康是一个长期的过程。  这里有多层意思，至少有：
+ 不要想着一天就能增长好多肌肉或减少好多脂肪，这不可能。 坚持（这个是世界上最难的事情）。 要以健康为中心。任何不以健康为中心的健身，都是伪健身。 尽量避免运动中受伤(这也是个很难的事情)。  健身中 增肌 大肌肉群为主 杠铃，哑铃, 卧推
+ 12次*4组模式 力竭*4组模式 单组能达50次，请进阶，加难度  呼吸  不可憋气。 出吐回吸。俯卧撑：下去，靠近地面，吐气；回来，靠近天空，吸气。 会有特殊情况，则有不同。  减脂 有氧运动为主  跑步是一个好方式。 心率的50-85% 持续不断20分钟  健身后 0-5分钟  慢走 放松体操 小动一下  不可以的事：
+ 不宜洗澡 不宜立即吸烟 不宜贪吃冷饮 不宜蹲坐 不宜吃饭  健身结束后应该调整呼吸节奏，进行一些低热量的活动，比如说慢走，做几节放松体操或者说是进行简单的深呼吸，促进四肢血液能够回流心脏，这样有利于我们还清欠下的“氧债”，能够加快恢复身体机能，消除疲劳。
+5-20分钟  可坐可蹲了 小口多次喝水，不能喝多  不可以的事：
+ 不宜洗澡 不宜立即吸烟 不宜贪吃冷饮 不宜吃饭  20-30分钟  宜洗澡  30-60分钟  洗澡。优先泡澡，再次淋浴 进食。先吃碳水化合物，再蛋白类。  60-120分钟  休息  运动了，很累的，让身体停下来。</description>
+    </item>
+    
+    <item>
+      <title>gitbook（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-gitbook.html</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-gitbook.html</guid>
+      <description>已移至 gitbook-handbook 仓库
+入门  https://www.jianshu.com/p/fa38ef97431d https://segmentfault.com/a/1190000011440899 https://www.jianshu.com/p/b0a11b9b8725 https://www.jianshu.com/p/09a1cac0a0d0  初步  http://www.ituring.com.cn/article/127744 http://www.chengweiyang.cn/gitbook/github-pages/README.html  进阶  https://github.com/zhangjikai/gitbook-use/  常见问题 Cannot find module &amp;lsquo;prismjs/components/prism-shell.js ➜ swift-docs git:(master) ✗ gitbook build ./ Failed to load prism syntax: shell { Error: Cannot find module &#39;prismjs/components/prism-shell.js&#39; at Function.Module._resolveFilename (internal/modules/cjs/loader.js:613:15) at Function.Module._load (internal/modules/cjs/loader.js:539:25) at Module.require (internal/modules/cjs/loader.js:667:17) at require (internal/modules/cjs/helpers.js:20:18) at requireSyntax (/Users/tomtsang/gitbook/swift-docs/node_modules/gitbook-plugin-prism/index.js:31:3) at Object.code (/Users/tomtsang/gitbook/swift-docs/node_modules/gitbook-plugin-prism/index.js:103:11) at Record.TemplateBlock.applyBlock (/Users/tomtsang/.gitbook/versions/3.2.3/lib/models/templateBlock.js:205:23) at /Users/tomtsang/.gitbook/versions/3.2.3/lib/output/getModifiers.js:56:33 at /Users/tomtsang/.gitbook/versions/3.2.3/lib/output/modifiers/highlightCode.js:47:24 at /Users/tomtsang/.</description>
+    </item>
+    
+    <item>
+      <title>tmux（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmux.html</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmux.html</guid>
+      <description> 基础 http://blog.jobbole.com/87584/
+高效的结对编程 在Tmux 中使用 Tmate
+在文本间快速移动光标，复制文本 将复制下来的文本发送到系统的剪贴板中
+Select and copy text
+调整 Tmux 以增强其同 Vim 的集成度 调整背景的配色方案
+调整光标的形状
+调整粘贴时的文本缩进
+美化 Tmux 的状态栏 tmux-plugins https://github.com/tmux-plugins
+查看version ➜ ~ git:(master) ✗ tmux -V tmux 2.1 ➜ ~ git:(master) ✗  滚屏 https://superuser.com/questions/209437/how-do-i-scroll-in-tmux
+复制文字 https://superuser.com/questions/196060/selecting-text-in-tmux-copy-mode
+Ref  https://zhuanlan.zhihu.com/p/33369297 https://github.com/search?q=tmux https://github.com/gpakosz/.tmux https://yq.aliyun.com/articles/44513 https://www.jianshu.com/p/ccac114c522e https://superuser.com/questions/209437/how-do-i-scroll-in-tmux https://www.jianshu.com/p/ccac114c522e http://os.51cto.com/art/201410/453671.htm http://os.51cto.com/art/201410/453671.htm  </description>
+    </item>
+    
+    <item>
+      <title>django-oscar(笔记)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-django-oscar.html</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-django-oscar.html</guid>
+      <description>(oscar) ➜ django-oscar git:(master) make sandbox pip install -r requirements.txt Collecting Werkzeug==0.14.1 (from -r requirements.txt (line 4)) Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB) 100% |████████████████████████████████| 327kB 8.8MB/s Collecting django-debug-toolbar==1.11 (from -r requirements.txt (line 5)) Downloading https://files.pythonhosted.org/packages/01/9a/3db232bd15882d90d3c53de1f34ce0a522327849593c9198899713267cfe/django_debug_toolbar-1.11-py2.py3-none-any.whl (201kB) 100% |████████████████████████████████| 204kB 24.9MB/s Collecting django-extensions==2.1.4 (from -r requirements.txt (line 6)) Downloading https://files.pythonhosted.org/packages/e4/56/6a854a56732f7cb6a0393b8a32ae8a37b82b004e638b7b2f153b66733ce5/django_extensions-2.1.4-py2.py3-none-any.whl (217kB) 100% |████████████████████████████████| 225kB 4.8MB/s Collecting psycopg2&amp;lt;2.8,&amp;gt;=2.7 (from -r requirements.txt (line 7)) Downloading https://files.pythonhosted.org/packages/63/54/c039eb0f46f9a9406b59a638415c2012ad7be9b4b97bfddb1f48c280df3a/psycopg2-2.7.7.tar.gz (427kB) 100% |████████████████████████████████| 430kB 4.1MB/s Complete output from command python setup.</description>
+    </item>
+    
+    <item>
+      <title>saleor 测试（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-tests.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-tests.html</guid>
+      <description>https://docs.getsaleor.com/en/latest/customization/tests.html
+(saleor) ➜ saleor git:(master) pipenv install --dev Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS =1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning. Installing dependencies from Pipfile.lock (0c0b26)… An error occurred while installing yarl==1.3.0 ; python_version &amp;gt;= &#39;3.</description>
+    </item>
+    
+    <item>
+      <title>tmuxinator（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmuxinator.html</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmuxinator.html</guid>
+      <description>tmux进阶之tmuxinator
+在Tmuxinator中配置layout https://blog.suisuijiang.com/tmux-course-terminal-manage/
+我们可能会需要指定窗格的排班规则，tmuxinator支持设置tmux中的5种默认layout样式：
+even-horizontal Panes are spread out evenly from left to right across the window. even-vertical Panes are spread evenly from top to bottom. main-horizontal A large (main) pane is shown at the top of the window and the remaining panes are spread from left to right in the leftover space at the bottom. Use the main-pane-height window option to specify the height of the top pane. main-vertical Similar to main-horizontal but the large pane is placed on the left and the others spread from top to bottom along the right.</description>
+    </item>
+    
+  </channel>
+</rss>

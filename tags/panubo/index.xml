@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>panubo on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/panubo.html</link>
+    <description>Recent content in panubo on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:26:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/panubo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mariadb Galera Panubo2 Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:26:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)(2017-02)
+ref  https://github.com/panubo/docker-mariadb-galera  env  node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)  step  拉取 (panubo版)git 代码, 取 image  三台机器, 各运行一下
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/ &amp;amp;&amp;amp; docker pull panubo/mariadb-galera   设置环境变量  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.13.110 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-0 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.15.240 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-1 EOF source ~/.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Base Docker Coreos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:36:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</guid>
+      <description>MariaDB Galera cluster running on CoreOS using the official Docker images
+env Coreos + any public cloud (Azure, AWS, Google, etc)
+step 开端口:
+sudo firewall-cmd --permanent --add-port=4567/udp; sudo firewall-cmd --permanent --add-port=4567/tcp; sudo firewall-cmd --permanent --add-port=4568/tcp; sudo firewall-cmd --permanent --add-port=4444/tcp; sudo firewall-cmd --permanent --add-port=3306/tcp; sudo firewall-cmd --reload; sudo firewall-cmd --permanent --list-port  检查mysql 是不是起来了:
+sudo yum install -y telnet telnet 127.0.0.1 22 Telnet 127.0.0.1 3306
+检查日志
+docker logs -f mariadb-container-0</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:32:52 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)
+env  node0, 10.10.12.17 node1, 10.10.12.18 node2, 10.10.13.10(这一台暂时没用上)  step  拉取 (panubo版)git 代码
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/
+ 设置环境变量
+  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.17 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.18 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc   Running Garbd  在 node0 上:
+docker run -d --net host --name galera-garbd \ -e WSREP_CLUSTER_ADDRESS=$WSREP_CLUSTER_ADDRESS \ panubo/mariadb-galera \ garbd   运行container  在node0上:</description>
+    </item>
+    
+  </channel>
+</rss>

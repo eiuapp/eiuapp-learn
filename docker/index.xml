@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/docker.html</link>
+    <description>Recent content in docker on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用户加入docker组</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/add-user-to-docker-group.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/add-user-to-docker-group.html</guid>
+      <description> Docker 创建docker用户组，应用用户加入docker组
+创建docker用户组 sudo groupadd docker  应用用户加入docker用户组 sudo usermod -aG docker ${USER}  重启docker服务 sudo systemctl restart docker  切换或者退出当前账户再从新登入 su root # 切换到root用户 su ${USER} # 再切换到原来的应用用户以上配置才生效  </description>
+    </item>
+    
+    <item>
+      <title>docker build时运行 COPY 时报no such file or directory 错误</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-copy-failed-no-such-file-or-directory.html</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-copy-failed-no-such-file-or-directory.html</guid>
+      <description>env Expected behavior COPY command to copy a file from local to image
+Actual behavior doing a simple COPY command in Dockerfile is throwing this error when the file is in a folder (not same level as Dockerfile file)
+Description
+I have a Dockerfile that has the line:
+COPY MyAgSourceAPI/conf/php/testsql.php var/www
+But it causes the error:
+COPY failed: stat /var/lib/docker/tmp/docker-builder918577595/MyAgSourceAPI/conf/php/testsql.php: no such file or directory
+step 有一些解决方案在 https://github.com/docker/for-mac/issues/1922 提出来。</description>
+    </item>
+    
+    <item>
+      <title>docker login failure,  unauthorized: incorrect username or password</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-faq.html</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-faq.html</guid>
+      <description>报错中出现类似“unauthorized: incorrect username or password”的话。
+➜ saleor git:(master) docker-compose run web python3 manage.py migrate Pulling db (library/postgres:latest)... latest: Pulling from library/postgres a5a6f2f73cd8: Already exists e50fbea8af5a: Pull complete 73b4855ad326: Pull complete ERROR: Get https://registry-1.docker.io/v2/library/postgres/manifests/latest: unauthorized: incorrect username or password ➜ saleor git:(master)  重新使用 docker.com 中的用户名登陆，而不是邮箱登陆。
+➜ saleor git:(master) docker logout Removing login credentials for https://index.docker.io/v1/ ➜ saleor git:(master) docker login Login with your Docker ID to push and pull images from Docker Hub.</description>
+    </item>
+    
+    <item>
+      <title>docker registry</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry.html</guid>
+      <description>docker registry
+ 在 192.168.31.240 ， 10.10.12.17 中建立了 registry 输入用户zimug，密码zimug_password  192.168.31.171 client
+root 用户
+sudo mkdir -p /etc/docker/certs.d/reg.jlch.com:5000 sudo echo 192.168.31.240 reg.jlch.com &amp;gt;&amp;gt; /etc/hosts sudo scp -r tom@192.168.31.240:/home/tom/registry/certs/registry.crt /etc/docker/certs.d/reg.jlch.com:5000  root@k-m:/home/jlch# docker login reg.jlch.com:5000 Username: zimug Password: Login Succeeded root@k-m:/home/jlch# docker images REPOSITORY TAG IMAGE ID CREATED SIZE ceph/daemon latest dc9781d1d530 20 hours ago 983MB hello-world latest 1815c82652c0 4 months ago 1.84kB root@k-m:/home/jlch# docker tag ceph/daemon reg.jlch.com:5000/ceph/daemon:latest root@k-m:/home/jlch# docker push reg.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</guid>
+      <description>root@km:~# sudo apt-get update ... Ign:56 http://cn.archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US Fetched 3,967 kB in 37min 32s (1,761 B/s) Reading package lists... Done W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-updates Release&#39; does not have a Release file. N: Data from such a repository can&#39;t be authenticated and is therefore potentially dangerous to use. N: See apt-secure(8) manpage for repository creation and user configuration details. W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-backports Release&#39; does not have a Release file.</description>
+    </item>
+    
+    <item>
+      <title>docker-compose安装后报&#34;specify DOCKER_HOST&#34;错误</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-compose-installed-then-error-specify-DOCKER_HOST.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-compose-installed-then-error-specify-DOCKER_HOST.html</guid>
+      <description> 按照官网 https://docs.docker.com/compose/install/ 安装完 docker-compose 后，要重 新进入一下用户(比如切换为root，再次切换为user)，配置才生效。
+否则会报出下面的错误：
+ERROR: Couldn’t connect to Docker daemon at http+docker://localunixsocket - is it running? If it’s at a non-standard location, specify the URL with the DOCKER_HOST environment variable.  Ref  https://blog.csdn.net/xiojing825/article/details/79494408  </description>
+    </item>
+    
+    <item>
+      <title>docker registry ui</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-ui.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-ui.html</guid>
+      <description>http://blog.csdn.net/mideagroup/article/details/52052618
+env 192.168.31.240
+home/tom/hyper-docker-registry-web-config 下</description>
+    </item>
+    
+    <item>
+      <title>批量删除docker images</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-remove-images-multy.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-remove-images-multy.html</guid>
+      <description> docker ps -a | grep &amp;quot;Exited&amp;quot; | awk &#39;{print $1 }&#39;|xargs docker stop docker ps -a | grep &amp;quot;Exited&amp;quot; | awk &#39;{print $1 }&#39;|xargs docker rm docker images|grep none|awk &#39;{print $3 }&#39;|xargs docker rmi  Ref  https://blog.csdn.net/p656456564545/article/details/50097145  </description>
+    </item>
+    
+    <item>
+      <title>docker-registry-push-pull</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-push-pull.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-push-pull.html</guid>
+      <description>请查看
+https://gitee.com/tomt/tom%5Fdocker%5Fregistry%5Fpush%5Fpull.git</description>
+    </item>
+    
+    <item>
+      <title>docker 登陆失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</guid>
+      <description>login failure - 代理问题 root@km:~/dockerRegistry# docker login reg.jlch.com:5000 Username (zimug): Password: Error response from daemon: Get https://reg.jlch.com:5000/v1/users/: EOF root@km:~/dockerRegistry# vi /lib/systemd/system/docker.service  重点把 reg.jlch.com 加入 Environment 中。
+root@km:~# cat /lib/systemd/system/docker.service [Unit] Description=Docker Application Container Engine Documentation=https://docs.docker.com After=network.target docker.socket firewalld.service Requires=docker.socket [Service] Type=notify # the default is not to use systemd for cgroups because the delegate issues still # exists and systemd currently does not support the cgroup feature set required # for containers run by docker Environment=&amp;quot;HTTP_PROXY=http://192.</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Mirrors Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-mirrors-base-ubuntu.html</link>
+      <pubDate>Fri, 22 Jun 2018 16:38:30 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-mirrors-base-ubuntu.html</guid>
+      <description> 如何配置镜像加速器
+Env  docker: 17.03.2+ os: ubuntu16.04  Step 打开 https://cr.console.aliyun.com/#/imageList 找到 镜像加速器
+可以根据自己OS选择，下面的是ubuntu, registry-mirrors中的内容已失效，请替换成您自己的。
+针对Docker客户端版本大于1.10.0的用户 您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器：
+sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json &amp;lt;&amp;lt;-&#39;EOF&#39; { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2yzz.mirror.aliyuncs.com&amp;quot;] } EOF sudo systemctl daemon-reload sudo systemctl restart docker  Ref  https://cr.console.aliyun.com/?spm=a2c4e.11153940.blogcont29941.9.520269d6m3p5Xn&amp;amp;accounttraceid=1843b6a4-8ded-4ec5-bdd5-fc17fcffbf8f&amp;amp;accounttraceid=93aba21f-da4b-41b2-ba82-c692f6d5c65f#/accelerator https://cr.console.aliyun.com/#/imageList  </description>
+    </item>
+    
+    <item>
+      <title>Docker Pull With Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-pull-with-proxy.html</link>
+      <pubDate>Sun, 17 Jun 2018 23:38:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-pull-with-proxy.html</guid>
+      <description> 透过proxy进行docker pull
+Env  os: ubuntu16 os: centos  Step  对于Ubuntu 系统  sudo vi /etc/default/docker   对于Centos 系统  sudo vi /etc/sysconfig/docker  把下面的内容加到尾部
+HTTP_PROXY=http://192.168.31.112:8118 http_proxy=${HTTP_PROXY} HTTPS_PROXY=${HTTP_PROXY} https_proxy=${HTTP_PROXY} export HTTP_PROXY HTTPS_PROXY http_proxy https_proxy  重启docker
+sudo systemctl restart docker sudo systemctl status docker  然后再进行相关的 docker pull 操作就可以了。
+Ref  https://blog.csdn.net/u011563903/article/details/52161648  </description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</link>
+      <pubDate>Mon, 04 Jun 2018 19:01:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</guid>
+      <description>ubuntu中安装docker-ce
+Env  os: ubuntu16 ip: ... docker: 17.03.2~ce-0~ubuntu-xenial  Step 查看已安装 sudo docker version  如果有已安装，请卸载，给个示例
+sudo apt remove docker* -y  安装 lsb_release -a sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - sudo apt-key fingerprint 0EBFCD88 sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; sudo apt-get update apt-cache madison docker-ce  查看后，选择我们需要的指定版本, 我这里选择17.03.2.
+sudo apt-get install docker-ce=17.03.2~ce-0~ubuntu-xenial -y sudo docker run hello-world  Ref  https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install For Jlch</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:30:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral docker-registry  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 192.168.31.240 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.jlch.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码
+cd ~/registry&amp;amp;&amp;amp; mkdir auth;docker run --entrypoint htpasswd registry:2 -Bbn zimug zimug_password &amp;gt; auth/htpasswd;  用户：zimug 密码：zimug_password 可随便填写自己想填写的</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:38:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral
+ docker-registry
+  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 10.10.12.17 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.zimug.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码</description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:28:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</guid>
+      <description>practice [tom@mysql1 ~]$ sudo tee /etc/yum.repos.d/docker.repo &amp;lt;&amp;lt;-&#39;EOF&#39; &amp;gt; [dockerrepo] &amp;gt; name=Docker Repository &amp;gt; baseurl=https://yum.dockerproject.org/repo/main/centos/7/ &amp;gt; enabled=1 &amp;gt; gpgcheck=1 &amp;gt; gpgkey=https://yum.dockerproject.org/gpg &amp;gt; EOF [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg [tom@mysql1 ~]$ sudo yum install docker-engine -y ... Installed: docker-engine.x86_64 0:1.12.3-1.el7.centos Dependency Installed: docker-engine-selinux.noarch 0:1.12.3-1.el7.centos Complete! [tom@mysql1 ~]$ sudo systemctl enable docker.service Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service. [tom@mysql1 ~]$ sudo systemctl start docker [tom@mysql1 ~]$ sudo docker run --rm hello-world Unable to find image &#39;hello-world:latest&#39; locally latest: Pulling from library/hello-world c04b14da8d14: Pull complete Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9 Status: Downloaded newer image for hello-world:latest Hello from Docker!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-dockerfile-faq.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-dockerfile-faq.html</guid>
+      <description>error之 /var/lib/dpkg/), are you root? RUN apt-get update apt install curl
+报错如下：
+ ---&amp;gt; Running in c865716a2694 E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied) E: Unable to lock directory /var/lib/apt/lists/ E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied) E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?  这里已经提示没有权限了，所以这里很可能是在这步操作上，用户切换成非root用户了。
+https://stackoverflow.com/questions/32576928/how-to-install-new-packages-into-non-root-docker-container
+source 命令 Step 12 : RUN source /usr/local/bin/virtualenvwrapper.sh ---&amp;gt; Running in c13a187261ec /bin/sh: 1: source: not found  遇到source命令，可以使用下面方式</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-with-windows.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-with-windows.html</guid>
+      <description>win10家庭版安装Docker
+https://blog.csdn.net/tidu2chengfo/article/details/84892915
+env  os: windows 10 HOME  step 安装前准备 进入任务管理器看虚拟化是否已启用。 如果你满足Docker for Windows的环境条件了，那么首先检查电脑的虚拟化开启了没有：进入任务管理器（ctrl+alt+delete），点击性能-&amp;gt;cpu ,查看虚拟化是否已启用，如果虚拟化是已禁用，那么你需要重启电脑进入bios开启虚拟化（我们的发的笔记本cpu都是支持虚拟化的，重启时进入bios按esc -&amp;gt; 再按f12 -&amp;gt; 去开启虚拟化）
+开启虚拟化重启后，进入任务管理器看虚拟化是否已启用。
+使用Coreinfo工具软件 (下载地址）来查看电脑是否支持Hyper-V 可以使用Coreinfo工具软件 (下载地址）来查看电脑是否支持Hyper-V，这是微软SysinternalsSuite工具软件套件中的一个，很实用。具体使用方法，把下载好的Coreinfo解压到桌面上，用管理员模式打开PowerShell，输入：.\ Coreinfo.exe -v，将显示你电脑虚拟化的相关信息，当然你已经添加了Hyper-V了，就无需使用这个软件了。下图所示的内容表明笔者电脑的CPU是完全支持Hyper-V的。
+Windows 10家庭版 能够安装HYPER-V 其中涉及一个 cmd 文件。也就是把下面的代码，保存到一个 *.cmd 文件中，比如，我保存成 install-hyper-v.cmd 中
+pushd &amp;quot;%~dp0&amp;quot; dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt for /f %%i in (&#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&#39;) do dism /online /norestart /add-package:&amp;quot;%SystemRoot%\servicing\Packages\%%i&amp;quot; del hyper-v.txt Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL  然后 打开 cmd 命令行，输入 .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-save-load.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-save-load.html</guid>
+      <description>docker save and docker load https://blog.csdn.net/weixin_36343850/article/details/80553680
+docker save vagrant@ubuntu-xenial:~$ docker stop some-redis some-redis vagrant@ubuntu-xenial:~$ docker ps -a | grep some-redis b3e246f35c82 redis:5.0.4 &amp;quot;docker-entrypoint.s…&amp;quot; 2 weeks ago Exited (0) 2 seconds ago some-redis ubuntu-xenial:~$ docker commit some-redis some-redis-save sha256:69ee84b5567bf37f24b81669f7341b6c9730d3a9b78b95d908b22a2cdcc334bd vagrant@ubuntu-xenial:~$ docker images | grep some-redis REPOSITORY TAG IMAGE ID CREATED SIZE some-redis-save latest 69ee84b5567b 9 seconds ago 95MB vagrant@ubuntu-xenial:~$ docker save -o some-redis-save.tar some-redis-save  docker load ubuntu@utuntu:~$ docker load -i .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-use-faq.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-use-faq.html</guid>
+      <description>ubuntu@VM-0-12-ubuntu:~$ sudo docker pull tomtsang:ubuntu-desktop-ide Error response from daemon: pull access denied for tomtsang, repository does not exist or may require &#39;docker login&#39; ubuntu@VM-0-12-ubuntu:~$  表示要登录
+ubuntu@VM-0-12-ubuntu:~$ sudo docker login Login with your Docker ID to push and pull images from Docker Hub. If you don&#39;t have a Docker ID, head over to https://hub.docker.com to create one. Username: tomtsang Password: Login Succeeded ubuntu@VM-0-12-ubuntu:~$  </description>
+    </item>
+    
+  </channel>
+</rss>

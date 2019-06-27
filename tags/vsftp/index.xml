@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vsftp on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/vsftp.html</link>
+    <description>Recent content in vsftp on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 30 May 2018 09:59:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/vsftp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vsftp Add User</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/tools/vsftp-add-user.html</link>
+      <pubDate>Wed, 30 May 2018 09:59:54 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/tools/vsftp-add-user.html</guid>
+      <description>env  os: centos6.9 ftp: vsftpd ip: 10.88.88.22  step 加用户 加用户，为安全，禁止用户登录
+[root@bitspace vsftpd]# useradd liuchao [root@bitspace vsftpd]# passwd liuchao Changing password for user liuchao. New password: [root@bitspace vsftpd]# passwd liuchao Changing password for user liuchao. New password: BAD PASSWORD: it is WAY too short BAD PASSWORD: is too simple Retype new password: passwd: all authentication tokens updated successfully. [root@bitspace vsftpd]# vi /etc/passwd [root@bitspace vsftpd]# tail -1 /etc/passwd liuchao:x:507:507::/home/liuchao:/sbin/nologin [root@bitspace vsftpd]# su - liuchao This account is currently not available.</description>
+    </item>
+    
+  </channel>
+</rss>

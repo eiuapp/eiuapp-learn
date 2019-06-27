@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mastercard on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/mastercard.html</link>
+    <description>Recent content in mastercard on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 Jun 2018 11:45:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/mastercard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mastercard Icard Tapngo Registry</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/about/life/mastercard-icard-tapngo-registry.html</link>
+      <pubDate>Sun, 24 Jun 2018 11:45:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/about/life/mastercard-icard-tapngo-registry.html</guid>
+      <description>注册拍住赏TAP&amp;amp;GO免费获得一张虚拟卡
+原以为拍住赏TAP&amp;amp;GO是一种实体的预付卡，但事实证明我Too young too simple了。原来拍住赏是一种电子钱包，有手机和护照或者港澳通行证就可以使用，这个电子钱包有个功能叫 i.Card，是一张虚拟卡，有卡号，有效日期及cvc2验证码，在线消费时和实体卡一样使用，非常方便。注册成功即可获得一张虚拟卡，甚至不需要充值。
+拍住赏的官方介绍如下
+拍住赏是一种全新付款方式，将手机变成电子钱包。客户只要使用指定的iPhone或Android制式智能手机下载拍住赏手机钱包， 配合商户的MasterCard® 终端机(包括MasterCard® 感应式支付终端机)或拍住赏付款终端机， 便可拍卡或于网上消费。
+你不需要去淘宝买卡，也不需要人肉去香港，你只需要拿出你的手机，下载一个app，在手机上完成以下操作就可以了。
+Env  iphone  Step 下载App 掏出你的手机，如果是iPhone，打开App Store，搜索 tap &amp;amp; go 注意中间要有空格，如图：
+注册拍住赏帐号 安装这个电子钱包，然后打开，选择 中国（+86），输入你的手机号码，并点“新帐户”进行注册
+拍住赏会发一条短信验证码给你，输入验证码并点”确定”
+然后创建一个密码（一定要记好这个密码），以后都是用这个密码来登录，要查看 i.Card或者进行其他一行重要操作，都需要输入这个密码。
+接下来就要上传身份证明文件，对于大陆的朋友，可以使用护照或者港澳通行证。
+我的护照寄出去办签证了，只好使用港澳通行证。上传了证件以后，拍住赏就注册成功了。
+不用等待资料审核完成，进入主界面，点击侧边栏的 “卡资料” 选项，往下拉选取 “提取 i.Card”，输入密码，就能获取到 Tap&amp;amp;Go 给你分配的虚拟卡号，还有 CVV2验证码、有效日期等信息。
+获得虚拟卡号 在菜单上的”卡资料”这个选项里，可以查看余额，提取你的i.Card虚拟卡号，如图：
+点下面的 Mastercard, 里面就是iCard 信息，需要输入之前注册时的密码。
+如何充值 因为目前卡内无余额，目前暂时还不能做为 Apple ID 付款方式. 所以如果你是这个时候在申请Apple ID,会提示 你的卡 无效。但是不要紧张，充值吧少年。
+充值方式 现在你的钱包里是没有钱的，但是你可以
+ 让朋友通过PayBuddy功能转钱给你，PayBuddy功能和支付宝的转帐功能是一样的。 中国银行(香港)在线实时充值 银行转帐 现金 可以是招行一卡通转账、 去香港便利店和 淘宝JS  可以通过以下方法充值，如图：
+可以通过中国银行(香港)在线实时充值，也可以通过银行转帐，现金等方式充值。</description>
+    </item>
+    
+  </channel>
+</rss>

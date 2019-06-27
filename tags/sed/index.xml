@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sed on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/sed.html</link>
+    <description>Recent content in sed on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 12 Nov 2018 19:11:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/sed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux sed 批量替换字符串</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/sed-string-replace.html</link>
+      <pubDate>Mon, 12 Nov 2018 19:11:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/sed-string-replace.html</guid>
+      <description>Linux下批量替换多个文件中的字符串的简单方法。
+用sed命令可以批量替换多个文件中的字符串 命令如下：
+sed -i &amp;quot;s/原字符串/新字符串/g&amp;quot; `grep 原字符串 -rl 所在目录`  例如：我要把 charset=gb2312 替换为 charset=UTF-8，执行命令：
+sed -i &amp;quot;s/charset=gb2312/charset=UTF-8/g&amp;quot; `grep charset=gb2312 -rl /www`  即可。
+解释一下：
+-i 表示inplace edit，就地修改文件
+-r 表示搜索子目录
+-l 表示输出匹配的文件名
+这个命令组合很强大，要注意备份文件。
+关于 sed 的更多说明：  替换  sed &#39;y/1234567890/ABCDEFGHIJ/&#39; test_sed  test_sed的内容是：
+1234567890 2345678901 3456789012 4567890123  执行后，test_sed的内容是：
+ABCDEFGHIJ BCDEFGHIJA CDEFGHIJAB DEFGHIJABC  注意变换关系是按两个list的位置对应变换
+ 替换每行所有匹配  sed &amp;rsquo;s/01/Ab/g&amp;rsquo; test_sed
+1234567890
+23456789Ab
+3456789Ab2
+456789Ab23
+注意：第一行的0，1没有分别替换为A,b
+删除：d命令 $ sed &#39;2d&#39; example  删除example文件的第二行。</description>
+    </item>
+    
+    <item>
+      <title>Mac Sed</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-sed.html</link>
+      <pubDate>Mon, 08 Oct 2018 12:08:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-sed.html</guid>
+      <description>由于Mac OS X自带的sed等命令行工具是基于BSD的，有一些缺陷和不足，比如sed不支持\t来表示TAB
+Env  os: mac  报错如下：
+➜ home git:(master) ✗ grep &amp;quot;finsoft.info&amp;quot; -rl ./CNAME ./CNAME ➜ home git:(master) ✗ ➜ home git:(master) ✗ grep &amp;quot;finsoft.info&amp;quot; -rl ./CNAME | xargs sed -i &amp;quot;s/finsoft.info/qqbb.app/g&amp;quot; sed: 1: &amp;quot;./CNAME&amp;quot;: invalid command code . ➜ home git:(master) ✗  Step ➜ ~ brew install coreutils ➜ ~ vi ~/.zshrc ➜ ~ source ~/.zshrc ➜ ~ tail ~/.zshrc ## coreutil export PATH=&amp;quot;$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH&amp;quot; export MANPATH=&amp;quot;$(brew --prefix coreutils)/libexec/gnuman:$MANPATH&amp;quot; ➜ ~ brew install gnu-sed --with-default-names ➜ ~  Ref  https://blog.</description>
+    </item>
+    
+  </channel>
+</rss>

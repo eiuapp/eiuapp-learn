@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/emacs.html</link>
+    <description>Recent content in emacs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eshell 中 没有完全加载 .zshrc 中的配置</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/eshell-zshrc-cannot-ok.html</link>
+      <pubDate>Sat, 22 Dec 2018 09:44:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/eshell-zshrc-cannot-ok.html</guid>
+      <description>Env 下面是终端上 zsh 的输出：
+➜ ~ cat /etc/shells # List of acceptable shells for chpass(1). # Ftpd will not allow users to connect who are not using # one of these shells. /bin/bash /bin/csh /bin/ksh /bin/sh /bin/tcsh /bin/zsh ➜ ~ echo $SHELL /bin/zsh ➜ ~ which js-beautify /usr/local/bin/js-beautify ➜ ~  下面是emacs中 eshell(`SPC &amp;lsquo;`开启)的输出：
+Welcome to the Emacs shell ~/org:master*? λ echo /etc/shells /etc/shells ~/org:master*? λ cat /etc/shells # List of acceptable shells for chpass(1).</description>
+    </item>
+    
+    <item>
+      <title>yasnippet-setup</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/yasnippet.html</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/yasnippet.html</guid>
+      <description> 功能  可以实现各种代码模板，包括注释模板。 可以参考emacs自带的yasnippet文档。命令是：c-h f yas-minor-mode 可以利用emacs的elisp代码，实现功能命令输出。  You can also include lisp code in your template. For example, you might want to have a date stamp. Here’s a example that insert user’s email address and datestamp.
+`user-mail-address` `(current-time-string)`
+直接看完下文就可以基本了解了：
+在Spacemacs中为Yasnippet添加自定义snippet
+Ref  https://blog.csdn.net/u011729865/article/details/53240101 在Spacemacs中为Yasnippet添加自定义snippet https://github.com/joaotavora/yasnippet http://joaotavora.github.io/yasnippet/  </description>
+    </item>
+    
+    <item>
+      <title>emacs中启动markdown preview</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-markdown-preview.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-markdown-preview.html</guid>
+      <description> zilongshanren/markdown-to-html 开启
+ , p
+ 使用 grip 程序preview markdown-to-html 文件。子龙说，这里的预览效果与 github上的md文件的效果是一模一样的。
+grip安装 https://github.com/joeyespo/grip
+brew install grip  Ref  https://emacs-china.org/t/topic/1549/17  </description>
+    </item>
+    
+    <item>
+      <title>在win10上安装emacs</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-install-with-win10.html</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-install-with-win10.html</guid>
+      <description>在win10上安装emacs
+env  os: win10 emacs: 26.1  step 官网下载 emacs 包 官网 https://www.gnu.org/software/emacs/
+下载地址 http://mirrors.nju.edu.cn/gnu/emacs/windows/emacs-26/emacs-26.1-x86_64.zip
+放到程序相应位置 解压后得到 emacs-26.1-x86_64 文件夹，剪切至程序安装目录 C:\Program Files\emacs-26.1-x86_64
+设置环境变量 设置系统环境变量
+ declare a environment variable named HOME pointing to your user directory C:\Users&amp;lt;username&amp;gt;   path中增加emacs\bin。  检查 win-r输入cmd
+C:\Users\DELL&amp;gt;emacs --version GNU Emacs 26.1 Copyright (C) 2018 Free Software Foundation, Inc. GNU Emacs comes with ABSOLUTELY NO WARRANTY. You may redistribute copies of GNU Emacs under the terms of the GNU General Public License.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu安装最新emacs</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-install-base-ubuntu.html</link>
+      <pubDate>Mon, 12 Nov 2018 20:08:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-install-base-ubuntu.html</guid>
+      <description>Env  os: ubuntu  Step $sudo add-apt-repository ppa:ubuntu-elisp/ppa $sudo apt update $sudo apt install emacs-snapshot emacs-snapshot-el $emacs --version #查看emacs版本  REF ubuntu安装最新emacs</description>
+    </item>
+    
+    <item>
+      <title>解决Mac下emacs中alt键不能使用问题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-melt-no-use.html</link>
+      <pubDate>Sat, 27 Oct 2018 13:16:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-melt-no-use.html</guid>
+      <description> Env  os: mac  Step iTerm preferences-&amp;gt;Profiles
+找到Left option key acts as一栏 选中+Esc选项
+Terminal preferences-&amp;gt;Profiles-&amp;gt;keyboard
+在使用Option键作为Meta一栏上打钩
+Ref  https://www.jianshu.com/p/7432c3bfcc99  </description>
+    </item>
+    
+    <item>
+      <title>Emacs Flycheck Eslint</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-flycheck-eslint.html</link>
+      <pubDate>Thu, 23 Aug 2018 15:05:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-flycheck-eslint.html</guid>
+      <description>Env  os: mac emacs: GNU Emacs 22.1.1  Step https://github.com/flycheck/flycheck/issues/1195
+遇到下面的情形，就按提示，把这些个包，一个一个地安装。
+➜ tmp git:(master) ✗ eslint -v v5.4.0 { ➜ tmp git:(master) ✗ ls test.js ➜ tmp git:(master) ✗ cat test.js var a=1; var b = 2; vardf c=a+b; function a(){ console.log(&amp;quot;hello world&amp;quot;) } ➜ tmp git:(master) ✗ eslint test.js Oops! Something went wrong! :( ESLint: 5.4.0. ESLint couldn&#39;t find the plugin &amp;quot;eslint-plugin-import&amp;quot;. This can happen for a couple different reasons: 1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs.html</guid>
+      <description>emacs</description>
+    </item>
+    
+  </channel>
+</rss>

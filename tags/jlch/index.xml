@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jlch on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/jlch.html</link>
+    <description>Recent content in jlch on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 31 Jan 2018 12:26:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/jlch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>centos install mysql (no network)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-install-mysql-no-network.html</link>
+      <pubDate>Wed, 31 Jan 2018 12:26:38 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-install-mysql-no-network.html</guid>
+      <description>env 需要在 centos 环境下安装 mysql
+192.168.31.175
+step 下载mysql的rpm安装包
+[root@localhost jlch]# rpm -ivh mysql-community-server-5.7.21-1.el7.x86_64.rpm warning: mysql-community-server-5.7.21-1.el7.x86_64.rpm: Header V3 DSA/SHA1 Signature, key ID 5072e1f5: NOKEY error: Failed dependencies: /usr/bin/perl is needed by mysql-community-server-5.7.21-1.el7.x86_64 mysql-community-client(x86-64) &amp;gt;= 5.7.9 is needed by mysql-community-server-5.7.21-1.el7.x86_64 mysql-community-common(x86-64) = 5.7.21-1.el7 is needed by mysql-community-server-5.7.21-1.el7.x86_64 net-tools is needed by mysql-community-server-5.7.21-1.el7.x86_64 perl(Getopt::Long) is needed by mysql-community-server-5.7.21-1.el7.x86_64 perl(strict) is needed by mysql-community-server-5.7.21-1.el7.x86_64 [root@localhost jlch]#  要安装 perl, 下载
+tar -zxvf perl-5.26.1.tar.gz cd perl-5.</description>
+    </item>
+    
+  </channel>
+</rss>

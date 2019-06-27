@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>make on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/make.html</link>
+    <description>Recent content in make on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 17:35:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubernetes-cephfs-make-by-go-get</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make-by-go-get.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:35:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make-by-go-get.html</guid>
+      <description>ENV k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 ceph-client 192.168.31.172 ceph-mon1 192.168.31.114  这次的make, 可以在任何地方完成，只要满足：golang 1.7 以上的版本
+我在 km,ceph-client,ceph-mon1 上都完成过
+安装golang 如果已有安装，请忽略这一步
+安装 golang 1.7 以上的版本。 我们这里安装 1.9.1
+ cd home/jlch tar -xvf go1.9.2.linux-amd64.tar ls go export PATH=$PATH:/home/jlch/go/bin
+ 验证go go version  配置 GOPATH mkdir gopath export GOPATH=/home/jlch/gopath/  go get go get github.com/kubernetes-incubator/external-storage  配置 Dockerfile 后来发现 docker image 的文件不对。
+这个地方的 ENV CEPH_VERSION &amp;ldquo;jewel&amp;rdquo; 应该修改成 ENV CEPH_VERSION &amp;ldquo;luminous&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>cephfs-k8s 中的 make</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:52:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make.html</guid>
+      <description>下载 make ，报错了。
+root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful# cd external-storage/ceph/cephfs/ root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful/external-storage/ceph/cephfs# ls cephfs_provisioner cephfs-provisioner.go ceph-secret-admin.yaml CHANGELOG.md claim.yaml class.yaml configmap.yaml deployment.yaml Dockerfile local-start.sh Makefile OWNERS README.md test-pod.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful/external-storage/ceph/cephfs# make CGO_ENABLED=0 GOOS=linux go build -a -ldflags &#39;-extldflags &amp;quot;-static&amp;quot;&#39; -o cephfs-provisioner cephfs-provisioner.go cephfs-provisioner.go:28:2: cannot find package &amp;quot;github.com/golang/glog&amp;quot; in any of: /usr/lib/go-1.8/src/github.com/golang/glog (from $GOROOT) /root/go/src/github.com/golang/glog (from $GOPATH) cephfs-provisioner.go:29:2: cannot find package &amp;quot;github.com/kubernetes-incubator/external-storage/lib/controller&amp;quot; in any of: /usr/lib/go-1.8/src/github.com/kubernetes-incubator/external-storage/lib/controller (from $GOROOT) /root/go/src/github.com/kubernetes-incubator/external-storage/lib/controller (from $GOPATH) cephfs-provisioner.go:30:2: cannot find package &amp;quot;k8s.io/api/core/v1&amp;quot; in any of: /usr/lib/go-1.</description>
+    </item>
+    
+  </channel>
+</rss>

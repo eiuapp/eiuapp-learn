@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tom on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/tom.html</link>
+    <description>Recent content in tom on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 11 Jun 2018 19:54:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/tom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac Install Software</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-install-software.html</link>
+      <pubDate>Mon, 11 Jun 2018 19:54:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-install-software.html</guid>
+      <description>记录mac-pro安装软件
+安装截图 安装  git (直接输入git version) 这个时候，会自动安装Xcode的组件，请保持网络稳定且快速。 搜狗五笔拼音 homebrew [telnet]() brew install telnet Visual Studio Code hugo  这个时候，你需要的是科学上网
+ shadowsocks chrome(美国版)，这里一定不要是google.cn下载的中文版。  无需科学上网
+ [百度网盘](https://pan.baidu.com/download#pan） iterm2, 下载，解压，安装就行了，不是brew安装的 oh my zsh安装 RARLAB-osx用于解压rar文件  设置 mac输入法切换快捷键设置</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ide on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/ide.html</link>
+    <description>Recent content in ide on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Jul 2018 13:55:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang Ide Gogland</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-ide-gogland.html</link>
+      <pubDate>Sun, 15 Jul 2018 13:55:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-ide-gogland.html</guid>
+      <description> Jetbrains 家族利器之 Gogland 简明教程
+Env  os: mac  Step 安装 gvm 参考 Go 语言多版本安装及管理利器 - GVM
+并 通过 gvm 安装指定 go版本
+安装 goland 略
+激活 gogland mac版本 从 GoLand注册码 找到 https://www.imsxm.com/jetbrains-license-server.html ，从而知道了 在 JetBrains 授权服务器(License Server):填入 http://www.activejetbrains.gq，即可完成激活。
+win10 版本 尝试 https://blog.csdn.net/sunylat/article/details/55096944
+三、设置 Gogland 的 GOROOT 如果之前已安装 gvm 则，这里会自动识别出来。
+这里如果说没有自动找到之前 gvm 安装的go版本，要重启一下mac。
+Ref  https://www.imsxm.com/jetbrains-license-server.html https://bingohuang.com/go-gvm/ https://gocn.vip/article/445  </description>
+    </item>
+    
+  </channel>
+</rss>

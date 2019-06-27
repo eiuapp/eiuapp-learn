@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>react on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/react.html</link>
+    <description>Recent content in react on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>初始化安装 taro-msparis</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/taro/taro-msparis-install.html</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/taro/taro-msparis-install.html</guid>
+      <description>appjson [&amp;ldquo;tabBar&amp;rdquo;][&amp;ldquo;borderStyle&amp;rdquo;] be &amp;ldquo;white&amp;rdquo; or &amp;ldquo;black&amp;rdquo; dist/app.json中的 &amp;ldquo;tabBar&amp;rdquo;下的&amp;rdquo;borderStyle&amp;rdquo;要修改为： &amp;ldquo;black&amp;rdquo;
+微信小程序报错request:fail url not in domain list 报错提示说请求的url不在域名列表里，应该是还没有配置服务器域名，可点击开发者工具右上角 详情-域名信息，看看是否配置了域名； 不过没有配置域名其实开发者工具也是不能发送请求的； 文档：https://developers.weixin.qq.com/miniprogram/dev/api/wx.request.html
+然后，操作如下：
+ 开发者工具里面要勾选不校验，也就是下面这句前打上勾：  Does not verify valid domain names, web-view (business domain names), TLS versions and HTTPS certificates
+ 手机里面也要打开调试，也就是：  开发版小程序不是右上角有三个点点嘛，点击就能看到打开调试
+这样就可以.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>desktop on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/desktop.html</link>
+    <description>Recent content in desktop on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 29 Nov 2018 17:39:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>set apt source</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-set-apt-source.html</link>
+      <pubDate>Thu, 29 Nov 2018 17:39:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-set-apt-source.html</guid>
+      <description>https://github.com/vnpy/vnpy/wiki/Ubuntu%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Desktop 环境安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-setup.html</link>
+      <pubDate>Thu, 29 Nov 2018 17:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-setup.html</guid>
+      <description>安装Ubuntu 全部安装流程：
+推荐的Ubuntu环境：
+ 版本：Ubuntu 16.04 LTS 语言：简体中文 时区：Shanghai 硬件：64位，4G内存以上   引用官方安装教程：点击查看
+ 更新软件源 apt源
+操作步骤如下：
+进行上述操作之后，系统会花几分钟时间进行服务器速度的测试。测试完毕之后，点击『选择服务器』，后面根据提示输入密码和重新载入软件信息即可。
+pip源
+创建pip的配置文件，在终端中执行如下命令创建.pip文件夹
+mkdir ~/.pip/  再执行如下命令创建pip.conf文件并编辑
+vim ~/.pip/pip.conf  这时候会出现pip.conf的编辑窗口，按字母键a进入到编辑模式，这时候内容为空，并把如下内容输入到编辑框里面
+[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple  编辑完后保存并退出vim： ESC -&amp;gt; shift+; -&amp;gt; x -&amp;gt; Enter
+安装Python 下载Anaconda2并安装，在终端中顺序执行下面3行命令
+wget https://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh  chmod +x Anaconda2-4.0.0-Linux-x86_64.sh  ./Anaconda2-4.0.0-Linux-x86_64.sh  然后开始进行安装：
+后面根据提示按回车或者输入yes即可，要注意一下在提示是否要在.bashrc文件中更新PATH变量时，一定要输入Yes：
+安装完毕之后执行如下命令让bash的配置文件即时生效
+source ~/.bashrc  执行完之后执行python命令进行验证，如果安装成功会出现 Anaconda 4.0.0 的字样：
+由于vnpy最近对python3的兼容，需要安装future模块，ImportError: No module named &amp;lsquo;Queue&amp;rsquo;
+pip install future  安装依赖项 执行如下两行命令分别安装应用软件和pip的库</description>
+    </item>
+    
+  </channel>
+</rss>

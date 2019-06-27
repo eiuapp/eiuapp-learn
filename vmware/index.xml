@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmware on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/vmware.html</link>
+    <description>Recent content in vmware on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/vmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vmware workstation pro 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-workstation-pro-install.html</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-workstation-pro-install.html</guid>
+      <description> Vmware安装提示在关闭以下进程 之前，无法进行安装的解决办法
+如图，如果真的通过任务管理器关闭了VMware.exe的话，安装程序也就关闭了，后来才发现这个VMware.exe和VMware的主程序重名了，把安装程序改名为其他的就行了，比如VMware-install.exe
+安装最后一步是输入 激活密钥，请支持正版。
+Ref  https://blog.csdn.net/u011666411/article/details/85998068 https://blog.csdn.net/aZhengjava520/article/details/81087847  </description>
+    </item>
+    
+    <item>
+      <title>在vmware workstation pro 中给ubuntu增加新分区</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vmware/ubuntu-vmware-workstation-pro-new-partition.html</link>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vmware/ubuntu-vmware-workstation-pro-new-partition.html</guid>
+      <description>env 在 vmware workstation pro 中安装的ubuntu server已经把20G的硬盘已经按默认的方式分区，且已经是把20G硬盘全占用。 此时，如果用 fdisk /dev/sda 然后 n 来新建分区的时候，会报出 no sector available 的错误。
+这个时候，有2个思路。
+ 把原来的 sector和硬盘空间 释放出来，然后，新建立分区 把硬盘空间加大（不是另增加一块硬盘），然后，重新规划分区  step 思路1，本来是寄希望于 gpart 和 gparted 命令（通过 apt install 安装）的，但是，发现，文章已失效，-s -t 等命令的效果与原理明显不对了，所以思路1，中断。
+思路2，操作成功。下面就只介绍思路2.
+关虚拟机，打开，点击，设置/硬盘/扩展容量，增加10G到30G, 然后，磁盘整理，一下，开机。
+这个时候，fdisk -l 可以看到 sector 已经增加了。
+但是通过 n 后，并不能选择 l, 只能选择 p，且分配的大小，不超过1个G,明显不是我们想要的。
+这个时候，我直接把 原有的 1,2,5 三个分区的 2，5直接删除（d）,然后再 n, 这个时候，就可以分出我们想要的分区了。 最后我的效果是 1,2,5,6 其中6分区占用了新增磁盘的 8 GB .</description>
+    </item>
+    
+    <item>
+      <title>vmware创建新VM（从其它机器中复制VM方式）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-copy-vm-from-other-hosts.html</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-copy-vm-from-other-hosts.html</guid>
+      <description>把vm的文件，放至一个合适的位置，然后，打开vmware workstation pro 点击 文件，打开， 选中相应文件就可以了。 当然，最好重命名一下。</description>
+    </item>
+    
+    <item>
+      <title>Vmware Workstation</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-workstation.html</link>
+      <pubDate>Sat, 24 Feb 2018 10:40:36 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-workstation.html</guid>
+      <description>序列号:
+ver 11:
+1F04Z-6D111-7Z029-AV0Q4-3AEH8
+ver 12:
+1F04Z-6D111-7Z029-AV0Q4-3AEH8
+5A02H-AU243-TZJ49-GTC7K-3C61N
+VF5XA-FNDDJ-085GZ-4NXZ9-N20E6 UC5MR-8NE16-H81WY-R7QGV-QG2D8 ZG1WH-ATY96-H80QP-X7PEX-Y30V4 AA3E0-0VDE1-0893Z-KGZ59-QGAVF</description>
+    </item>
+    
+  </channel>
+</rss>

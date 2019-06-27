@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/javascript.html</link>
+    <description>Recent content in javascript on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 21 Mar 2018 09:57:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/javascript/javascript-faq.html</link>
+      <pubDate>Wed, 21 Mar 2018 09:57:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/javascript/javascript-faq.html</guid>
+      <description>Mixpanel error: &amp;quot;mixpanel&amp;quot; object not initialized. Ensure you are using the latest version of the Mixpanel JS Library along with the snippet we provide.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Type</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/javascript/javascript-type.html</link>
+      <pubDate>Fri, 09 Mar 2018 11:32:33 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/javascript/javascript-type.html</guid>
+      <description>简单谈谈Javascript中类型的判断</description>
+    </item>
+    
+  </channel>
+</rss>

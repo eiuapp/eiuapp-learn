@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>benchmarks on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/benchmarks.html</link>
+    <description>Recent content in benchmarks on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 29 Nov 2018 12:02:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/benchmarks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>web框架</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/web-framework-benchmarks.html</link>
+      <pubDate>Thu, 29 Nov 2018 12:02:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/web-framework-benchmarks.html</guid>
+      <description>一个超级好的 Web Framewosrk Benchmarks
+http://www.techempower.com/whatwedo.html
+http://www.techempower.com/benchmarks/
+http://www.techempower.com/benchmarks/#section=data-r14&amp;amp;hw=ph&amp;amp;test=update
+这里面才是真正的压力测试结果。里面可以看到 市面上 最全的:
+ web 架构方案， 数据库， 程序语言language，
+的表现。
+  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysqldump on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/mysqldump.html</link>
+    <description>Recent content in mysqldump on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 28 Feb 2018 14:31:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/mysqldump/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mysqldump Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysqldump-faq.html</link>
+      <pubDate>Wed, 28 Feb 2018 14:31:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysqldump-faq.html</guid>
+      <description>mysqldump中断的常见错误和解决措施</description>
+    </item>
+    
+  </channel>
+</rss>

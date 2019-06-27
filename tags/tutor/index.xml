@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutor on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/tutor.html</link>
+    <description>Recent content in tutor on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 21 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/tutor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spacemacs Rocks Day 10, spacemacs tutor</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-10-notes.html</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-10-notes.html</guid>
+      <description>youku spacemacs tutor
+安装 各文件夹功能 core 方便加载layer的配置
+使用 proxychains4 打开 emacs $ proxychains4 open /Applications/Emacs.app  这样的话，就会让emacs翻墙，这样下载melpa.org中的packages就会比较快。
+介绍 spacemacs home page change-log Evil tutor  SPC h T
+ universal arguments  SPC u
+ 配置启动全屏 在buffer中快速跳转  M-x jump-in-buffer
+ 现在有2种
+ M-x helm-jump-in-buffer
+ 和
+ M-x counsel-jump-in-buffer
+ 不需要安装layer，只单独安装某package 在 ~/.spacemacs.d/init.el 中的
+dotspacemacs-additional-packages 中添加packages名就可以了。
+行号  SPC t n
+ 相对行号
+ SPC t r
+ 这时，向下跳转9行，则只要：</description>
+    </item>
+    
+  </channel>
+</rss>

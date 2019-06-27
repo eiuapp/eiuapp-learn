@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wubipinyin on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/wubipinyin.html</link>
+    <description>Recent content in wubipinyin on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 24 May 2018 09:32:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/wubipinyin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu Install Wubipinyin</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-wubipinyin.html</link>
+      <pubDate>Thu, 24 May 2018 09:32:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-wubipinyin.html</guid>
+      <description> ubuntu安装 五笔拼音输入法
+env  Ubuntu Desktop 16.04  step 方法1 https://www.linuxdashen.com/ubuntu-16-04-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85fcitx%E4%BA%94%E7%AC%94%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95
+方法2 sudo add-apt-repository ppa:fcitx-team/nightly sudo apt update -y sudo apt -y install fcitx sudo apt -y install fcitx-table-wbpy  System Setting/Language Support/Keyboard input method system/ =&amp;gt; fcitx
+打开System Setting系统设置&amp;gt;Text Entry
+记得重启哟！
+ref  https://www.linuxdashen.com/ubuntu-16-04-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85fcitx%E4%BA%94%E7%AC%94%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95 https://blog.csdn.net/zzqlivecn/article/details/25018203 https://blog.csdn.net/hamigua0208/article/details/51421117 https://blog.csdn.net/e421083458/article/details/37738805  </description>
+    </item>
+    
+  </channel>
+</rss>

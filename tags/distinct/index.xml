@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distinct on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/distinct.html</link>
+    <description>Recent content in distinct on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:51:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/distinct/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mongodb Distinct</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-distinct.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:51:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-distinct.html</guid>
+      <description>mongodb系列之distinct
+reference https://docs.mongodb.com/manual/reference/method/db.collection.distinct/
+http://www.jb51.net/article/65929.htm
+destinct  MongoDB的destinct命令是获取特定字段中不同值列表。该命令适用于普通字段，数组字段和数组内嵌文档.  mongodb的distinct的语句： db.users.distinct(&amp;lsquo;last_name&amp;rsquo;）;
+等同于 SQL 语句: select DISTINCT last_name from users;
+表示的是根据指定的字段返回不同的记录集。
+ 如果，有相关的查询，则放在后面。
+testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;LastPx&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161101, &amp;ldquo;ID&amp;rdquo;: &amp;ldquo;600650.SH&amp;rdquo;}) [ 25.88, 25.89, 25.87, 25.86 ] testrs:PRIMARY&amp;gt;
+示例  db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;).length 114 db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;)
+ testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161102, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1081 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161101, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1109 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161103, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1083 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161031, &amp;ldquo;ID&amp;rdquo;: /^60.*SH/, &amp;ldquo;TrdTm&amp;rdquo;:1441}).length 1107 testrs:PRIMARY&amp;gt; db.KLine_1Min.distinct(&amp;ldquo;ID&amp;rdquo;, {&amp;ldquo;TrdDt&amp;rdquo;:20161025, &amp;ldquo;ID&amp;rdquo;: /^60.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nvm on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/nvm.html</link>
+    <description>Recent content in nvm on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/nvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>nodejs 一定要通过 nvm安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-install.html</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-install.html</guid>
+      <description>使用 nvm 管理不同版本的 node 与 npm
+step 补充说明：Mac 下通过 brew install nvm 所安装的 nvm ，由于安装路径不同，无法正确启用。建议使用 brew uninstall nvm 卸载掉之后，通过本文的方案重新安装一次。
+nvm 是 Mac 下的 node 管理工具，有点类似管理 Ruby 的 rvm，如果是需要管理 Windows 下的 node，官方推荐是使用 nvmw 或 nvm-windows 。
+以下具体说下 Mac 系统中的安装与使用细节（Windows 系统仅供类比参考）。
+一、卸载已安装到全局的 node/npm 如果之前是在官网下载的 node 安装包，运行后会自动安装在全局目录，其中
+ node 命令在 `/usr/local/bin/node` npm 命令在 `/usr/local/bin/npm` ，其实是 `/usr/local/lib/node_modules/npm/bin/npm-cli.js` 的软链接 全局 node_modules 目录在 `/usr/local/lib/node_modules/`  安装 nvm 之后最好先删除下已安装的 node 和全局 node 模块：
+npm ls -g --depth=0 #查看已经安装在全局的模块，以便删除这些全局模块后再按照不同的 node 版本重新进行全局安装 sudo rm -rf /usr/local/lib/node_modules #删除全局 node_modules 目录 sudo rm /usr/local/bin/node #删除 node cd /usr/local/bin &amp;amp;&amp;amp; ls -l | grep &amp;quot;.</description>
+    </item>
+    
+  </channel>
+</rss>

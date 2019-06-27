@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>upgrade on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/upgrade.html</link>
+    <description>Recent content in upgrade on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 17:05:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/upgrade/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>更新kubeadm clusters 从v1.7.3至v1.8.3</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-clusters-upgrade-from-v173-to-v183.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:05:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-clusters-upgrade-from-v173-to-v183.html</guid>
+      <description>Upgrading kubeadm clusters from 1.7 to 1.8
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm-upgrade-1-8/
+env 192.168.31.120 km, master 192.168.31.119 kn1 192.168.31.118 kn2  下载 kubeadm  https://dl.k8s.io/release/v1.8.2/bin/linux/amd64/kubeadm
+ root@km:~# sudo chmod a+rx /usr/bin/kubeadm root@km:~# kubeadm version kubeadm version: &amp;amp;version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;8&amp;quot;, GitVersion:&amp;quot;v1.8.2&amp;quot;, GitCommit:&amp;quot;bdaeafa71f6c7c04636251031f93464384d54963&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2017-10-24T19:38:10Z&amp;quot;, GoVersion:&amp;quot;go1.8.3&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} root@km:~#  上传 root@km:~# kubeadm config upload from-file --config ./admin.conf unable to decode config from &amp;quot;./admin.conf&amp;quot; [no kind &amp;quot;Config&amp;quot; is registered for version &amp;quot;v1&amp;quot;]  不是这样的 conf 文件呀。</description>
+    </item>
+    
+    <item>
+      <title>kubeadm从v1.8.3更新至v1.8.4失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-upgrade-failure-from-v183-to-v184.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-upgrade-failure-from-v183-to-v184.html</guid>
+      <description>Installing Docker root@km:~# cat /etc/apt/sources.list.d/docker.list deb https://apt.dockerproject.org/repo ubuntu-xenial main root@km:~# cat /etc/docker/daemon.json { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2y.mirror.aliyuncs.com&amp;quot;] } root@km:~# vi /etc/docker/daemon.json root@km:~# cat /etc/docker/daemon.json { &amp;quot;exec-opts&amp;quot;: [&amp;quot;native.cgroupdriver=systemd&amp;quot;], &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2y.mirror.aliyuncs.com&amp;quot;] } root@km:~# apt-get install -y curl apt-transport-https Reading package lists... Done Building dependency tree Reading state information... Done apt-transport-https is already the newest version (1.2.24). curl is already the newest version (7.47.0-1ubuntu2.4). The following packages were automatically installed and are no longer required: golang-1.</description>
+    </item>
+    
+  </channel>
+</rss>

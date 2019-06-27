@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安装 on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation.html</link>
+    <description>Recent content in 安装 on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 10 Sep 2018 21:07:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>_index.zh安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/_index.zh.html</link>
+      <pubDate>Mon, 10 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/_index.zh.html</guid>
+      <description>准备工作 安装golang 安装hugo之前，先安装好golang。
+目前新版本的hugo如0.54版本，需要golang最新的1.11版本支持。安装hugo前最好检查一下hugo对golang的版本要求。
+安装 在Hugo Releases页面下载对应操作系统版本的安装包。
+Linux安装 找到linux的安装包，对于 ubuntu 可以直接用 deb 文件：
+ hugo_0.54_Linux-64bit.deb  deb文件直接安装即可。
+sudo dpkg -i hugo_0.54_Linux-64bit.deb  Mac安装 mac 下安装最简单的方式是用brew命令
+brew install hugo  也可以从下载页面下载到macos的安装包，解压后，将 hugo 可执行文件放在path路径下即可。
+安装后设置 验证安装：
+$ hugo version Hugo Static Site Generator v0.54.0-B1A82C61 linux/amd64 BuildDate: 2019-02-01T09:40:34Z  为了方便使用，增加hugo server 命令的 alias：
+alias h=&amp;quot;hugo server --disableFastRender&amp;quot;  自动发布 以下是jenkins自动生成并发布到nginx的简单脚本：
+sh update_academic.sh # clean cd /var/www/skyao/ # 删除所有文件和文件夹，但排除以&amp;quot;learning-&amp;quot;前缀开头的 rm -rf `ls | grep -v &amp;quot;learning-&amp;quot;` cd /var/lib/jenkins/workspace/skyao.</description>
+    </item>
+    
+    <item>
+      <title>index安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/</link>
+      <pubDate>Mon, 10 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/</guid>
+      <description>准备工作 安装golang 安装hugo之前，先安装好golang。
+目前新版本的hugo如0.54版本，需要golang最新的1.11版本支持。安装hugo前最好检查一下hugo对golang的版本要求。
+安装 在Hugo Releases页面下载对应操作系统版本的安装包。
+Linux安装 找到linux的安装包，对于 ubuntu 可以直接用 deb 文件：
+ hugo_0.54_Linux-64bit.deb  deb文件直接安装即可。
+sudo dpkg -i hugo_0.54_Linux-64bit.deb  Mac安装 mac 下安装最简单的方式是用brew命令
+brew install hugo  也可以从下载页面下载到macos的安装包，解压后，将 hugo 可执行文件放在path路径下即可。
+安装后设置 验证安装：
+$ hugo version Hugo Static Site Generator v0.54.0-B1A82C61 linux/amd64 BuildDate: 2019-02-01T09:40:34Z  为了方便使用，增加hugo server 命令的 alias：
+alias h=&amp;quot;hugo server --disableFastRender&amp;quot;  自动发布 以下是jenkins自动生成并发布到nginx的简单脚本：
+sh update_academic.sh # clean cd /var/www/skyao/ # 删除所有文件和文件夹，但排除以&amp;quot;learning-&amp;quot;前缀开头的 rm -rf `ls | grep -v &amp;quot;learning-&amp;quot;` cd /var/lib/jenkins/workspace/skyao.</description>
+    </item>
+    
+    <item>
+      <title>快速开始</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/quickstart.html</link>
+      <pubDate>Mon, 10 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/quickstart.html</guid>
+      <description>新建站点 hugo new side /path/tp/your/site  提示如下：
+$ hugo new site learning-cilium Congratulations! Your new Hugo site is created in /home/sky/work/code/learning/learning-cilium. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/, or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>开启HTTPS</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/https.html</link>
+      <pubDate>Mon, 10 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/https.html</guid>
+      <description>参考文章：
+ 给博客加上HTTPS 在Ubuntu上获取Let’s Encrypt免费证书  由于我用的博客服务器是ubuntu 16.04，因此部分命令稍有不同。
+生成证书 先安装工具：
+sudo apt-get install letsencrypt  生成证书：
+sudo letsencrypt certonly --webroot -w /var/www/skyao -d skyao.io  配置nginx 在/etc/nginx/sites-available下增加一个skyao.io.https站点文件，内容如下：
+server { listen 443 ssl; server_name skyao.io www.skyao.io; root /var/www/skyao; index index.html; ssl on; ssl_certificate /etc/letsencrypt/live/skyao.io/fullchain.pem; ssl_certificate_key /etc/letsencrypt/live/skyao.io/privkey.pem; }  然后将http请求都自动转为https，修改原来的skyao.io配置文件：
+server { listen 80; server_name skyao.io www.skyao.io; rewrite ^(.*)$ https://$host$1 permanent; }  重启nginx：
+sudo service nginx restart  设置自动更新证书 由于Let&amp;rsquo;s Encrypt证书的有效期为90天，所有我们需要定期更新以避免证书过期，通常Let&amp;rsquo;s Encrypt会发邮件提醒的。</description>
+    </item>
+    
+    <item>
+      <title>搜索引擎优化</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/seo.html</link>
+      <pubDate>Mon, 10 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/installation/seo.html</guid>
+      <description> 为了让Hugo网站更好的被搜索引擎收录，需要进行搜索引擎优化（SEO）。
+站点内容优化 修改配置 修改 hugo/config/_default 目录下的 params.toml 文件：
+description = &amp;quot;敖小剑的个人技术博客网站，主要关注服务网格,serverless,kubernetes,微服务等云原生技术。&amp;quot;  修改模板 0.54 版本下基本做的很好了，不再修改。
+添加页面信息 首先确保每个页面一定都要设置有 title，description，最好还有 keywords：
+title: 前言 keywords: - hugo - 学习笔记 - hugo学习笔记 description : &amp;quot;介绍Hugo学习笔记的基本资料和访问方式。&amp;quot;  google搜索优化 提交给Google网站站长 打开 Google网站站长，点击 &amp;ldquo;SEARCH CONSOLE &amp;rdquo; 进入，然后添加资源，如https://skyao.io/learning-hugo/。会要求下载一个html文件如google571325××××.html做验证，将这个文件保存到hugo站点根目录下的static子目录，更新站点内容让google search console可以访问到进行验证即可。
+进入资源页面，点&amp;rdquo;索引&amp;rdquo;下的&amp;rdquo;站点地图&amp;rdquo;，在&amp;rdquo;添加新的站点地图&amp;rdquo;处输入当前hugo站点的sitemap，这个文件hugo会默认生成，就在根路径下，如https://skyao.io/learning-hugo/sitemap.xml。
+百度搜索优化 打开 百度搜索资源平台 ，点击 链接提交，然后点&amp;rdquo;添加站点&amp;rdquo;。同样可以用文件验证的方式来进行网站验证。
+进入&amp;rdquo;数据引入&amp;rdquo;下的&amp;rdquo;链接提交&amp;rdquo;，再点 &amp;ldquo;自动提交&amp;rdquo; 下的 &amp;ldquo;sitemap&amp;rdquo;，在这里可以提交hugo网站的sitemap文件。注意百度不容许以子目录的方式提交子站点，和google不一样，我们的学习笔记 https://skyao.io/learning-hugo/ 就不能直接提交了，只能在提交sitemap文件时，提交多个sitemap文件。这样也能勉强让百度收录。
+参考资料 有参考以下资料，特此鸣谢：
+ 搜索引擎优化（SEO）: 来自宋静超的hugo handbook Front-End-Checklist - Github SEO 查询 - 站长之家 SEO Meta Tags Meta Description 从Hexo迁移到Hugo-送漂亮的Hugo Theme主题 Hugo website SEO Hugo SEO Markup  </description>
+    </item>
+    
+  </channel>
+</rss>

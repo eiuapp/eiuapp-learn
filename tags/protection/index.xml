@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>protection on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/protection.html</link>
+    <description>Recent content in protection on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 21 Jun 2018 17:18:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/protection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Host Protection</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/security/host-protection.html</link>
+      <pubDate>Thu, 21 Jun 2018 17:18:24 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/security/host-protection.html</guid>
+      <description> Step 所以啊，主机防护还是很重要的！不要小看了！提供几个方向给大家思考看看吧：
+建立完善的登入密码规则限制； 完善的主机权限设定； 设定自动升级与修补软件漏洞、及移除危险软件； 在每项系统服务的设定当中，强化安全设定的项目； 利用 iptables, TCP_Wrappers 强化网络防火墙； 利用主机监控软件如 MRTG 与 logwatch 来分析主机状况与登录文件；  Ref    </description>
+    </item>
+    
+  </channel>
+</rss>

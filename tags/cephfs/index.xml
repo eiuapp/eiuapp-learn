@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cephfs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/cephfs.html</link>
+    <description>Recent content in cephfs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 17:31:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/cephfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubernetes cephfs intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-intro.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-intro.html</guid>
+      <description>REAEME cephfs-stateful cephfs-k8s-make-by-go-get cephfs-k8s-deployment-faq cephfs-k8s-yaml cephfs-k8s-make cephfs-k8s-faq</description>
+    </item>
+    
+    <item>
+      <title>cephfs 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/cephfs-install.html</link>
+      <pubDate>Fri, 30 Nov 2018 09:36:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/cephfs-install.html</guid>
+      <description> 环境： 192.168.31.115 192.168.31.114 192.168.31.113  line1 官网, 成功安装 我的安装设计是这样的：
+admin-node, deploy-node(ceph-deploy)：192.168.31.115 cephfs5 mon.0: 192.168.31.114 cephfs4 osd.0: 192.168.31.113 cephfs3 osd.1: 192.168.31.115 cephfs5 mds.0: 192.168.31.113 cephfs3 mds.1: 192.168.31.114 cephfs4  还是要结合一下 https://linux.cn/article-8182-1.html
+line2 http://tonybai.com/2017/05/08/mount-cephfs-acrossing-nodes-in-kubernetes-cluster/
+over </description>
+    </item>
+    
+    <item>
+      <title>kubernetes cephfs README</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-readme.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:28:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-readme.html</guid>
+      <description>本次, k8s cephfs 结合, 前前后后, 花了差不多1个月的时间, 终于是有结果了.
+主要大过程是:
+安装 k8s.v1.7.3 flannel 网络 成功 安装 ceph 安装 cephfs 然后 k8s + cephfs make &amp;amp;&amp;amp; make push deployment.yaml 失败 docker 成功 test-pod 成功 检查 SUCCESS 失败 Input/Output Error 发现不对, 升级内核 升级 k8s.v1.7.3 至 k8s.v1.8.3 升级失败 科学上网 XX-net 失败 加速度 成功 全新安装 k8s.v1.8.4 remove kube* 成功 install kube* 成功 init 成功 apply -f kube-flannel.yml 然后 k8s + cephfs docker 成功, 关闭 重新设置 cni0 secret 成功 configmap.</description>
+    </item>
+    
+    <item>
+      <title>ceph auth</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-auth.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:10:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-auth.html</guid>
+      <description>cephu@cephadmin:~/my-cluster$ ceph auth ls installed auth entries: mds.node1 key: AQADpu5ZJgEAAhAA6Om+UrlNn3s4v728UGIuTQ== caps: [mds] allow caps: [mon] allow profile mds caps: [osd] allow rwx osd.0 key: AQCAou5ZbAFBCRAANHUYj3trYJm+bbpzM68Czw== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * osd.1 key: AQCNou5Z0AEiChAAoXaQS1KsqnygVzIdK4LeBQ== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * osd.2 key: AQCaou5ZckceFxAArxSTMrgL94Pe9wGqhT2tGA== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * client.</description>
+    </item>
+    
+    <item>
+      <title>使用 cephfs 完成 statefulset 的练习</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-stateful.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-stateful.html</guid>
+      <description>环境 k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 cephfs-admin 192.168.31.115 cephfs-monitor 192.168.31.114 cephfs-client 192.168.31.172  各 k8s-node 安装完 ceph-common(sudo apt install ceph-common -y)
+准备 在进行操作前，请完成下面的操作：
+1）阅读
+http://www.cnblogs.com/iiiiher/p/7159810.html
+https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+注意：
+https://github.com/kubernetes-incubator/external-storage 这个仓库，是官方提供之外的 External storage plugins, provisioners, and helper libraries ，因为我们在官方文档 中看到了 nfs 是不支持 provisioners 的，所以要来这里了哟&amp;gt;。
+2）git clone
+ git clone https://github.com/kubernetes-incubator/external-storage
+cd external-storage/nfs-client/deploy/
+ 3）按步骤来进行。
+现在打开 https://github.com/kubernetes-incubator/external-storage/tree/master/ceph/cephfs
+开始动手了
+step Compile the provisioner 见 cephfs-k8s-make-by-go-get.rst
+这个地方，请参看 http://blogtt.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes-cephfs-make-by-go-get</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make-by-go-get.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:35:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make-by-go-get.html</guid>
+      <description>ENV k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 ceph-client 192.168.31.172 ceph-mon1 192.168.31.114  这次的make, 可以在任何地方完成，只要满足：golang 1.7 以上的版本
+我在 km,ceph-client,ceph-mon1 上都完成过
+安装golang 如果已有安装，请忽略这一步
+安装 golang 1.7 以上的版本。 我们这里安装 1.9.1
+ cd home/jlch tar -xvf go1.9.2.linux-amd64.tar ls go export PATH=$PATH:/home/jlch/go/bin
+ 验证go go version  配置 GOPATH mkdir gopath export GOPATH=/home/jlch/gopath/  go get go get github.com/kubernetes-incubator/external-storage  配置 Dockerfile 后来发现 docker image 的文件不对。
+这个地方的 ENV CEPH_VERSION &amp;ldquo;jewel&amp;rdquo; 应该修改成 ENV CEPH_VERSION &amp;ldquo;luminous&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes中cephfs的deployment的FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-deployment-faq.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:41:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-deployment-faq.html</guid>
+      <description>k8s cephfs 在 deployment.yaml 中的使用 Environment k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2  配置 deployment.yaml apiVersion: extensions/v1beta1 kind: Deployment metadata: name: cephfs-provisioner spec: replicas: 1 strategy: type: Recreate template: metadata: labels: app: cephfs-provisioner spec: containers: - name: cephfs-provisioner image: &amp;quot;quay.io/external_storage/cephfs-provisioner:latest&amp;quot; # 对应 镜像 imagePullPolicy: IfNotPresent env: - name: PROVISIONER_NAME valueFrom: configMapKeyRef: key: provisioner.name name: cephfs-provisioner command: # 这里对应 命令 - &amp;quot;/usr/local/bin/cephfs-provisioner&amp;quot; args: # 这里对应三个参数 - &amp;quot;-id=cephfs-provisioner-1&amp;quot; - &amp;quot;-master=https://10.</description>
+    </item>
+    
+    <item>
+      <title>k8s 中 cephfs 成功的 yaml 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-yaml.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:47:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-yaml.html</guid>
+      <description>https://github.com/kubernetes-incubator/external-storage/tree/master/ceph/cephfs
+对 我们好不容易成功安装的 k8s-cephfs 进行一个记录呀！
+环境 k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 cephfs-admin 192.168.31.115 cephfs-monitor 192.168.31.114 cephfs-client 192.168.31.172  git remote jlch@km:~/cephfs$ git remote -v origin https://github.com/kubernetes-incubator/external-storage (fetch) origin https://github.com/kubernetes-incubator/external-storage (push) jlch@km:~/cephfs$ git log | head commit f1eb2a4ddf944fdd35a16e686ae104c1db8753b2 Merge: 06aaf46 52a4da4 Author: Matthew Wong &amp;lt;mawong@redhat.com&amp;gt; Date: Tue Nov 21 01:48:43 2017 -0500 Merge pull request #468 from sathieu/patch-1 flex: Fix file shbang commit 06aaf46950c9f6f741b34afc1d9f7807bdbe078c jlch@km:~/cephfs$  git status 记录一下主要的修改点</description>
+    </item>
+    
+    <item>
+      <title>cephfs-k8s 中的 make</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:52:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make.html</guid>
+      <description>下载 make ，报错了。
+root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful# cd external-storage/ceph/cephfs/ root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful/external-storage/ceph/cephfs# ls cephfs_provisioner cephfs-provisioner.go ceph-secret-admin.yaml CHANGELOG.md claim.yaml class.yaml configmap.yaml deployment.yaml Dockerfile local-start.sh Makefile OWNERS README.md test-pod.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful/external-storage/ceph/cephfs# make CGO_ENABLED=0 GOOS=linux go build -a -ldflags &#39;-extldflags &amp;quot;-static&amp;quot;&#39; -o cephfs-provisioner cephfs-provisioner.go cephfs-provisioner.go:28:2: cannot find package &amp;quot;github.com/golang/glog&amp;quot; in any of: /usr/lib/go-1.8/src/github.com/golang/glog (from $GOROOT) /root/go/src/github.com/golang/glog (from $GOPATH) cephfs-provisioner.go:29:2: cannot find package &amp;quot;github.com/kubernetes-incubator/external-storage/lib/controller&amp;quot; in any of: /usr/lib/go-1.8/src/github.com/kubernetes-incubator/external-storage/lib/controller (from $GOROOT) /root/go/src/github.com/kubernetes-incubator/external-storage/lib/controller (from $GOPATH) cephfs-provisioner.go:30:2: cannot find package &amp;quot;k8s.io/api/core/v1&amp;quot; in any of: /usr/lib/go-1.</description>
+    </item>
+    
+    <item>
+      <title>k8s 与 cephfs 相关的FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-faq.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:58:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-faq.html</guid>
+      <description>Input/output error cephu@ceph-client:/mnt/mycephfs/volumes/kubernetes$ ll kubernetes-dynamic-pvc-a2c667ad-d0c7-11e7-b656-0a580af40148/ ls: reading directory &#39;kubernetes-dynamic-pvc-a2c667ad-d0c7-11e7-b656-0a580af40148/&#39;: Input/output error total 0 drwxr-xr-x 1 root root 0 Nov 24 11:36 ./ drwxr-xr-x 1 root root 0 Nov 24 11:29 ../ cephu@ceph-client:/mnt/mycephfs/volumes/kubernetes$  这个问题，看了一下，https://github.com/kubernetes-incubator/external-storage/issues/345，
+最后，有用户是这样回复的
+I tried to update my ubuntu kernel from 4.4.0 to 4.10.0 (sudo apt install linux-image-4.10.0-28-generic) and after a reboot, the error is gone, everything works fine from now on :)  所以就是升级内核了。升级去吧。 升级一下，果然成功了。</description>
+    </item>
+    
+  </channel>
+</rss>

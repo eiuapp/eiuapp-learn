@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>auth on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/auth.html</link>
+    <description>Recent content in auth on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 30 Nov 2018 17:10:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/auth/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ceph auth</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-auth.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:10:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-auth.html</guid>
+      <description>cephu@cephadmin:~/my-cluster$ ceph auth ls installed auth entries: mds.node1 key: AQADpu5ZJgEAAhAA6Om+UrlNn3s4v728UGIuTQ== caps: [mds] allow caps: [mon] allow profile mds caps: [osd] allow rwx osd.0 key: AQCAou5ZbAFBCRAANHUYj3trYJm+bbpzM68Czw== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * osd.1 key: AQCNou5Z0AEiChAAoXaQS1KsqnygVzIdK4LeBQ== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * osd.2 key: AQCaou5ZckceFxAArxSTMrgL94Pe9wGqhT2tGA== caps: [mgr] allow profile osd caps: [mon] allow profile osd caps: [osd] allow * client.</description>
+    </item>
+    
+  </channel>
+</rss>

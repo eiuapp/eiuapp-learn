@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>preview on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/preview.html</link>
+    <description>Recent content in preview on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/preview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>emacs中启动markdown preview</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-markdown-preview.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-markdown-preview.html</guid>
+      <description> zilongshanren/markdown-to-html 开启
+ , p
+ 使用 grip 程序preview markdown-to-html 文件。子龙说，这里的预览效果与 github上的md文件的效果是一模一样的。
+grip安装 https://github.com/joeyespo/grip
+brew install grip  Ref  https://emacs-china.org/t/topic/1549/17  </description>
+    </item>
+    
+  </channel>
+</rss>

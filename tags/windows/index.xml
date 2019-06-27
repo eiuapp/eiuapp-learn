@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/windows.html</link>
+    <description>Recent content in windows on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows下效率必备软件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/windows-tools.html</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/windows-tools.html</guid>
+      <description>Windows下效率必备软件
+env os: win10
+step 工欲善其事，必先利其器！ 工欲善其事，必先利其器！ 工欲善其事，必先利其器！重而说三。
+当你第一次接触windows，并准备在其上开发时，请先安装 package-manager-for-windows , 并用它来安装下面的软件。
+工具 AutoHotKey: 神器！神器！神器！当然也得看使用者咯(^__^) 嘻嘻……详情请参看：Win下最爱效率神器:AutoHotKey。
+[Listary]()： 本地搜索神器，当然还有别的作用，More&amp;amp;More。
+Launchy : 快速启动安装的应用程序，老而弥坚，有丝Mac下Spotlight之风；
+ http://www.launchy.net/ https://www.iplaysoft.com/launchy.html  Wox ： Windows下一款最接近 Alfred 的软件启动/文件搜索利器；可参见Listary Everything Wox Launch。
+Chrome: Web世界里的神，的神，神。偏爱ing；如虎添翼，效率必备：Vimium~让您的Chrome起飞。
+SublimeText3： 编码垒字的神器，还能览图/文件对比/…,偏爱ing；自荐笔者总结一文： 如何优雅地使用Sublime Text
+Picasa3: 图片查看器中的佼佼者，偏爱ing。姑姑出品，必属精品！
+Clover： 在Win下必备，谁让Win资源管理器太…QT，TotalCommand太重(⊙o⊙)…
+Everything： 本来必备神器，无奈我移情别恋了–Listary。不过是不会忘了你。
+Foxmail： 对比体验不多，不做评判，必备；反正不用win自带的。
+Evernote: 纪录/收藏你想保存的文｜图｜网页;为知笔记～功能同丰满,身材更骨感😄。
+Beyond Compare : 文件比较器; 此款为所接触中最佳。
+Cmder: windows下cmd的替换工具,支持PowerShell;同比还有PowerShell，ConEmu 等。自荐笔者总结的：Win下必备神器之Cmder。
+作业部落客户端: 开启卓越写作之旅,支持全平台＋离线使用，一键发布文稿，社交化批注。身材苗条，面容姣好，免费Markdown书写平台的魅力战斗机。
+夜神模拟器: 经历了BlueStacks,海马，一遇这夜神,认你乃最佳！ 之后体验过程也没那么好，兼用海马(都不经常)。
+网易云音乐: 初遇QQ音乐,处过天天动听,恋过酷狗，上过酷我，一夜情过千千静听,移情过虾米，和豆瓣FM好过，同百度随心听约过,最后，发现音乐的世界,还得是你～网易云音乐。
+[Update: 2016-03-09 ~ 2016-03-10]
+Atom: 新一代编码写文神器；虽还在发展，却已惊艳。自荐笔者一文：新编码神器Atom使用纪要。</description>
+    </item>
+    
+    <item>
+      <title>Network Proxy Win10</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-win10.html</link>
+      <pubDate>Mon, 11 Jun 2018 10:10:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/network-proxy-win10.html</guid>
+      <description> 通过win10实现FQ
+Env  os: win10  Step 先配置Shadowsocks privoxy or not 方法1 不配置 privoxy 其实可以不配置privoxy,而使得socks5生效。
+具体步骤如下：
+配置的过程中，可以通过一个pac 文件过滤url,这个地方，怎么设置的呢？看下图
+方法2 配置 privoxy </description>
+    </item>
+    
+    <item>
+      <title>Windows Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/windows.html</link>
+      <pubDate>Wed, 28 Feb 2018 17:26:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/windows.html</guid>
+      <description> windows 后台运行 使用start /b +命令即可，具体方法如下：
+ 按windows和r组合键打开运行面板； 在运行框内输入cmd，再按回车键进入命令提示符中； 在命令提示符中输入“ start /b 命令 &amp;ldquo; 再按回车，即可后台运行该命令。  </description>
+    </item>
+    
+  </channel>
+</rss>

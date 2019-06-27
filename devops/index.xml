@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/devops.html</link>
+    <description>Recent content in devops on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>devops ideas</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/devops/devops-ideas.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/devops/devops-ideas.html</guid>
+      <description>windows 防止电脑被远程控制 https://jingyan.baidu.com/article/a948d65159fc890a2dcd2ea8.html
+对外开放端口 对外开放的端口的机器，随时都有被攻击，被挂掉的风险。
+所以，对外开放的端口的机器，必须只提供单一的对外服务，即使挂掉了，也没有关系。
+尽可能使用docker吧。</description>
+    </item>
+    
+  </channel>
+</rss>

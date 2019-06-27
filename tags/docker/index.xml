@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/docker.html</link>
+    <description>Recent content in docker on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 27 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用户加入docker组</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/add-user-to-docker-group.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/add-user-to-docker-group.html</guid>
+      <description> Docker 创建docker用户组，应用用户加入docker组
+创建docker用户组 sudo groupadd docker  应用用户加入docker用户组 sudo usermod -aG docker ${USER}  重启docker服务 sudo systemctl restart docker  切换或者退出当前账户再从新登入 su root # 切换到root用户 su ${USER} # 再切换到原来的应用用户以上配置才生效  </description>
+    </item>
+    
+    <item>
+      <title>docker build时运行 COPY 时报no such file or directory 错误</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-copy-failed-no-such-file-or-directory.html</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-copy-failed-no-such-file-or-directory.html</guid>
+      <description>env Expected behavior COPY command to copy a file from local to image
+Actual behavior doing a simple COPY command in Dockerfile is throwing this error when the file is in a folder (not same level as Dockerfile file)
+Description
+I have a Dockerfile that has the line:
+COPY MyAgSourceAPI/conf/php/testsql.php var/www
+But it causes the error:
+COPY failed: stat /var/lib/docker/tmp/docker-builder918577595/MyAgSourceAPI/conf/php/testsql.php: no such file or directory
+step 有一些解决方案在 https://github.com/docker/for-mac/issues/1922 提出来。</description>
+    </item>
+    
+    <item>
+      <title>docker login failure,  unauthorized: incorrect username or password</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-faq.html</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-faq.html</guid>
+      <description>报错中出现类似“unauthorized: incorrect username or password”的话。
+➜ saleor git:(master) docker-compose run web python3 manage.py migrate Pulling db (library/postgres:latest)... latest: Pulling from library/postgres a5a6f2f73cd8: Already exists e50fbea8af5a: Pull complete 73b4855ad326: Pull complete ERROR: Get https://registry-1.docker.io/v2/library/postgres/manifests/latest: unauthorized: incorrect username or password ➜ saleor git:(master)  重新使用 docker.com 中的用户名登陆，而不是邮箱登陆。
+➜ saleor git:(master) docker logout Removing login credentials for https://index.docker.io/v1/ ➜ saleor git:(master) docker login Login with your Docker ID to push and pull images from Docker Hub.</description>
+    </item>
+    
+    <item>
+      <title>docker registry</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry.html</guid>
+      <description>docker registry
+ 在 192.168.31.240 ， 10.10.12.17 中建立了 registry 输入用户zimug，密码zimug_password  192.168.31.171 client
+root 用户
+sudo mkdir -p /etc/docker/certs.d/reg.jlch.com:5000 sudo echo 192.168.31.240 reg.jlch.com &amp;gt;&amp;gt; /etc/hosts sudo scp -r tom@192.168.31.240:/home/tom/registry/certs/registry.crt /etc/docker/certs.d/reg.jlch.com:5000  root@k-m:/home/jlch# docker login reg.jlch.com:5000 Username: zimug Password: Login Succeeded root@k-m:/home/jlch# docker images REPOSITORY TAG IMAGE ID CREATED SIZE ceph/daemon latest dc9781d1d530 20 hours ago 983MB hello-world latest 1815c82652c0 4 months ago 1.84kB root@k-m:/home/jlch# docker tag ceph/daemon reg.jlch.com:5000/ceph/daemon:latest root@k-m:/home/jlch# docker push reg.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</guid>
+      <description>root@km:~# sudo apt-get update ... Ign:56 http://cn.archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US Fetched 3,967 kB in 37min 32s (1,761 B/s) Reading package lists... Done W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-updates Release&#39; does not have a Release file. N: Data from such a repository can&#39;t be authenticated and is therefore potentially dangerous to use. N: See apt-secure(8) manpage for repository creation and user configuration details. W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-backports Release&#39; does not have a Release file.</description>
+    </item>
+    
+    <item>
+      <title>docker-compose安装后报&#34;specify DOCKER_HOST&#34;错误</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-compose-installed-then-error-specify-DOCKER_HOST.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-compose-installed-then-error-specify-DOCKER_HOST.html</guid>
+      <description> 按照官网 https://docs.docker.com/compose/install/ 安装完 docker-compose 后，要重 新进入一下用户(比如切换为root，再次切换为user)，配置才生效。
+否则会报出下面的错误：
+ERROR: Couldn’t connect to Docker daemon at http+docker://localunixsocket - is it running? If it’s at a non-standard location, specify the URL with the DOCKER_HOST environment variable.  Ref  https://blog.csdn.net/xiojing825/article/details/79494408  </description>
+    </item>
+    
+    <item>
+      <title>ceph安装，基于docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-docker.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:15:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-docker.html</guid>
+      <description>https://github.com/ceph/ceph-docker
+m1 http://ceph.com/planet/%E5%9F%BA%E4%BA%8Edocker%E9%83%A8%E7%BD%B2ceph%E4%BB%A5%E5%8F%8A%E4%BF%AE%E6%94%B9docker-image/
+http://www.sebastien-han.fr/blog/2015/06/23/bootstrap-your-ceph-cluster-in-docker/
+http://www.topjishu.com/10455.html
+http://ceph.com/planet/%E5%9F%BA%E4%BA%8Edocker-ui-%E9%85%8D%E7%BD%AEceph%E9%9B%86%E7%BE%A4/
+m2 http://www.dockerinfo.net/445.html
+m3 http://www.jianshu.com/p/f08ed7287416</description>
+    </item>
+    
+    <item>
+      <title>docker registry ui</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-ui.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-ui.html</guid>
+      <description>http://blog.csdn.net/mideagroup/article/details/52052618
+env 192.168.31.240
+home/tom/hyper-docker-registry-web-config 下</description>
+    </item>
+    
+    <item>
+      <title>批量删除docker images</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-remove-images-multy.html</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-remove-images-multy.html</guid>
+      <description> docker ps -a | grep &amp;quot;Exited&amp;quot; | awk &#39;{print $1 }&#39;|xargs docker stop docker ps -a | grep &amp;quot;Exited&amp;quot; | awk &#39;{print $1 }&#39;|xargs docker rm docker images|grep none|awk &#39;{print $3 }&#39;|xargs docker rmi  Ref  https://blog.csdn.net/p656456564545/article/details/50097145  </description>
+    </item>
+    
+    <item>
+      <title>docker 登陆失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</guid>
+      <description>login failure - 代理问题 root@km:~/dockerRegistry# docker login reg.jlch.com:5000 Username (zimug): Password: Error response from daemon: Get https://reg.jlch.com:5000/v1/users/: EOF root@km:~/dockerRegistry# vi /lib/systemd/system/docker.service  重点把 reg.jlch.com 加入 Environment 中。
+root@km:~# cat /lib/systemd/system/docker.service [Unit] Description=Docker Application Container Engine Documentation=https://docs.docker.com After=network.target docker.socket firewalld.service Requires=docker.socket [Service] Type=notify # the default is not to use systemd for cgroups because the delegate issues still # exists and systemd currently does not support the cgroup feature set required # for containers run by docker Environment=&amp;quot;HTTP_PROXY=http://192.</description>
+    </item>
+    
+    <item>
+      <title>docker-registry-push-pull</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-push-pull.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-push-pull.html</guid>
+      <description>请查看
+https://gitee.com/tomt/tom%5Fdocker%5Fregistry%5Fpush%5Fpull.git</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/docker.html</link>
+      <pubDate>Wed, 03 Apr 2019 15:59:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/docker.html</guid>
+      <description> docker 删除所有容器，镜像，数据卷 #以下，按需求开启 #停止容器 docker stop $(docker ps -a -q) #删除容器 docker rm $(docker ps -a -q) #删除镜像 docker image rm $(docker image ls -a -q) #删除数据卷： #docker volume rm $(docker volume ls -q) #删除 network： #docker network rm $(docker network ls -q) #---------------------------------------------------------------------------- #最直接并全面清理的的就是以下命令 #$docker stop $(docker ps -a -q) &amp;amp;&amp;amp; docker system prune --all --force  ref  https://blog.csdn.net/qq_34924407/article/details/82777691  </description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Mirrors Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-mirrors-base-ubuntu.html</link>
+      <pubDate>Fri, 22 Jun 2018 16:38:30 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-mirrors-base-ubuntu.html</guid>
+      <description> 如何配置镜像加速器
+Env  docker: 17.03.2+ os: ubuntu16.04  Step 打开 https://cr.console.aliyun.com/#/imageList 找到 镜像加速器
+可以根据自己OS选择，下面的是ubuntu, registry-mirrors中的内容已失效，请替换成您自己的。
+针对Docker客户端版本大于1.10.0的用户 您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器：
+sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json &amp;lt;&amp;lt;-&#39;EOF&#39; { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2yzz.mirror.aliyuncs.com&amp;quot;] } EOF sudo systemctl daemon-reload sudo systemctl restart docker  Ref  https://cr.console.aliyun.com/?spm=a2c4e.11153940.blogcont29941.9.520269d6m3p5Xn&amp;amp;accounttraceid=1843b6a4-8ded-4ec5-bdd5-fc17fcffbf8f&amp;amp;accounttraceid=93aba21f-da4b-41b2-ba82-c692f6d5c65f#/accelerator https://cr.console.aliyun.com/#/imageList  </description>
+    </item>
+    
+    <item>
+      <title>Docker Pull With Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-pull-with-proxy.html</link>
+      <pubDate>Sun, 17 Jun 2018 23:38:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-pull-with-proxy.html</guid>
+      <description> 透过proxy进行docker pull
+Env  os: ubuntu16 os: centos  Step  对于Ubuntu 系统  sudo vi /etc/default/docker   对于Centos 系统  sudo vi /etc/sysconfig/docker  把下面的内容加到尾部
+HTTP_PROXY=http://192.168.31.112:8118 http_proxy=${HTTP_PROXY} HTTPS_PROXY=${HTTP_PROXY} https_proxy=${HTTP_PROXY} export HTTP_PROXY HTTPS_PROXY http_proxy https_proxy  重启docker
+sudo systemctl restart docker sudo systemctl status docker  然后再进行相关的 docker pull 操作就可以了。
+Ref  https://blog.csdn.net/u011563903/article/details/52161648  </description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</link>
+      <pubDate>Mon, 04 Jun 2018 19:01:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</guid>
+      <description>ubuntu中安装docker-ce
+Env  os: ubuntu16 ip: ... docker: 17.03.2~ce-0~ubuntu-xenial  Step 查看已安装 sudo docker version  如果有已安装，请卸载，给个示例
+sudo apt remove docker* -y  安装 lsb_release -a sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - sudo apt-key fingerprint 0EBFCD88 sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; sudo apt-get update apt-cache madison docker-ce  查看后，选择我们需要的指定版本, 我这里选择17.03.2.
+sudo apt-get install docker-ce=17.03.2~ce-0~ubuntu-xenial -y sudo docker run hello-world  Ref  https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera From Docker to Bare</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:49:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html</guid>
+      <description>mysql系列之 从 docker+Galera 转到 Galera(去除 docker)
+context 之前在 docker之docker-mariadb-galera(panubo版) 中成功在 docker 中安装了 Galera, 突然, 由于业务调整, 需要把 Galera 从docker中脱离出来, 直接在 裸机 上跑..
+node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)
+step  [在node0, node1, node2上]把 Galera 从 docker 中删除
+docker stop abcd
+ [node0上]然后, 我尝试重新启动 MariaDB-Galera-cluster, 怎么重启, 那自然是参考 mysql系列之集群 MariaDB Galera Cluster 部署
+  来到 node0上,
+sudo /etc/init.d/mysql status sudo /etc/init.d/mysql start --wsrep-new-cluster  发现, 直接报错了..
+[tom@mariadb-node-0 ~]$ sudo /etc/init.d/mysql start --wsrep-new-cluster Starting MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install For Jlch</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:30:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral docker-registry  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 192.168.31.240 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.jlch.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码
+cd ~/registry&amp;amp;&amp;amp; mkdir auth;docker run --entrypoint htpasswd registry:2 -Bbn zimug zimug_password &amp;gt; auth/htpasswd;  用户：zimug 密码：zimug_password 可随便填写自己想填写的</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo2 Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:26:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo2-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)(2017-02)
+ref  https://github.com/panubo/docker-mariadb-galera  env  node0, 10.10.13.110, primary node1, 10.10.15.240 node2, 10.10.12.13(这一台暂时没用上)  step  拉取 (panubo版)git 代码, 取 image  三台机器, 各运行一下
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/ &amp;amp;&amp;amp; docker pull panubo/mariadb-galera   设置环境变量  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.13.110 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-0 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.15.240 WSREP_CLUSTER_ADDRESS=gcomm://10.10.13.110:4567,10.10.12.13:4567,10.10.15.240:4567 WSREP_CLUSTER_NAME=my_wsrep_cluster WSREP_NODE_NAME=mariadb-node-1 EOF source ~/.</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:38:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral
+ docker-registry
+  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 10.10.12.17 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.zimug.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Base Docker Coreos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:36:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</guid>
+      <description>MariaDB Galera cluster running on CoreOS using the official Docker images
+env Coreos + any public cloud (Azure, AWS, Google, etc)
+step 开端口:
+sudo firewall-cmd --permanent --add-port=4567/udp; sudo firewall-cmd --permanent --add-port=4567/tcp; sudo firewall-cmd --permanent --add-port=4568/tcp; sudo firewall-cmd --permanent --add-port=4444/tcp; sudo firewall-cmd --permanent --add-port=3306/tcp; sudo firewall-cmd --reload; sudo firewall-cmd --permanent --list-port  检查mysql 是不是起来了:
+sudo yum install -y telnet telnet 127.0.0.1 22 Telnet 127.0.0.1 3306
+检查日志
+docker logs -f mariadb-container-0</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Panubo Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:32:52 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-panubo-base-docker.html</guid>
+      <description>docker之docker-mariadb-galera(panubo版)
+env  node0, 10.10.12.17 node1, 10.10.12.18 node2, 10.10.13.10(这一台暂时没用上)  step  拉取 (panubo版)git 代码
+mkdir ~/docker &amp;amp;&amp;amp; cd ~/docker &amp;amp;&amp;amp; git clone https://github.com/panubo/docker-mariadb-galera &amp;amp;&amp;amp; cd docker-mariadb-galera/
+ 设置环境变量
+  在node0上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.17 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc  在node1上:
+cat &amp;gt;&amp;gt; ~/.bashrc &amp;lt;&amp;lt; EOF WSREP_NODE_ADDRESS=10.10.12.18 WSREP_CLUSTER_ADDRESS=gcomm://10.10.12.17:4567,10.10.12.18:4567,10.10.13.10:4567 EOF source ~/.bashrc   Running Garbd  在 node0 上:
+docker run -d --net host --name galera-garbd \ -e WSREP_CLUSTER_ADDRESS=$WSREP_CLUSTER_ADDRESS \ panubo/mariadb-galera \ garbd   运行container  在node0上:</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Galera Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:31:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker.html</guid>
+      <description> docker之docker-mariadb-galera各种策略汇总
+使用 FROM mariadb:10.1 的几个docker  https://github.com/EgoAleSum/mariadb-cluster  http://withblue.ink/2016/03/09/galera-cluster-mariadb-coreos-and-docker-part-1.html
+Coreos + any public cloud (Azure, AWS, Google, etc)
+ https://github.com/dial-once/docker-mariadb-galera  使用 Docker Cloud/Docker Compose YML
+ https://github.com/toughIQ/docker-mariadb-cluster  Swarm
+Consider this a POC and not a production ready system!
+Built for use with Docker 1.12.1+ in Swarm Mode
+ https://github.com/panubo/docker-mariadb-galera  Galera Arbitrator (aka garbd)
+end </description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:28:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</guid>
+      <description>practice [tom@mysql1 ~]$ sudo tee /etc/yum.repos.d/docker.repo &amp;lt;&amp;lt;-&#39;EOF&#39; &amp;gt; [dockerrepo] &amp;gt; name=Docker Repository &amp;gt; baseurl=https://yum.dockerproject.org/repo/main/centos/7/ &amp;gt; enabled=1 &amp;gt; gpgcheck=1 &amp;gt; gpgkey=https://yum.dockerproject.org/gpg &amp;gt; EOF [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg [tom@mysql1 ~]$ sudo yum install docker-engine -y ... Installed: docker-engine.x86_64 0:1.12.3-1.el7.centos Dependency Installed: docker-engine-selinux.noarch 0:1.12.3-1.el7.centos Complete! [tom@mysql1 ~]$ sudo systemctl enable docker.service Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service. [tom@mysql1 ~]$ sudo systemctl start docker [tom@mysql1 ~]$ sudo docker run --rm hello-world Unable to find image &#39;hello-world:latest&#39; locally latest: Pulling from library/hello-world c04b14da8d14: Pull complete Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9 Status: Downloaded newer image for hello-world:latest Hello from Docker!</description>
+    </item>
+    
+    <item>
+      <title>Docker Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/docker.html</link>
+      <pubDate>Fri, 23 Feb 2018 10:08:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/docker.html</guid>
+      <description> 如何使用 DockerHub  </description>
+    </item>
+    
+  </channel>
+</rss>

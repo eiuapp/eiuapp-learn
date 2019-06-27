@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>before on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/before.html</link>
+    <description>Recent content in before on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/before/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>运行 kubeadm init 之前</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-before-v1_8_3.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-before-v1_8_3.html</guid>
+      <description>在运行 kubeadm init 之前的动作
+kubelet 服务检查 后来发现，在这里应该测试一下 kubelet.service。
+原来，虽然我 apt install kubelet , 但是， 遗留了之前 kubeadm 的一些配置.(应该把它们清空的.) 如: /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+让我们来吧。
+删除这个新安装的 kubelet root@km:/etc/cni/net.d# root@km:/etc/cni/net.d# apt remove kubelet Reading package lists... Done Building dependency tree Reading state information... Done The following packages were automatically installed and are no longer required: ebtables golang-1.8-go golang-1.8-race-detector-runtime golang-1.8-src kubernetes-cni socat Use &#39;apt autoremove&#39; to remove them. The following packages will be REMOVED: kubeadm kubelet 0 upgraded, 0 newly installed, 2 to remove and 11 not upgraded.</description>
+    </item>
+    
+  </channel>
+</rss>

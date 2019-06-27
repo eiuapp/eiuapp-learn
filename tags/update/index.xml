@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>update on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/update.html</link>
+    <description>Recent content in update on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:52:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mongodb Update</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-update.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:52:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mongodb/mongodb-update.html</guid>
+      <description>mongodb系列之update
+只要是批量，后头加 {multi: true} 吧。
+批量，新增一个k-v db.Signals_Day.update({TrdDt:20161129}, {$set: {&amp;ldquo;Real&amp;rdquo;: true}}, {multi: true})
+testrs:PRIMARY&amp;gt; db.Signals_Day.update({TrdDt:20161129}, {$set: {&amp;quot;Real&amp;quot;: true}}, {multi: true}) WriteResult({ &amp;quot;nMatched&amp;quot; : 8935, &amp;quot;nUpserted&amp;quot; : 0, &amp;quot;nModified&amp;quot; : 8933 }) testrs:PRIMARY&amp;gt; db.Signals_Day.find({TrdDt:20161129}) { &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;583d27735868c24cb078e925&amp;quot;), &amp;quot;Type&amp;quot; : &amp;quot;NewHighLow&amp;quot;, &amp;quot;Sign&amp;quot; : -1, &amp;quot;ID&amp;quot; : &amp;quot;000785.SZ&amp;quot;, &amp;quot;TrdDt&amp;quot; : 20161129, &amp;quot;TrdTm&amp;quot; : 1500, &amp;quot;PrevClsPx&amp;quot; : 14.99, &amp;quot;LastPx&amp;quot; : 14.4, &amp;quot;Real&amp;quot; : true } { &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;583d27735868c24cb078e92a&amp;quot;), &amp;quot;Type&amp;quot; : &amp;quot;RSI&amp;quot;, &amp;quot;Sign&amp;quot; : -1, &amp;quot;ID&amp;quot; : &amp;quot;002117.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Deployment Rollingupdate</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-deployment-rollingupdate.html</link>
+      <pubDate>Sun, 04 Feb 2018 13:21:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-deployment-rollingupdate.html</guid>
+      <description>使用kubernetes的deployment进行RollingUpdate</description>
+    </item>
+    
+  </channel>
+</rss>

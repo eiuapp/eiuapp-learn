@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eslint on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/eslint.html</link>
+    <description>Recent content in eslint on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 10 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/eslint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eslint入门</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/eslint/eslint-install.html</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/eslint/eslint-install.html</guid>
+      <description>安装 npm install -g eslint babel-eslint eslint-plugin-react eslint-config-airbnb  在安装的时候得注意一点，eslint与eslint-config-airbnb要么都执行全局安装，要么都本地安装，必须相同哟。
+然后，把 https://github.com/airbnb/javascript/blob/master/linters/.eslintrc 下载到Project 中就可以了。
+使用 配置完相关信息后，就可以切到项目目录内然后执行检测啦：
+我们新建一个test.js进行检测
+$ eslint test.js  JavaScript Style Guide 关于 JavaScript Style Guide 可以直接参考
+ https://github.com/airbnb/javascript  react eslint 优先查看：
+在React+Babel+Webpack环境中使用ESLint
+ https://www.cnblogs.com/le0zh/p/5619350.html https://www.bbsmax.com/A/obzbX0j65E/  React-native ESLint &amp;amp; Airbnb 配置
+ https://www.jianshu.com/p/1d66a10466d2  npm run lint 检查所有js文件 在根目录的 package.json文件下修改如下:
+&amp;quot;scripts&amp;quot;: { &amp;quot;lint&amp;quot;: &amp;quot;eslint --ext .js ./src --fix&amp;quot; }  根目录下运行:
+npm run lint  再webpack配置中使用eslint加载器 添加 到：webpack.</description>
+    </item>
+    
+    <item>
+      <title>Emacs Flycheck Eslint</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-flycheck-eslint.html</link>
+      <pubDate>Thu, 23 Aug 2018 15:05:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-flycheck-eslint.html</guid>
+      <description>Env  os: mac emacs: GNU Emacs 22.1.1  Step https://github.com/flycheck/flycheck/issues/1195
+遇到下面的情形，就按提示，把这些个包，一个一个地安装。
+➜ tmp git:(master) ✗ eslint -v v5.4.0 { ➜ tmp git:(master) ✗ ls test.js ➜ tmp git:(master) ✗ cat test.js var a=1; var b = 2; vardf c=a+b; function a(){ console.log(&amp;quot;hello world&amp;quot;) } ➜ tmp git:(master) ✗ eslint test.js Oops! Something went wrong! :( ESLint: 5.4.0. ESLint couldn&#39;t find the plugin &amp;quot;eslint-plugin-import&amp;quot;. This can happen for a couple different reasons: 1.</description>
+    </item>
+    
+  </channel>
+</rss>

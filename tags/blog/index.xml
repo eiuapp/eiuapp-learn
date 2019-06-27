@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/blog.html</link>
+    <description>Recent content in blog on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 09 Nov 2018 23:32:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Org写Blog</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/org/org-blog-why.html</link>
+      <pubDate>Fri, 09 Nov 2018 23:32:18 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/org/org-blog-why.html</guid>
+      <description> Env    Step why  http://ju.outofmemory.cn/entry/204743  Ref  http://ju.outofmemory.cn/entry/204743  </description>
+    </item>
+    
+  </channel>
+</rss>

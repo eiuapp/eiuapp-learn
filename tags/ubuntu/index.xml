@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/ubuntu.html</link>
+    <description>Recent content in ubuntu on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在vmware workstation pro 中给ubuntu增加新分区</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vmware/ubuntu-vmware-workstation-pro-new-partition.html</link>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vmware/ubuntu-vmware-workstation-pro-new-partition.html</guid>
+      <description>env 在 vmware workstation pro 中安装的ubuntu server已经把20G的硬盘已经按默认的方式分区，且已经是把20G硬盘全占用。 此时，如果用 fdisk /dev/sda 然后 n 来新建分区的时候，会报出 no sector available 的错误。
+这个时候，有2个思路。
+ 把原来的 sector和硬盘空间 释放出来，然后，新建立分区 把硬盘空间加大（不是另增加一块硬盘），然后，重新规划分区  step 思路1，本来是寄希望于 gpart 和 gparted 命令（通过 apt install 安装）的，但是，发现，文章已失效，-s -t 等命令的效果与原理明显不对了，所以思路1，中断。
+思路2，操作成功。下面就只介绍思路2.
+关虚拟机，打开，点击，设置/硬盘/扩展容量，增加10G到30G, 然后，磁盘整理，一下，开机。
+这个时候，fdisk -l 可以看到 sector 已经增加了。
+但是通过 n 后，并不能选择 l, 只能选择 p，且分配的大小，不超过1个G,明显不是我们想要的。
+这个时候，我直接把 原有的 1,2,5 三个分区的 2，5直接删除（d）,然后再 n, 这个时候，就可以分出我们想要的分区了。 最后我的效果是 1,2,5,6 其中6分区占用了新增磁盘的 8 GB .</description>
+    </item>
+    
+    <item>
+      <title>ceph 安装，基于ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:26:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu.html</guid>
+      <description>本次安装，完全按照 官方文档 进行。
+env 192.168.31.115 cephadmin 这个是admin节点 192.168.31.114 mon1 192.168.31.113 cephfsn2 192.168.31.173 cephfsn3  step 1 这里的配置注意点如下：
+ceph-admin 节点： 安装时， with a stable Ceph release (e.g., luminous.) ，安装 luminous 或以上版本。
+cephu@cephadmin:~/my-cluster$ sudo cat /etc/apt/sources.list.d/ceph.list deb https://download.ceph.com/debian-luminous/ xenial main cephu@cephadmin:~/my-cluster$  配置 ~/.ssh/config 方便后续安装
+cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config Host node0 Hostname cephadmin User cephu Host node1 Hostname mon1 User cephu Host node2 Hostname cephfsn2 User cephu Host node3 Hostname cephfsn3 User cephu cephu@cephadmin:~/my-cluster$  所有节点： cephu@cephadmin:~/my-cluster$ cat /etc/hosts 127.</description>
+    </item>
+    
+    <item>
+      <title>set apt source</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-set-apt-source.html</link>
+      <pubDate>Thu, 29 Nov 2018 17:39:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-set-apt-source.html</guid>
+      <description>https://github.com/vnpy/vnpy/wiki/Ubuntu%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85</description>
+    </item>
+    
+    <item>
+      <title>ubuntu intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-intro.html</link>
+      <pubDate>Thu, 29 Nov 2018 11:07:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-intro.html</guid>
+      <description>Contents:
+ update-kernel/index how-to-install-certificates-for-command-line ubuntu-desktop/index  </description>
+    </item>
+    
+    <item>
+      <title>ubuntu16.04升级内核至 4.10 以上</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu16-update-kernel.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu16-update-kernel.html</guid>
+      <description>ubuntu16.04 update-kernel env 192.168.31.118 192.168.31.119  step 浏览器打开 http://kernel.ubuntu.com/~kernel-ppa/mainline/
+找到适合的 内核版本（这时v4.12), 进入，
+找到合适的内核文件(linux-image-4.12.0-041200-generic_4.12.0-041200.201707022031_amd64.deb)
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.12/linux-image-4.12.0-041200-generic_4.12.0-041200.201707022031_amd64.deb  然后安装就可以了。</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</guid>
+      <description>root@km:~# sudo apt-get update ... Ign:56 http://cn.archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US Fetched 3,967 kB in 37min 32s (1,761 B/s) Reading package lists... Done W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-updates Release&#39; does not have a Release file. N: Data from such a repository can&#39;t be authenticated and is therefore potentially dangerous to use. N: See apt-secure(8) manpage for repository creation and user configuration details. W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-backports Release&#39; does not have a Release file.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Desktop 环境安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-setup.html</link>
+      <pubDate>Thu, 29 Nov 2018 17:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-desktop-setup.html</guid>
+      <description>安装Ubuntu 全部安装流程：
+推荐的Ubuntu环境：
+ 版本：Ubuntu 16.04 LTS 语言：简体中文 时区：Shanghai 硬件：64位，4G内存以上   引用官方安装教程：点击查看
+ 更新软件源 apt源
+操作步骤如下：
+进行上述操作之后，系统会花几分钟时间进行服务器速度的测试。测试完毕之后，点击『选择服务器』，后面根据提示输入密码和重新载入软件信息即可。
+pip源
+创建pip的配置文件，在终端中执行如下命令创建.pip文件夹
+mkdir ~/.pip/  再执行如下命令创建pip.conf文件并编辑
+vim ~/.pip/pip.conf  这时候会出现pip.conf的编辑窗口，按字母键a进入到编辑模式，这时候内容为空，并把如下内容输入到编辑框里面
+[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple  编辑完后保存并退出vim： ESC -&amp;gt; shift+; -&amp;gt; x -&amp;gt; Enter
+安装Python 下载Anaconda2并安装，在终端中顺序执行下面3行命令
+wget https://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh  chmod +x Anaconda2-4.0.0-Linux-x86_64.sh  ./Anaconda2-4.0.0-Linux-x86_64.sh  然后开始进行安装：
+后面根据提示按回车或者输入yes即可，要注意一下在提示是否要在.bashrc文件中更新PATH变量时，一定要输入Yes：
+安装完毕之后执行如下命令让bash的配置文件即时生效
+source ~/.bashrc  执行完之后执行python命令进行验证，如果安装成功会出现 Anaconda 4.0.0 的字样：
+由于vnpy最近对python3的兼容，需要安装future模块，ImportError: No module named &amp;lsquo;Queue&amp;rsquo;
+pip install future  安装依赖项 执行如下两行命令分别安装应用软件和pip的库</description>
+    </item>
+    
+    <item>
+      <title>命令行下如何安装或者更新 CA.crt 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line-2.html</link>
+      <pubDate>Thu, 29 Nov 2018 15:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line-2.html</guid>
+      <description>https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
+env 192.168.31.120
+step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.Debian.gz /usr/share/man /usr/share/man/man8 /usr/share/man/man8/update-ca-certificates.8.gz jlch@km:~$  那查一下 update-ca-certificates</description>
+    </item>
+    
+    <item>
+      <title>命令行下如何安装或者更新 CA.crt 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/how-to-install-certificates-for-command-line-2.html</link>
+      <pubDate>Thu, 29 Nov 2018 15:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/how-to-install-certificates-for-command-line-2.html</guid>
+      <description>https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
+env 192.168.31.120
+step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.Debian.gz /usr/share/man /usr/share/man/man8 /usr/share/man/man8/update-ca-certificates.8.gz jlch@km:~$  那查一下 update-ca-certificates</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Storage Cluster Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-storage-cluster-quick-start.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:51:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-storage-cluster-quick-start.html</guid>
+      <description>2.1 Create the cluster.
+ ceph-deploy new node1 不生效的，要写成 ceph-deploy new mon1
+ cephu@cephadmin:~/my-cluster$ ceph-deploy new mon1  2.2 - 2.3
+cephu@cephadmin:~/my-cluster$ cat ~/my-cluster/ceph.conf [global] fsid = d0aa5af1-4f8e-4953-9448-7f1b2448b8a5 mon_initial_members = mon1 mon_host = 192.168.31.114 auth_cluster_required = cephx auth_service_required = cephx auth_client_required = cephx public network = 192.168.31.1/24 ms bind ipv6 = true cephu@cephadmin:~/my-cluster$  2.4
+cephu@cephadmin:~/my-cluster$ ceph-deploy install node1 node2 node3  2.5
+cephu@cephadmin:~/my-cluster$ ceph-deploy mon create-initial  报错，然后，经过 农总在 https://my.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Filesystem Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-filesystem-quick-start.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:55:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-filesystem-quick-start.html</guid>
+      <description>http://docs.ceph.com/docs/master/start/quick-cephfs/
+PREREQUISITES admin 节点：
+ceph -s  看一下，是不是都正常。 这里是看不到 mds 的，要看，要去 moniter 节点
+moniter 节点： 我们环境的是 192.168.31.114
+cephu@mon1:~$ ps -ef | grep ceph root 7541 7227 0 Oct23 pts/0 00:00:00 su - cephu cephu 7542 7541 0 Oct23 pts/0 00:00:00 -su cephu 20793 7542 0 12:39 pts/0 00:00:00 ps -ef cephu 20794 7542 0 12:39 pts/0 00:00:00 grep --color=auto ceph ceph 21275 1 0 Oct23 ? 00:07:50 /usr/bin/ceph-mon -f --cluster ceph --id mon1 --setuser ceph --setgroup ceph ceph 22756 1 0 Oct24 ?</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Block Device Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-block-device-quick-start.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:27:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-block-device-quick-start.html</guid>
+      <description>env 192.168.31.172 ceph-client
+修改 hostname 为 ceph-client
+INSTALL CEPH admin 节点：
+ceph-deploy install ceph-client ceph-deploy admin ceph-client  ceph-client 节点：
+sudo chmod +r /etc/ceph/ceph.client.admin.keyring  CREATE A BLOCK DEVICE POOL admin 节点：
+原来在 admin 节点，是没有这个 rbd 命令的。
+要通过 sudo apt install ceph-common 之后，才会有。所以先运行一下。
+cephu@cephadmin:~/my-cluster$ sudo apt install ceph-common -y cephu@cephadmin:~/my-cluster$ rbd pool init jlch 2017-10-24 15:57:45.951917 7fde4fa6e0c0 -1 auth: unable to find a keyring on /etc/ceph/ceph.client.admin.keyring,/etc/ceph/ceph.keyring,/etc/ceph/keyring,/etc/ceph/keyring.bin,: (2) No such file or directory 2017-10-24 15:57:45.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Object Storage Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-object-storage-quick-start.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:29:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-object-storage-quick-start.html</guid>
+      <description>INSTALLING CEPH OBJECT GATEWAY ceph-client：
+cephu@ceph-client:~$ sudo ufw allow 7480 Rule added Rule added (v6) cephu@ceph-client:~$ sudo ufw status Status: active To Action From -- ------ ---- 22 ALLOW Anywhere 7480 ALLOW Anywhere 22 (v6) ALLOW Anywhere (v6) 7480 (v6) ALLOW Anywhere (v6) cephu@ceph-client:~$  ceph-admin:
+cephu@cephadmin:~/my-cluster$ ping ceph-client PING ceph-client (192.168.31.172) 56(84) bytes of data. 64 bytes from ceph-client (192.168.31.172): icmp_seq=1 ttl=64 time=0.558 ms ^C --- ceph-client ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/keyboard/keyboard-ubuntu.html</link>
+      <pubDate>Wed, 08 Aug 2018 00:29:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/keyboard/keyboard-ubuntu.html</guid>
+      <description>通过xmodmap修改ubuntu系统下的键盘布局
+因为某种需求，需要把 右ctrl与右alt 互换
+Env  os: ubuntu desktop 16.04 target: swap Right Ctrl with Right Alt on my keyboard  xmodmap Installation tom@tom:~$ cat ~/.Xmodmap clear control clear mod1 keycode 105 = Alt_R Meta_R keycode 108 = Control_R add control = Control_L Control_R add mod1 = Alt_R Meta_R tom@tom:~$ tom@tom:~$ xmodmap ~/.Xmodmap tom@tom:~$  这样，成功了。
+然后放到.bashrc中，这个文件每次启动shell都会执行，但结果确是：每启动一次shell,Ctrl和CapLock就交换一次，意味着我不知道下一时刻,哪个是Ctrl键，哪个是CapLock键。
+最后发现，在~目录添加一个.bash_profile文件，并将xmodmap脚本的执行放入其中。问题就解决了。
+tom@tom:~$ cat .bash_profile xmodmap ~/.Xmodmap tom@tom:~$ source .bash_profile  gnome-tweak-tool(不成功) gnome-tweak-tool 可以方便地修改某些键盘，如：互换 左ctrl与CapsLock</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Share File to Virtulbox Win7</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/ubuntu-share-file-to-virtulbox-win7.html</link>
+      <pubDate>Fri, 03 Aug 2018 23:10:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/ubuntu-share-file-to-virtulbox-win7.html</guid>
+      <description> Env  宿主机: ubuntu desktop 16 虚拟机软件: virtualbox 虚拟机: win7  Step 思路1 因为虚拟机是win7,那就直接通过 ubuntu如何访问windows共享文件夹 完成就可以了。
+思路2  https://www.linuxidc.com/Linux/2012-11/74195p3.htm http://xylonwang.iteye.com/blog/2221475  上面的方法，尝试，没有成功。
+Ref  https://www.linuxidc.com/Linux/2012-11/74195p3.htm http://xylonwang.iteye.com/blog/2221475  </description>
+    </item>
+    
+    <item>
+      <title>Change System Datetime Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/change-system-datetime-base-ubuntu.html</link>
+      <pubDate>Wed, 11 Jul 2018 10:40:10 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/change-system-datetime-base-ubuntu.html</guid>
+      <description>Env  os: ubuntu16  Step 原理 需要取消自动从互联网同步时间才可以的
+timedatectl set-ntp 0  上面的命令可以关闭自动同步，然后你再设置就好了
+如果又要打开可以运行
+timedatectl set-ntp 1  示例 ubuntu@ip-172-31-46-220:~$ date Wed Jul 11 02:08:35 UTC 2018 ubuntu@ip-172-31-46-220:~$ sudo su root@ip-172-31-46-220:/home/ubuntu# timedatectl set-ntp 0 root@ip-172-31-46-220:/home/ubuntu# date -s &amp;quot;2018-07-12 02:08&amp;quot; Thu Jul 12 02:08:00 UTC 2018 root@ip-172-31-46-220:/home/ubuntu# hwclock --systohc root@ip-172-31-46-220:/home/ubuntu# date Thu Jul 12 02:08:06 UTC 2018 root@ip-172-31-46-220:/home/ubuntu# date -s &amp;quot;2018-07-12 02:10&amp;quot; Thu Jul 12 02:10:00 UTC 2018 root@ip-172-31-46-220:/home/ubuntu#  修改成功了</description>
+    </item>
+    
+    <item>
+      <title>Linux Add Format Mount Harddisk</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-add-format-mount-harddisk.html</link>
+      <pubDate>Thu, 28 Jun 2018 14:16:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-add-format-mount-harddisk.html</guid>
+      <description>替 Linux 新增硬碟（磁碟分割、格式化與掛載）
+最近要替我的 Linux Server 增加一顆硬碟，一般若是在安裝 Linux 時就將硬碟裝上去的話，就可以直接在安裝時設定好硬碟的格式化與掛載，但若是後來要加掛新的硬碟，就要自己動手設定了。
+這裡示範在 Ubuntu Linux 下面新增加硬碟的做法，首先當然是買一顆新硬碟囉。
+Env  os: ubuntu16 新硬盘: sdb  Step 查看 root@ubuntu:~# fdisk -l Disk /dev/sda: 111.8 GiB, 120034123776 bytes, 234441648 sectors Units: sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disklabel type: gpt Disk identifier: 846C81DB-5DB9-4853-94E9-CC1192592FC9 Device Start End Sectors Size Type /dev/sda1 2048 1050623 1048576 512M EFI System /dev/sda2 1050624 2050047 999424 488M Linux filesystem /dev/sda3 2050048 234440703 232390656 110.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Install Faq A</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-faq-a.html</link>
+      <pubDate>Tue, 26 Jun 2018 18:51:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-faq-a.html</guid>
+      <description> U盘安装Ubuntu16.04 server版 提示无法挂载cd-rom数据的解决办法
+Step 错误：
+使用类似ultraiso的刻录软件会出现这个错误 Failed to copy files from CD-ROM, retry?
+解决：
+解决的办法是使用win32diskimager制作U盘安装程序，就可以正常安装Ubuntu 16.04 Server。
+下载地址win32diskimager
+文本框用来输入文件完整地址，后面的文件夹图标是浏览窗口，默认只能识别img文件。 只需要将iso文件全路径输入在Image File中。 填好镜像的完整地址后右边有个下拉列表用来选择移动设备，千万别选错了！
+建议只插一个U盘，以免误操作。之后点击Wirte按钮就开始写入。写入后就能够使用U盘安装了。
+Ref  http://blog.51cto.com/gentle/1743114 https://blog.csdn.net/w_ww_w/article/details/18219911 https://sourceforge.net/projects/win32diskimager/?source=typ_redirect  </description>
+    </item>
+    
+    <item>
+      <title>How to Install Certificates for Command Line</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line.html</link>
+      <pubDate>Thu, 21 Jun 2018 22:32:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line.html</guid>
+      <description>当你有一个 CA.crt 文件时，怎么安装它，然后使用呢？我遇到了这个问题。
+Env  os: ubuntu16 192.168.31.120  Step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.</description>
+    </item>
+    
+    <item>
+      <title>How to Install Certificates for Command Line</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/how-to-install-certificates-for-command-line.html</link>
+      <pubDate>Thu, 21 Jun 2018 22:32:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/how-to-install-certificates-for-command-line.html</guid>
+      <description>当你有一个 CA.crt 文件时，怎么安装它，然后使用呢？我遇到了这个问题。
+Env  os: ubuntu16 192.168.31.120  Step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.</description>
+    </item>
+    
+    <item>
+      <title>Update Kernel Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/update-kernel-base-ubuntu.html</link>
+      <pubDate>Thu, 21 Jun 2018 21:55:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/update-kernel-base-ubuntu.html</guid>
+      <description> ubuntu16.04 update-kernel
+Env  os: ubuntu16.04 ip: 192.168.31.118  Step 浏览器打开 http://kernel.ubuntu.com/~kernel-ppa/mainline/
+找到适合的 内核版本（这时v4.12), 进入，
+找到合适的内核文件(linux-image-4.12.0-041200-generic_4.12.0-041200.201707022031_amd64.deb)
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.12/linux-image-4.12.0-041200-generic_4.12.0-041200.201707022031_amd64.deb  然后安装就可以了。
+Ref  http://kernel.ubuntu.com/~kernel-ppa/mainline/  </description>
+    </item>
+    
+    <item>
+      <title>Teamviewer Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/tools/teamviewer-install-base-ubuntu.html</link>
+      <pubDate>Thu, 21 Jun 2018 16:48:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/tools/teamviewer-install-base-ubuntu.html</guid>
+      <description>Ubuntu16.04 安装 Teamviewer
+有时需要远程控制ubuntu系统的电脑，Teamviewer在linux下也可以进行安装，而且Teamviewer远程控制的流畅性一直不错，就选择安装Teamviewer。
+Env  os: ubuntu16.04 teamviewer: 13.1  Step 下面给出具体的安装步骤：
+首先到 https://www.teamviewer.com/zhcn/download/linux/ 下载相应linux版本的Teamviewer，版主选择的是ubuntu版本，下载完成之后，在你的下载路径中会有软件安装包teamviewer_12.0.85001_i386.deb。
+安装依赖包，ternimal终端进入到下载路径中，执行命令：(博主是64位系统没有执行这个命令也成功，假如是32位的系统则需要执行)
+sudo apt-get install libjpeg62:i386 libxinerama1:i386 libxrandr2:i386 libxtst6:i386 ca-certificates -y  安装deb软件包，执行命令：
+sudo dpkg -i teamviewer_12.0.76279_i386.deb  安装成功之后在dash输入Teamviewer就可以打开了。
+注意：在执行第三步安装deb包的时候，可能会遇到下面的问题：
+wanglaotou@wanglaotou95:~/softwares/software-package$ sudo dpkg -i teamviewer_12.0.85001_i386.deb (正在读取数据库 ... 系统当前共安装有 215790 个文件和目录。) 正准备解包 teamviewer_12.0.85001_i386.deb ... 正在将 teamviewer:i386 (12.0.85001) 解包到 (12.0.85001) 上 ... dpkg: 依赖关系问题使得 teamviewer:i386 的配置工作不能继续： teamviewer:i386 依赖于 libasound2. teamviewer:i386 依赖于 libdbus-1-3. teamviewer:i386 依赖于 libexpat1. teamviewer:i386 依赖于 libfontconfig1.</description>
+    </item>
+    
+    <item>
+      <title>Static Ip Ubuntu18</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/static-ip-ubuntu18.html</link>
+      <pubDate>Sat, 16 Jun 2018 21:52:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/static-ip-ubuntu18.html</guid>
+      <description>ubuntu18设置固态IP
+Env  os: ubuntu18  Step ubuntu16 ubuntu16是在/etc/network/interfaces 文件中设置固态IP 设置的方式类似下面
+source /etc/network/interfaces.d/* # The loopback network interface auto lo iface lo inet loopback # The primary network interface auto ens160 #iface ens160 inet dhcp iface ens160 inet static address 192.168.31.120 gateway 192.168.31.1 #这个地址你要确认下 网关是不是这个地址 netmask 255.255.255.0 network 192.168.31.0 broadcast 192.168.31.255 dns-nameservers 202.96.134.133  ubuntu17及以上 但是，ubuntu17起，改成了etc/netplan/*.yaml来配置。
+配置方式类似下面
+tom@tom:~$ cat /etc/netplan/50-cloud-init.yaml # This file is generated from information provided by # the datasource.</description>
+    </item>
+    
+    <item>
+      <title>Php Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/php/php-install-base-ubuntu.html</link>
+      <pubDate>Sat, 16 Jun 2018 18:11:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/php/php-install-base-ubuntu.html</guid>
+      <description> Env  os: ubuntu  Step sudo apt-get install -y language-pack-en-base sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php sudo add-apt-repository ppa:ondrej/php sudo apt-get update sudo apt search php5 # 这个地方，会返回具体的版本号，不同的时间可能返回不同，比如20180616返回的是5.6，所以安装php5.6而不是php5.5 sudo apt-get install php5.6-common sudo apt-get install libapache2-mod-php5.6  Ref  https://www.zhihu.com/question/45999546/answer/100165171  </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Command Not Found</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-command-not-found.html</link>
+      <pubDate>Sat, 16 Jun 2018 18:08:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-command-not-found.html</guid>
+      <description> add-apt-repository: command not found When I run:
+sudo add-apt-repository ppa:ubuntu-wine/ppa  Log here:
+sudo: add-apt-repository: command not found  solved I tried to run:
+sudo apt-get install software-properties-common  </description>
+    </item>
+    
+    <item>
+      <title>Tomcat Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/java/tomcat-install-base-ubuntu.html</link>
+      <pubDate>Tue, 12 Jun 2018 20:51:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/java/tomcat-install-base-ubuntu.html</guid>
+      <description> Env  os: ubuntu16 java:  root@ip-172-31-28-68:/home/ubuntu/java/sotre_app# java -version openjdk version &amp;quot;1.8.0_171&amp;quot; OpenJDK Runtime Environment (build 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11) OpenJDK 64-Bit Server VM (build 25.171-b11, mixed mode) root@ip-172-31-28-68:/home/ubuntu/java/sotre_app#  nodejs: v8.11.2 tomcat: apache-tomcat-8.5.31 java-jre: openjdk-8-jdk  Step wget https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz ls tar zxvf apache-tomcat-8.5.31.tar.gz sudo mv apache-tomcat-8.5.31 /opt/ sudo ln -s /opt/apache-tomcat-8.5.31/ /opt/tomcat8 /opt/tomcat8/bin/startup.sh curl http://127.0.0.1:8080/  Ref  https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.31/bin/ https://www.cnblogs.com/EasonJim/p/7202844.html  </description>
+    </item>
+    
+    <item>
+      <title>Rancher2 Install Base Aws Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher2-install-base-aws-ubuntu.html</link>
+      <pubDate>Wed, 06 Jun 2018 17:08:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher2-install-base-aws-ubuntu.html</guid>
+      <description>aws中ubuntu安装rancher2.0
+Env Env-a  cloud: aws os: ubuntu 16.04 docker: 17.03.2-ce  Env-b  cloud: aws os: Amazon Linux AMI 2018.03 docker: 17.12.1-ce  这里的env-b可以不看, 因为效果与env-a相同
+Rancher versions:
+rancher/server or rancher/rancher: rancher/server 2.0.2
+**Docker version: 17.03.2-ce
+**Operating system and kernel:
+ ubuntu 16.04 Linux ip-172-31-12-229 4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux  **Type/provider of hosts: AWS
+**Setup details: single node rancher
+**Environment Template: Kubernetes</description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</link>
+      <pubDate>Mon, 04 Jun 2018 19:01:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</guid>
+      <description>ubuntu中安装docker-ce
+Env  os: ubuntu16 ip: ... docker: 17.03.2~ce-0~ubuntu-xenial  Step 查看已安装 sudo docker version  如果有已安装，请卸载，给个示例
+sudo apt remove docker* -y  安装 lsb_release -a sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - sudo apt-key fingerprint 0EBFCD88 sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; sudo apt-get update apt-cache madison docker-ce  查看后，选择我们需要的指定版本, 我这里选择17.03.2.
+sudo apt-get install docker-ce=17.03.2~ce-0~ubuntu-xenial -y sudo docker run hello-world  Ref  https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Apt Http Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-apt-http-proxy.html</link>
+      <pubDate>Thu, 24 May 2018 10:16:52 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-apt-http-proxy.html</guid>
+      <description>Ubuntu的更改apt-get代理，设置与取消
+apt代理的设置 方法1 这是一种临时的手段，如果您仅仅是暂时需要通过http代理使用apt-get，您可以使用这种方式。
+在使用apt-get之前，在终端中输入以下命令（根据您的实际情况替换yourproxyaddress和proxyport）。
+export http_proxy=http://yourproxyaddress:proxyport  方法2 这种方法要用到/etc/apt/文件夹下的apt.conf文件。如果您希望apt-get（而不是其他应用程序）一直使用http代理，您可以使用这种方式。
+注意：某些情况下，系统安装过程中没有建立apt配置文件。下面的操作将视情况修改现有的配置文件或者新建配置文件。
+sudo gedit /etc/apt/apt.conf在您的apt.conf文件中加入下面这行（根据你的实际情况替换yourproxyaddress和proxyport）。
+Acquire::http::Proxy &amp;quot;http://yourproxyaddress:proxyport&amp;quot;  保存apt.conf文件。
+方法3 这种方法会在您的主目录下的.bashrc文件中添加两行。如果您希望apt-get和其他应用程序如wget等都使用http代理，您可以使用这种方式。
+gedit ~/.bashrc在您的.bashrc文件末尾添加如下内容（根据你的实际情况替换yourproxyaddress和proxyport）。
+http_proxy=http://yourproxyaddress:proxyport  export http_proxy保存文件。关闭当前终端，然後打开另一个终端。
+使用apt-get update或者任何您想用的网络工具测试代理。我使用firestarter查看活动的网络连接。
+如果您为了纠正错误而再次修改了配置文件，记得关闭终端并重新打开，否自新的设置不会生效。
+方法4 另外，apt-get也有一个“-o”选项，直接跟apt-get的设置变量，就不用指定配置文件了，比如
+sudo apt-get -o Acquire::http::proxy=&amp;quot;http://127.0.0.1:1080/”  取消apt代理 今天想装个软件(wine)，使用 sudo apt-get update 命令时，发现给出很多Ign 语句，总出现 Connecting to proxy.http://10.0.126.1:13128 的字样，发现这个代理是已经废弃掉的。接着想去取消使用该代理： 1、 查看/etc/apt/apt.conf，发现存在： http_proxy=&amp;quot;http://10.0.126.1:13128/&amp;quot; https_proxy=&amp;quot;https://10.0.126.1:13128/&amp;quot; ftp_proxy=&amp;quot;ftp://10.0.126.1:13128/&amp;quot; socks_proxy=&amp;quot;socks://10.0.126.1:13128/&amp;quot; 直接删除该文件，重启电脑，发现问题还是没解决； 2、百度一下，命令行执行：export http_proxy=&amp;quot;&amp;quot; 发现问题未解； 执行 unset http_proxy 问题还是存在； 3、查看~/.bashrc，未发现存在http_proxy之类设置; 4、env | grep proxy 发现依然存在 http 代理； 5、根目录查找一把： sudo grep -r -i http_proxy=http://10.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Install Wubipinyin</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-wubipinyin.html</link>
+      <pubDate>Thu, 24 May 2018 09:32:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-wubipinyin.html</guid>
+      <description> ubuntu安装 五笔拼音输入法
+env  Ubuntu Desktop 16.04  step 方法1 https://www.linuxdashen.com/ubuntu-16-04-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85fcitx%E4%BA%94%E7%AC%94%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95
+方法2 sudo add-apt-repository ppa:fcitx-team/nightly sudo apt update -y sudo apt -y install fcitx sudo apt -y install fcitx-table-wbpy  System Setting/Language Support/Keyboard input method system/ =&amp;gt; fcitx
+打开System Setting系统设置&amp;gt;Text Entry
+记得重启哟！
+ref  https://www.linuxdashen.com/ubuntu-16-04-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85fcitx%E4%BA%94%E7%AC%94%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95 https://blog.csdn.net/zzqlivecn/article/details/25018203 https://blog.csdn.net/hamigua0208/article/details/51421117 https://blog.csdn.net/e421083458/article/details/37738805  </description>
+    </item>
+    
+    <item>
+      <title>Gitlab Install Base Ubuntu14.04</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install-base-ubuntu14.04.html</link>
+      <pubDate>Mon, 16 Apr 2018 17:36:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install-base-ubuntu14.04.html</guid>
+      <description>gitlab在ubuntu14.04和ubuntu16.04上安装
+env IP: 192.168.31.148 OS: ubuntu-14.04.5 gitlab: 10.6.4
+env2 IP: 192.168.31.169 OS: ubuntu-16.04 gitlab: 10.6.4
+step 按照 清华大学 Gitlab Community Edition 镜像使用帮助 安装就可以了.
+一定要注意系统版本
+修改IP, sudo vi /etc/gitlab/gitlab.rb修改下面内容
+external_url &#39;http://192.168.31.148:7890&#39;  重启
+sudo gitlab-ctl reconfigure  浏览器打开 http://192.168.31.148:7890 修改密码,重新登陆.
+faq libstdc++.so.6: version `GLIBCXX_3.4.21&amp;rsquo; not found strings /home/kzl/anaconda2/bin/../lib/libstdc++.so.6 | grep GLIBCXX  可以看到所有的安装的 glibc++ 版本, 这里确实是没有3.4.21版本
+后来才发现,我安装的时候,没有选择正确的系统版本(最先选择了ubuntu16.04,应该先看一下系统版本,然后选择 ubuntu14.04)
+ref  Gitlab Community Edition 镜像使用帮助 version `GLIBCXX_3.4.21&amp;rsquo; not found 解决办法 ImportError: /home/kzl/anaconda2/bin/.</description>
+    </item>
+    
+    <item>
+      <title>Virtualbox Install Ubuntu Desktop</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-install-ubuntu-desktop.html</link>
+      <pubDate>Thu, 01 Mar 2018 22:47:20 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/virtualbox-install-ubuntu-desktop.html</guid>
+      <description>在 ubuntu desktop 下安装virtualbox
+env 在 ubuntu desktop(硬盘9)中安装 virtualbox 总是不能启动
+step tom@ud-3-1:~$ which VirtualBox /usr/bin/VirtualBox  看一下启动文件
+tom@ud-3-1:~$ ll /usr/bin/VirtualBox lrwxrwxrwx 1 root root 4 3月 16 2017 /usr/bin/VirtualBox -&amp;gt; VBox* tom@ud-3-1:~$ ll /usr/bin/VBox -rwxr-xr-x 1 root root 4589 3月 16 2017 /usr/bin/VBox* tom@ud-3-1:~$ VirtualBox WARNING: The vboxdrv kernel module is not loaded. Either there is no module available for the current kernel (4.10.0-28-generic) or it failed to load. Please recompile the kernel module and install it by sudo /sbin/vboxconfig You will not be able to start VMs until this problem is fixed.</description>
+    </item>
+    
+  </channel>
+</rss>

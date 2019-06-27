@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>channel on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/channel.html</link>
+    <description>Recent content in channel on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 03 Dec 2018 21:33:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/channel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>golang channel</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-channel-learning-a.html</link>
+      <pubDate>Mon, 03 Dec 2018 21:33:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-channel-learning-a.html</guid>
+      <description>goroutine 首先我们来看线程,在golang里面也叫goroutine
+在读这篇文章之前，我们需要了解一下并发与并行。golang的线程是一种并发机制，而不是并行。它们之间的区别大家可以上网搜一下，网上有很多的介绍。
+下面我们先来看一个例子吧
+package main import ( &amp;quot;fmt&amp;quot; ) func main() { go fmt.Println(&amp;quot;1&amp;quot;) fmt.Println(&amp;quot;2&amp;quot;) }  在golang里面，使用go这个关键字，后面再跟上一个函数就可以创建一个线程。后面的这个函数可以是已经写好的函数，也可以是一个匿名函数
+package main import ( &amp;quot;fmt&amp;quot; ) func main() { var i = 3 go func(a int) { fmt.Println(a) fmt.Println(&amp;quot;1&amp;quot;) }(i) fmt.Println(&amp;quot;2&amp;quot;) }  上面的代码就创建了一个匿名函数，并且还传入了一个参数i，下面括号里的i是实参，a是形参。
+那么上面的代码能按照我们预想的打印1、2、3吗？告诉你们吧，不能，程序只能打印出2。下面我把正确的代码贴出来吧
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) func main() { var i = 3 go func(a int) { fmt.Println(a) fmt.Println(&amp;quot;1&amp;quot;) }(i) fmt.Println(&amp;quot;2&amp;quot;) time.Sleep(1 * time.Second) }  我只是在最后加了一行让主线程休眠一秒的代码，程序就会依次打印出2、3、1。</description>
+    </item>
+    
+  </channel>
+</rss>

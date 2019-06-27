@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/dev.html</link>
+    <description>Recent content in dev on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kids code</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/kids-code.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:37:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/kids-code.html</guid>
+      <description>少儿编程网
+http://www.kidscode.cn/</description>
+    </item>
+    
+    <item>
+      <title>web框架</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/web-framework-benchmarks.html</link>
+      <pubDate>Thu, 29 Nov 2018 12:02:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/web-framework-benchmarks.html</guid>
+      <description>一个超级好的 Web Framewosrk Benchmarks
+http://www.techempower.com/whatwedo.html
+http://www.techempower.com/benchmarks/
+http://www.techempower.com/benchmarks/#section=data-r14&amp;amp;hw=ph&amp;amp;test=update
+这里面才是真正的压力测试结果。里面可以看到 市面上 最全的:
+ web 架构方案， 数据库， 程序语言language，
+的表现。
+  </description>
+    </item>
+    
+    <item>
+      <title>Charts</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/charts.html</link>
+      <pubDate>Thu, 14 Jun 2018 16:30:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/charts.html</guid>
+      <description> tradingview，一个免费股票，数字货币图表网站 tradingview-cn  </description>
+    </item>
+    
+    <item>
+      <title>Environment About It</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/environment-about-it.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:35:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/environment-about-it.html</guid>
+      <description>生产环境、测试环境、开发环境、 https://my.oschina.net/sancuo/blog/214904
+开发环境 production environment;
+测试环境 testing environment;
+开发环境 development environment;
+开发环境：开发环境是程序猿们专门用于开发的服务器，配置可以比较随意， 为了开发调试方便，一般打开全部错误报告。 测试环境：一般是克隆一份生产环境的配置，一个程序在测试环境工作不正常，那么肯定不能把它发布到生产机上。 生产环境：是值正式提供对外服务的，一般会关掉错误报告，打开错误日志。  三个环境也可以说是系统开发的三个阶段：开发-&amp;gt;测试-&amp;gt;上线，其中生产环境也就是通常说的真实环境。</description>
+    </item>
+    
+    <item>
+      <title>Project Ok</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/project-ok.html</link>
+      <pubDate>Thu, 01 Mar 2018 16:50:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/project-ok.html</guid>
+      <description>project 必须有以下内容
+ 文件  需求文档 技术文档 开发文档 测试文档 验收文件
+ 图  流程图 脑图
+ 其它  trello git docker README 笔记</description>
+    </item>
+    
+    <item>
+      <title>Software Architect</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/software-architect.html</link>
+      <pubDate>Tue, 13 Feb 2018 21:14:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/software-architect.html</guid>
+      <description>c4model</description>
+    </item>
+    
+    <item>
+      <title>Code Style</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/code-style.html</link>
+      <pubDate>Tue, 06 Feb 2018 17:55:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/code-style.html</guid>
+      <description> 三种编程命名规范（匈牙利命名法、驼峰式命名法、帕斯卡命名法)
+代码风格, 所有的语言的代码风格汇总 有的时候，真的是很困惑，我应该用什么代码风格.
+ Airbnb JavaScript Style Guide 中文版 Airbnb JavaScript Style Guide Style Guide for Python Code Style guides for Google-originated open-source projects Google 开源项目风格指南 (中文版) Google 开源项目风格指南 github (中文版) Google JavaScript Style Guide(中文 版) analyzing code convention from github commits for Github data challenge, github地址 Code Guide by @AlloyTeam 盼望您的指定  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/code-analysis.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/code-analysis.html</guid>
+      <description>关于 代码 分析，可以看下面网站
+https://github.com/mre/awesome-static-analysis https://github.com/vinta/awesome-python#code-analysis https://www.owasp.org/index.php/Source_Code_Analysis_Tools https://lgtm.com/help/lgtm/about-lgtm</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/programmer-competency-matrix.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/programmer-competency-matrix.html</guid>
+      <description>programmer-competency-matrix http://www.starling-software.com/employment/programmer-competency-matrix.html</description>
+    </item>
+    
+  </channel>
+</rss>

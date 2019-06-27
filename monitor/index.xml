@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>monitor on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/monitor.html</link>
+    <description>Recent content in monitor on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/monitor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/elk/elk.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/elk/elk.html</guid>
+      <description> ELK </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/monitor.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/monitor.html</guid>
+      <description> 监控系统 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/prometheus/functions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/prometheus/functions.html</guid>
+      <description>function函数 [TOC]
+abs 求绝对值
+absent 检测是否为空
+ceil 四舍五入
+changes 一定时间范围内改变的次数
+clamp_max 设置上限，最大值不大于设置的上限
+clamp_max(v instant-vector,max scalar)  clamp_min 设置下限，最小值不小于设置的下限
+clamp_min(v instant-vector,min scalar)  day_of_month day_of_week days_in_month 每个月的天数 28-31
+delta 计算区间开始时与当前值的差值
+delta(cpu_temp_celsius{host=&amp;quot;zeus&amp;quot;}[2h])  deriv deriv（v range-vector）使用简单线性回归计算范围向量v中时间序列的每秒导数。
+仅限于gauge数据
+exp floor 取整
+0.6 &amp;ndash;&amp;gt; 0
+histogram_quantile holt_winters hour 返回小时数，0-23
+idelta increase 一定时间内的增长量，比如CPU时间，访问量(counter数据类型)
+irate 一定时间区间内，两个相邻的值之间的变化率（对应整体的变化量）
+label_join 添加标签
+label——replace 替换标签
+ln 自然对数
+log10 十进制对数
+minute 返回分钟（0-59）
+mouth 返回月份（1-12）
+predict_linear 简单线性回归
+rate 计算一段时间内美妙的平均增长率（与irate类似但又不同）
+resets 返回一定范围内呗reset的次数，仅适用count
+resets(up[1y]) 查看一年内exporter重启次数</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/prometheus/prometheus.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/prometheus/prometheus.html</guid>
+      <description> prometheus </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/prometheus/storage.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/prometheus/storage.html</guid>
+      <description>storage 本地存储 每两个小时的数据存储在一个目录中，包含一个或者多个块文件，里面也有这个时间区间的所有时间序列样本，以及元数据文件和索引文件（通过metric name和label索引时间序列）。当前时间段的数据并没有直接持久化到本地，而是存放在内存中。有一个WAL（write-ahead-log）预写日志机制，当Prometheus服务从崩溃中重启时可以重放WAL日志。当时间序列数据通过API被删除时，只是把删除记录保存在单独的逻辑删除文件中，而不是立即从块文件中删除数据
+最初的两小时一个的时间序列会在后期被不断压缩并整合成一个长时间序列（类似zabbix保留趋势数据的方式？减小时间精度之类）
+参数  --storage.tsdb.path: 数据存储目录，默认为data/ --storage.tsdb.retention：数据保留时间，默认为15d  远程存储 本地存储不支持多节点
+http2</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/zabbix/python%E5%AE%9E%E7%8E%B0zabbix%E5%91%8A%E8%AD%A6%E6%8E%A8%E9%80%81%E9%92%89%E9%92%89.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/zabbix/python%E5%AE%9E%E7%8E%B0zabbix%E5%91%8A%E8%AD%A6%E6%8E%A8%E9%80%81%E9%92%89%E9%92%89.html</guid>
+      <description>python实现zabbix告警推送钉钉 写了一个简单的python脚本，用来推送zabbix告警到钉钉机器人，推送格式为markdown，有需要的可以自己修改markdown的格式及推送的值（zabbix宏）
+环境如下，理论上zabbix版本不影响，可以看看官方宏定义是否有区别
+ python 3 zabbix 3.4.2  zabbix宏官方文档：https://www.zabbix.com/documentation/3.4/manual/appendix/macros/supported_by_location
+配置 配置钉钉自定义机器人  官方文档：https://open-doc.dingtalk.com/docs/doc.htm?treeId=257&amp;amp;articleId=105735&amp;amp;docType=1  编写zabbix告警脚本并置于alertscripts路径下 [itservice@zabbix alertscripts]$ cat /usr/lib/zabbix/alertscripts/alert_for_zabbix_by_dingding.py #!/usr/bin/env python3 # encoding: utf-8 # author: huangwj # mail: huangwjwork@gmail.com # bolg: huangwj.app # csdn: http://blog.csdn.net/u010871982 # github: https://github.com/huangwjwork # file: alert_for_zabbix_by_dingding.py # time: 2018/5/11 14:31 &#39;&#39;&#39; 本程序由huangwjwork开发,一切最终解释权归于huangwjwork. 本程序为开源,只用于技术交流,只供开发者参考与学习. 不得用于违反法律以及未经许可不得用于商业.保留其追责权利. 本程序不涉及任何违法敏感因素,如有人拿程序改造成违法工具,将与本程序开发者无关. 勇于开源,请勿滥用.内部学习交流,请勿传播.违反者造成相关法律事故,自行承担刑事责任. &#39;&#39;&#39; import sys import getopt import requests import json import traceback try: opts,args = getopt.getopt(sys.argv[1:],shortopts=&#39;&#39;,longopts=[&#39;webhook_url=&#39;,&#39;webhook_title=&#39;,&#39;alert_message=&#39;]) for opt,value in opts: if opt == &#39;--webhook_url&#39;: webhook_url = value elif opt == &#39;--webhook_title&#39;: webhook_title = value elif opt == &#39;--alert_message&#39;: alert_message = value webhook_header = { &amp;quot;Content-Type&amp;quot;: &amp;quot;application/json&amp;quot;, &amp;quot;charset&amp;quot;: &amp;quot;utf-8&amp;quot; } webhook_message = { &amp;quot;msgtype&amp;quot;: &amp;quot;markdown&amp;quot;, &amp;quot;markdown&amp;quot;: { &amp;quot;title&amp;quot;: webhook_title, &amp;quot;text&amp;quot;: alert_message } } sendData = json.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/monitor/zabbix/zabbix.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/monitor/zabbix/zabbix.html</guid>
+      <description> zabbix </description>
+    </item>
+    
+  </channel>
+</rss>

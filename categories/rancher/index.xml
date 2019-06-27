@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rancher on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/rancher.html</link>
+    <description>Recent content in rancher on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 30 Jun 2018 10:22:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/rancher/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rancher Add Worker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-add-worker.html</link>
+      <pubDate>Sat, 30 Jun 2018 10:22:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-add-worker.html</guid>
+      <description> Env    Step QA 报 certificate has expired or is not yet valid 错误 Q: 希望新添加1个 worker， 报 certificate has expired or is not yet valid 错误，应该如何修正？ A:
+Ref  https://www.cnblogs.com/xzkzzz/p/9106218.html  </description>
+    </item>
+    
+    <item>
+      <title>Rancher Service Discovery</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-service-discovery.html</link>
+      <pubDate>Sat, 30 Jun 2018 09:06:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-service-discovery.html</guid>
+      <description> rancher 中的 service discovery
+Env  rancher: v2.0.2  Step service discovery对应于 k8s的service
+ external IP addresses 相当于 DNS的A记录的解析 An external hostname 相当于 DNS的CNAME的域名转换 Alias of another DNS record&amp;rsquo;s value 相当于 指向另外一个DNS的记录 One or more workloads 指向其它的workloads The set of pods which match a selector 通过selector作转换, 实现内部的负载均衡，升级时就可使用。  Ref  http://live.vhall.com/209459630  </description>
+    </item>
+    
+    <item>
+      <title>Rancher Node Driver Add Aliyun</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-node-driver-add-aliyun.html</link>
+      <pubDate>Fri, 29 Jun 2018 20:53:32 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-node-driver-add-aliyun.html</guid>
+      <description> rancher添加node drivers(阿里云)
+Env  rancher: v2.0.2  Step Global, Node Drivers, Add Node Drivers, 把下图填写完，OK了。
+Ref  http://live.vhall.com/431874021  </description>
+    </item>
+    
+    <item>
+      <title>Backup Rancher</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/backup-rancher.html</link>
+      <pubDate>Tue, 19 Jun 2018 00:18:49 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/backup-rancher.html</guid>
+      <description>Single Node Backup And Restoration
+Env    Step backup rancher server
+root@bitzone:~/.tom# docker stop e3655bea211c^C root@bitzone:~/.tom# docker create --volumes-from e3655bea211c --name rancher-backup-v2.0.2 rancher/rancher:v2.0.2 464fd997687abe4cbc43fa39b30f4c246e620b6c33c8f032f32fdafebcd29c61 root@bitzone:~/.tom#  查看所有正在运行容器的hash-id
+root@bitzone:~/.tom# docker ps -q 2211913af199 3cb7184995a4 5e50622bcc06 9e2549352d17 0287433011b0 2f7f9a341fcb 6b80dcdacaf5 d22d8ef3b283 a321ebd4941c 9c7e75ce47b3 0ea90d1c532f 1aec7af587f1 970a46ba0b57 698b46a9e3fb fc9270fe5d50 d41ae6d7fa22 aab01d4e1556 95d8b9f51555 7a07fd5c94ce a93266250acf 7b5c63b5de0e dfda4227277f 84804443cd2c e3655bea211c root@bitzone:~/.tom#  重启rancher及容器
+docker start 2211913af199 docker start 3cb7184995a4 docker start 5e50622bcc06 docker start 9e2549352d17 docker start 0287433011b0 docker start 2f7f9a341fcb docker start 6b80dcdacaf5 docker start d22d8ef3b283 docker start a321ebd4941c docker start 9c7e75ce47b3 docker start 0ea90d1c532f docker start 1aec7af587f1 docker start 970a46ba0b57 docker start 698b46a9e3fb docker start fc9270fe5d50 docker start d41ae6d7fa22 docker start aab01d4e1556 docker start 95d8b9f51555 docker start 7a07fd5c94ce docker start a93266250acf docker start 7b5c63b5de0e docker start dfda4227277f docker start 84804443cd2c docker start e3655bea211c  docker 正常运行时</description>
+    </item>
+    
+    <item>
+      <title>Rancher Single Node Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-single-node-install.html</link>
+      <pubDate>Sun, 17 Jun 2018 16:59:39 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher-single-node-install.html</guid>
+      <description>rancher2.0单节点安装kubernetes
+Env 无论哪个环境
+ 硬盘容量
+ 空闲 &amp;gt; 20G 空闲 &amp;gt; 20%  有网络
+  Env-1(成功)  cloud: aws os: ubuntu16.04 rancher: v2.0.2 docker: docker-ce=17.03.2~ce-0~ubuntu-xenial post: 8088, 4443  实际上，我是直接把
+ ufw: disable  Env-2(没有成功)可略过。 实验环境
+4台vm，配置为2C，4G，100G 一台安装Rancher 一台作为Kubernets cted &amp;amp; control 两台作为Kubernets worker
+ os: ubuntu16.04 rancher: v2.0.2  IP  ip: 192.168.31.189 rancher, win10（192.168.31.102）下的virtualbox ip: 192.168.31.188 k8s-etcd, ud-ssd（192.168.31.199）下的virtualbox ip: 192.168.31.187 k8s-worker, ud-ssd（192.168.31.199）下的virtualbox ip: 192.168.31.186 k8s-worker, ud-putong（192.168.31.112）下的virtualbox  后来发现，192.</description>
+    </item>
+    
+    <item>
+      <title>Rancher2 Install Base Aws Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher2-install-base-aws-ubuntu.html</link>
+      <pubDate>Wed, 06 Jun 2018 17:08:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher2-install-base-aws-ubuntu.html</guid>
+      <description>aws中ubuntu安装rancher2.0
+Env Env-a  cloud: aws os: ubuntu 16.04 docker: 17.03.2-ce  Env-b  cloud: aws os: Amazon Linux AMI 2018.03 docker: 17.12.1-ce  这里的env-b可以不看, 因为效果与env-a相同
+Rancher versions:
+rancher/server or rancher/rancher: rancher/server 2.0.2
+**Docker version: 17.03.2-ce
+**Operating system and kernel:
+ ubuntu 16.04 Linux ip-172-31-12-229 4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux  **Type/provider of hosts: AWS
+**Setup details: single node rancher
+**Environment Template: Kubernetes</description>
+    </item>
+    
+  </channel>
+</rss>

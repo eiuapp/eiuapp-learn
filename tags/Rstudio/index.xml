@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rstudio on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/Rstudio.html</link>
+    <description>Recent content in Rstudio on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 03 Feb 2018 14:38:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/Rstudio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Rstudio Vnc Install Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/r/R-Rstudio-vnc-install-centos.html</link>
+      <pubDate>Sat, 03 Feb 2018 14:38:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/r/R-Rstudio-vnc-install-centos.html</guid>
+      <description>R, Rstudio 在 centos 下安装, 并可通过端口访问
+cd yum install scp ls ifconfig ls yum install R yum install gcc gcc-c++ -y vncserver R sudo systemctl stop firewalld.service yum -y install tigervnc-server tigervnc ll /lib/systemd/system/vncserver@.service cp /lib/systemd/system/vncserver@.service /lib/systemd/system/vncserver@:1.service vi /lib/systemd/system/vncserver@.service systemctl daemon-reload systemctl enable vncserver@:1.service systemctl start vncserver@:1.service cat /etc/sysconfig/iptables sudo systemctl stop firewalld.service service vncserver restart rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm yum install epel-release yum install gcc gcc-c++ -y yum install gcc-gfortran -y yum install readline-devel -y yum install libXt-devel -y yum install fonts-chinese tcl tcl-devel tclx tk tk-devel -y yum install mesa-libGLU mesa-libGLU-devel -y yum install -y openssl openssl-devel sudo yum clean all sudo yum install R -y R mkdir /home/conan/R/Rserve -p vi /etc/Rserv.</description>
+    </item>
+    
+  </channel>
+</rss>

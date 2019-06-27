@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/golang.html</link>
+    <description>Recent content in golang on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 03 Dec 2018 21:33:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>golang channel</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-channel-learning-a.html</link>
+      <pubDate>Mon, 03 Dec 2018 21:33:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-channel-learning-a.html</guid>
+      <description>goroutine 首先我们来看线程,在golang里面也叫goroutine
+在读这篇文章之前，我们需要了解一下并发与并行。golang的线程是一种并发机制，而不是并行。它们之间的区别大家可以上网搜一下，网上有很多的介绍。
+下面我们先来看一个例子吧
+package main import ( &amp;quot;fmt&amp;quot; ) func main() { go fmt.Println(&amp;quot;1&amp;quot;) fmt.Println(&amp;quot;2&amp;quot;) }  在golang里面，使用go这个关键字，后面再跟上一个函数就可以创建一个线程。后面的这个函数可以是已经写好的函数，也可以是一个匿名函数
+package main import ( &amp;quot;fmt&amp;quot; ) func main() { var i = 3 go func(a int) { fmt.Println(a) fmt.Println(&amp;quot;1&amp;quot;) }(i) fmt.Println(&amp;quot;2&amp;quot;) }  上面的代码就创建了一个匿名函数，并且还传入了一个参数i，下面括号里的i是实参，a是形参。
+那么上面的代码能按照我们预想的打印1、2、3吗？告诉你们吧，不能，程序只能打印出2。下面我把正确的代码贴出来吧
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) func main() { var i = 3 go func(a int) { fmt.Println(a) fmt.Println(&amp;quot;1&amp;quot;) }(i) fmt.Println(&amp;quot;2&amp;quot;) time.Sleep(1 * time.Second) }  我只是在最后加了一行让主线程休眠一秒的代码，程序就会依次打印出2、3、1。</description>
+    </item>
+    
+    <item>
+      <title>go-tour-zh离线安装(本地安装)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/go-tour-zh-local-install.html</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/go-tour-zh-local-install.html</guid>
+      <description>中文文档 最近尝试学习golang，在某个网站（真忘了）上发现gotour是一款灰常叼的教程&amp;amp;指南，之后搜索发现有前辈给出了本地安装离线gotour的方法，但实际安装过程中发现一些问题：
+1.通过go get bitbucket.org/mikespook/go-tour-zh/gotour 命令安装时报错，提示missing Mercurial command，原来是先需要安装Mercurial；
+➜ bitbucket git:(master) ✗ go get bitbucket.org/mikespook/go-tour-zh/gotour go: missing Mercurial command. See https://golang.org/s/gogetcmd package bitbucket.org/mikespook/go-tour-zh/gotour: exec: &amp;quot;hg&amp;quot;: executable file not found in $PATH ➜ bitbucket git:(master) ✗ brew install mercurial Updating Homebrew... ==&amp;gt; Downloading https://homebrew.bintray.com/bottles/mercurial-4.8.mojave.bottle.tar.gz ######################################################################## 100.0% ==&amp;gt; Pouring mercurial-4.8.mojave.bottle.tar.gz ==&amp;gt; Caveats Bash completion has been installed to: /usr/local/etc/bash_completion.d zsh completions have been installed to: /usr/local/share/zsh/site-functions ==&amp;gt; Summary 🍺 /usr/local/Cellar/mercurial/4.8: 618 files, 9.</description>
+    </item>
+    
+    <item>
+      <title>Golang Gvm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-gvm.html</link>
+      <pubDate>Sun, 15 Jul 2018 14:09:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-gvm.html</guid>
+      <description>Go 语言多版本安装及管理利器 - GVM
+Env  golang  Step ### 安装指定版本 golang
+这里要科学上网
+通过 gvm 安装指定 go版本
+➜ ~ gvm install go1.10 Downloading Go source...  但是这个时候，没有指定你会使用哪个版本
+➜ ~ gvm list gvm gos (installed) go1.10 system ➜ ~  通过 gvm 指定 默认使用版本
+➜ ~ gvm use go1.10 --default Now using version go1.10 ➜ ~ gvm list gvm gos (installed) =&amp;gt; go1.10 system ➜ ~  看一下go的环境吧
+➜ ~ go env GOARCH=&amp;quot;amd64&amp;quot; GOBIN=&amp;quot;&amp;quot; GOCACHE=&amp;quot;/Users/tomtsang/Library/Caches/go-build&amp;quot; GOEXE=&amp;quot;&amp;quot; GOHOSTARCH=&amp;quot;amd64&amp;quot; GOHOSTOS=&amp;quot;darwin&amp;quot; GOOS=&amp;quot;darwin&amp;quot; GOPATH=&amp;quot;/Users/tomtsang/.</description>
+    </item>
+    
+    <item>
+      <title>Golang Ide Gogland</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-ide-gogland.html</link>
+      <pubDate>Sun, 15 Jul 2018 13:55:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-ide-gogland.html</guid>
+      <description> Jetbrains 家族利器之 Gogland 简明教程
+Env  os: mac  Step 安装 gvm 参考 Go 语言多版本安装及管理利器 - GVM
+并 通过 gvm 安装指定 go版本
+安装 goland 略
+激活 gogland mac版本 从 GoLand注册码 找到 https://www.imsxm.com/jetbrains-license-server.html ，从而知道了 在 JetBrains 授权服务器(License Server):填入 http://www.activejetbrains.gq，即可完成激活。
+win10 版本 尝试 https://blog.csdn.net/sunylat/article/details/55096944
+三、设置 Gogland 的 GOROOT 如果之前已安装 gvm 则，这里会自动识别出来。
+这里如果说没有自动找到之前 gvm 安装的go版本，要重启一下mac。
+Ref  https://www.imsxm.com/jetbrains-license-server.html https://bingohuang.com/go-gvm/ https://gocn.vip/article/445  </description>
+    </item>
+    
+    <item>
+      <title>Golang Import Packages</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-import-packages.html</link>
+      <pubDate>Fri, 09 Feb 2018 22:29:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-import-packages.html</guid>
+      <description> ref https://segmentfault.com/q/1010000010846304
+https://my.oschina.net/zlLeaf/blog/174404
+step 通常情况下，import的包都是相对$GOPATH/src目录引入的，比如从github上面clone下来的项目，直接放到$GOPATH/src目录下，就可以直接import。例如： 如果项目的import路径是这样写的： import &amp;quot;github.com/yourname/projectname&amp;quot; 需要将项目代码放置在： $GOAPTH/src/github.com/yourname/projectname/下 如果项目的import是这样写的： import &amp;quot;message&amp;quot; 则将message.go放到: $GOAPTH/src/message/目录下即可。  </description>
+    </item>
+    
+    <item>
+      <title>Golang Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-install.html</link>
+      <pubDate>Mon, 05 Feb 2018 23:34:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-install.html</guid>
+      <description>mac Golang在Mac OS上的环境配置
+LiteIDE下载,这个网址,好像现在打不开
+调试 mac安装gdb brew tap homebrew/dupes brew install gdb  delve 参考了 Installing Go, Gocode, GDB and LiteIDE</description>
+    </item>
+    
+    <item>
+      <title>Go Learn</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/learn-golang.html</link>
+      <pubDate>Mon, 05 Feb 2018 14:25:08 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/learn-golang.html</guid>
+      <description>资料导航 http://www.geeker8.com/go/41
+菜鸟教程 已完成
+优
+ 比较易读  缺点
+ 没介绍 通道，go协程，等并发概念和原理  Go语言第一课 代码
+已完成
+优
+ 比较易读 有代码测试  Go简易教程 代码
+学习中
+在 6.3 小节完全懵逼
+读后感受 整体来说，我感觉，本书内容较淺而对新手不易理解，知识结构展示混乱，且无完整的示例代码。读完了，没有感觉学到东西。
+Go入门指南 gomake
+godoc
+9.11 在 Go 程序中使用外部库
+学习在 13.2 小节, 停止&amp;hellip;.
+Go并发编程实战 随书源码
+学习中, 现在第3章
+An Introduction to Programming in Go url
+ http://www.golang-book.com/books/intro pdf 中文繁体  code
+随书源码
+golangbootcamp [官方文档-中文] 官方中文-Go编程语言规范 golang快速入门 done
+chan 部分有错，其它整体很不错了，可以作为小手册，参考用。
+go语言圣经（中文版） gobyexample done
+https://gobyexample.com, 这里有大量使用常规使用案例 https://gobyexample.</description>
+    </item>
+    
+  </channel>
+</rss>

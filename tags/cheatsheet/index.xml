@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cheatsheet on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/cheatsheet.html</link>
+    <description>Recent content in cheatsheet on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 21 Mar 2018 10:56:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cheatsheet</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/cheatsheet.html</link>
+      <pubDate>Wed, 21 Mar 2018 10:56:42 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/cheatsheet.html</guid>
+      <description> cheetsheat  cheat-sheets.org  linux  unix-linux-cheat-sheet linux-commands-cheat-sheet linux-command-shelf  docker  docker-command-manual docker-cli-to-kubectl  kubernetes  kubernetes(不全) Kubernetes核心概念总结  bash  jimmysong.io/cheatsheets/bash  nginx ops  运维不仅仅是Linux，居然还要知道这么多？ 史上最全互联网运维工作规划！十分钟找到职业方向！ 建设DevOps统一运维监控平台，先从日志监控说起  mysql  cheat-sheets/mysql overapi.com/mysql cheat-sheets/mysql 不全  python  PQRC-2.4-A4-latest cheat-sheets/python/  </description>
+    </item>
+    
+  </channel>
+</rss>

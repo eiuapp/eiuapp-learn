@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitlab on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/gitlab.html</link>
+    <description>Recent content in gitlab on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 12 Jul 2018 11:07:08 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gitlab Authority</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-authority.html</link>
+      <pubDate>Thu, 12 Jul 2018 11:07:08 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-authority.html</guid>
+      <description> Env  gitlab: 10.0.8  Step 公司切入Gitlab来管理代码已经有一年多了，其中遇到很多权限问题，如没有权限clone、没有权限提交代码等等，这里做个总结. 权限分为访问权限和行为权限两个层次.
+访问权限 – Visibility Level 这个是在建立项目时就需要选定的，主要用于决定哪些人可以访问此项目，包含3种
+ Private – 私有，只有属于该项目成员才有原先查看 Internal – 内部，用个Gitlab账号的人都可以clone Public – 公开，任何人可以clone  行为权限 在满足行为权限之前，必须具备访问权限（如果没有访问权限，那就无所谓行为权限了），行为权限是指对该项目进行某些操作，比如提交、创建问题、创建新分支、删除分支、创建标签、删除标签等.
+角色 Gitlab定义了以下几个角色:
+ Guest – 访客 Reporter – 报告者; 可以理解为测试员、产品经理等，一般负责提交issue等 Developer – 开发者; 负责开发 Master – 主人; 一般是组长，负责对Master分支进行维护 Owner – 拥有者; 一般是项目经理  权限 不同角色，拥有不同权限，下面列出Gitlab各角色权限
+Ref  https://www.cnblogs.com/dzcWeb/p/8919970.html http://ju.outofmemory.cn/entry/273281  </description>
+    </item>
+    
+    <item>
+      <title>Gitlab CI Step by Step</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-ci-step-by-step.html</link>
+      <pubDate>Tue, 10 Jul 2018 22:26:33 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-ci-step-by-step.html</guid>
+      <description>gitlab-ci 一步一步学
+Env  os: ubuntu docker: 17.03.2 gitlab: 10.2.8(比特空间提供)
+ gitlab-runner:
+  Step 理论 了解  用 GitLab CI 进行持续集成, 这篇文章是写得我认为最合适入门的。
+ gitlab ci quick-start有一个对应的中文版本-GitLab CI/CD快速入门。
+  安装 gitlab 略
+安装 gitlab-runner  可以先直接看 一步一步完成GitLab Runner持续化自动部署 的前3大点，就是安装的过程，我也就是这么安装成功的。  从 https://docs.gitlab.com/runner/install/ 了解到 docker 安装 gitlab-runner
+docker run -d --name gitlab-runner --restart always \ -v /srv/gitlab-runner/config:/etc/gitlab-runner \ -v /var/run/docker.sock:/var/run/docker.sock \ gitlab/gitlab-runner:v11.0.0  registering-a-specific-runner 获取Gitlab项目的Token https://blog.csdn.net/u011215669/article/details/80458972
+register https://docs.gitlab.com/ce/ci/runners/README.html#registering-a-specific-runner
+找到</description>
+    </item>
+    
+    <item>
+      <title>Gitlab Workflow</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-workflow.html</link>
+      <pubDate>Fri, 29 Jun 2018 09:08:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-workflow.html</guid>
+      <description> gitlab流程
+Env    Step Ref  https://www.cnblogs.com/coderzl/p/7491143.html https://blog.csdn.net/liumiaocn/article/details/79256312  </description>
+    </item>
+    
+    <item>
+      <title>gitlab修改密码</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-change-password.html</link>
+      <pubDate>Tue, 17 Apr 2018 17:15:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-change-password.html</guid>
+      <description>gitlab修改密码
+env  IP: 192.168.31.169 OS: ubuntu-16.04 gitlab: 10.6.4  step root@gitlab:~# sudo gitlab-rails console production Warning: fuzzy message was ignored. : msgid &#39;&amp;lt;strong&amp;gt;Removes&amp;lt;/strong&amp;gt; source branch&#39; Warning: fuzzy message was ignored. : msgid &#39;A new branch will be created in your fork and a new merge request will be started.&#39; Warning: fuzzy message was ignored. : msgid &#39;A user with write access to the source branch selected this option&#39; Warning: fuzzy message was ignored.</description>
+    </item>
+    
+    <item>
+      <title>Gitlab汉化</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-cn.html</link>
+      <pubDate>Tue, 17 Apr 2018 09:50:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-cn.html</guid>
+      <description> 对gitlab进行汉化
+env IP: 192.168.31.148 OS: ubuntu-14.04.5 gitlab: 10.6.4
+step mkdir xhang &amp;amp;&amp;amp; cd xhang git clone https://gitlab.com/xhang/gitlab.git cd gitlab/ git fetch gitlab_version=$(sudo cat /opt/gitlab/embedded/service/gitlab-rails/VERSION) echo ${gitlab_version} git diff v${gitlab_version} v${gitlab_version}-zh &amp;gt; ../${gitlab_version}-zh.diff cd .. sudo gitlab-ctl stop sudo patch -d /opt/gitlab/embedded/service/gitlab-rails -p1 &amp;lt; 10.6.4-zh.diff sudo gitlab-ctl start sudo gitlab-ctl reconfigure telnet 192.168.31.148 7890  ref  汉化指南，基于 Larry Li 版汉化指南 修改  </description>
+    </item>
+    
+    <item>
+      <title>Gitlab Install Base Ubuntu14.04</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install-base-ubuntu14.04.html</link>
+      <pubDate>Mon, 16 Apr 2018 17:36:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install-base-ubuntu14.04.html</guid>
+      <description>gitlab在ubuntu14.04和ubuntu16.04上安装
+env IP: 192.168.31.148 OS: ubuntu-14.04.5 gitlab: 10.6.4
+env2 IP: 192.168.31.169 OS: ubuntu-16.04 gitlab: 10.6.4
+step 按照 清华大学 Gitlab Community Edition 镜像使用帮助 安装就可以了.
+一定要注意系统版本
+修改IP, sudo vi /etc/gitlab/gitlab.rb修改下面内容
+external_url &#39;http://192.168.31.148:7890&#39;  重启
+sudo gitlab-ctl reconfigure  浏览器打开 http://192.168.31.148:7890 修改密码,重新登陆.
+faq libstdc++.so.6: version `GLIBCXX_3.4.21&amp;rsquo; not found strings /home/kzl/anaconda2/bin/../lib/libstdc++.so.6 | grep GLIBCXX  可以看到所有的安装的 glibc++ 版本, 这里确实是没有3.4.21版本
+后来才发现,我安装的时候,没有选择正确的系统版本(最先选择了ubuntu16.04,应该先看一下系统版本,然后选择 ubuntu14.04)
+ref  Gitlab Community Edition 镜像使用帮助 version `GLIBCXX_3.4.21&amp;rsquo; not found 解决办法 ImportError: /home/kzl/anaconda2/bin/.</description>
+    </item>
+    
+    <item>
+      <title>Git Workflow</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/git-workflow.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:42:26 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/git-workflow.html</guid>
+      <description>gitlab系列之workflow
+本文是 官方 workflow 的中文翻译
+参考 https://docs.gitlab.com/ee/workflow/gitlab_flow.html
+中文 介绍 使用git进行版本管理使得分支和合并比旧版本系统（如SVN）容易得多。 这允许多种分支策略和工作流程。 几乎所有这些都是对git之前使用的方法的改进。 但是许多组织最终没有明确定义，过于复杂或没有与问题跟踪系统（issue tracking systems）集成的，工作流。 因此，我们建议GitLab flow作为明确定义的一套最佳实践。 它结合了功能驱动开发和功能分支的问题跟踪。
+来自其他版本控制系统的组织经常发现很难开发有效的工作流。 本文介绍“将git工作流与问题跟踪系统集成”的GitLab流程。 它提供了一个简单，透明和有效的方式使用git。
+当转换到git时，你必须习惯于在与同事共享提交之前有三个步骤。 大多数版本控制系统只有一个步骤，从工作副本提交到共享服务器。 在git中，您可以将文件从工作副本添加到暂存区域。 之后，你提交他们到本地回购。 第三步是推送到共享远程存储库。 在习惯了这三个步骤之后，分支模型成为挑战。
+因为许多组织，对于git是新认识，没有公约如何使用它，那么很快git变成一团糟。 他们遇到的最大的问题是，许多长期运行的分支，每个包含了一部分的变化。 人们很难确定他们应该开发或部署到生产的是哪个分支。 通常对这个问题的反应是采用标准化模式，例如git流和GitHub流。 我们认为仍有改进的余地，并将详细介绍一组我们称为GitLab流程的做法。
+Git flow and its problems Git流是一个第一建议使用git分支的vcs，它得到了很多的关注。它主张一个主分支、一个单独开发分支以及支持特性功能开发，发布版本和修补程序的其它分支。开发发生在开发分支上，移动到发布分支，并最终合并到主分支。 Git流是有一个定义良好的标准，但它的复杂性引入了两个问题。第一个问题是开发人员必须使用develop分支而不是master，master是保留给用于发布生产版本的代码。这是一个约定，称默认分支为master，并主要从此master分支，合并到此master。由于大多数工具自动使master分支成为默认分支，并在默认情况下显示该分支，因此必须切换到另一个分支。git流的第二个问题是修补程序和发布分支引入的复杂性。这些分支对于一些组织来说可能是一个好主意，但对于绝大多数组织来说是过分了。现在大多数组织实施持续交付，这意味着可以部署您的默认master分支。这意味着要prevented修补程序和发布分支，包括它们引入的所有仪式（ceremony）。这个仪式的一个例子是合并发布分支。虽然存在专门的工具来解决这个问题，但它们需要文档并增加复杂性。开发人员经常犯错误，例如更改只会合并到master中，而不会合并到develop分支中。这些错误的根本原因是git流对于大多数用例来说太复杂了。并且发布并不自动意味着也做修补程序。
+GitHub flow as a simpler alternative 在对git流的应对中，一个更简单的选择是，详细的GitHub流。 此流仅具有特征分支和master分支。 这是非常简单和干净，许多组织已经采用它与巨大的成功。 Atlassian推荐一个类似的策略，虽然他们rebase特征分支。 将所有内容合并到主分支并经常部署,意味着您最小化“库存”中的代码量，这符合精益和持续交付最佳实践。 但是这个流程仍然有许多关于部署，环境，发布和问题集成的问题。 使用GitLab流程，我们为这些问题提供额外的指导。
+Production branch with GitLab flow GitHub流假设你能够在每次合并特性分支时都部署到生产环境。这对于SaaS应用程序是可能的，但在许多情况下，这是不可能的。一种情况是，你不能控制确切的发布时刻，例如需要通过App Store验证的iOS应用程序。另一个例子是，当您有部署窗口时间（工作日从上午10点到下午4点，当操作团队满员时），但您也可以在其他时间合并代码。在这些情况下，您可以创建一个反映部署代码的生产分支。您可以通过将master合并到生产（production）分支来部署新版本。如果你需要知道在生产分支中是什么代码，你可以只是checkout到生产分支看看。部署的大致时间，很容易显示为版本控制系统中的合并提交时间。如果您自动部署生产分支，这一时间是相当准确的。如果您需要更准确的时间，您可以让部署脚本在每个部署中创建一个tag。此流防止了，git流的发布，标记和合并的开销。
+Environment branches with GitLab flow 建立一个自动更新到master分支的环境可能是个好主意。只有在这种情况下，此环境的名称可能与分支名称不同。假设您有一个暂存环境（staging environment），一个预生产环境和一个生产环境。在这种情况下，主分支将部署在暂存环境。当有人想要部署到预生产时，他们创建从主分支到预生产分支的合并请求。并且通过合并预生产分支到生产分支。此工作流只提交下游流确保一切都已在所有环境中测试过。如果您需要使用修补程序选择一个提交，通常在特性分支上进行开发，并将其与合并请求合并到master中，不要删除特性分支。如果master是好的（它应该是好的，如果你是连续交付的），然后将它合并到其他分支（也就是合并到预生产环境和生产环境）。如果这是不可能的（因为可能需要更多的手动测试），您可以将功能分支的合并请求发送到下游分支。 环境分支的一个“极端”版本，就是，正在为Teatro所做的，每个功能分支设置一个环境。
+Release branches with GitLab flow 只有在需要将软件发布到外部世界的情况下，您才需要使用版本发布分支。在这种情况下，每个分支包含次要版本（2-3稳定版，2-4稳定版等）。稳定分支使用master作为起点，并尽可能晚地创建。通过尽可能晚的提交分支，您必须将错误修复应用到多个分支的时间最小化。在发布了一个发布分支后，只有严重的错误修复包括在发布分支中。如果可能的话，这些错误修复首先合并到master中，然后进入发布分支。这种方式下，你不能忘记cherry-picked他们进 master 和 遇到相同的bug的后续版本。这称为“上游第一”策略，也是由Google和Red Hat实施的。每次在发布分支中包括错误修复时，通过设置新标签来提高补丁版本（以符合语义版本控制）。一些项目也有一个稳定的分支，指向与最新发布的分支相同的提交。在这个流程中，有一个生产分支（或git flow master分支）是不常见的。</description>
+    </item>
+    
+    <item>
+      <title>Gitlab Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:40:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install.html</guid>
+      <description>git系列之gitlab安装
+env 阿里云 - IP: 120.25.204.216 - OS: centos7
+step sudo firewall-cmd --permanent --add-service=http sudo systemctl reload firewalld  注意这个写法
+sudo EXTERNAL_URL=&amp;quot;http://gitlab.example.com&amp;quot; yum install -y gitlab-ee  修改成 下面这种 方式, 但是, 这样下载会比较慢了
+sudo EXTERNAL_URL=&amp;quot;http://120.25.204.216:7890&amp;quot; yum install -y gitlab-ee  我们用 清华镜像 吧
+[root@jlch_web_001 ~]# wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.6.2-ce.0.el7.x86_64.rpm --2018-04-12 15:11:25-- https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.6.2-ce.0.el7.x86_64.rpm Resolving mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)... 101.6.8.193, 2402:f000:1:408:8100::1 Connecting to mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)|101.6.8.193|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 417757949 (398M) [application/x-redhat-package-manager] Saving to: ‘gitlab-ce-10.</description>
+    </item>
+    
+  </channel>
+</rss>

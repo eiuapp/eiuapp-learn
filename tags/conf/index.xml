@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conf on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/conf.html</link>
+    <description>Recent content in conf on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/conf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>saleor 设置 templates base</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-conf-templates-base.html</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-conf-templates-base.html</guid>
+      <description>安装完了 saleor ，下一步，自然就是修改一些我们自己的Logo，页脚之类的东西了。
+页脚COPYRIGHT (saleor) ➜ saleor git:(master) ✗ grep &amp;quot;COPYRIGHT © 2009–2019 MIRUMEE SOFTWARE&amp;quot; -rn ./ ./templates/base.html:296: &amp;lt;div class=&amp;quot;col-8 footer__copy-text&amp;quot;&amp;gt;COPYRIGHT © 2009–2019 MIRUMEE SOFTWARE&amp;lt;/div&amp;gt; (saleor) ➜ saleor git:(master) ✗  把这里修改成我们自己的
+(saleor) ➜ saleor git:(master) ✗ vi templates/base.html (saleor) ➜ saleor git:(master) ✗ grep &amp;quot;COPYRIGHT © 2009–2019 &amp;quot; -rn ./ ../../../templates/base.html:296: &amp;lt;div class=&amp;quot;col-8 footer__copy-text&amp;quot;&amp;gt;COPYRIGHT © 2009–2019 谦谦科技&amp;lt;/div&amp;gt; (saleor) ➜ images git:(master) ✗  页脚Logo 只要审查元素就知道，这个 LOGO是 SVG图像。
+&amp;lt;div class=&amp;quot;col-4&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;{% url &#39;home&#39; %}&amp;quot; class=&amp;quot;footer__logo float-md-left&amp;quot;&amp;gt; &amp;lt;svg data-src=&amp;quot;{% static &amp;quot;images/logo-document.</description>
+    </item>
+    
+  </channel>
+</rss>

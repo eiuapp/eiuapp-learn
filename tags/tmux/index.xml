@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tmux on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/tmux.html</link>
+    <description>Recent content in tmux on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>tmuxinator（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmuxinator.html</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmuxinator.html</guid>
+      <description>tmux进阶之tmuxinator
+在Tmuxinator中配置layout https://blog.suisuijiang.com/tmux-course-terminal-manage/
+我们可能会需要指定窗格的排班规则，tmuxinator支持设置tmux中的5种默认layout样式：
+even-horizontal Panes are spread out evenly from left to right across the window. even-vertical Panes are spread evenly from top to bottom. main-horizontal A large (main) pane is shown at the top of the window and the remaining panes are spread from left to right in the leftover space at the bottom. Use the main-pane-height window option to specify the height of the top pane. main-vertical Similar to main-horizontal but the large pane is placed on the left and the others spread from top to bottom along the right.</description>
+    </item>
+    
+    <item>
+      <title>tmux（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmux.html</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-tmux.html</guid>
+      <description> 基础 http://blog.jobbole.com/87584/
+高效的结对编程 在Tmux 中使用 Tmate
+在文本间快速移动光标，复制文本 将复制下来的文本发送到系统的剪贴板中
+Select and copy text
+调整 Tmux 以增强其同 Vim 的集成度 调整背景的配色方案
+调整光标的形状
+调整粘贴时的文本缩进
+美化 Tmux 的状态栏 tmux-plugins https://github.com/tmux-plugins
+查看version ➜ ~ git:(master) ✗ tmux -V tmux 2.1 ➜ ~ git:(master) ✗  滚屏 https://superuser.com/questions/209437/how-do-i-scroll-in-tmux
+复制文字 https://superuser.com/questions/196060/selecting-text-in-tmux-copy-mode
+Ref  https://zhuanlan.zhihu.com/p/33369297 https://github.com/search?q=tmux https://github.com/gpakosz/.tmux https://yq.aliyun.com/articles/44513 https://www.jianshu.com/p/ccac114c522e https://superuser.com/questions/209437/how-do-i-scroll-in-tmux https://www.jianshu.com/p/ccac114c522e http://os.51cto.com/art/201410/453671.htm http://os.51cto.com/art/201410/453671.htm  </description>
+    </item>
+    
+    <item>
+      <title>wemux (笔记)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-wemux.html</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-wemux.html</guid>
+      <description>https://github.com/zolrath/wemux</description>
+    </item>
+    
+  </channel>
+</rss>

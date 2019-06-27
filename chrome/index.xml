@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chrome on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/chrome.html</link>
+    <description>Recent content in chrome on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/chrome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ftp Cannot Chrome File Access</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/chrome/ftp-cannot-chrome-file-access.html</link>
+      <pubDate>Tue, 29 May 2018 15:11:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/chrome/ftp-cannot-chrome-file-access.html</guid>
+      <description> 为何客户端软件可以而浏览器则不能连接FTP服务器
+env  centos6.9 ftp: vsftpd  step 这里主要的点就是理解主动模式与被动模式。
+主动模式对服务器端有利，被动模式对客户端有利。但是服务器端既然要提供FTP服务，应该在服务器端设置防火墙规则，提供被动模式服务，而不能要求所有的客户端都设置防火墙规则以适应主动服务模式。当然服务器端在提供被动模式服务时，出于安全考虑，应该设置客户端可发起数据连接的端口范围，这就是下面配置文件中的
+pasv_min_port=61001 pasv_max_port=62000  即，告诉客户端可以向61001与62000之间的端口发起数据连接。
+[root@bitspace ~]# tail /etc/vsftpd/vsftpd.conf # sockets, you must run two copies of vsftpd with two configuration files. # Make sure, that one of the listen options is commented !! #listen_ipv6=YES pam_service_name=vsftpd userlist_enable=YES tcp_wrappers=YES pasv_min_port=61001 pasv_max_port=62000 [root@bitspace ~]#  Ref  https://blog.csdn.net/zilong00007/article/details/7663152 https://my.oschina.net/iyinghui/blog/1605801 http://www.cnblogs.com/qytan36/archive/2010/05/15/1736270.html  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/chrome/chrome-tools.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/chrome/chrome-tools.html</guid>
+      <description>extensions https://www.zhihu.com/question/19594682
+vimium</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/chrome/chrome.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/chrome/chrome.html</guid>
+      <description>chrome</description>
+    </item>
+    
+  </channel>
+</rss>

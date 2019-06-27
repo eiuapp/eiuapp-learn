@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/code.html</link>
+    <description>Recent content in code on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 01 Dec 2018 08:37:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kids code</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/kids-code.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:37:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/kids-code.html</guid>
+      <description>少儿编程网
+http://www.kidscode.cn/</description>
+    </item>
+    
+    <item>
+      <title>Code Style</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/code-style.html</link>
+      <pubDate>Tue, 06 Feb 2018 17:55:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/code-style.html</guid>
+      <description> 三种编程命名规范（匈牙利命名法、驼峰式命名法、帕斯卡命名法)
+代码风格, 所有的语言的代码风格汇总 有的时候，真的是很困惑，我应该用什么代码风格.
+ Airbnb JavaScript Style Guide 中文版 Airbnb JavaScript Style Guide Style Guide for Python Code Style guides for Google-originated open-source projects Google 开源项目风格指南 (中文版) Google 开源项目风格指南 github (中文版) Google JavaScript Style Guide(中文 版) analyzing code convention from github commits for Github data challenge, github地址 Code Guide by @AlloyTeam 盼望您的指定  </description>
+    </item>
+    
+  </channel>
+</rss>

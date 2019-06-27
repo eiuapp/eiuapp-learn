@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>install on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/install.html</link>
+    <description>Recent content in install on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>nodejs 一定要通过 nvm安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-install.html</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-install.html</guid>
+      <description>使用 nvm 管理不同版本的 node 与 npm
+step 补充说明：Mac 下通过 brew install nvm 所安装的 nvm ，由于安装路径不同，无法正确启用。建议使用 brew uninstall nvm 卸载掉之后，通过本文的方案重新安装一次。
+nvm 是 Mac 下的 node 管理工具，有点类似管理 Ruby 的 rvm，如果是需要管理 Windows 下的 node，官方推荐是使用 nvmw 或 nvm-windows 。
+以下具体说下 Mac 系统中的安装与使用细节（Windows 系统仅供类比参考）。
+一、卸载已安装到全局的 node/npm 如果之前是在官网下载的 node 安装包，运行后会自动安装在全局目录，其中
+ node 命令在 `/usr/local/bin/node` npm 命令在 `/usr/local/bin/npm` ，其实是 `/usr/local/lib/node_modules/npm/bin/npm-cli.js` 的软链接 全局 node_modules 目录在 `/usr/local/lib/node_modules/`  安装 nvm 之后最好先删除下已安装的 node 和全局 node 模块：
+npm ls -g --depth=0 #查看已经安装在全局的模块，以便删除这些全局模块后再按照不同的 node 版本重新进行全局安装 sudo rm -rf /usr/local/lib/node_modules #删除全局 node_modules 目录 sudo rm /usr/local/bin/node #删除 node cd /usr/local/bin &amp;amp;&amp;amp; ls -l | grep &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>eslint入门</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/eslint/eslint-install.html</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/eslint/eslint-install.html</guid>
+      <description>安装 npm install -g eslint babel-eslint eslint-plugin-react eslint-config-airbnb  在安装的时候得注意一点，eslint与eslint-config-airbnb要么都执行全局安装，要么都本地安装，必须相同哟。
+然后，把 https://github.com/airbnb/javascript/blob/master/linters/.eslintrc 下载到Project 中就可以了。
+使用 配置完相关信息后，就可以切到项目目录内然后执行检测啦：
+我们新建一个test.js进行检测
+$ eslint test.js  JavaScript Style Guide 关于 JavaScript Style Guide 可以直接参考
+ https://github.com/airbnb/javascript  react eslint 优先查看：
+在React+Babel+Webpack环境中使用ESLint
+ https://www.cnblogs.com/le0zh/p/5619350.html https://www.bbsmax.com/A/obzbX0j65E/  React-native ESLint &amp;amp; Airbnb 配置
+ https://www.jianshu.com/p/1d66a10466d2  npm run lint 检查所有js文件 在根目录的 package.json文件下修改如下:
+&amp;quot;scripts&amp;quot;: { &amp;quot;lint&amp;quot;: &amp;quot;eslint --ext .js ./src --fix&amp;quot; }  根目录下运行:
+npm run lint  再webpack配置中使用eslint加载器 添加 到：webpack.</description>
+    </item>
+    
+    <item>
+      <title>docker 安装 saleor</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-docker.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-customization-docker.html</guid>
+      <description>https://docs.getsaleor.com/en/latest/customization/docker.html
+安装后 完成步骤后的效果如下：
+(saleor) ➜ saleor git:(master) ✗ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 202bd2594ad9 saleor_web &amp;quot;python manage.py ru…&amp;quot; About a minute ago Up 33 seconds 0.0.0.0:8000-&amp;gt;8000/tcp saleor_web_1 af1d1c556b35 saleor_celery &amp;quot;celery -A saleor wo…&amp;quot; About a minute ago Up 33 seconds 8000/tcp saleor_celery_1 aa067abbd302 postgres:latest &amp;quot;docker-entrypoint.s…&amp;quot; About a minute ago Up 34 seconds 0.0.0.0:5432-&amp;gt;5432/tcp saleor_db_1 dfb447947378 redis:latest &amp;quot;docker-entrypoint.s…&amp;quot; About a minute ago Up 33 seconds 0.</description>
+    </item>
+    
+    <item>
+      <title>vmware workstation pro 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-workstation-pro-install.html</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/vmware/vmware-workstation-pro-install.html</guid>
+      <description> Vmware安装提示在关闭以下进程 之前，无法进行安装的解决办法
+如图，如果真的通过任务管理器关闭了VMware.exe的话，安装程序也就关闭了，后来才发现这个VMware.exe和VMware的主程序重名了，把安装程序改名为其他的就行了，比如VMware-install.exe
+安装最后一步是输入 激活密钥，请支持正版。
+Ref  https://blog.csdn.net/u011666411/article/details/85998068 https://blog.csdn.net/aZhengjava520/article/details/81087847  </description>
+    </item>
+    
+    <item>
+      <title>ceph 安装，基于ubuntu, intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-intro.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:34:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-intro.html</guid>
+      <description>Contents:
+ README Preflight Storage Cluster Quick Start Block Device Quick Start Filesystem Quick Start Object Storage Quick Start  </description>
+    </item>
+    
+    <item>
+      <title>kubeadm-kubelet-cni</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</link>
+      <pubDate>Sun, 25 Nov 2018 13:34:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</guid>
+      <description>问题1 kubelet 没有初始化 cni 现场 root@km:~# cat k8.export.sh sudo cp /etc/kubernetes/admin.conf $HOME/ sudo chown $(id -u):$(id -g) $HOME/admin.conf export KUBECONFIG=$HOME/admin.conf root@km:~# export KUBECONFIG=$HOME/admin.conf root@km:~# k get nodes NAME STATUS ROLES AGE VERSION km NotReady master 18h v1.8.4 kn1 Ready &amp;lt;none&amp;gt; 29s v1.8.4 kn2 Ready &amp;lt;none&amp;gt; 29s v1.8.4  出错了。
+descibe root@km:~# k describe node km Name: km Roles: master Labels: beta.kubernetes.io/arch=amd64 beta.kubernetes.io/os=linux kubernetes.io/hostname=km node-role.kubernetes.io/master= Annotations: node.alpha.kubernetes.io/ttl=0 volumes.kubernetes.io/controller-managed-attach-detach=true Taints: node-role.kubernetes.io/master:NoSchedule CreationTimestamp: Tue, 21 Nov 2017 17:36:14 +0800 Conditions: Type Status LastHeartbeatTime LastTransitionTime Reason Message ---- ------ ----------------- ------------------ ------ ------- OutOfDisk False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientDisk kubelet has sufficient disk space available MemoryPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientMemory kubelet has sufficient memory available DiskPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasNoDiskPressure kubelet has no disk pressure Ready False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletNotReady runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized Addresses: InternalIP: 192.</description>
+    </item>
+    
+    <item>
+      <title>k8s安装系列</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-install-intro.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-install-intro.html</guid>
+      <description>env  kubeadm: v1.8.4 os: ubuntu 16.04  step kubernetes-before-install kubeadm-init-before-v1.8.3 kubeadm-install-ubuntu-v1.8.4 kubeadm-join upgrade-v1.8.3-failure-install-v1.8.3 kubeadm-install-v1.8.3 kubeadm-init-use-local-image kubeadm-build delete-node kubeadm-install-FAQ</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-ubuntu.html</guid>
+      <description>root@km:~# sudo apt-get update ... Ign:56 http://cn.archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US Fetched 3,967 kB in 37min 32s (1,761 B/s) Reading package lists... Done W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-updates Release&#39; does not have a Release file. N: Data from such a repository can&#39;t be authenticated and is therefore potentially dangerous to use. N: See apt-secure(8) manpage for repository creation and user configuration details. W: The repository &#39;http://cn.archive.ubuntu.com/ubuntu xenial-backports Release&#39; does not have a Release file.</description>
+    </item>
+    
+    <item>
+      <title>go-tour-zh离线安装(本地安装)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/go-tour-zh-local-install.html</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/go-tour-zh-local-install.html</guid>
+      <description>中文文档 最近尝试学习golang，在某个网站（真忘了）上发现gotour是一款灰常叼的教程&amp;amp;指南，之后搜索发现有前辈给出了本地安装离线gotour的方法，但实际安装过程中发现一些问题：
+1.通过go get bitbucket.org/mikespook/go-tour-zh/gotour 命令安装时报错，提示missing Mercurial command，原来是先需要安装Mercurial；
+➜ bitbucket git:(master) ✗ go get bitbucket.org/mikespook/go-tour-zh/gotour go: missing Mercurial command. See https://golang.org/s/gogetcmd package bitbucket.org/mikespook/go-tour-zh/gotour: exec: &amp;quot;hg&amp;quot;: executable file not found in $PATH ➜ bitbucket git:(master) ✗ brew install mercurial Updating Homebrew... ==&amp;gt; Downloading https://homebrew.bintray.com/bottles/mercurial-4.8.mojave.bottle.tar.gz ######################################################################## 100.0% ==&amp;gt; Pouring mercurial-4.8.mojave.bottle.tar.gz ==&amp;gt; Caveats Bash completion has been installed to: /usr/local/etc/bash_completion.d zsh completions have been installed to: /usr/local/share/zsh/site-functions ==&amp;gt; Summary 🍺 /usr/local/Cellar/mercurial/4.8: 618 files, 9.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu READM</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-readme.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:37:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-readme.html</guid>
+      <description>本次安装，完全按照 官方文档 http://docs.ceph.com/docs/master/start/ 进行。
+env 192.168.31.115 cephadmin # 这个是admin节点 192.168.31.114 mon1 # 存储节点 192.168.31.113 cephfsn2 # 存储节点 192.168.31.173 cephfsn3 # 存储节点 192.168.31.172 ceph-client # 客户端节点  上面这几个，可以全部写进 /etc/hosts 中。且各节点的 hostname 必须对应相同（否则安装容易出错）。</description>
+    </item>
+    
+    <item>
+      <title>cephfs 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/cephfs-install.html</link>
+      <pubDate>Fri, 30 Nov 2018 09:36:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/cephfs-install.html</guid>
+      <description> 环境： 192.168.31.115 192.168.31.114 192.168.31.113  line1 官网, 成功安装 我的安装设计是这样的：
+admin-node, deploy-node(ceph-deploy)：192.168.31.115 cephfs5 mon.0: 192.168.31.114 cephfs4 osd.0: 192.168.31.113 cephfs3 osd.1: 192.168.31.115 cephfs5 mds.0: 192.168.31.113 cephfs3 mds.1: 192.168.31.114 cephfs4  还是要结合一下 https://linux.cn/article-8182-1.html
+line2 http://tonybai.com/2017/05/08/mount-cephfs-acrossing-nodes-in-kubernetes-cluster/
+over </description>
+    </item>
+    
+    <item>
+      <title>flannel网络模式下ping出错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</link>
+      <pubDate>Sun, 25 Nov 2018 16:53:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</guid>
+      <description>Environment 所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  问题 网络出了问题了，ping 不了 kn1, kn2 中的pod的IP
+解决 https://github.com/coreos/flannel/blob/476abd9ef37e7111a1268c41afbd7154046b492a/Documentation/troubleshooting.md#firewalls
+root@km:~# k get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE default cephfs-provisioner-cff8d95c-6tgcs 1/1 Running 2 11d 10.244.1.90 kn1 default mysql-0 2/2 Running 2 22h 10.244.1.87 kn1 default mysql-1 2/2 Running 0 22h 10.244.2.243 kn2 default mysql-2 2/2 Running 2 22h 10.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu quick-start-preflight</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-quick-start-preflight.html</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-quick-start-preflight.html</guid>
+      <description>这里的配置注意点如下：
+ceph-admin 节点： 安装时， with a stable Ceph release (e.g., luminous.) ，安装 luminous 或以上版本。
+cephu@cephadmin:~/my-cluster$ sudo cat /etc/apt/sources.list.d/ceph.list deb https://download.ceph.com/debian-luminous/ xenial main cephu@cephadmin:~/my-cluster$  配置 ~/.ssh/config 方便后续安装
+cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config Host node0 Hostname cephadmin User cephu Host node1 Hostname mon1 User cephu Host node2 Hostname cephfsn2 User cephu Host node3 Hostname cephfsn3 User cephu cephu@cephadmin:~/my-cluster$  这里，我后来想了一下，应该把这个地方，修改成 全用 node0, node1, node2, node3, 然后，各节点的　Hostname 也修改成这些，这样子才是真的方便安装。如下：
+cephu@cephadmin:~/my-cluster$ cat ~/.ssh/config Host node0 Hostname node0 User cephu Host node1 Hostname node1 User cephu Host node2 Hostname node2 User cephu Host node3 Hostname node3 User cephu cephu@cephadmin:~/my-cluster$  存储节点： cephu@cephadmin:~/my-cluster$ cat /etc/hosts 127.</description>
+    </item>
+    
+    <item>
+      <title>运行 kubeadm init 之前</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-before-v1_8_3.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-before-v1_8_3.html</guid>
+      <description>在运行 kubeadm init 之前的动作
+kubelet 服务检查 后来发现，在这里应该测试一下 kubelet.service。
+原来，虽然我 apt install kubelet , 但是， 遗留了之前 kubeadm 的一些配置.(应该把它们清空的.) 如: /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+让我们来吧。
+删除这个新安装的 kubelet root@km:/etc/cni/net.d# root@km:/etc/cni/net.d# apt remove kubelet Reading package lists... Done Building dependency tree Reading state information... Done The following packages were automatically installed and are no longer required: ebtables golang-1.8-go golang-1.8-race-detector-runtime golang-1.8-src kubernetes-cni socat Use &#39;apt autoremove&#39; to remove them. The following packages will be REMOVED: kubeadm kubelet 0 upgraded, 0 newly installed, 2 to remove and 11 not upgraded.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Storage Cluster Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-storage-cluster-quick-start.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:51:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-storage-cluster-quick-start.html</guid>
+      <description>2.1 Create the cluster.
+ ceph-deploy new node1 不生效的，要写成 ceph-deploy new mon1
+ cephu@cephadmin:~/my-cluster$ ceph-deploy new mon1  2.2 - 2.3
+cephu@cephadmin:~/my-cluster$ cat ~/my-cluster/ceph.conf [global] fsid = d0aa5af1-4f8e-4953-9448-7f1b2448b8a5 mon_initial_members = mon1 mon_host = 192.168.31.114 auth_cluster_required = cephx auth_service_required = cephx auth_client_required = cephx public network = 192.168.31.1/24 ms bind ipv6 = true cephu@cephadmin:~/my-cluster$  2.4
+cephu@cephadmin:~/my-cluster$ ceph-deploy install node1 node2 node3  2.5
+cephu@cephadmin:~/my-cluster$ ceph-deploy mon create-initial  报错，然后，经过 农总在 https://my.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装kubeadm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-base-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-base-ubuntu.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装kubeadm v1.8.4</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-v184-install-base-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-v184-install-base-ubuntu.html</guid>
+      <description>Environment  kubeadm: v1.8.4
+所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node   加代理 准备FQ网络
+ 命令行  加代理原因：kubeadm init 会去检查最新版本，及最新版本镜像是什么，镜像是否要更新。 如果本地有了相同的docker image id，就不会下载，不会更新。 这意味着，我们前几天的手工build kubeadm，达成 在 etc/kubernetes/mainfest 下的 *.yaml 文件 加上 &amp;ldquo;imagePullPolicy: IfNotPresent&amp;rdquo; , 没有意义了。
+root@km:~# export http_proxy=&amp;quot;http://192.168.31.239:8118/&amp;quot; root@km:~# export https_proxy=&amp;quot;http://192.168.31.239:8118/&amp;quot; root@km:~# export no_proxy=&amp;quot;localhost,127.0.0.1,192.168.31.120,10.96.0.10,github.com,ubuntu.com&amp;quot;   apt  加代理原因： apt update 要去 google.com 下载
+root@km:~# cat /etc/apt/apt.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Filesystem Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-filesystem-quick-start.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:55:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-filesystem-quick-start.html</guid>
+      <description>http://docs.ceph.com/docs/master/start/quick-cephfs/
+PREREQUISITES admin 节点：
+ceph -s  看一下，是不是都正常。 这里是看不到 mds 的，要看，要去 moniter 节点
+moniter 节点： 我们环境的是 192.168.31.114
+cephu@mon1:~$ ps -ef | grep ceph root 7541 7227 0 Oct23 pts/0 00:00:00 su - cephu cephu 7542 7541 0 Oct23 pts/0 00:00:00 -su cephu 20793 7542 0 12:39 pts/0 00:00:00 ps -ef cephu 20794 7542 0 12:39 pts/0 00:00:00 grep --color=auto ceph ceph 21275 1 0 Oct23 ? 00:07:50 /usr/bin/ceph-mon -f --cluster ceph --id mon1 --setuser ceph --setgroup ceph ceph 22756 1 0 Oct24 ?</description>
+    </item>
+    
+    <item>
+      <title>kubeadm join</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-join.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:17:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-join.html</guid>
+      <description>Environment 已安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  kubeadm join /etc/kubernetes/pki/ca.crt already exists sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d  这个来自于 master节点， kubeadm init 后的提示。
+jlch@kn1:~$ sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d [kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters. [preflight] Running pre-flight checks [preflight] WARNING: docker version is greater than the most recently validated version.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Block Device Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-block-device-quick-start.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:27:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-block-device-quick-start.html</guid>
+      <description>env 192.168.31.172 ceph-client
+修改 hostname 为 ceph-client
+INSTALL CEPH admin 节点：
+ceph-deploy install ceph-client ceph-deploy admin ceph-client  ceph-client 节点：
+sudo chmod +r /etc/ceph/ceph.client.admin.keyring  CREATE A BLOCK DEVICE POOL admin 节点：
+原来在 admin 节点，是没有这个 rbd 命令的。
+要通过 sudo apt install ceph-common 之后，才会有。所以先运行一下。
+cephu@cephadmin:~/my-cluster$ sudo apt install ceph-common -y cephu@cephadmin:~/my-cluster$ rbd pool init jlch 2017-10-24 15:57:45.951917 7fde4fa6e0c0 -1 auth: unable to find a keyring on /etc/ceph/ceph.client.admin.keyring,/etc/ceph/ceph.keyring,/etc/ceph/keyring,/etc/ceph/keyring.bin,: (2) No such file or directory 2017-10-24 15:57:45.</description>
+    </item>
+    
+    <item>
+      <title>kubeadm从v1.8.3更新至v1.8.4失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-upgrade-failure-from-v183-to-v184.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-upgrade-failure-from-v183-to-v184.html</guid>
+      <description>Installing Docker root@km:~# cat /etc/apt/sources.list.d/docker.list deb https://apt.dockerproject.org/repo ubuntu-xenial main root@km:~# cat /etc/docker/daemon.json { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2y.mirror.aliyuncs.com&amp;quot;] } root@km:~# vi /etc/docker/daemon.json root@km:~# cat /etc/docker/daemon.json { &amp;quot;exec-opts&amp;quot;: [&amp;quot;native.cgroupdriver=systemd&amp;quot;], &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2y.mirror.aliyuncs.com&amp;quot;] } root@km:~# apt-get install -y curl apt-transport-https Reading package lists... Done Building dependency tree Reading state information... Done apt-transport-https is already the newest version (1.2.24). curl is already the newest version (7.47.0-1ubuntu2.4). The following packages were automatically installed and are no longer required: golang-1.</description>
+    </item>
+    
+    <item>
+      <title>ceph-install-base-ubuntu Object Storage Quick Start</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-object-storage-quick-start.html</link>
+      <pubDate>Sat, 01 Dec 2018 08:29:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-object-storage-quick-start.html</guid>
+      <description>INSTALLING CEPH OBJECT GATEWAY ceph-client：
+cephu@ceph-client:~$ sudo ufw allow 7480 Rule added Rule added (v6) cephu@ceph-client:~$ sudo ufw status Status: active To Action From -- ------ ---- 22 ALLOW Anywhere 7480 ALLOW Anywhere 22 (v6) ALLOW Anywhere (v6) 7480 (v6) ALLOW Anywhere (v6) cephu@ceph-client:~$  ceph-admin:
+cephu@cephadmin:~/my-cluster$ ping ceph-client PING ceph-client (192.168.31.172) 56(84) bytes of data. 64 bytes from ceph-client (192.168.31.172): icmp_seq=1 ttl=64 time=0.558 ms ^C --- ceph-client ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.</description>
+    </item>
+    
+    <item>
+      <title>kubeadm v1.8.3 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-v183.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:36:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-v183.html</guid>
+      <description>https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+env 192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  Initializing your master kubeadm init --pod-network-cidr=10.244.0.0/16  如果遇到类似下面错误
+- [preflight] Some fatal errors occurred: :: Port 10250 is in use /etc/kubernetes/manifests is not empty /var/lib/kubelet is not empty  则，参考 https://github.com/kubernetes/kubernetes/issues/37063 运行下面命令：
+kubeadm reset systemctl start kubelet.service  之后，再次运行
+kubeadm init --pod-network-cidr=10.244.0.0/16  被墙了，出不去，我了个去，怎么办？
+https://mritd.me/2016/10/29/set-up-kubernetes-cluster-by-kubeadm/#21安装包从哪来
+好吧，那就去 hub.docker.com 中配置吧
+找到所有要配置的 image 找 etc/kubernetes/manifests root@km:~# cd /etc/kubernetes/manifests/ root@km:/etc/kubernetes/manifests# ls etcd.</description>
+    </item>
+    
+    <item>
+      <title>使用本地镜像进行kubeadm init</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-use-local-image.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:48:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-use-local-image.html</guid>
+      <description>因为 kubeadm 安装 要提前下载好docker images, 并使用 这些个 docker images. 但是，我们公司的网络FQ的下载速度太慢，时不时会断了。所以，我们考虑使用本地下载好的这些 images。
+要使用 local images, 那就要去修改 kubeadm 的代码，并重新build。好吧，我们build 吧。
+env 192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  kubeadm-build 见 kubeadm-build 部分
+加代理 root@km:/etc/kubernetes/manifests# export declare -x HOME=&amp;quot;/root&amp;quot; declare -x LANG=&amp;quot;en_US.UTF-8&amp;quot; declare -x LANGUAGE=&amp;quot;en_US:en&amp;quot; declare -x LESSCLOSE=&amp;quot;/usr/bin/lesspipe %s %s&amp;quot; declare -x LESSOPEN=&amp;quot;| /usr/bin/lesspipe %s&amp;quot; declare -x LOGNAME=&amp;quot;root&amp;quot; declare -x LS_COLORS=&amp;quot;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:&amp;quot; declare -x MAIL=&amp;quot;/var/mail/root&amp;quot; declare -x NO_PROXY=&amp;quot;localhost,127.0.0.1/8,192.168.31.1/24&amp;quot; declare -x OLDPWD=&amp;quot;/etc/kubernetes&amp;quot; declare -x PATH=&amp;quot;/home/jlch/.</description>
+    </item>
+    
+    <item>
+      <title>kubeadm build</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-build.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:58:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-build.html</guid>
+      <description>build kubeadm 修改 Kubeadm 使得 etc/kubernetes/manifests 下的 *.yaml 文件带有 imagePullPolicy: IfNotPresent
+env 192.168.31.114 jlch
+gopath cd ~/gopath/src/github.com/kubernetes/ git clone https://github.com/kubernetes/kubernetes.git cd kubernetes  修改吧 jlch@mon1:~/gopath/src/github.com/kubernetes/kubernetes$ git status Not currently on any branch. Changes not staged for commit: (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed) (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory) modified: cmd/kubeadm/app/phases/controlplane/manifests.go modified: cmd/kubeadm/app/phases/etcd/local.go no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;) jlch@mon1:~/gopath/src/github.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes delete node</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-delete-node.html</link>
+      <pubDate>Sat, 24 Nov 2018 23:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-delete-node.html</guid>
+      <description>clear cat k8.export.sh export KUBECONFIG=$HOME/admin.conf ls k get node kubectl drain kn1 --delete-local-data --force --ignore-daemonsets kubectl delete node kn1 kubectl drain kn2 --delete-local-data --force --ignore-daemonsets kubectl delete node kn2 k get node clear kubectl drain km --delete-local-data --force --ignore-daemonsets kubeadm reset k get pod --all-namespaces docker ps  </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Install Faq A</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-faq-a.html</link>
+      <pubDate>Tue, 26 Jun 2018 18:51:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-faq-a.html</guid>
+      <description> U盘安装Ubuntu16.04 server版 提示无法挂载cd-rom数据的解决办法
+Step 错误：
+使用类似ultraiso的刻录软件会出现这个错误 Failed to copy files from CD-ROM, retry?
+解决：
+解决的办法是使用win32diskimager制作U盘安装程序，就可以正常安装Ubuntu 16.04 Server。
+下载地址win32diskimager
+文本框用来输入文件完整地址，后面的文件夹图标是浏览窗口，默认只能识别img文件。 只需要将iso文件全路径输入在Image File中。 填好镜像的完整地址后右边有个下拉列表用来选择移动设备，千万别选错了！
+建议只插一个U盘，以免误操作。之后点击Wirte按钮就开始写入。写入后就能够使用U盘安装了。
+Ref  http://blog.51cto.com/gentle/1743114 https://blog.csdn.net/w_ww_w/article/details/18219911 https://sourceforge.net/projects/win32diskimager/?source=typ_redirect  </description>
+    </item>
+    
+    <item>
+      <title>Python Install Pip With Get Pip Py</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip-with-get-pip-py.html</link>
+      <pubDate>Wed, 13 Jun 2018 13:12:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip-with-get-pip-py.html</guid>
+      <description> 通过 get-pip.py 安装 pip
+Env  os: ubuntu16  Step curl https://bootstrap.pypa.io/get-pip.py | sudo python  Ref  https://pip.pypa.io/en/stable/installing/  </description>
+    </item>
+    
+    <item>
+      <title>Tomcat Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/java/tomcat-install-base-ubuntu.html</link>
+      <pubDate>Tue, 12 Jun 2018 20:51:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/java/tomcat-install-base-ubuntu.html</guid>
+      <description> Env  os: ubuntu16 java:  root@ip-172-31-28-68:/home/ubuntu/java/sotre_app# java -version openjdk version &amp;quot;1.8.0_171&amp;quot; OpenJDK Runtime Environment (build 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11) OpenJDK 64-Bit Server VM (build 25.171-b11, mixed mode) root@ip-172-31-28-68:/home/ubuntu/java/sotre_app#  nodejs: v8.11.2 tomcat: apache-tomcat-8.5.31 java-jre: openjdk-8-jdk  Step wget https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz ls tar zxvf apache-tomcat-8.5.31.tar.gz sudo mv apache-tomcat-8.5.31 /opt/ sudo ln -s /opt/apache-tomcat-8.5.31/ /opt/tomcat8 /opt/tomcat8/bin/startup.sh curl http://127.0.0.1:8080/  Ref  https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.31/bin/ https://www.cnblogs.com/EasonJim/p/7202844.html  </description>
+    </item>
+    
+    <item>
+      <title>Rancher2 Install Base Aws Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/rancher/rancher2-install-base-aws-ubuntu.html</link>
+      <pubDate>Wed, 06 Jun 2018 17:08:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/rancher/rancher2-install-base-aws-ubuntu.html</guid>
+      <description>aws中ubuntu安装rancher2.0
+Env Env-a  cloud: aws os: ubuntu 16.04 docker: 17.03.2-ce  Env-b  cloud: aws os: Amazon Linux AMI 2018.03 docker: 17.12.1-ce  这里的env-b可以不看, 因为效果与env-a相同
+Rancher versions:
+rancher/server or rancher/rancher: rancher/server 2.0.2
+**Docker version: 17.03.2-ce
+**Operating system and kernel:
+ ubuntu 16.04 Linux ip-172-31-12-229 4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux  **Type/provider of hosts: AWS
+**Setup details: single node rancher
+**Environment Template: Kubernetes</description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</link>
+      <pubDate>Mon, 04 Jun 2018 19:01:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-ubuntu.html</guid>
+      <description>ubuntu中安装docker-ce
+Env  os: ubuntu16 ip: ... docker: 17.03.2~ce-0~ubuntu-xenial  Step 查看已安装 sudo docker version  如果有已安装，请卸载，给个示例
+sudo apt remove docker* -y  安装 lsb_release -a sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - sudo apt-key fingerprint 0EBFCD88 sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; sudo apt-get update apt-cache madison docker-ce  查看后，选择我们需要的指定版本, 我这里选择17.03.2.
+sudo apt-get install docker-ce=17.03.2~ce-0~ubuntu-xenial -y sudo docker run hello-world  Ref  https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Centos6 Install Ftp</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos6-install-ftp.html</link>
+      <pubDate>Tue, 29 May 2018 10:39:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos6-install-ftp.html</guid>
+      <description>CentOS6上ftp服务器搭建实战
+env  centos6.9 IP: 10.88.88.22 IP: 172.16.55.6  step 1.安装程序包 [root@node1 ~]$ yum install -y vsftpd [root@node1 ~]$ yum install -y lftp # 安装测试软件  2.启动vsftpd服务 [root@node1 ~]$ setenforce 0　#关闭selinux setenforce: SELinux is disabled　[root@node1 ~]$ service iptables stop　#关闭防火墙　[root@node1 ~]$ service vsftpd start　# 启动服务 为 vsftpd 启动 vsftpd： [确定] [root@node1 ~]$ service vsftpd status vsftpd (pid 6473) 正在运行... [root@node1 ~]$ ss -tnl | grep 21　#默认监听21号端口 LISTEN 0 32 *:21 *:* [root@bitspace ~]# service vsftpd start Starting vsftpd for vsftpd: [ OK ] [root@bitspace ~]# netstat -anltp | grep 21 tcp 0 0 0.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Install Wubipinyin</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-wubipinyin.html</link>
+      <pubDate>Thu, 24 May 2018 09:32:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/ubuntu-install-wubipinyin.html</guid>
+      <description> ubuntu安装 五笔拼音输入法
+env  Ubuntu Desktop 16.04  step 方法1 https://www.linuxdashen.com/ubuntu-16-04-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85fcitx%E4%BA%94%E7%AC%94%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95
+方法2 sudo add-apt-repository ppa:fcitx-team/nightly sudo apt update -y sudo apt -y install fcitx sudo apt -y install fcitx-table-wbpy  System Setting/Language Support/Keyboard input method system/ =&amp;gt; fcitx
+打开System Setting系统设置&amp;gt;Text Entry
+记得重启哟！
+ref  https://www.linuxdashen.com/ubuntu-16-04-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85fcitx%E4%BA%94%E7%AC%94%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95 https://blog.csdn.net/zzqlivecn/article/details/25018203 https://blog.csdn.net/hamigua0208/article/details/51421117 https://blog.csdn.net/e421083458/article/details/37738805  </description>
+    </item>
+    
+    <item>
+      <title>Ngrok Server Install(搭建自己的ngrok服务器)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ngrok/ngrok-server-install.html</link>
+      <pubDate>Thu, 19 Apr 2018 15:18:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ngrok/ngrok-server-install.html</guid>
+      <description>搭建自己的ngrok服务器
+env 服务端  机器: 腾讯云主机一台 IP: 111.230.153.251 OS: ubuntu server 16.04.1
+客户端 机器: 腾讯云主机一台
+ IP: 192.168.31.106
+ OS: ubuntu desktop 16.04.3
+  step 主要就是参考了 搭建 ngrok 服务实现内网穿透 一文
+编译 ngrok 编译我是在服务端完成的
+首先装必要的工具：
+sudo apt-get install build-essential golang mercurial git  获取 ngrok 源码：
+git clone https://github.com/inconshreveable/ngrok.git ngrok ### 请使用下面的地址，修复了无法访问的包地址 git clone https://github.com/tutumcloud/ngrok.git ngrok cd ngrok  生成并替换源码里默认的证书，注意域名修改为你自己的。（之后编译出来的服务端客户端会基于这个证书来加密通讯，保证了安全性）
+NGROK_DOMAIN=&amp;quot;hkshop.club&amp;quot; openssl genrsa -out base.key 2048 openssl req -new -x509 -nodes -key base.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Install 2 Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-2-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:26:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-2-base-centos.html</guid>
+      <description>主要参考： http://blog.csdn.net/renfufei/article/details/17616549
+过程 说明: 首先必须能链接外网. 如果不能直接访问,那也可以设置代理,请参考: 在内网机器上设置yum代理 使用 yum 的权限要求是 root 用户,如果你不是,那么可以需要 在 shell命令之前加上 sudo, 或者 su root 切换到 super 管理员进行操作. 并可能需要输入密码.
+1. 添加 yum 数据源  安装mariadb10.1 官方的通过yum安装教程
+根据不同的系统来下载repo吧，更多的MariaDB.repo
+ 建议命名为 MariaDB.repo 类似的名字：
+cd /etc/yum.repos.d/ vim /etc/yum.repos.d/MariaDB.repo  然后,写入文件内容:(建议使用 10.0)
+# MariaDB 10.0 CentOS repository list - created 2015-08-12 10:59 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/10.0/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1  该文件的内容是参考官网,并从官网上生成的，设置安装源仓库的 具体的地址为: https://downloads.mariadb.org/mariadb/repositories/ 选择好操作系统版本之后既可以查看，其他操作系统的安装源也可以在此处查看并设置。 如果服务器不支持https协议，或者gpgkey 保错，确保没问题的话，可以将 gpgcheck=1 修改为 gpgcheck=0,则不进行校验.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:45:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</guid>
+      <description>mysql系列之mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:55:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install-base-centos.html</guid>
+      <description>mysql-0mysql系列之mariadb-install
+ref  http://blog.csdn.net/renfufei/article/details/17616549  过程 说明: 首先必须能链接外网. 如果不能直接访问,那也可以设置代理,请参考: 在内网机器上设置yum代理 使用 yum 的权限要求是 root 用户,如果你不是,那么可以需要 在 shell命令之前加上 sudo, 或者 su root 切换到 super 管理员进行操作. 并可能需要输入密码.
+1. 添加 yum 数据源  安装mariadb10.1 官方的通过yum安装教程
+根据不同的系统来下载repo吧，更多的MariaDB.repo
+ 建议命名为 MariaDB.repo 类似的名字：
+cd /etc/yum.repos.d/ vim /etc/yum.repos.d/MariaDB.repo  然后,写入文件内容:(建议使用 10.0)
+# MariaDB 10.0 CentOS repository list - created 2015-08-12 10:59 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/10.0/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1  这个baseurl可以通过浏览器打开，然后在 http://yum.mariadb.org/10.0/centos7-amd64/rpms/ 中 可以看到这里面有些什么 .</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:54:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install.html</guid>
+      <description> mariadb install </description>
+    </item>
+    
+    <item>
+      <title>Gitlab Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:40:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-install.html</guid>
+      <description>git系列之gitlab安装
+env 阿里云 - IP: 120.25.204.216 - OS: centos7
+step sudo firewall-cmd --permanent --add-service=http sudo systemctl reload firewalld  注意这个写法
+sudo EXTERNAL_URL=&amp;quot;http://gitlab.example.com&amp;quot; yum install -y gitlab-ee  修改成 下面这种 方式, 但是, 这样下载会比较慢了
+sudo EXTERNAL_URL=&amp;quot;http://120.25.204.216:7890&amp;quot; yum install -y gitlab-ee  我们用 清华镜像 吧
+[root@jlch_web_001 ~]# wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.6.2-ce.0.el7.x86_64.rpm --2018-04-12 15:11:25-- https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.6.2-ce.0.el7.x86_64.rpm Resolving mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)... 101.6.8.193, 2402:f000:1:408:8100::1 Connecting to mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)|101.6.8.193|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 417757949 (398M) [application/x-redhat-package-manager] Saving to: ‘gitlab-ce-10.</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install For Jlch</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:30:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install-for-jlch.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral docker-registry  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 192.168.31.240 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.jlch.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码
+cd ~/registry&amp;amp;&amp;amp; mkdir auth;docker run --entrypoint htpasswd registry:2 -Bbn zimug zimug_password &amp;gt; auth/htpasswd;  用户：zimug 密码：zimug_password 可随便填写自己想填写的</description>
+    </item>
+    
+    <item>
+      <title>Docker Registry Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:38:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-registry-install.html</guid>
+      <description>docker之registry搭建(当然更建议使用Harbor)
+reference  http://www.zimug.com/317.html?utm_source=tuicool&amp;amp;utm_medium=referral
+ docker-registry
+  env docker版本大于1.6.0(docker -v)
+机器3台: * registry server , IP: 10.10.12.17 * registry client a(docker push), IP: 10.10.12.18 * registry client b(docker pull), IP: 10.10.13.10
+step 1. 创建registry server端 下载镜像
+docker pull registry:2  生成自签名证书
+cd ~/;mkdir registry &amp;amp;&amp;amp; cd registry &amp;amp;&amp;amp; mkdir certs &amp;amp;&amp;amp; cd certs;openssl req -x509 -days 3650 -subj &#39;/CN=reg.zimug.com/&#39; -nodes -newkey rsa:2048 -keyout registry.key -out registry.crt;  生成用户和密码</description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:28:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</guid>
+      <description>practice [tom@mysql1 ~]$ sudo tee /etc/yum.repos.d/docker.repo &amp;lt;&amp;lt;-&#39;EOF&#39; &amp;gt; [dockerrepo] &amp;gt; name=Docker Repository &amp;gt; baseurl=https://yum.dockerproject.org/repo/main/centos/7/ &amp;gt; enabled=1 &amp;gt; gpgcheck=1 &amp;gt; gpgkey=https://yum.dockerproject.org/gpg &amp;gt; EOF [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg [tom@mysql1 ~]$ sudo yum install docker-engine -y ... Installed: docker-engine.x86_64 0:1.12.3-1.el7.centos Dependency Installed: docker-engine-selinux.noarch 0:1.12.3-1.el7.centos Complete! [tom@mysql1 ~]$ sudo systemctl enable docker.service Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service. [tom@mysql1 ~]$ sudo systemctl start docker [tom@mysql1 ~]$ sudo docker run --rm hello-world Unable to find image &#39;hello-world:latest&#39; locally latest: Pulling from library/hello-world c04b14da8d14: Pull complete Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9 Status: Downloaded newer image for hello-world:latest Hello from Docker!</description>
+    </item>
+    
+    <item>
+      <title>Bundle Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ruby/bundle-install.html</link>
+      <pubDate>Sat, 24 Feb 2018 09:24:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ruby/bundle-install.html</guid>
+      <description> env mac book air
+step 安装 bundle
+➜ ~ sudo gem install bundler Password: Fetching: bundler-1.16.1.gem (100%) Successfully installed bundler-1.16.1 Parsing documentation for bundler-1.16.1 Installing ri documentation for bundler-1.16.1 1 gem installed ➜ ~ ➜ tomtsang-rootsongjc-cheatsheet git:(master) which bundle /usr/local/bin/bundle ➜ tomtsang-rootsongjc-cheatsheet git:(master)  ref  mac 下应该怎么安装 bundle  </description>
+    </item>
+    
+    <item>
+      <title>Yarn Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/yarn/yarn-install.html</link>
+      <pubDate>Sat, 24 Feb 2018 09:20:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/yarn/yarn-install.html</guid>
+      <description>env mac book air
+step 安装 yarn
+➜ tomtsang-rootsongjc-cheatsheet git:(master) brew install yarn Updating Homebrew... ==&amp;gt; Auto-updated Homebrew! Updated 2 taps (caskroom/cask, homebrew/core). ==&amp;gt; Updated Formulae abcmidi braid cryptopp exiftool fdroidserver glbinding haxe pwntools x265 alot cgrep erlang fbi-servefiles freexl graphene miniupnpc ranger ==&amp;gt; Downloading https://yarnpkg.com/downloads/1.3.2/yarn-v1.3.2.tar.gz ==&amp;gt; Downloading from https://github.com/yarnpkg/yarn/releases/download/v1.3.2/yarn-v1.3.2.tar.gz ######################################################################## 100.0% 🍺 /usr/local/Cellar/yarn/1.3.2: 14 files, 3.9MB, built in 40 seconds ➜ tomtsang-rootsongjc-cheatsheet git:(master)  使用, 安装工程中的依赖包
+➜ tomtsang-rootsongjc-cheatsheet git:(master) yarn install yarn install v1.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Install Rpm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-rpm.html</link>
+      <pubDate>Mon, 12 Feb 2018 09:59:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-rpm.html</guid>
+      <description> mysql install by rpm on centos 官方下载地址
+在安装了perl的基本上,直接下载以下4个rpm包安装就可以了.
+mysql-community-server-5.7.21-1.el7.x86_64.rpm mysql-community-client-5.7.21-1.el7.x86_64.rpm mysql-community-common-5.7.21-1.el7.x86_64.rpm mysql-community-libs-5.7.21-1.el7.x86_64.rpm  </description>
+    </item>
+    
+    <item>
+      <title>Telnet Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/telnet-install.html</link>
+      <pubDate>Tue, 06 Feb 2018 10:33:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/telnet-install.html</guid>
+      <description>telnet 安装 by rpm
+telnet下载</description>
+    </item>
+    
+    <item>
+      <title>Golang Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/golang-install.html</link>
+      <pubDate>Mon, 05 Feb 2018 23:34:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/golang-install.html</guid>
+      <description>mac Golang在Mac OS上的环境配置
+LiteIDE下载,这个网址,好像现在打不开
+调试 mac安装gdb brew tap homebrew/dupes brew install gdb  delve 参考了 Installing Go, Gocode, GDB and LiteIDE</description>
+    </item>
+    
+    <item>
+      <title>Redis Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/redis/redis-install.html</link>
+      <pubDate>Mon, 05 Feb 2018 17:23:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/redis/redis-install.html</guid>
+      <description>CENTOS7下安装REDIS
+CentOS下Redis的安装
+内含 开机自启动</description>
+    </item>
+    
+    <item>
+      <title>R Rstudio Vnc Install Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/r/R-Rstudio-vnc-install-centos.html</link>
+      <pubDate>Sat, 03 Feb 2018 14:38:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/r/R-Rstudio-vnc-install-centos.html</guid>
+      <description>R, Rstudio 在 centos 下安装, 并可通过端口访问
+cd yum install scp ls ifconfig ls yum install R yum install gcc gcc-c++ -y vncserver R sudo systemctl stop firewalld.service yum -y install tigervnc-server tigervnc ll /lib/systemd/system/vncserver@.service cp /lib/systemd/system/vncserver@.service /lib/systemd/system/vncserver@:1.service vi /lib/systemd/system/vncserver@.service systemctl daemon-reload systemctl enable vncserver@:1.service systemctl start vncserver@:1.service cat /etc/sysconfig/iptables sudo systemctl stop firewalld.service service vncserver restart rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm yum install epel-release yum install gcc gcc-c++ -y yum install gcc-gfortran -y yum install readline-devel -y yum install libXt-devel -y yum install fonts-chinese tcl tcl-devel tclx tk tk-devel -y yum install mesa-libGLU mesa-libGLU-devel -y yum install -y openssl openssl-devel sudo yum clean all sudo yum install R -y R mkdir /home/conan/R/Rserve -p vi /etc/Rserv.</description>
+    </item>
+    
+    <item>
+      <title>Svn Install Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn-install-centos.html</link>
+      <pubDate>Sat, 03 Feb 2018 14:22:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn-install-centos.html</guid>
+      <description>在 centos 下 安装SVN
+yum install subversion -y svnserve --version mkdir svn cd svn pwd rm /root/svn rm /root/svn -p rm /root/svn/ -p rm /root/svn/ cd pwd rm /root/svn/ cd /home mkdir svn cd svn pwd mkdir project svnadmin create /home/svn/project/ cd project/ ls cd conf/ ls vi passwd vi authz vi svnserve.conf svnserve -d -r /var/svn/svnrepos svnserve -d -r /home/svn/project/ ps -aux | grep svn cd home cd /home ls vi test ls svn import test svn://192.</description>
+    </item>
+    
+    <item>
+      <title>Perl Rpm Install Offline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/perl-rpm-install-offline.html</link>
+      <pubDate>Thu, 01 Feb 2018 20:11:51 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/perl-rpm-install-offline.html</guid>
+      <description>perl rpm install offline
+$ tar -xzf perl-5.x.y.tar.gz $ cd perl-5.x.y $ ./Configure -de $ make $ make test $ make install  </description>
+    </item>
+    
+  </channel>
+</rss>

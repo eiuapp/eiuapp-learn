@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nfs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/nfs.html</link>
+    <description>Recent content in nfs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 18:11:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/nfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubernetes 使用 nfs 存储</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-nfs-yaml.html</link>
+      <pubDate>Sun, 25 Nov 2018 18:11:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-nfs-yaml.html</guid>
+      <description>test-claim.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/StatefulSet-Basics/v# cat test-claim.yaml kind: PersistentVolumeClaim apiVersion: v1 metadata: name: test-claim annotations: volume.beta.kubernetes.io/storage-class: &amp;quot;managed-nfs-storage&amp;quot; spec: accessModes: - ReadWriteMany resources: requests: storage: 1Mi  class.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/StatefulSet-Basics/v# cat class.yaml apiVersion: storage.k8s.io/v1beta1 kind: StorageClass metadata: name: managed-nfs-storage provisioner: fuseim.pri/ifs # or choose another name, must match deployment&#39;s env PROVISIONER_NAME&#39;  deployment.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/StatefulSet-Basics/v# cat deployment.yaml kind: Deployment apiVersion: extensions/v1beta1 metadata: name: nfs-client-provisioner spec: replicas: 1 strategy: type: Recreate template: metadata: labels: app: nfs-client-provisioner spec: containers: - name: nfs-client-provisioner image: quay.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/git.html</link>
+    <description>Recent content in git on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git中submodule子模块的添加、使用和删除</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/git-submodules-add-usage-delete.html</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/git-submodules-add-usage-delete.html</guid>
+      <description>背景 项目中经常使用别人维护的模块，在git中使用子模块的功能能够大大提高开发效率。
+使用子模块后，不必负责子模块的维护，只需要在必要的时候同步更新子模块即可。
+本文主要讲解子模块相关的基础命令，详细使用请参考man page。
+子模块的添加 添加子模块非常简单，命令如下：
+git submodule add &amp;lt;url&amp;gt; &amp;lt;path&amp;gt;  其中，url为子模块的路径，path为该子模块存储的目录路径。
+执行成功后，git status会看到项目中修改了.gitmodules，并增加了一个新文件（为刚刚添加的路径）
+git diff &amp;ndash;cached查看修改内容可以看到增加了子模块，并且新文件下为子模块的提交hash摘要
+git commit提交即完成子模块的添加
+子模块的使用 克隆项目后，默认子模块目录下无任何内容。需要在项目根目录执行如下命令完成子模块的下载：
+git submodule init git submodule update  或：
+git submodule update --init --recursive  执行后，子模块目录下就有了源码，再执行相应的makefile即可。
+子模块的更新 子模块的维护者提交了更新后，使用子模块的项目必须手动更新才能包含最新的提交。
+在项目中，进入到子模块目录下，执行 git pull更新，查看git log查看相应提交。
+完成后返回到项目目录，可以看到子模块有待提交的更新，使用git add，提交即可。
+修改Submodule URL 修改某模块URL
+ 修改&amp;rsquo;.gitmodules&amp;rsquo;文件中对应模块的url属性; 使用`git submodule sync`命令，将新的URL更新到文件.git/config；  thinker-g@localhost: ~/app$ git submodule sync Synchronizing submodule url for &#39;gitmods/thinker_g/Helpers&#39; thinker-g@localhost: ~/app$ # 运行后可观察到&#39;.git/config&#39;中对应模块的url属性被更新 thinker-g@localhost: ~/app$ git commit -am &amp;quot;Update submodule url.</description>
+    </item>
+    
+    <item>
+      <title>配置公私钥别名</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/git-multi-ssh-keys.html</link>
+      <pubDate>Tue, 13 Nov 2018 22:10:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/git-multi-ssh-keys.html</guid>
+      <description>配置公私钥别名 私钥权限不是600 ➜ tom-finsoftinfo git:(master) ✗ ssh-add id_rsa_finsoftinfo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @ WARNING: UNPROTECTED PRIVATE KEY FILE! @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Permissions 0644 for &#39;id_rsa_finsoftinfo&#39; are too open. It is required that your private key files are NOT accessible by others. This private key will be ignored. ➜ tom-finsoftinfo git:(master) ✗  看提示，就知道是权限不对了。修改为600，就可以了。
+➜ tom-finsoftinfo git:(master) ✗ l total 16K drwxr-xr-x 6 tomtsang 192 Nov 13 22:56 . drwx--x--x 7 tomtsang 224 Oct 15 11:20 .</description>
+    </item>
+    
+    <item>
+      <title>Git Faq A</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/git-faq-a.html</link>
+      <pubDate>Thu, 14 Jun 2018 11:56:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/git-faq-a.html</guid>
+      <description>git 报错 Updates were rejected because the tip of your current branch is behind
+Env ➜ public git:(master) git push -u origin master To bitbucket.org:tomtsang/blog_tomtsang_hugo_html.git ! [rejected] master -&amp;gt; master (non-fast-forward) error: failed to push some refs to &#39;git@bitbucket.org:tomtsang/blog_tomtsang_hugo_html.git&#39; hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart. Integrate the remote changes (e.g. hint: &#39;git pull ...&#39;) before pushing again. hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</description>
+    </item>
+    
+    <item>
+      <title>Gitlab汉化</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-cn.html</link>
+      <pubDate>Tue, 17 Apr 2018 09:50:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/gitlab/gitlab-cn.html</guid>
+      <description> 对gitlab进行汉化
+env IP: 192.168.31.148 OS: ubuntu-14.04.5 gitlab: 10.6.4
+step mkdir xhang &amp;amp;&amp;amp; cd xhang git clone https://gitlab.com/xhang/gitlab.git cd gitlab/ git fetch gitlab_version=$(sudo cat /opt/gitlab/embedded/service/gitlab-rails/VERSION) echo ${gitlab_version} git diff v${gitlab_version} v${gitlab_version}-zh &amp;gt; ../${gitlab_version}-zh.diff cd .. sudo gitlab-ctl stop sudo patch -d /opt/gitlab/embedded/service/gitlab-rails -p1 &amp;lt; 10.6.4-zh.diff sudo gitlab-ctl start sudo gitlab-ctl reconfigure telnet 192.168.31.148 7890  ref  汉化指南，基于 Larry Li 版汉化指南 修改  </description>
+    </item>
+    
+    <item>
+      <title>Git Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/git.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:41:30 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/git.html</guid>
+      <description> git reset &amp;ndash;hard commit_id Git允许我们在版本的历史之间穿梭，使用命令
+git reset --hard commit_id  去除对　已添加的文件或文件夹　的跟踪 git rm -r --cached -- .idea/  这样呢，文件夹里 .idea/　的修改，git都不跟踪了。
+git rm -r --cached -- node_modules/  git clone 指定分支 git clone -b test-v1 git@xxx:xxx.git  使用git stash命令保存和恢复进度 使用git stash命令保存和恢复进度
+最近一次提交的 hash 短字符串, 如&amp;rdquo;de34928&amp;rdquo; git rev-parse --short HEAD  ref  git clone 指定分支操作  </description>
+    </item>
+    
+    <item>
+      <title>Git From Outside</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/git/git-from-outside.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:37:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/git/git-from-outside.html</guid>
+      <description>从外部复制一个.git文件，如何使用
+问题 有.git 文件　，直接使用，报错如下：
+fatal: &#39;/srv/OpenX.git&#39; does not appear to be a git repository fatal: Could not read from remote repository.  现在有一个新来的.git文件, 如：OpenX.git
+ 放到本机的git仓库目录
+[tom@check repositories]$ sudo cp -a OpenX.git/ /srv/  建立新的下传使用目录
+[tom@check repositories]$ cd ../testgit/ [tom@check testgit]$ mkdir testgit2 [tom@check testgit]$ ls OpenXtest testgit2 [tom@check testgit]$ cd testgit2/ [tom@check testgit2]$ git init Initialized empty Git repository in /home/tom/in/testgit/testgit2/.git/  下传pull
+ remote报错啦
+[tom@check testgit2]$ git remote add checkgit git@192.</description>
+    </item>
+    
+  </channel>
+</rss>

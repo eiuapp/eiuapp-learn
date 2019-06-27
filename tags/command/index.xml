@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>command on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/command.html</link>
+    <description>Recent content in command on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 03 Apr 2019 15:59:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/command/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/docker.html</link>
+      <pubDate>Wed, 03 Apr 2019 15:59:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/docker.html</guid>
+      <description> docker 删除所有容器，镜像，数据卷 #以下，按需求开启 #停止容器 docker stop $(docker ps -a -q) #删除容器 docker rm $(docker ps -a -q) #删除镜像 docker image rm $(docker image ls -a -q) #删除数据卷： #docker volume rm $(docker volume ls -q) #删除 network： #docker network rm $(docker network ls -q) #---------------------------------------------------------------------------- #最直接并全面清理的的就是以下命令 #$docker stop $(docker ps -a -q) &amp;amp;&amp;amp; docker system prune --all --force  ref  https://blog.csdn.net/qq_34924407/article/details/82777691  </description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/command-github.html</link>
+      <pubDate>Thu, 12 Apr 2018 09:39:07 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/command-github.html</guid>
+      <description> 建立 github.io 工程页面 建立项目主页
+ 新建一个repo，repo名字随意。 点进repo主页然后点击右面的Settings，页面往下拉到GitHub Pages部分，选择Launch automatic page generator&amp;gt;Continue to layouts&amp;gt;Publish page即可.（由于大部分情况下并不用默认的页面和样式，所以这里不需要太纠结于内容编辑）   这样一个项目主页就建立完成了，此时可以用.github.io/访问到了。
+ 比如, 我这里有一个repo(如cheatsheets)是可以作为一个项目主页, 然后项目主页建立完成了后，此时可以用.github.io/访问到了&amp;hellip;
+ref  单个GitHub帐号下添加多个GitHub Pages的相关问题  </description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/python.html</link>
+      <pubDate>Wed, 04 Apr 2018 15:59:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/python.html</guid>
+      <description> python shell 中如何实现清屏 方法1
+ctrl+L
+方法2
+import os i=os.system(&#39;cls&#39;)  查模块版本
+(django1.11) ➜ example_i18n_polymorphic git:(master) ✗ python -m django --version 1.11 (django1.11) ➜ example_i18n_polymorphic git:(master) ✗  </description>
+    </item>
+    
+    <item>
+      <title>Mysql Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mysql.html</link>
+      <pubDate>Mon, 26 Mar 2018 16:23:40 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mysql.html</guid>
+      <description> 查看 MYSQL连接数 show processlist;  设置mysql远程连接root权限 MariaDB [(none)]&amp;gt; Grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;mysql&#39; with grant option; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt; flush privileges; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Linux Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/linux.html</link>
+      <pubDate>Mon, 26 Mar 2018 16:21:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/linux.html</guid>
+      <description> 查看 机器的连接数 netstat -n | awk &#39;/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}&#39;  </description>
+    </item>
+    
+    <item>
+      <title>Nodejs Npm Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/nodejs-npm.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:09:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/nodejs-npm.html</guid>
+      <description>nodejs系列之npm的常用命令
+ref  http://www.jb51.net/article/52409.htm  要点 分享几个npm的常用命令
+npm -v #显示版本，检查npm 是否正确安装。
+npm install express #安装express模块
+npm install -g express #全局安装express模块
+npm list #列出已安装模块
+npm show express #显示模块详情
+npm update #升级当前目录下的项目的所有模块
+npm update express #升级当前目录下的项目的指定模块
+npm update -g express #升级全局安装的express模块
+npm uninstall express #删除指定的模块</description>
+    </item>
+    
+    <item>
+      <title>Hexo Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/hexo.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:45:27 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/hexo.html</guid>
+      <description> hexo系列之使用1
+hexo下新建页面下如何放多个文章？ https://www.zhihu.com/question/33324071
+hexo分类与tags配置 Hexo中如何给一篇文章加多个tags？ 下面2种方式：
+ tags: [a,b,c] # 冒号后有一个空格 tags: - tag1 - tag2  可以做到自动增加哟。 tom@adata:~/m6s/blogs/tomtsang$ hexo n &amp;quot;mysql-21&amp;quot; INFO Created: ~/m6s/blogs/tomtsang/source/_posts/mysql-21.md tom@adata:~/m6s/blogs/tomtsang$ hexo n &amp;quot;mysql&amp;quot; INFO Created: ~/m6s/blogs/tomtsang/source/_posts/mysql-22.md tom@adata:~/m6s/blogs/tomtsang$ hexo n &amp;quot;mysql&amp;quot; INFO Created: ~/m6s/blogs/tomtsang/source/_posts/mysql-23.md_  这样的话，方便形成系列的文章。每次就不用管是第几个mysql系列文章了。 不过系列文章，最好用的，还是 categories
+可以用自定义的post: tom@adata:~/m6s/blogs/tomtsang$ hexo n &amp;quot;mysql&amp;quot; [mysql] INFO Created: ~/m6s/blogs/tomtsang/source/_posts/mysql-4.md tom@adata:~/m6s/blogs/tomtsang$ hexo n &amp;quot;mysql&amp;quot; [mysql] INFO Created: ~/m6s/blogs/tomtsang/source/_posts/mysql-5.md tom@adata:~/m6s/blogs/tomtsang$ hexo n &amp;quot;mysql&amp;quot; [mysql] INFO Created: ~/m6s/blogs/tomtsang/source/_posts/mysql-1.md_  end </description>
+    </item>
+    
+    <item>
+      <title>Git Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/git.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:41:30 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/git.html</guid>
+      <description> git reset &amp;ndash;hard commit_id Git允许我们在版本的历史之间穿梭，使用命令
+git reset --hard commit_id  去除对　已添加的文件或文件夹　的跟踪 git rm -r --cached -- .idea/  这样呢，文件夹里 .idea/　的修改，git都不跟踪了。
+git rm -r --cached -- node_modules/  git clone 指定分支 git clone -b test-v1 git@xxx:xxx.git  使用git stash命令保存和恢复进度 使用git stash命令保存和恢复进度
+最近一次提交的 hash 短字符串, 如&amp;rdquo;de34928&amp;rdquo; git rev-parse --short HEAD  ref  git clone 指定分支操作  </description>
+    </item>
+    
+    <item>
+      <title>Windows Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/windows.html</link>
+      <pubDate>Wed, 28 Feb 2018 17:26:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/windows.html</guid>
+      <description> windows 后台运行 使用start /b +命令即可，具体方法如下：
+ 按windows和r组合键打开运行面板； 在运行框内输入cmd，再按回车键进入命令提示符中； 在命令提示符中输入“ start /b 命令 &amp;ldquo; 再按回车，即可后台运行该命令。  </description>
+    </item>
+    
+    <item>
+      <title>Gem Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/gem.html</link>
+      <pubDate>Tue, 27 Feb 2018 17:56:15 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/gem.html</guid>
+      <description> gem 卸载 软件包 以 cocoapods 为例子
+sudo gem uninstall cocoapods  ref  2017年最新cocoaPods安装、升级、卸载及删除库命令  </description>
+    </item>
+    
+    <item>
+      <title>Mac Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mac.html</link>
+      <pubDate>Fri, 23 Feb 2018 17:08:40 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mac.html</guid>
+      <description>brew brew install node brew upgrade node  Mac OS 如何更改文件的默认打开方式 如何显示Mac OS X上的隐藏文件和文件夹 如何显示Mac OS X上的隐藏文件和文件夹
+https://wenku.baidu.com/view/ce92f3b877232f60dccca1e0.html</description>
+    </item>
+    
+  </channel>
+</rss>

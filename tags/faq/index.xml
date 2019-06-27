@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>faq on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/faq.html</link>
+    <description>Recent content in faq on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pipenv install 报错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/pipenv-install-failed.html</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/pipenv-install-failed.html</guid>
+      <description>在某个项目中遇到了出错，如下：
+(saleor) ➜ saleor git:(master) pipenv install --dev Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS =1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning. Installing dependencies from Pipfile.lock (0c0b26)… An error occurred while installing yarl==1.3.0 ; python_version &amp;gt;= &#39;3.</description>
+    </item>
+    
+    <item>
+      <title>docker build时运行 COPY 时报no such file or directory 错误</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-copy-failed-no-such-file-or-directory.html</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-build-copy-failed-no-such-file-or-directory.html</guid>
+      <description>env Expected behavior COPY command to copy a file from local to image
+Actual behavior doing a simple COPY command in Dockerfile is throwing this error when the file is in a folder (not same level as Dockerfile file)
+Description
+I have a Dockerfile that has the line:
+COPY MyAgSourceAPI/conf/php/testsql.php var/www
+But it causes the error:
+COPY failed: stat /var/lib/docker/tmp/docker-builder918577595/MyAgSourceAPI/conf/php/testsql.php: no such file or directory
+step 有一些解决方案在 https://github.com/docker/for-mac/issues/1922 提出来。</description>
+    </item>
+    
+    <item>
+      <title>kubeadm-kubelet-cni</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</link>
+      <pubDate>Sun, 25 Nov 2018 13:34:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</guid>
+      <description>问题1 kubelet 没有初始化 cni 现场 root@km:~# cat k8.export.sh sudo cp /etc/kubernetes/admin.conf $HOME/ sudo chown $(id -u):$(id -g) $HOME/admin.conf export KUBECONFIG=$HOME/admin.conf root@km:~# export KUBECONFIG=$HOME/admin.conf root@km:~# k get nodes NAME STATUS ROLES AGE VERSION km NotReady master 18h v1.8.4 kn1 Ready &amp;lt;none&amp;gt; 29s v1.8.4 kn2 Ready &amp;lt;none&amp;gt; 29s v1.8.4  出错了。
+descibe root@km:~# k describe node km Name: km Roles: master Labels: beta.kubernetes.io/arch=amd64 beta.kubernetes.io/os=linux kubernetes.io/hostname=km node-role.kubernetes.io/master= Annotations: node.alpha.kubernetes.io/ttl=0 volumes.kubernetes.io/controller-managed-attach-detach=true Taints: node-role.kubernetes.io/master:NoSchedule CreationTimestamp: Tue, 21 Nov 2017 17:36:14 +0800 Conditions: Type Status LastHeartbeatTime LastTransitionTime Reason Message ---- ------ ----------------- ------------------ ------ ------- OutOfDisk False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientDisk kubelet has sufficient disk space available MemoryPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientMemory kubelet has sufficient memory available DiskPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasNoDiskPressure kubelet has no disk pressure Ready False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletNotReady runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized Addresses: InternalIP: 192.</description>
+    </item>
+    
+    <item>
+      <title>flannel网络模式下ping出错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</link>
+      <pubDate>Sun, 25 Nov 2018 16:53:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</guid>
+      <description>Environment 所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  问题 网络出了问题了，ping 不了 kn1, kn2 中的pod的IP
+解决 https://github.com/coreos/flannel/blob/476abd9ef37e7111a1268c41afbd7154046b492a/Documentation/troubleshooting.md#firewalls
+root@km:~# k get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE default cephfs-provisioner-cff8d95c-6tgcs 1/1 Running 2 11d 10.244.1.90 kn1 default mysql-0 2/2 Running 2 22h 10.244.1.87 kn1 default mysql-1 2/2 Running 0 22h 10.244.2.243 kn2 default mysql-2 2/2 Running 2 22h 10.</description>
+    </item>
+    
+    <item>
+      <title>ceph安装FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-faq.html</link>
+      <pubDate>Fri, 30 Nov 2018 17:19:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ceph/ceph-install-base-ubuntu-faq.html</guid>
+      <description>Q1 ceph-deploy install ceph-admin ceph-osd1 ceph-osd2 mon1 ... [ceph-osd1][DEBUG ] Get:40 https://download.ceph.com/debian-jewel xenial/main amd64 python-rbd amd64 10.2.10-1xenial [1,449 kB] [ceph-osd1][DEBUG ] Get:41 https://download.ceph.com/debian-jewel xenial/main amd64 ceph-common amd64 10.2.10-1xenial [15.5 MB] [ceph-osd1][DEBUG ] Get:42 https://download.ceph.com/debian-jewel xenial/main amd64 ceph-base amd64 10.2.10-1xenial [50.5 MB] [ceph-osd1][WARNIN] No data was received after 300 seconds, disconnecting... [ceph-osd1][INFO ] Running command: sudo ceph --version [ceph-osd1][ERROR ] Traceback (most recent call last): [ceph-osd1][ERROR ] File &amp;quot;/usr/lib/python2.7/dist-packages/ceph_deploy/lib/vendor/remoto/process.py&amp;quot;, line 119, in run [ceph-osd1][ERROR ] reporting(conn, result, timeout) [ceph-osd1][ERROR ] File &amp;quot;/usr/lib/python2.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes中cephfs的deployment的FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-deployment-faq.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:41:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-deployment-faq.html</guid>
+      <description>k8s cephfs 在 deployment.yaml 中的使用 Environment k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2  配置 deployment.yaml apiVersion: extensions/v1beta1 kind: Deployment metadata: name: cephfs-provisioner spec: replicas: 1 strategy: type: Recreate template: metadata: labels: app: cephfs-provisioner spec: containers: - name: cephfs-provisioner image: &amp;quot;quay.io/external_storage/cephfs-provisioner:latest&amp;quot; # 对应 镜像 imagePullPolicy: IfNotPresent env: - name: PROVISIONER_NAME valueFrom: configMapKeyRef: key: provisioner.name name: cephfs-provisioner command: # 这里对应 命令 - &amp;quot;/usr/local/bin/cephfs-provisioner&amp;quot; args: # 这里对应三个参数 - &amp;quot;-id=cephfs-provisioner-1&amp;quot; - &amp;quot;-master=https://10.</description>
+    </item>
+    
+    <item>
+      <title>k8s 与 cephfs 相关的FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-faq.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:58:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-faq.html</guid>
+      <description>Input/output error cephu@ceph-client:/mnt/mycephfs/volumes/kubernetes$ ll kubernetes-dynamic-pvc-a2c667ad-d0c7-11e7-b656-0a580af40148/ ls: reading directory &#39;kubernetes-dynamic-pvc-a2c667ad-d0c7-11e7-b656-0a580af40148/&#39;: Input/output error total 0 drwxr-xr-x 1 root root 0 Nov 24 11:36 ./ drwxr-xr-x 1 root root 0 Nov 24 11:29 ../ cephu@ceph-client:/mnt/mycephfs/volumes/kubernetes$  这个问题，看了一下，https://github.com/kubernetes-incubator/external-storage/issues/345，
+最后，有用户是这样回复的
+I tried to update my ubuntu kernel from 4.4.0 to 4.10.0 (sudo apt install linux-image-4.10.0-28-generic) and after a reboot, the error is gone, everything works fine from now on :)  所以就是升级内核了。升级去吧。 升级一下，果然成功了。</description>
+    </item>
+    
+    <item>
+      <title>Python Faq Openssl</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-faq-openssl.html</link>
+      <pubDate>Wed, 13 Jun 2018 13:00:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-faq-openssl.html</guid>
+      <description>Env  os: ubuntu16  出错 /alg -Iscrypt-1.2.1/libcperciva/util -Iscrypt-1.2.1/libcperciva/crypto -I/usr/local/include -I/usr/include -I/usr/include/python2.7 -c scrypt-1.2.1/libcperciva/crypto/crypto_aes.c -o build/temp.linux-x86_64-2.7/scrypt-1.2.1/libcperciva/crypto/crypto_aes.o -O2 scrypt-1.2.1/libcperciva/crypto/crypto_aes.c:6:25: fatal error: openssl/aes.h: No such file or directory compilation terminated. error: command &#39;x86_64-linux-gnu-gcc&#39; failed with exit status 1 ---------------------------------------- Command &amp;quot;/usr/bin/python -u -c &amp;quot;import setuptools, tokenize;__file__=&#39;/tmp/pip-install-qN0XHo/scrypt/setup.py&#39;;f=getattr(tokenize, &#39;open&#39;, open)(__file__);code=f.read().replace(&#39;\r\n&#39;, &#39;\n&#39;);f.close();exec(compile(code, __file__, &#39;exec&#39;))&amp;quot; install --record /tmp/pip-record-8LxwEK/install-record.txt --single-version-externally-managed --compile&amp;quot; failed with error code 1 in /tmp/pip-install-qN0XHo/scrypt/ root@ip-172-31-23-102:/home/ubuntu/rpc#  Step 看错误。这里看的错误，不应该是error: command &#39;x86_64-linux-gnu-gcc&#39; failed with exit status 1,而应该是fatal error: openssl/aes.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/javascript/javascript-faq.html</link>
+      <pubDate>Wed, 21 Mar 2018 09:57:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/javascript/javascript-faq.html</guid>
+      <description>Mixpanel error: &amp;quot;mixpanel&amp;quot; object not initialized. Ensure you are using the latest version of the Mixpanel JS Library along with the snippet we provide.</description>
+    </item>
+    
+    <item>
+      <title>Mac Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-faq.html</link>
+      <pubDate>Thu, 15 Mar 2018 16:33:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-faq.html</guid>
+      <description>how-to-open-app-from-unidentified-developer-in-mac-os-x how-to-open-app-from-unidentified-developer-in-mac-os-x
+https://zhidao.baidu.com/question/466554299.html</description>
+    </item>
+    
+    <item>
+      <title>Mac Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac.html</link>
+      <pubDate>Thu, 15 Mar 2018 16:33:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac.html</guid>
+      <description>mac</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Npm Faq 1</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-npm-faq-1.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:06:48 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-npm-faq-1.html</guid>
+      <description>nodejs系列之npm报错
+报错 报错1，permission denied, open &#39;/usr/local/lib/node_modules/npm/lib/ tom@adata:~/in/ttt$ npm i npm ERR! Linux 4.4.0-47-generic npm ERR! argv &amp;quot;/usr/local/bin/node&amp;quot; &amp;quot;/usr/local/bin/npm&amp;quot; &amp;quot;i&amp;quot; npm ERR! node v6.9.1 npm ERR! npm v3.10.8 npm ERR! path /usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js npm ERR! code EACCES npm ERR! errno -13 npm ERR! syscall open npm ERR! Error: EACCES: permission denied, open &#39;/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js&#39; npm ERR! at Error (native) npm ERR! at Object.fs.openSync (fs.js:640:18) npm ERR! at Object.fs.readFileSync (fs.js:508:33) npm ERR! at Object.</description>
+    </item>
+    
+    <item>
+      <title>Gem Install Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ruby/gem-install-faq.html</link>
+      <pubDate>Mon, 26 Feb 2018 09:23:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ruby/gem-install-faq.html</guid>
+      <description>faq, ruby.h not found ubuntu@VM-0-12-ubuntu:~/registry/tomtsang-rootsongjc-cheatsheet$ bundle install ... ... To see why this extension failed to compile, please check the mkmf.log which can be found here: /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/extensions/x86_64-linux/2.3.0/nokogiri-1.8.0/mkmf.log extconf failed, exit code 1 Gem files will remain installed in /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/gems/nokogiri-1.8.0 for inspection. Results logged to /tmp/bundler20180226-1352-qwjujmnokogiri-1.8.0/extensions/x86_64-linux/2.3.0/nokogiri-1.8.0/gem_make.out An error occurred while installing nokogiri (1.8.0), and Bundler cannot continue. Make sure that `gem install nokogiri -v &#39;1.8.0&#39;` succeeds before bundling. In Gemfile: github-pages was resolved to 156, which depends on jekyll-mentions was resolved to 1.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Faq Unexpected Token Function</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-faq-unexpected-token-function.html</link>
+      <pubDate>Fri, 23 Feb 2018 15:42:10 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-faq-unexpected-token-function.html</guid>
+      <description>env 在 hugo-algolia -s命令运行时, 出现了 Unexpected token function 报错
+➜ tomtsang-rootsongjc-hugo git:(master) ✗ hugo-algolia -s /usr/local/lib/node_modules/hugo-algolia/lib/utils.js:11 async function copySynonyms(fromIndex, toIndex) { ^^^^^^^^ SyntaxError: Unexpected token function at Object.exports.runInThisContext (vm.js:78:16) at Module._compile (module.js:543:28) at Object.Module._extensions..js (module.js:580:10) at Module.load (module.js:488:32) at tryModuleLoad (module.js:447:12) at Function.Module._load (module.js:439:3) at Module.require (module.js:498:17) at require (internal/module.js:20:19) at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hugo-algolia/lib/index.js:11:52) at Module._compile (module.js:571:32) ➜ tomtsang-rootsongjc-hugo git:(master) ✗  step Unexpected token function 报错, 是指未预期的token 函数, 那先就要查一下, nodejs版本支持与否</description>
+    </item>
+    
+  </channel>
+</rss>

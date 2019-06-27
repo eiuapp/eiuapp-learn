@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>privoxy on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/privoxy.html</link>
+    <description>Recent content in privoxy on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Jul 2018 14:16:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/privoxy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Privoxy Mac</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/privoxy-mac.html</link>
+      <pubDate>Sun, 15 Jul 2018 14:16:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/privoxy-mac.html</guid>
+      <description>mac osx 下面通过 privoxy 把shadowsocks 转换成http代理
+Env  os: mac  Step ➜ ~ brew install privoxy ... ... To have launchd start privoxy now and restart at login: brew services start privoxy Or, if you don&#39;t want/need a background service you can just run: privoxy /usr/local/etc/privoxy/config ==&amp;gt; Summary 🍺 /usr/local/Cellar/privoxy/3.0.26: 99 files, 2.2MB ==&amp;gt; Caveats ==&amp;gt; privoxy To have launchd start privoxy now and restart at login: brew services start privoxy Or, if you don&#39;t want/need a background service you can just run: privoxy /usr/local/etc/privoxy/config ➜ ~  修改配置文件/usr/local/etc/privoxy/config</description>
+    </item>
+    
+  </channel>
+</rss>

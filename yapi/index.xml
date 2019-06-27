@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yapi on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/yapi.html</link>
+    <description>Recent content in yapi on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/yapi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yapi Install Base Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/yapi/yapi-install-base-ubuntu.html</link>
+      <pubDate>Thu, 28 Jun 2018 18:37:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/yapi/yapi-install-base-ubuntu.html</guid>
+      <description>Env    Step  177 yum install -y mongodb-org 178 mongo -v 179 systemctl start mongod 180 /etc/init.d/mongod start 181 npm install -g yapi-cli --registry https://registry.npm.taobao.org 182 yapi server 183 ls 184 rm -rf my-yapi/ 185 clear 186 ls 187 node -v 188 mongo 189 git 190 yum install git 191 /etc/init.d/mongod restart 192 mongod -v 193 mongo 194 clear 195 npm install -g yapi-cli --registry https://registry.npm.taobao.org 196 yapi server 197 ls 198 node my-yapi/vendors/server/app.</description>
+    </item>
+    
+    <item>
+      <title>Yapi Transfer Base Docker</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/yapi/yapi-docker-transfer-data-install.html</link>
+      <pubDate>Thu, 28 Jun 2018 18:37:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/yapi/yapi-docker-transfer-data-install.html</guid>
+      <description>记一次yapi的迁移过程
+Env 原来有一个docker安装在 192.168.168.162. 现在希望迁移至 192.168.168.137
+原来 docker 的安装方式,见, https://github.com/eiuapp/docker-yapi
+同时也可以参考一下 https://www.cnblogs.com/woshimrf/p/docker-install-yapi.html
+Step 安装文件与容器数据迁移 tar -zcvf yapi.tar.gz ./yapi/ tar zcvf ./data.opt.mongodb.data.tar.gz /data/opt/mongodb/data/ scp -P 2222 data.opt.mongodb.data.tar.gz yapi.tar.gz ubuntu@192.168.168.137:/home/ubuntu/  新机器安装docker网络与相关镜像 tar -zxvf yapi.tar.gz tar -zxvf data.opt.mongodb.data.tar.gz sudo mv data/opt/ /data/opt/ ls /data/opt/mongodb/data/ cd yapi/ cp index.sh rindex.sh vi rindex.sh  修改一下rindex.sh文件
+ubuntu@utuntu:~/yapi$ cat rindex.sh #!/bin/bash #git clone https://github.com/Ryan-Miao/docker-yapi.git cd docker-yapi bash build.sh 1.5.10 bash start.sh init-network bash start.sh start-mongo #bash start.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/yapi/api-format.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/yapi/api-format.html</guid>
+      <description>YAPI 使用
+接口集合 接口定义 接口定义与使用，要近可能符合 Restful API 风格
+方法 - 中文 - 英文  Get - 查询 - Get ; Post - 提交（新增） - Add, Set, Post Post, Put - 修改 - Set, Post, Put, Update Delete - 删除 - Delete  示例 （优先）
+ Get - 查询用户帐户 - GetUserAccout Post - 新增用户帐户 - AddUserAccout Post, Put - 修改用户帐户 - SetUserAccount 或者 UpdateUserAccout Delete - 删除用户帐户 - DeleteUserAccout  或者</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/yapi/install-yapi-with-docker.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/yapi/install-yapi-with-docker.html</guid>
+      <description>yapi通过docker安装
+https://github.com/Ryan-Miao/docker-yapi 学习笔记
+env  os: ubuntu docker: 18.09.5  step 直接运行 index.sh vagrant@ubuntu-xenial:~/yapi$ cat index.sh #!/bin/bash git clone https://github.com/Ryan-Miao/docker-yapi.git cd docker-yapi bash build.sh 1.5.10 bash start.sh init-network bash start.sh start-mongo bash start.sh init-mongo bash start.sh init-yapi bash start.sh logs-yapi vagrant@ubuntu-xenial:~/yapi$ bash index.sh ... ... init mongodb account admin and yapi MongoDB shell version v4.0.9 connecting to: mongodb://127.0.0.1:27017/admin?gssapiServiceName=mongodb 2019-04-24T03:22:21.172+0000 E QUERY [js] Error: couldn&#39;t connect to server 127.0.0.1:27017, connection attempt failed: SocketException: Error connecting to 127.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/yapi/yapi-practices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/yapi/yapi-practices.html</guid>
+      <description>实践 原则  前端是接口的主要发起者, 维护者 后端, 测试与前端交互, 只认YAPI中的接口与测试用例 接口, 有重大修改, 请及时通知相关人 单个接口只完成单个功能 尽可能不要在一个接口中, 返回不同的数据结构, 接口列表与测试集合要配合编写 请先经过相关人员讨论后再编写情况  返回不同的数据结构 参数表达困难 接口功能不清楚   接口列表 下面只说一些注意点, 其它不明的問同事
+编辑接口 基本设置  请使用英文而不是拼音 使用 JSON 交互 当编辑完 测试集合 后, 回到接口列表打 tag  请求函数  中文名称: 操作 - 模块 - 子模块 - 功能名 英文名称: AddUserAccout 大驼峰法: 大写字母开头的驼峰  请求参数  小驼峰法: 小写字母开头的驼峰, 而不是下划线 单参数多值: ,号分隔. 如: users=a,b,c,d 如果是 不同参数值返回不同数据结构,请在 mock和测试集合 中分别加示例,并在备注中指出. 非 Get 请求均要使用 json 格式 Post 请求, 编写时,请导入 JSON 是否为必需,写准确.</description>
+    </item>
+    
+  </channel>
+</rss>

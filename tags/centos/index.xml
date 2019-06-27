@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>centos on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/centos.html</link>
+    <description>Recent content in centos on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 30 Nov 2018 09:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>centos更新内核</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-update-kernel.html</link>
+      <pubDate>Fri, 30 Nov 2018 09:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-update-kernel.html</guid>
+      <description>https://linux.cn/article-8310-1.html</description>
+    </item>
+    
+    <item>
+      <title>Update Kernel Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/update-kernel-base-centos.html</link>
+      <pubDate>Fri, 22 Jun 2018 11:34:39 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/update-kernel-base-centos.html</guid>
+      <description>如何在 CentOS 7 中安装或升级最新的内核
+请直接看 https://linux.cn/article-8310-1.html
+下文只是记录
+Env  os: centos7  Step 虽然有些人使用 Linux 来表示整个操作系统，但要注意的是，严格地来说，Linux 只是个内核。另一方面，发行版是一个完整功能的系统，它建立在内核之上，具有各种各样的应用程序工具和库。
+在正常操作期间，内核负责执行两个重要任务：
+ 作为硬件和系统上运行的软件之间的接口。 尽可能高效地管理系统资源。  为此，内核通过内置的驱动程序或以后可作为模块安装的驱动程序与硬件通信。
+例如，当你计算机上运行的程序想要连接到无线网络时，它会将该请求提交给内核，后者又会使用正确的驱动程序连接到网络。
+建议阅读： 如何在 Ubuntu 中升级内核
+随着新的设备和技术定期出来，如果我们想充分利用它们，保持最新的内核就很重要。此外，更新内核将帮助我们利用新的内核函数，并保护自己免受先前版本中发现的漏洞的攻击。
+准备好了在 CentOS 7 或其衍生产品（如 RHEL 7和 Fedora）上更新内核了么？如果是这样，请继续阅读！
+步骤 1：检查已安装的内核版本 让我们安装了一个发行版，它包含了一个特定版本的内核。为了展示当前系统中已安装的版本，我们可以：
+# uname -sr  如果我们现在进入 https://www.kernel.org/，在撰写本文时，我们看到最新的内核版本是4.10.1（其他版本可以从同一网站获得）。
+还要考虑的一个重要的事情是内核版本的生命周期 - 如果你当前使用的版本接近它的生命周期结束，那么在该日期后将不会提供更多的 bug 修复。关于更多信息，请参阅内核发布页。
+步骤 2：在 CentOS 7 中升级内核 大多数现代发行版提供了一种使用 yum 等包管理系统和官方支持的仓库升级内核的方法。
+但是，这只会升级内核到仓库中可用的最新版本 - 而不是在 https://www.kernel.org/ 中可用的最新版本。不幸的是，Red Hat 只允许使用前者升级内核。
+与 Red Hat 不同，CentOS 允许使用 ELRepo，这是一个第三方仓库，可以将内核升级到最新版本。</description>
+    </item>
+    
+    <item>
+      <title>Mount Ntfs Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/mount-ntfs-base-centos.html</link>
+      <pubDate>Wed, 06 Jun 2018 16:57:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/mount-ntfs-base-centos.html</guid>
+      <description>centos挂载ntfs硬盘
+Env  os: centos6.9  当前状态
+[root@bitspace ~]# lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 931.5G 0 disk ├─sda1 8:1 0 220G 0 part ├─sda2 8:2 0 238G 0 part ├─sda3 8:3 0 237G 0 part └─sda4 8:4 0 236.5G 0 part sdb 8:16 0 111.8G 0 disk ├─sdb1 8:17 0 500M 0 part /boot └─sdb2 8:18 0 111.3G 0 part ├─vg_bitspace-lv_root (dm-0) 253:0 0 50G 0 lvm / ├─vg_bitspace-lv_swap (dm-1) 253:1 0 7.</description>
+    </item>
+    
+    <item>
+      <title>Python Upgrade Version Base on Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-upgrade-version-base-on-centos.html</link>
+      <pubDate>Mon, 04 Jun 2018 10:06:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-upgrade-version-base-on-centos.html</guid>
+      <description>概要
+CentOS 6.9中预安装了Python-2.6.6，其比较新的Python-2.7.9(CentOS 7预装版本)主要区别在于新版本的Python导入了更丰富的模块功能。对于初学者而言这一般不会有太大的影响，相对而言这些新模块在某些特定的编译环境下却是不可或缺的。例如：使用Devstack all-in-one模式进行安装OpenStack开发调试平台，需要Python-2.7及以上的支持，这样可以省去很多缺失模块的麻烦。
+Env  os: centos6.9 python: 2.6.6 =&amp;gt; 2.7.9  step 1.查看当前系统的Python Version
+[root@jmilk ~]# python --version Python 2.6.6  2.下载Python-2.7.9
+wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz  3.安装Python
+a. 解压
+tar -Jxvf Python-2.7.9.tar.xz -C /usr/src/  b. 安装
+mkdir /usr/local/python27 cd /usr/src/Python-2.7.9/ ./configure --prefix=/usr/local/python27 &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install  c. 将系统python指令默认指向Python-2.7.9版本
+CentOS6.9中YUM需要Python-2.6.6支持，所以不建议卸载老版本。
+mv /usr/bin/python /usr/bin/python266 ln -s /usr/local/python27/bin/python2.7 /usr/bin/python python --version  解决YUM与Python2.7.9的兼容问题 因为YUM需要python-2.6.6的支持，CentOS 6.9中YUM却不兼容Python-2.7，导致YUM不可用。
+[root@bitspace ~]# yum install python-pip -y There was a problem importing one of the Python modules required to run yum.</description>
+    </item>
+    
+    <item>
+      <title>Ftp Cannot Chrome File Access</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/chrome/ftp-cannot-chrome-file-access.html</link>
+      <pubDate>Tue, 29 May 2018 15:11:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/chrome/ftp-cannot-chrome-file-access.html</guid>
+      <description> 为何客户端软件可以而浏览器则不能连接FTP服务器
+env  centos6.9 ftp: vsftpd  step 这里主要的点就是理解主动模式与被动模式。
+主动模式对服务器端有利，被动模式对客户端有利。但是服务器端既然要提供FTP服务，应该在服务器端设置防火墙规则，提供被动模式服务，而不能要求所有的客户端都设置防火墙规则以适应主动服务模式。当然服务器端在提供被动模式服务时，出于安全考虑，应该设置客户端可发起数据连接的端口范围，这就是下面配置文件中的
+pasv_min_port=61001 pasv_max_port=62000  即，告诉客户端可以向61001与62000之间的端口发起数据连接。
+[root@bitspace ~]# tail /etc/vsftpd/vsftpd.conf # sockets, you must run two copies of vsftpd with two configuration files. # Make sure, that one of the listen options is commented !! #listen_ipv6=YES pam_service_name=vsftpd userlist_enable=YES tcp_wrappers=YES pasv_min_port=61001 pasv_max_port=62000 [root@bitspace ~]#  Ref  https://blog.csdn.net/zilong00007/article/details/7663152 https://my.oschina.net/iyinghui/blog/1605801 http://www.cnblogs.com/qytan36/archive/2010/05/15/1736270.html  </description>
+    </item>
+    
+    <item>
+      <title>Centos6 Install Ftp</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos6-install-ftp.html</link>
+      <pubDate>Tue, 29 May 2018 10:39:09 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos6-install-ftp.html</guid>
+      <description>CentOS6上ftp服务器搭建实战
+env  centos6.9 IP: 10.88.88.22 IP: 172.16.55.6  step 1.安装程序包 [root@node1 ~]$ yum install -y vsftpd [root@node1 ~]$ yum install -y lftp # 安装测试软件  2.启动vsftpd服务 [root@node1 ~]$ setenforce 0　#关闭selinux setenforce: SELinux is disabled　[root@node1 ~]$ service iptables stop　#关闭防火墙　[root@node1 ~]$ service vsftpd start　# 启动服务 为 vsftpd 启动 vsftpd： [确定] [root@node1 ~]$ service vsftpd status vsftpd (pid 6473) 正在运行... [root@node1 ~]$ ss -tnl | grep 21　#默认监听21号端口 LISTEN 0 32 *:21 *:* [root@bitspace ~]# service vsftpd start Starting vsftpd for vsftpd: [ OK ] [root@bitspace ~]# netstat -anltp | grep 21 tcp 0 0 0.</description>
+    </item>
+    
+    <item>
+      <title>Centos Iptable Open Port 21</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-iptable-open-port-21.html</link>
+      <pubDate>Tue, 29 May 2018 10:30:36 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-iptable-open-port-21.html</guid>
+      <description>centos6.9开放ftp(vsftpd)的21端口
+env  centos6.9  [root@bitspace ~]# /etc/rc.d/init.d/iptables save iptables: Saving firewall rules to /etc/sysconfig/iptables:[ OK ] [root@bitspace ~]# service iptables restart iptables: Setting chains to policy ACCEPT: filter [ OK ] iptables: Flushing firewall rules: [ OK ] iptables: Unloading modules: [ OK ] iptables: Applying firewall rules: [ OK ] [root@bitspace ~]# vim /etc/sysconfig/iptables [root@bitspace ~]# cat /etc/sysconfig/iptables # Generated by iptables-save v1.4.7 on Tue May 29 18:27:18 2018 *filter :INPUT ACCEPT [0:0] :FORWARD ACCEPT [0:0] :OUTPUT ACCEPT [53:4182] -A INPUT -p tcp -m tcp --dport 21 -j ACCEPT -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT -A INPUT -p icmp -j ACCEPT -A INPUT -i lo -j ACCEPT -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT -A INPUT -j REJECT --reject-with icmp-host-prohibited -A INPUT -p tcp -m state --state NEW -m tcp --dport 21 -j ACCEPT -A FORWARD -j REJECT --reject-with icmp-host-prohibited COMMIT # Completed on Tue May 29 18:27:18 2018 [root@bitspace ~]# [root@bitspace ~]# /sbin/iptables -I INPUT -p tcp --dport 21 -j ACCEPT [root@bitspace ~]# /etc/rc.</description>
+    </item>
+    
+    <item>
+      <title>Centos Release</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-release.html</link>
+      <pubDate>Tue, 29 May 2018 10:11:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-release.html</guid>
+      <description>前言
+记下CentOS 7查看系统版本及查看机器位数x86-64的方法，由于不经常使用Linux，每当使用的时候就是安装软件，安装软件的时候就要选择安装包平台，是32位的还是64位的。这时候突然发现不知道怎么查，于是百度。虽然轻而易举百度出来，但仍旧没有自己的笔记看起来舒服。所以，还是记录下来。
+辨识标准 首先要清楚什么样标识是32位的，什么样的是64位的。
+PC server X86 系列
+ I386&amp;ndash;I686 都是32位 x86_64 是 64位  查看位数命令 命令实在是不要太多，为了防止选择性障碍，一致选择第一种方式，后面的仅作为补充。
+方法1： [root@linuxidc ~]# uname -a Linux linuxidc 3.10.0-327.18.2.el7.x86_64 #1 SMP Thu May 12 11:03:55 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux  方法2：显示系统程序信息 [root@linuxidc ~]# file /bin/ls /bin/ls: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=aa7ff68f13de25936a098016243ce57c3c982e06, stripped  方法3： [root@linuxidc ~]# cat /proc/version Linux version 3.</description>
+    </item>
+    
+    <item>
+      <title>Gcc Rpm Install Offline</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/gcc-rpm-install-offline.html</link>
+      <pubDate>Fri, 02 Mar 2018 17:29:20 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/gcc-rpm-install-offline.html</guid>
+      <description>gcc rpm 安装包下载
+安装gcc, 下载
+[root@localhost jlch]# rpm -ivh gcc-4.8.5-16.el7_4.1.x86_64.rpm warning: gcc-4.8.5-16.el7_4.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY error: Failed dependencies: cpp = 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 glibc-devel &amp;gt;= 2.2.90-12 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libgcc &amp;gt;= 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libgomp = 4.8.5-16.el7_4.1 is needed by gcc-4.8.5-16.el7_4.1.x86_64 libmpc.so.3()(64bit) is needed by gcc-4.8.5-16.el7_4.1.x86_64 libmpfr.so.4()(64bit) is needed by gcc-4.8.5-16.el7_4.1.x86_64 [root@localhost jlch]#  所有的下载地址如下:
+http://mirror.centos.org/centos/7/os/x86_64/Packages/libgcc-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/gcc-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/cpp-4.8.5-16.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/glibc-devel-2.17-196.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/libgomp-4.8.5-16.el7.x86_64.rpm http://mirror.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:55:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-install-base-centos.html</guid>
+      <description>mysql-0mysql系列之mariadb-install
+ref  http://blog.csdn.net/renfufei/article/details/17616549  过程 说明: 首先必须能链接外网. 如果不能直接访问,那也可以设置代理,请参考: 在内网机器上设置yum代理 使用 yum 的权限要求是 root 用户,如果你不是,那么可以需要 在 shell命令之前加上 sudo, 或者 su root 切换到 super 管理员进行操作. 并可能需要输入密码.
+1. 添加 yum 数据源  安装mariadb10.1 官方的通过yum安装教程
+根据不同的系统来下载repo吧，更多的MariaDB.repo
+ 建议命名为 MariaDB.repo 类似的名字：
+cd /etc/yum.repos.d/ vim /etc/yum.repos.d/MariaDB.repo  然后,写入文件内容:(建议使用 10.0)
+# MariaDB 10.0 CentOS repository list - created 2015-08-12 10:59 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/10.0/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1  这个baseurl可以通过浏览器打开，然后在 http://yum.mariadb.org/10.0/centos7-amd64/rpms/ 中 可以看到这里面有些什么 .</description>
+    </item>
+    
+    <item>
+      <title>Centos Yum</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-yum.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:46:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-yum.html</guid>
+      <description>centos系列之yum
+yum安装的软件在哪? linux下如何查看某个软件 是否安装？安装路径在哪? linux下如何查看某个软件 是否安装？安装路径在哪
+使用sudo rpm -qa来查看通过 yum安装的软件
+[tom@kube-node-11 ~]$ sudo rpm -qa | grep Maria MariaDB-client-10.1.19-1.el7.centos.x86_64 MariaDB-common-10.1.19-1.el7.centos.x86_64 MariaDB-Galera-server-10.0.28-1.el7.centos.x86_64 MariaDB-shared-10.1.19-1.el7.centos.x86_64  linux 通过 yum search 得到，在当前情况下，能安装哪些软件，哪些软件安装不了。 如下面 这个地方，显示 MariaDB-Galera-server 找不到。
+[cdn@test_240 ~]$ sudo yum install MariaDB-Galera-server MariaDB-client galera -y Loaded plugins: fastestmirror, langpacks Loading mirror speeds from cached hostfile * base: mirrors.cn99.com * extras: mirrors.cn99.com * updates: mirrors.cn99.com No package MariaDB-Galera-server available. Package MariaDB-client-10.1.19-1.el7.centos.x86_64 already installed and latest version Package galera-25.</description>
+    </item>
+    
+    <item>
+      <title>Docker Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:28:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-install-base-centos.html</guid>
+      <description>practice [tom@mysql1 ~]$ sudo tee /etc/yum.repos.d/docker.repo &amp;lt;&amp;lt;-&#39;EOF&#39; &amp;gt; [dockerrepo] &amp;gt; name=Docker Repository &amp;gt; baseurl=https://yum.dockerproject.org/repo/main/centos/7/ &amp;gt; enabled=1 &amp;gt; gpgcheck=1 &amp;gt; gpgkey=https://yum.dockerproject.org/gpg &amp;gt; EOF [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg [tom@mysql1 ~]$ sudo yum install docker-engine -y ... Installed: docker-engine.x86_64 0:1.12.3-1.el7.centos Dependency Installed: docker-engine-selinux.noarch 0:1.12.3-1.el7.centos Complete! [tom@mysql1 ~]$ sudo systemctl enable docker.service Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service. [tom@mysql1 ~]$ sudo systemctl start docker [tom@mysql1 ~]$ sudo docker run --rm hello-world Unable to find image &#39;hello-world:latest&#39; locally latest: Pulling from library/hello-world c04b14da8d14: Pull complete Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9 Status: Downloaded newer image for hello-world:latest Hello from Docker!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/windows.html</link>
+    <description>Recent content in windows on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows下效率必备软件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/windows-tools.html</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/windows-tools.html</guid>
+      <description>Windows下效率必备软件
+env os: win10
+step 工欲善其事，必先利其器！ 工欲善其事，必先利其器！ 工欲善其事，必先利其器！重而说三。
+当你第一次接触windows，并准备在其上开发时，请先安装 package-manager-for-windows , 并用它来安装下面的软件。
+工具 AutoHotKey: 神器！神器！神器！当然也得看使用者咯(^__^) 嘻嘻……详情请参看：Win下最爱效率神器:AutoHotKey。
+[Listary]()： 本地搜索神器，当然还有别的作用，More&amp;amp;More。
+Launchy : 快速启动安装的应用程序，老而弥坚，有丝Mac下Spotlight之风；
+ http://www.launchy.net/ https://www.iplaysoft.com/launchy.html  Wox ： Windows下一款最接近 Alfred 的软件启动/文件搜索利器；可参见Listary Everything Wox Launch。
+Chrome: Web世界里的神，的神，神。偏爱ing；如虎添翼，效率必备：Vimium~让您的Chrome起飞。
+SublimeText3： 编码垒字的神器，还能览图/文件对比/…,偏爱ing；自荐笔者总结一文： 如何优雅地使用Sublime Text
+Picasa3: 图片查看器中的佼佼者，偏爱ing。姑姑出品，必属精品！
+Clover： 在Win下必备，谁让Win资源管理器太…QT，TotalCommand太重(⊙o⊙)…
+Everything： 本来必备神器，无奈我移情别恋了–Listary。不过是不会忘了你。
+Foxmail： 对比体验不多，不做评判，必备；反正不用win自带的。
+Evernote: 纪录/收藏你想保存的文｜图｜网页;为知笔记～功能同丰满,身材更骨感😄。
+Beyond Compare : 文件比较器; 此款为所接触中最佳。
+Cmder: windows下cmd的替换工具,支持PowerShell;同比还有PowerShell，ConEmu 等。自荐笔者总结的：Win下必备神器之Cmder。
+作业部落客户端: 开启卓越写作之旅,支持全平台＋离线使用，一键发布文稿，社交化批注。身材苗条，面容姣好，免费Markdown书写平台的魅力战斗机。
+夜神模拟器: 经历了BlueStacks,海马，一遇这夜神,认你乃最佳！ 之后体验过程也没那么好，兼用海马(都不经常)。
+网易云音乐: 初遇QQ音乐,处过天天动听,恋过酷狗，上过酷我，一夜情过千千静听,移情过虾米，和豆瓣FM好过，同百度随心听约过,最后，发现音乐的世界,还得是你～网易云音乐。
+[Update: 2016-03-09 ~ 2016-03-10]
+Atom: 新一代编码写文神器；虽还在发展，却已惊艳。自荐笔者一文：新编码神器Atom使用纪要。</description>
+    </item>
+    
+    <item>
+      <title>autohotkey 用法</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/autohotkey-usage.html</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/autohotkey-usage.html</guid>
+      <description> autohotkey 用法
+env  os: win10 autohotkey: Version 1.1.30.01  step 最好的方法是直接看官网
+https://autohotkey.com/docs/Tutorial.htm
+对应点击en,会出现zh，也就是中文版本
+https://wyagd001.github.io/zh-cn/docs/Tutorial.htm
+script https://zhuanlan.zhihu.com/p/19754204
+ref  https://autohotkey.com/docs/Tutorial.htm https://wyagd001.github.io/zh-cn/docs/Tutorial.htm https://blog.csdn.net/weixin_37834999/article/details/79542638 https://blog.csdn.net/ChinarCSDN/article/details/82914429 https://blog.lovejade.cn/2016/03/12/share-autohotkey-script.html  </description>
+    </item>
+    
+    <item>
+      <title>Win10 Share Files</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/win10-share-files.html</link>
+      <pubDate>Sat, 14 Jul 2018 17:51:39 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/win10-share-files.html</guid>
+      <description> 两台win10 电脑怎么共享文件夹
+Env  os: win10  Step 两台win10 电脑怎么共享文件夹
+Ref  https://jingyan.baidu.com/article/495ba841b42de438b20ede5e.html https://jingyan.baidu.com/article/358570f6633ba4ce4624fc48.html  </description>
+    </item>
+    
+    <item>
+      <title>U Shendu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/u-shendu.html</link>
+      <pubDate>Sat, 14 Jul 2018 17:49:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/u-shendu.html</guid>
+      <description> 当你忘记了密码，可以使用u深度重置用户密码
+Env  os: win10  Step u深度u盘启动盘制作教程
+u深度重置用户密码
+Ref  https://jingyan.baidu.com/article/6b97984da3b9851ca2b0bfec.html http://upzxt.win7qjb.com/upzxtjc/794.html https://jingyan.baidu.com/article/90808022f724c6fd91c80fa6.html https://jingyan.baidu.com/article/6b97984da3b9851ca2b0bfec.html  </description>
+    </item>
+    
+    <item>
+      <title>Realtek Shengyin</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/realtek-shengyin.html</link>
+      <pubDate>Thu, 07 Jun 2018 16:03:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/realtek-shengyin.html</guid>
+      <description>Realtek高清晰音频管理器使耳机能听到声音
+env  os: win10  step 总以为是声卡类驱动没有安装成功，哈哈！～～
+直接看图操作吧</description>
+    </item>
+    
+    <item>
+      <title>Xshell Ubuntu Transmitter File</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/xshell-ubuntu-transmitter-file.html</link>
+      <pubDate>Thu, 24 May 2018 11:19:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/xshell-ubuntu-transmitter-file.html</guid>
+      <description> xshell + ubuntu 直接拖拽完成传输
+env  win10-xshell ubuntu  step ubunut 安装lrzsz软件
+ubuntu@ip-172-31-17-102:~$ sudo apt install lrzsz Reading package lists... Done Building dependency tree Reading state information... Done lrzsz is already the newest version (0.12.21-8). 0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded. ubuntu@ip-172-31-17-102:~$  如果第一次没有成功，则，直接再把上面的命令运行一次
+传输完成了，会显示如下内容
+ubuntu@ip-172-31-17-102:~$ rz -E rz waiting to receive. ubuntu@ip-172-31-17-102:~$  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/ide-windows.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/ide-windows.html</guid>
+      <description>本文主要参考： 如何搭建优雅的windows开发环境 。有修改。
+如何搭建优雅的windows开发环境 [2016-12-17]()
+之前写过 &amp;lt;如何搭建优雅的开发环境&amp;gt; 系列(未完结)， 分章节的介绍了开发过程中使用的工具和技巧。里面也提及了 Windows 下的工具，但是不够系统，我还是很想整理一篇讲解 windows 下具体设置的文章。
+[](#命令行 &amp;ldquo;命令行&amp;rdquo;)命令行 [](#PowerShell &amp;ldquo;PowerShell&amp;rdquo;)PowerShell 微软以后肯定是要用 PowerShell 替代 cmd.exe 的，所以早晚我们都会用到，就别停留在 cmd 下了，那个难易操作的终端环境，反正我是打开一次就不想再看到。如果你觉得 cmd.exe 也无所谓，那起码安装一个 clink 提升一些编辑操作。喜欢 linux 命令的朋友，还可以安装下 gow 体验 linux 命令。
+但是我还是建议大家使用 PowerShell, 特别是配合 cmder(下面会提到)。可以安装一些插件来提升使用的体验。
+因为 PowerShell 也更新了好几个版本，我们可以先看下如何安装or更新 PowerShell:
+ How to Install How to Install Windows PowerShell 4.0  安装完成，我们使用 $PSVersionTable.PSVersion 查看下安装的版本。
+关于教程，可以看看:
+ Learning-powershell MSDN: PowerShell  官方的教程，但是我也没看过，有问题就上 MSDN 或 Google 上搜一下吧。
+[](#插件安装 &amp;ldquo;插件安装&amp;rdquo;)插件安装 我不确定是否内置了命令 Install-Module, 因为我看到了一个模块： PsGet, 也是提供install-module 命令的, 估计是对原生的扩展吧。反正有了这个命令，我们就可以来安装模块了.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/package-manager-for-windows.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/package-manager-for-windows.html</guid>
+      <description>https://www.slant.co/topics/1843/~best-windows-package-managers
+本文主要介绍以下工具
+package manager for Windows: * Chocolatey * Scoop * ninite * pact(in babun)  结论  请注意：win10或以上有一个 WSL。如果你支持 WSL 请使用 WSL。能在WSL完成的事情，就请不要用以下 package manager。 如果是babun用户，请直接使用 pack 。pack不能完成的任务，再考虑scoop，再考虑chocolatey scoop 和 chocolatey 将是你目前比较好的包管理工具。可以都使用 能用 scoop 安装的，就不要 chocolatey 安装。不能 scoop 安装的，都用 chocolatey 安装 两者都不能的，请安 scoop 方式定制 私人内容，用 scoop 定制 scoop 安装、卸载、更新、清理 时，清保证软件未正在被使用（这一点，是致命的缺点呀，具体原因见 h404bi 的博文）  Scoop https://www.h404bi.com/blog/2018/05/12/talk-about-scoop-the-package-manager-for-windows-again.html
+https://davidsheh.github.io/2017/09/09/windows-chocolatey-scoop/
+scoop 个人库 https://github.com/h404bi/dorado
+chocolatey https://chocolatey.org/
+vs chocolatey vs scoop https://github.com/lukesampson/scoop/wiki/Chocolatey-Comparison https://www.reddit.com/r/devops/comments/9o4si5/installing_dependencies_on_windows_do_you_use/ https://www.slant.co/versus/6470/6471/~chocolatey_vs_scoop
+windows vs mac https://davidsheh.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/windows-link.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/windows-link.html</guid>
+      <description>Windows的四种链接方式
+如果要看明白，请参考这里 https://binarythink.net/2013/06/windows-link/
+env  os: win10 cmder: 180626 preview  step 创建硬链接 并 查询 C:\Users\DELL (master -&amp;gt; origin) λ mklink /H C:\Users\DELL\Desktop\ahk.ahk C:\Users\DELL\autohotkey.ahk 为 C:\Users\DELL\Desktop\ahk.ahk &amp;lt;&amp;lt;===&amp;gt;&amp;gt; C:\Users\DELL\autohotkey.ahk 创建了硬链接 C:\Users\DELL (master -&amp;gt; origin) λ fsutil.exe hardlink list autohotkey.ahk \Users\DELL\autohotkey.ahk \Users\DELL\Desktop\ahk.ahk  如果移动了这个硬链接，系统依然可以找到的，所以不用担心。
+C:\Users\DELL (master -&amp;gt; origin) λ fsutil.exe hardlink list autohotkey.ahk \Users\DELL\autohotkey.ahk \Users\DELL\Desktop\ahk.ahk C:\Users\DELL (master -&amp;gt; origin) λ fsutil.exe hardlink list autohotkey.ahk \Users\DELL\autohotkey.ahk \Users\DELL\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ahk.ahk  ref  https://binarythink.net/2013/06/windows-link/ https://www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/windows-wsl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/windows-wsl.html</guid>
+      <description>windows wsl 子系统 https://www.jianshu.com/p/bc38ed12da1d 此文中的环境与我的大体一致。
+env win10 版本： 1703 (查看版本可 cmd 下输入winver)
+找到 子系统 目录 在 文件夹下 输入 %localappdata%, 然后搜索框输入： rootfs , 则会出现结果。
+我的是在 %localappdata%\lxss\rootfs 。那么说明 wsl 子系统 目录 是 %localappdata%\lxss
+子系统环境(lxss目录) 备份 那最终powershell 中 运行命令如下（运行过程中视情况：1.D选择复制目录;2.选择A全选择）：
+xcopy .\lxss .\lxss.20190306.bak /E/C  毕竟爱折腾，难免会把子系统环境(lxss目录)玩坏掉，因此干正事前最好先备份下以便快速还原。注意，不要直接右键复制或者打包，可能会导致文件权限丢失的。
+powershell 中 运行：
+&amp;gt; xcopy .\lxss .\lxss.bak /E  但是，因为某些文件，会导致文件创建错误 - 系统找不到指定的文件。 这样的错误：
+Local master + = $ xcopy .\lxss\root\.nvm\test .\lxsstest /E 目标 .\lxsstest 是文件名 还是目录名 (F = 文件，D = 目录)?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/windows.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/windows.html</guid>
+      <description>windows</description>
+    </item>
+    
+  </channel>
+</rss>

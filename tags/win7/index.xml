@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>win7 on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/win7.html</link>
+    <description>Recent content in win7 on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 03 Aug 2018 23:10:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/win7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu Share File to Virtulbox Win7</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/virtualbox/ubuntu-share-file-to-virtulbox-win7.html</link>
+      <pubDate>Fri, 03 Aug 2018 23:10:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/virtualbox/ubuntu-share-file-to-virtulbox-win7.html</guid>
+      <description> Env  宿主机: ubuntu desktop 16 虚拟机软件: virtualbox 虚拟机: win7  Step 思路1 因为虚拟机是win7,那就直接通过 ubuntu如何访问windows共享文件夹 完成就可以了。
+思路2  https://www.linuxidc.com/Linux/2012-11/74195p3.htm http://xylonwang.iteye.com/blog/2221475  上面的方法，尝试，没有成功。
+Ref  https://www.linuxidc.com/Linux/2012-11/74195p3.htm http://xylonwang.iteye.com/blog/2221475  </description>
+    </item>
+    
+  </channel>
+</rss>

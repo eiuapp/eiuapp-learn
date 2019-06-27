@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scoop on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/scoop.html</link>
+    <description>Recent content in scoop on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/scoop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/scoop/scoop.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/scoop/scoop.html</guid>
+      <description>https://scoop.sh/
+scoop master = $ scoop list Installed apps: 7zip 19.00 concfg 0.2019.02.21 curl 7.64.0 figlet 1.0-go grep 2.5.4 openssh 7.6p1 pshazz 0.2019.02.04 touch 0.2018.08.04 scoop master = $  command
+scoop help scoop install 7zip scoop list scoop search scoop reset ruby  </description>
+    </item>
+    
+  </channel>
+</rss>

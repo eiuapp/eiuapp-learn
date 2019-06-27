@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/django.html</link>
+    <description>Recent content in django on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>using-django中的queries</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/django/djangoprojectcom-using-django-queries.html</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/django/djangoprojectcom-using-django-queries.html</guid>
+      <description>本文是对 https://docs.djangoproject.com/zh-hans/2.1/topics/db/queries/ 这一小节的说明</description>
+    </item>
+    
+  </channel>
+</rss>

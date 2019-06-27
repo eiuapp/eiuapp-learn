@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wechat on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/wechat.html</link>
+    <description>Recent content in wechat on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/wechat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WeChat Send Messages</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/wechat/weixin-send-messages.html</link>
+      <pubDate>Sat, 10 Mar 2018 16:05:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/wechat/weixin-send-messages.html</guid>
+      <description>  监控服务调用微信API如何给自己发告警信息 微信开发之发送消息接口 微信智能问答机器人  golang  golang-wechat golang-wechat https://github.com/songtianyi/wechat-go https://github.com/liushuchun/wechatcmd wechat_pusher - 基于Golang开发的高性能微信消息定时推送框架 https://github.com/yaotian/gowechat  个人号  最优雅的微信个人号 API
+微信机器人 机器人
+ 机器人
+ WeChatRebot
+ http://reverland.org/javascript/2016/01/15/webchat-user-bot/
+ 微信机器人
+  </description>
+    </item>
+    
+  </channel>
+</rss>

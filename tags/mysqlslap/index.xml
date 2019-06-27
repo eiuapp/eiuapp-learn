@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysqlslap on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/mysqlslap.html</link>
+    <description>Recent content in mysqlslap on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 12:51:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/mysqlslap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mysql Mysqlslap</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-mysqlslap.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:51:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-mysqlslap.html</guid>
+      <description>mysqlslap模拟并发测试数据库性能
+安装：简单，装了mysql就有了
+作用：模拟并发测试数据库性能。
+reference 参考网址
+命令主要参数, 示例与解析 示例:
+mysqlslap -h10.10.15.240 -P3306 --concurrency=10 --iterations=1 --create-schema=&#39;stock&#39; --query=\&#39;&amp;quot;$line&amp;quot;\&#39; --number-of-queries=100000 --debug-info -udeveloper01 -pdeveloper01
+解析:
+mysqlslap 程序名 -h10.10.15.240 mysql IP地址 -P3306 端口 --concurrency=10 并发数 --iterations=1 迭代数, 多次迭代使得数据有统计意义 --create-schema=&#39;stock&#39; 数据库名 --query=\&#39;&amp;quot;$line&amp;quot;\&#39; 要测试的sql语句, 因为sql语句, 很可能含有 `select * `, 所以这里必须使用 \&#39;&amp;quot; 和 &amp;quot;\&#39; 把 sql 语句包起来 --number-of-queries=100000 总query数 --debug-info -udeveloper01 用户名 -pdeveloper01 密码  结果, 示例及解析 示例:
+User time 3.81, System time 2.55 Maximum resident set size 3620, Integral resident set size 0 Non-physical pagefaults 1116, Physical pagefaults 0, Swaps 0 Blocks in 0 out 0, Messages in 0 out 0, Signals 0 Voluntary context switches 100269, Involuntary context switches 19 Benchmark Average number of seconds to run all queries: 5.</description>
+    </item>
+    
+  </channel>
+</rss>

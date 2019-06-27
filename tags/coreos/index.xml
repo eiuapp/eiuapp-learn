@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coreos on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/coreos.html</link>
+    <description>Recent content in coreos on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 10:36:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/coreos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mariadb Galera Base Docker Coreos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</link>
+      <pubDate>Fri, 02 Mar 2018 10:36:14 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-base-docker-coreos.html</guid>
+      <description>MariaDB Galera cluster running on CoreOS using the official Docker images
+env Coreos + any public cloud (Azure, AWS, Google, etc)
+step 开端口:
+sudo firewall-cmd --permanent --add-port=4567/udp; sudo firewall-cmd --permanent --add-port=4567/tcp; sudo firewall-cmd --permanent --add-port=4568/tcp; sudo firewall-cmd --permanent --add-port=4444/tcp; sudo firewall-cmd --permanent --add-port=3306/tcp; sudo firewall-cmd --reload; sudo firewall-cmd --permanent --list-port  检查mysql 是不是起来了:
+sudo yum install -y telnet telnet 127.0.0.1 22 Telnet 127.0.0.1 3306
+检查日志
+docker logs -f mariadb-container-0</description>
+    </item>
+    
+  </channel>
+</rss>

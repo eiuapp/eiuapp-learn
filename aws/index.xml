@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/aws.html</link>
+    <description>Recent content in aws on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aws Get Access Key Secret Key</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/aws/aws-get-access-key-secret-key.html</link>
+      <pubDate>Thu, 07 Jun 2018 17:22:31 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/aws/aws-get-access-key-secret-key.html</guid>
+      <description>教你如何找到AWS Access Key ID and Secret Access Key
+Env  aws  Step 按照 教你如何找到AWS Access Key ID and Secret Access Key 完成 1-5
+Step 1. Visit the Amazon Web Services web console. Step 2. Click My Account/Console at the top right corner of the web page. In this case User Name is Alexander. Step 3. In the drop-down list click the “Security Credentials” option. Step 4. Then you will be redirected to the “Your Security Credentials” page and see the following pop-up window: Step 5.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/about.html</link>
+    <description>Recent content in about on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 08 Sep 2018 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>my works</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/about/works.html</link>
+      <pubDate>Sat, 01 Dec 2018 15:04:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/about/works.html</guid>
+      <description> blog https://b.qqbb.app blog handbook https://book.qqmm.app cheatsheets https://c.eiu.app stock https://s.qqbb.app 论坛 http://www.hkshop.club:4567  </description>
+    </item>
+    
+    <item>
+      <title>关于配置</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/about/env.html</link>
+      <pubDate>Mon, 12 Nov 2018 20:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/about/env.html</guid>
+      <description> 因为我不希望总是去重复写我的配置，所以，我集中地把配置信息放在这里。
+Env  os: mac Emacs: 26.1 Spacemacs: 0.300.0 Org: 9.1.2 Hugo: v0.41 ox-hugo: 20181106.2350 prodigy: 20180511.938  </description>
+    </item>
+    
+    <item>
+      <title>About blog</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/about/ABOUT_BLOG.html</link>
+      <pubDate>Sat, 18 Mar 2017 20:53:54 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/about/ABOUT_BLOG.html</guid>
+      <description>关于博客 简单的说一下这个博客的部署。
+这是一个基于Gitbook的电子书，通过markdown语法以及Gitbook约定的文档结构，可以很有逻辑的讲内容展示出来。整个博客项目托管在我个人的github：https://github.com/huangwjwork/gitbook ，然后通过github与我的vps部署的webhook联动：每当有push行为，github就会post一条请求到我vps上的webhook，然后触发我的gitbook脚本，实现博客的自动更新。
+关于Gitbook，想要了解的可以参考这位大佬的博客：http://gitbook.zhangjikai.com/
+关于github的webhook的部署，网上的资源很多，我用的是https://github.com/hustcc/webhookit，内有中文文档
+安装Gitbook 安装node.js 编译安装或者对应的二进制安装
+yum install nodejs  安装Gitbook 国内环境建议修改npm源为淘宝镜像站后再安装
+npm install gitbook-cli -g gitbook -V  配置gitbook 可以在github上创建一个项目，然后clone到本地，进入项目根目录，执行gitbook init，编辑gitbook.json，SUMMARY.md，README.md，以及.gitignore
+book.json book.json是gitbook的配置文件，包括插件的配置文件，通过插件可以丰富电子书的功能，有兴趣的可以去官方找找，很多很有意思的插件（插件越多js文件越多，我的vps流量计费，所以我的是乞丐版 T T）
+贴一下我的book.json
+cat book.json { &amp;quot;title&amp;quot;: &amp;quot;huangwjwork&#39;s notes&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;好记性不如烂笔头，记录日常遇到的问题及学习的成果&amp;quot;, &amp;quot;author&amp;quot;: &amp;quot;huangwjwork&amp;quot;, &amp;quot;output.name&amp;quot;: &amp;quot;site&amp;quot;, &amp;quot;language&amp;quot;: &amp;quot;zh-hans&amp;quot;, &amp;quot;gitbook&amp;quot;: &amp;quot;3.2.3&amp;quot;, &amp;quot;root&amp;quot;: &amp;quot;.&amp;quot;, &amp;quot;links&amp;quot;: { &amp;quot;sidebar&amp;quot;: { &amp;quot;Home&amp;quot;: &amp;quot;https://huangwj.app&amp;quot; } }, &amp;quot;plugins&amp;quot;: [ &amp;quot;github@^2.0.0&amp;quot;, &amp;quot;edit-link@^2.0.2&amp;quot;, &amp;quot;anchors@^0.7.1&amp;quot;, &amp;quot;include-codeblock@^3.0.2&amp;quot;, &amp;quot;splitter@^0.0.8&amp;quot;, &amp;quot;tbfed-pagefooter@^0.0.1&amp;quot;, &amp;quot;expandable-chapters-small@^0.1.7&amp;quot;, &amp;quot;anchor-navigation-ex@0.1.8&amp;quot; ], &amp;quot;pluginsConfig&amp;quot;: { &amp;quot;theme-default&amp;quot;: { &amp;quot;showLevel&amp;quot;: true }, &amp;quot;github&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;https://github.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/about/ABOUT_ME.html</link>
+      <pubDate>Sat, 18 Mar 2017 20:53:54 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/about/ABOUT_ME.html</guid>
+      <description>Nothing in the world can take the place of Persistence. Talent will not; nothing is more common than unsuccessful men with talent. Genius will not; unrewarded genius is almost a proverb. Education will not; the world is full of educated derelicts. Persistence and Determination alone are omnipotent. The slogan &amp;ldquo;Press On&amp;rdquo; has solved and will always solve the problems of the human race.
+本人正在寻找一位前端工程师，希望一起加油，有意向的可以联系我！
+想联系，加微信!</description>
+    </item>
+    
+    <item>
+      <title>友情链接</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/about/friend.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/about/friend.html</guid>
+      <description>.tg {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;} .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;} .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;} .tg .tg-xldj{border-color:inherit;text-align:left} .tg .tg-0lax{text-align:left;vertical-align:top}   宋净超的博客 阳明的博客 漠然 柳清风的专栏 伪架构师   ybyang2 Feisky Cizixs 李佶澳 Reliable Insights</description>
+    </item>
+    
+  </channel>
+</rss>

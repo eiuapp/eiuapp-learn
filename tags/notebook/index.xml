@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notebook on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/notebook.html</link>
+    <description>Recent content in notebook on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs与Jupyter notebook之间的集成</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/jupyter/jupyter-notebook-with-emacs.html</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/jupyter/jupyter-notebook-with-emacs.html</guid>
+      <description>emacs配置ein包 具体配置可以参考我的个人配置
+启动notebook服务器 连接notebook服务器  M-x ein:notebooklist-open 选择 New Notebook , 然后输入 token
+ 使用 使用的时候，查看 菜单栏 或者 C-c 出现大多数你想要的命令。</description>
+    </item>
+    
+    <item>
+      <title>jupyter-notebook 密码查询</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/jupyter/jupyter-notebook-login-with-token.html</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/jupyter/jupyter-notebook-login-with-token.html</guid>
+      <description>有一些场景，需要连接jupyter-notebook, 这时，需要提供登陆密码.
+这个密码就是 token.
+(py3) ➜ learn-python3 git:(master) ✗ /Users/tomtsang/Downloads/.ana/bin/jupyter-notebook list Currently running servers: http://localhost:8888/?token=b488be28e8f4bdf6f11b3e863ee92896d99c50ed70e67bde :: /Users/tomtsang (py3) ➜ learn-python3 git:(master) ✗  如果是安装的 anaconda ，则在 anaconda 启动 jupyter-notebook 的过程中会提示出这个 token. 如下：
+➜ ~ git:(master) ✗ /Users/tomtsang/Downloads/.ana/bin/jupyter_mac.command ; exit; [I 09:36:46.923 NotebookApp] JupyterLab extension loaded from /Users/tomtsang/Downloads/.ana/lib/python3.7/site-packages/jupyterlab [I 09:36:46.924 NotebookApp] JupyterLab application directory is /Users/tomtsang/Downloads/.ana/share/jupyter/lab [I 09:36:46.931 NotebookApp] Serving notebooks from local directory: /Users/tomtsang [I 09:36:46.931 NotebookApp] The Jupyter Notebook is running at: [I 09:36:46.</description>
+    </item>
+    
+  </channel>
+</rss>

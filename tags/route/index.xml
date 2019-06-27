@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>route on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/route.html</link>
+    <description>Recent content in route on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Feb 2018 12:25:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/route/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Route</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/route.html</link>
+      <pubDate>Fri, 23 Feb 2018 12:25:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/route.html</guid>
+      <description>env 192.168.31.181 上 加一条 wifi 192.168.33.0/24 的路由规则
+ref Linux下route add 命令加入路由列表
+step [root@check ~]# ip a 1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet 127.0.0.1/8 scope host lo valid_lft forever preferred_lft forever inet6 ::1/128 scope host valid_lft forever preferred_lft forever 2: em1: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP qlen 1000 link/ether 44:a8:42:2b:e5:e3 brd ff:ff:ff:ff:ff:ff inet 192.168.31.181/24 brd 192.168.31.255 scope global em1 valid_lft forever preferred_lft forever inet6 fe80::46a8:42ff:fe2b:e5e3/64 scope link valid_lft forever preferred_lft forever 3: em2: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP qlen 1000 link/ether 44:a8:42:2b:e5:e4 brd ff:ff:ff:ff:ff:ff inet 10.</description>
+    </item>
+    
+  </channel>
+</rss>

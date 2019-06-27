@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cluster on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/cluster.html</link>
+    <description>Recent content in cluster on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 12:45:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mariadb Cluster Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:45:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</guid>
+      <description>mysql系列之mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-base-centos.html</guid>
+      <description>mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Infile Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-infile-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-infile-base-centos.html</guid>
+      <description>mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>java源码找到mysql用户密码</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/find-mysql-password-with-java-source-code.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/find-mysql-password-with-java-source-code.html</guid>
+      <description>在有java源码的情况下，找到mysql用户密码
+进入项目查找 mysql ip 字符串 lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./bin/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./conf/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./lib/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./webapps/ ./webapps/lcnxdata/WEB-INF/classes/applicationContext.xml:30: &amp;lt;value&amp;gt;jdbc:mysql://rm-wz95k1f761xu890f3.mysql.rds.aliyuncs.com:3306/lcnx&amp;lt;/value&amp;gt; lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ cat ./webapps/lcnxdata/WEB-INF/classes/applicationContext.xml &amp;lt;bean id=&amp;quot;dataSource&amp;quot; class=&amp;quot;org.logicalcobwebs.proxool.ProxoolDataSource&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;driver&amp;quot;&amp;gt; &amp;lt;value&amp;gt;com.mysql.jdbc.Driver&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property name=&amp;quot;driverUrl&amp;quot;&amp;gt; &amp;lt;!-- &amp;lt;value&amp;gt;jdbc:mysql://192.168.0.188:3306/nemmp&amp;lt;/value&amp;gt; --&amp;gt; &amp;lt;value&amp;gt;jdbc:mysql://rm-wz95k1f761xu890f3.mysql.rds.aliyuncs.com:3306/lcnx&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property name=&amp;quot;user&amp;quot; value=&amp;quot;*********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;password&amp;quot; value=&amp;quot;**********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;alias&amp;quot; value=&amp;quot;*********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;prototypeCount&amp;quot; value=&amp;quot;150&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;maximumConnectionCount&amp;quot; value=&amp;quot;1100&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;minimumConnectionCount&amp;quot; value=&amp;quot;300&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;simultaneousBuildThrottle&amp;quot; value=&amp;quot;300&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;houseKeepingTestSql&amp;quot; value=&amp;quot;select CURRENT_DATE&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;trace&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt; lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$  确认mysql可通后，用帐号密码连接就可以了。</description>
+    </item>
+    
+  </channel>
+</rss>

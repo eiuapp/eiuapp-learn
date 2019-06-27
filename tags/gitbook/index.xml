@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitbook on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/gitbook.html</link>
+    <description>Recent content in gitbook on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/gitbook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gitbook（笔记）</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-gitbook.html</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-gitbook.html</guid>
+      <description>已移至 gitbook-handbook 仓库
+入门  https://www.jianshu.com/p/fa38ef97431d https://segmentfault.com/a/1190000011440899 https://www.jianshu.com/p/b0a11b9b8725 https://www.jianshu.com/p/09a1cac0a0d0  初步  http://www.ituring.com.cn/article/127744 http://www.chengweiyang.cn/gitbook/github-pages/README.html  进阶  https://github.com/zhangjikai/gitbook-use/  常见问题 Cannot find module &amp;lsquo;prismjs/components/prism-shell.js ➜ swift-docs git:(master) ✗ gitbook build ./ Failed to load prism syntax: shell { Error: Cannot find module &#39;prismjs/components/prism-shell.js&#39; at Function.Module._resolveFilename (internal/modules/cjs/loader.js:613:15) at Function.Module._load (internal/modules/cjs/loader.js:539:25) at Module.require (internal/modules/cjs/loader.js:667:17) at require (internal/modules/cjs/helpers.js:20:18) at requireSyntax (/Users/tomtsang/gitbook/swift-docs/node_modules/gitbook-plugin-prism/index.js:31:3) at Object.code (/Users/tomtsang/gitbook/swift-docs/node_modules/gitbook-plugin-prism/index.js:103:11) at Record.TemplateBlock.applyBlock (/Users/tomtsang/.gitbook/versions/3.2.3/lib/models/templateBlock.js:205:23) at /Users/tomtsang/.gitbook/versions/3.2.3/lib/output/getModifiers.js:56:33 at /Users/tomtsang/.gitbook/versions/3.2.3/lib/output/modifiers/highlightCode.js:47:24 at /Users/tomtsang/.</description>
+    </item>
+    
+  </channel>
+</rss>

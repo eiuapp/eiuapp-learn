@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>login on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/login.html</link>
+    <description>Recent content in login on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/login/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker login failure,  unauthorized: incorrect username or password</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-faq.html</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-faq.html</guid>
+      <description>报错中出现类似“unauthorized: incorrect username or password”的话。
+➜ saleor git:(master) docker-compose run web python3 manage.py migrate Pulling db (library/postgres:latest)... latest: Pulling from library/postgres a5a6f2f73cd8: Already exists e50fbea8af5a: Pull complete 73b4855ad326: Pull complete ERROR: Get https://registry-1.docker.io/v2/library/postgres/manifests/latest: unauthorized: incorrect username or password ➜ saleor git:(master)  重新使用 docker.com 中的用户名登陆，而不是邮箱登陆。
+➜ saleor git:(master) docker logout Removing login credentials for https://index.docker.io/v1/ ➜ saleor git:(master) docker login Login with your Docker ID to push and pull images from Docker Hub.</description>
+    </item>
+    
+    <item>
+      <title>docker 登陆失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/docker/docker-login-failure.html</guid>
+      <description>login failure - 代理问题 root@km:~/dockerRegistry# docker login reg.jlch.com:5000 Username (zimug): Password: Error response from daemon: Get https://reg.jlch.com:5000/v1/users/: EOF root@km:~/dockerRegistry# vi /lib/systemd/system/docker.service  重点把 reg.jlch.com 加入 Environment 中。
+root@km:~# cat /lib/systemd/system/docker.service [Unit] Description=Docker Application Container Engine Documentation=https://docs.docker.com After=network.target docker.socket firewalld.service Requires=docker.socket [Service] Type=notify # the default is not to use systemd for cgroups because the delegate issues still # exists and systemd currently does not support the cgroup feature set required # for containers run by docker Environment=&amp;quot;HTTP_PROXY=http://192.</description>
+    </item>
+    
+  </channel>
+</rss>

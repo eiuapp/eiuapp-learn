@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>httpd-tools on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/httpd-tools.html</link>
+    <description>Recent content in httpd-tools on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 01 Mar 2018 17:30:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/httpd-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Install Ab Httpd Tools</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-install-ab-httpd-tools.html</link>
+      <pubDate>Thu, 01 Mar 2018 17:30:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-install-ab-httpd-tools.html</guid>
+      <description> env 长城证券 压力测试 要安装 ab
+step 离线安装 下载
+ httpd-tools libapr-1.so.0 libaprutil-1.so.0  安装
+rpm -ivh *.rpm which ab  </description>
+    </item>
+    
+  </channel>
+</rss>

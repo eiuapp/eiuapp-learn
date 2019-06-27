@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/tips.html</link>
+    <description>Recent content in tips on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python小技巧</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-tips.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-tips.html</guid>
+      <description> Python查看安装路径 &amp;gt;&amp;gt;&amp;gt; import sys &amp;gt;&amp;gt;&amp;gt; sys.path  </description>
+    </item>
+    
+    <item>
+      <title>mac tips</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/macos/mac-tips.html</link>
+      <pubDate>Wed, 05 Dec 2018 22:40:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/macos/mac-tips.html</guid>
+      <description> 卸载软件 为什么在我的mac上面下了腾讯电脑管家就卸载不了了？点击没有小叉叉也不能移到废纸篓.
+finder－应用程序－右键－移到废纸篓  </description>
+    </item>
+    
+  </channel>
+</rss>

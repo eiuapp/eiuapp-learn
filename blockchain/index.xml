@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blockchain on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/blockchain.html</link>
+    <description>Recent content in blockchain on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blockchain</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/blockchain/learn-blockchain.html</link>
+      <pubDate>Wed, 13 Jun 2018 15:43:40 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/blockchain/learn-blockchain.html</guid>
+      <description> 记录我的blockchain学习过程
+区块链浏览器  区块链学习笔记-如何使用区块链浏览器 三分钟了解区块链浏览器 区块链浏览器是什么？  常识  浏览器都可以挖矿  实操 未操作  fabric中简单搭建区块链浏览器  </description>
+    </item>
+    
+  </channel>
+</rss>

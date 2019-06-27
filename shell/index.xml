@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/shell.html</link>
+    <description>Recent content in shell on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shell(Bash)中如何判断是否存在某个命令</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/shell/how-to-check-if-a-program-exists-from-a-bash-script.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/shell/how-to-check-if-a-program-exists-from-a-bash-script.html</guid>
+      <description>在编写bash时，如果要判断某条命令是否存在，应该如何写呢？ 下面以 foo 代表某个命令（如：wget）. 我尝试了如下的写法，
+which foo &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 if [ $? == 0 ]; then echo &amp;quot;exist&amp;quot; else echo &amp;quot;dose not exist&amp;quot; fi  但是： 最好避免使用 which，做为一个外部的工具，并不一定存在，在发行版之间也会有区别，有的系统的 which 命令不会设置有效的 exit status，存在一定的不确定性。
+Bash 有提供一些内建命令如 hash、type、command 也能达到要求。
+$ command -v foo &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || { echo &amp;gt;&amp;amp;2 &amp;quot;I require foo but it&#39;s not installed. Aborting.&amp;quot;; exit 1; } $ type foo &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || { echo &amp;gt;&amp;amp;2 &amp;quot;I require foo but it&#39;s not installed.</description>
+    </item>
+    
+    <item>
+      <title>Shell获取某目录下所有文件夹的名称</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/shell/shell-get-dir-name.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/shell/shell-get-dir-name.html</guid>
+      <description>方法一  #!/bin/bash dir=$(ls -l D:/temp/ |awk &#39;/^d/ {print $NF}&#39;) for i in $dir do echo $i done   方法二  #!/bin/bash for dir in $(ls D:/tmep/) do [ -d $dir ] &amp;amp;&amp;amp; echo $dir done   方法三  #!/bin/bash ls -l D:/temp/ |awk &#39;/^d/ {print $NF}&#39; ## 其实同方法一，直接就可以显示不用for循环   方法四  #!/bin/bash ls -l |awk &#39;/^d/ {print $NF}&#39; ## get file *.rst name ls -l *.</description>
+    </item>
+    
+    <item>
+      <title>shell批量替换文件扩展名</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/shell/shell-replace-file-houzhui.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/shell/shell-replace-file-houzhui.html</guid>
+      <description>早上本想将一些照片上传到相册中，但是由于所有照片的扩展名都是JPG而不是小写的jpg，因此造成了“格式不正确”而不能上传照片。此刻就产生了这样一个问题：使用shell脚本如何批量将所有文件的扩展名JPG都改成小写的jpg？
+既然要批量替换文件名，那么肯定得用一个for循环依次遍历指定目录下的每个文件。对于每个文件，假如该文件的名称为name.oldext，那么我们必须原始文件名中挖出name，再将它与新的文件扩展名newext拼接形成新的文件名name.newext。依照这样的思路，就诞生了下面的脚本：
+#!/bin/bash oldext=&amp;quot;JPG&amp;quot; newext=&amp;quot;jpg&amp;quot; dir=&amp;quot;/home/edsionte/mypic&amp;quot; cd $dir for file in $(ls $dir | grep .$oldext) do name=$(ls $file | cut -d. -f1) mv $file ${name}.$newext done  下面对针对这个程序作简单说明：
+1.变量oldext和newext分别指定旧的扩展名和新的扩展名。dir指定文件所在目录；
+2.“ls $dir | grep .$oldext”用来在指定目录dir中获取扩展名为旧扩展名的所有文件；
+3.在循环体内先利用cut命令将文件名中“.”之前的字符串剪切出来，并赋值给name变量；接着将当前的文件名重命名为新的文件名。
+通过这个脚本，所有照片的扩展名都成功修改。为了使这个脚本更具有通用型，我们可以增加几条read命令实现脚本和用户之间的交互。改进版的脚本如下：
+#!/bin/bash read -p &amp;quot;old extension:&amp;quot; oldext read -p &amp;quot;new extension:&amp;quot; newext read -p &amp;quot;The directory:&amp;quot; dir cd $dir for file in $(ls $dir | grep .$oldext) do name=$(ls $file | cut -d. -f1) mv $file ${name}.</description>
+    </item>
+    
+  </channel>
+</rss>

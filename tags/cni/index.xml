@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cni on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/cni.html</link>
+    <description>Recent content in cni on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 13:34:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/cni/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubeadm-kubelet-cni</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</link>
+      <pubDate>Sun, 25 Nov 2018 13:34:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</guid>
+      <description>问题1 kubelet 没有初始化 cni 现场 root@km:~# cat k8.export.sh sudo cp /etc/kubernetes/admin.conf $HOME/ sudo chown $(id -u):$(id -g) $HOME/admin.conf export KUBECONFIG=$HOME/admin.conf root@km:~# export KUBECONFIG=$HOME/admin.conf root@km:~# k get nodes NAME STATUS ROLES AGE VERSION km NotReady master 18h v1.8.4 kn1 Ready &amp;lt;none&amp;gt; 29s v1.8.4 kn2 Ready &amp;lt;none&amp;gt; 29s v1.8.4  出错了。
+descibe root@km:~# k describe node km Name: km Roles: master Labels: beta.kubernetes.io/arch=amd64 beta.kubernetes.io/os=linux kubernetes.io/hostname=km node-role.kubernetes.io/master= Annotations: node.alpha.kubernetes.io/ttl=0 volumes.kubernetes.io/controller-managed-attach-detach=true Taints: node-role.kubernetes.io/master:NoSchedule CreationTimestamp: Tue, 21 Nov 2017 17:36:14 +0800 Conditions: Type Status LastHeartbeatTime LastTransitionTime Reason Message ---- ------ ----------------- ------------------ ------ ------- OutOfDisk False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientDisk kubelet has sufficient disk space available MemoryPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientMemory kubelet has sufficient memory available DiskPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasNoDiskPressure kubelet has no disk pressure Ready False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletNotReady runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized Addresses: InternalIP: 192.</description>
+    </item>
+    
+  </channel>
+</rss>

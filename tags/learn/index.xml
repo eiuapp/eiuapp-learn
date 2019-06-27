@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learn on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/learn.html</link>
+    <description>Recent content in learn on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 02 Jul 2018 18:54:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/learn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qor Doc Get Started</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-doc-get-started.html</link>
+      <pubDate>Mon, 02 Jul 2018 18:54:49 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-doc-get-started.html</guid>
+      <description>qor step by step
+Qor Doc中的Get Started
+Env  os: ubuntu16 go: 1.10.2  Step root@tom-w10vbud16:/home/tom/test# cd /home/tom/golang/ root@tom-w10vbud16:/home/tom/golang# mkdir qor/src -p root@tom-w10vbud16:/home/tom/golang# cd qor/src/ root@tom-w10vbud16:/home/tom/golang/qor/src# git clone https://github.com/qor/qor root@tom-w10vbud16:/home/tom/golang/qor/src# ls qor/ bower.json config.go context.go errors.go gulpfile.js LICENSE.txt package.json README.md resource test test_all.sh update_all_qor_repos.sh utils yarn.lock  get_started https://doc.getqor.com/get_started.html
+配置 GOPATH 把 /home/tom/golang/qor 加入 GOPATH
+root@tom-w10vbud16:/home/tom/golang/qor/src# vi ~/.bashrc root@tom-w10vbud16:/home/tom/golang/qor/src# source ~/.bashrc root@tom-w10vbud16:/home/tom/golang/qor/src# export | grep go declare -x GOPATH=&amp;quot;/home/tom/golang/lib:/home/tom/golang/goc2p:/home/tom/ztom/project/github/ERP/goERP:/home/tom/golang/qor&amp;quot; declare -x GOROOT=&amp;quot;/usr/local/go&amp;quot; declare -x OLDPWD=&amp;quot;/home/tom/golang&amp;quot; declare -x PATH=&amp;quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin:/home/tom/golang/lib/bin:/usr/local/go/bin:/home/tom/golang/lib/bin&amp;quot; declare -x PWD=&amp;quot;/home/tom/golang/qor/src&amp;quot;  root@tom-w10vbud16:/home/tom/golang/qor/src# vi main.</description>
+    </item>
+    
+    <item>
+      <title>Blockchain</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/blockchain/learn-blockchain.html</link>
+      <pubDate>Wed, 13 Jun 2018 15:43:40 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/blockchain/learn-blockchain.html</guid>
+      <description> 记录我的blockchain学习过程
+区块链浏览器  区块链学习笔记-如何使用区块链浏览器 三分钟了解区块链浏览器 区块链浏览器是什么？  常识  浏览器都可以挖矿  实操 未操作  fabric中简单搭建区块链浏览器  </description>
+    </item>
+    
+    <item>
+      <title>Today Learn</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/tools/today-learn.html</link>
+      <pubDate>Fri, 23 Feb 2018 17:27:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/tools/today-learn.html</guid>
+      <description> 20180223 Hugo 集成 Algolia 搜索
+20180302 telegram 客户端都是开源的，源代码放在官方网站上供人下载，以及修改（遵循 GPL v3 许可协议）。从比特币投资者变成天使投资人的李笑来，最近就用一个星期的时间，开发了一个基于 Telegram 的第三方客户端 Dove。
+李笑来说，“（我）觉得 Telegram 挺开放的，未来可能在这上面长出很多有意思的东西。另外，总体上，它是个比较让人喜欢的软件。”
+不过，Telegram 的服务端是闭源的。
+ref
+ http://www.ifanr.com/504427  </description>
+    </item>
+    
+    <item>
+      <title>Go Learn</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/golang/learn-golang.html</link>
+      <pubDate>Mon, 05 Feb 2018 14:25:08 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/golang/learn-golang.html</guid>
+      <description>资料导航 http://www.geeker8.com/go/41
+菜鸟教程 已完成
+优
+ 比较易读  缺点
+ 没介绍 通道，go协程，等并发概念和原理  Go语言第一课 代码
+已完成
+优
+ 比较易读 有代码测试  Go简易教程 代码
+学习中
+在 6.3 小节完全懵逼
+读后感受 整体来说，我感觉，本书内容较淺而对新手不易理解，知识结构展示混乱，且无完整的示例代码。读完了，没有感觉学到东西。
+Go入门指南 gomake
+godoc
+9.11 在 Go 程序中使用外部库
+学习在 13.2 小节, 停止&amp;hellip;.
+Go并发编程实战 随书源码
+学习中, 现在第3章
+An Introduction to Programming in Go url
+ http://www.golang-book.com/books/intro pdf 中文繁体  code
+随书源码
+golangbootcamp [官方文档-中文] 官方中文-Go编程语言规范 golang快速入门 done
+chan 部分有错，其它整体很不错了，可以作为小手册，参考用。
+go语言圣经（中文版） gobyexample done
+https://gobyexample.com, 这里有大量使用常规使用案例 https://gobyexample.</description>
+    </item>
+    
+  </channel>
+</rss>

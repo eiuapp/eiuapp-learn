@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golangs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/golangs.html</link>
+    <description>Recent content in golangs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 10 Feb 2018 10:57:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/golangs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang Resource</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/golang.html</link>
+      <pubDate>Sat, 10 Feb 2018 10:57:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/golang.html</guid>
+      <description> golang-wiki
+gowalker
+PackageManagementTools
+godoc
+gometalinter,golang代码质量检查分析工具
+https://github.com/itcloudy/go-view
+Ref  https://segmentfault.com/a/1190000013553309  </description>
+    </item>
+    
+  </channel>
+</rss>

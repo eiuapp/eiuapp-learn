@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>certificates on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/certificates.html</link>
+    <description>Recent content in certificates on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 29 Nov 2018 15:50:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>命令行下如何安装或者更新 CA.crt 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line-2.html</link>
+      <pubDate>Thu, 29 Nov 2018 15:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/how-to-install-certificates-for-command-line-2.html</guid>
+      <description>https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
+env 192.168.31.120
+step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.Debian.gz /usr/share/man /usr/share/man/man8 /usr/share/man/man8/update-ca-certificates.8.gz jlch@km:~$  那查一下 update-ca-certificates</description>
+    </item>
+    
+    <item>
+      <title>命令行下如何安装或者更新 CA.crt 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ubuntu/how-to-install-certificates-for-command-line-2.html</link>
+      <pubDate>Thu, 29 Nov 2018 15:50:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ubuntu/how-to-install-certificates-for-command-line-2.html</guid>
+      <description>https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
+env 192.168.31.120
+step 尝试直接 apt install
+jlch@km:~$ sudo apt install ./CA.crt [sudo] password for jlch: Reading package lists... Done E: Unsupported file ./CA.crt given on commandline jlch@km:~$  不行，那尝试一下
+jlch@km:~$ dpkg-query -L ca-certificates /. /etc /etc/ssl /etc/ssl/certs /etc/ca-certificates /etc/ca-certificates/update.d /usr /usr/sbin /usr/sbin/update-ca-certificates /usr/share /usr/share/ca-certificates /usr/share/ca-certificates/mozilla ... # 看到了好多 mozilla 的证书相关信息呀。 /usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt /usr/share/doc /usr/share/doc/ca-certificates /usr/share/doc/ca-certificates/examples ... # 好多 examples /usr/share/doc/ca-certificates/examples/ca-certificates-local/README /usr/share/doc/ca-certificates/changelog.gz /usr/share/doc/ca-certificates/copyright /usr/share/doc/ca-certificates/README.Debian /usr/share/doc/ca-certificates/NEWS.Debian.gz /usr/share/man /usr/share/man/man8 /usr/share/man/man8/update-ca-certificates.8.gz jlch@km:~$  那查一下 update-ca-certificates</description>
+    </item>
+    
+  </channel>
+</rss>

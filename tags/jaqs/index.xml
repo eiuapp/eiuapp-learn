@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jaqs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/jaqs.html</link>
+    <description>Recent content in jaqs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 17 Oct 2018 09:18:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/jaqs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>量化小学Lecture4的笔记</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/stock/jaqs-lecture4.html</link>
+      <pubDate>Wed, 17 Oct 2018 09:18:35 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/stock/jaqs-lecture4.html</guid>
+      <description>Env  os: mac  Step 尝试用python做个股票绘图软件，要用到 finance 库，于是开始导入：
+import matplotlib.finance as mpf  结果执行的时候直接报错：
+ModuleNotFoundError: No module named &#39;matplotlib.finance&#39;  那么我们可以到 ipython 环境中去测试一下。
+➜ ~ ipython Python 3.7.0 (default, Jun 28 2018, 07:39:16) Type &#39;copyright&#39;, &#39;credits&#39; or &#39;license&#39; for more information IPython 6.5.0 -- An enhanced Interactive Python. Type &#39;?&#39; for help. In [1]: from matplotlib.finance import candlestick_ohlc --------------------------------------------------------------------------- ModuleNotFoundError Traceback (most recent call last) &amp;lt;ipython-input-1-7ea83a59eaf3&amp;gt; in &amp;lt;module&amp;gt;() ----&amp;gt; 1 from matplotlib.</description>
+    </item>
+    
+    <item>
+      <title>Jaqs安装笔记</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-jaqs-install.html</link>
+      <pubDate>Tue, 16 Oct 2018 11:38:26 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-jaqs-install.html</guid>
+      <description>Env    Step ## 下载并安装 Anaconda chmod +x Anaconda3-5.3.0-MacOSX-x86_64.sh which sh sh ./Anaconda3-5.3.0-MacOSX-x86_64.sh ## 配置环境 cat /Users/tomtsang/.bash_profile source /Users/tomtsang/.bash_profile which python which python3 which python2 ## 这个还是原来的路径 python3 python which ipython ipython workon quant-py3 ## 验证，不影响其它环境 which python which python3 which python2 which deactivate deactivate ## 退出 virtualenv ## 安装依赖 snappy brew install snappy CPPFLAGS=&amp;quot;-I/usr/local/include -L/usr/local/lib&amp;quot; pip install python-snappy pip install PyHamcrest ## 安装 jaqs pip install jaqs ## 验证 ipython ## 输入 import jaqs ##  Ref  https://mirrors.</description>
+    </item>
+    
+  </channel>
+</rss>

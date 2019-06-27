@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>microservices on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/microservices.html</link>
+    <description>Recent content in microservices on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 06 Feb 2018 00:08:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/microservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microservices Python</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/microservices-python.html</link>
+      <pubDate>Tue, 06 Feb 2018 00:08:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/microservices-python.html</guid>
+      <description>TDD开发容器化的Python微服务应用</description>
+    </item>
+    
+  </channel>
+</rss>

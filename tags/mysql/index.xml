@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/mysql.html</link>
+    <description>Recent content in mysql on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>To Completly remove Mysql from Ubuntu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/remove-mysql-mariadb-from-ubuntu.html</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/remove-mysql-mariadb-from-ubuntu.html</guid>
+      <description> To Completly remove Mysql from Ubuntu
+env  os: ubuntu mysql: 5.7 mariadb: 10.3  step sudo apt-get remove --purge mysql-server mysql-client mysql-common sudo apt-get autoremove sudo apt-get autoclean  如果有安装过 mariadb
+sudo apt-get remove --purge mariadb* sudo apt-get autoremove sudo apt-get autoclean  after this, if you are having issues with re installing, Try to remove Mysql files in :
+sudo rm -rf /var/lib/mysql  ref  https://stackoverflow.com/questions/25244606/completely-remove-mysql-ubuntu-14-04-lts  </description>
+    </item>
+    
+    <item>
+      <title>Unable to set password for the MariaDB ‘root’ user</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/cannot-setup-mysql-root-password-during-installation.html</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/cannot-setup-mysql-root-password-during-installation.html</guid>
+      <description>env 在安装 mysql 或者 mariadb 过程中，设置完 root 密码后，报出类似下面错误：
+Unable to set password for the MariaDB &amp;quot;root&amp;quot; user An error occurred while setting the password for the MariaDB administrative user. This may have happened because the account already has a password, or because of a communication problem with the MariaDB server. You should check the account&#39;s password after the package installation. Please read the /usr/share/doc/mariadb-server-10.2/README.Debian file for more information.  step 说明，之前的安装，没有 completly remove。怎么remove, 看 这里</description>
+    </item>
+    
+    <item>
+      <title>mysql 常用用法</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-usage.html</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-usage.html</guid>
+      <description>mysql 常用用法
+修改mysql用户密码 select User,Password from mysql.user; set password for keystone@localhost = password(&#39;324dcdc2318be07d0300&#39;);  mysql timestamp 在建立表时,优先使用ON UPDATE CURRENT_TIMESTAMP, 也就是说, 优先使用下面的
+`create_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT &#39;创建时间&#39;, `update_date` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT &#39;更新时间&#39;,  而不是使用这下面的
+`create_date` timestamp NULL DEFAULT NULL COMMENT &#39;创建时间&#39;, `update_date` timestamp NULL DEFAULT NULL COMMENT &#39;更新时间&#39;,  如果表已经建立好了,则通过 navicat ,选中字段后,点击,默认:根据当前时间戳更新, 就可以更改了.</description>
+    </item>
+    
+    <item>
+      <title>Mysql User Create</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user-create.html</link>
+      <pubDate>Wed, 04 Jul 2018 14:40:22 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user-create.html</guid>
+      <description> mysql创建用户
+Env  mysql: 5.7  Step MariaDB [(none)]&amp;gt; create user &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;password&#39;; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt; grant all on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;password&#39;; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt; flush privileges; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt;  Ref    </description>
+    </item>
+    
+    <item>
+      <title>Qor Character Set Database Utf8</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-character-set-database-utf8.html</link>
+      <pubDate>Wed, 04 Jul 2018 10:53:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-character-set-database-utf8.html</guid>
+      <description>qor通过字符集解决输入中文报错
+Env  os: ubuntu16 go: 1.10.2  Step 输入中文会有 Error 1366: Incorrect string value: &#39;\xE4\xB8\xAD&#39; for column &#39;name&#39; at row 1这样的报错。
+这个错误主要的原因，就是插入数据的时候，数据库不认这个数据。那我们第一个想到的就是字符集的问题了。（可以先手动 insert into 方式测试）
+mysql 查看字符集 新安装的mysql数据库, 默认字符集是 latin1.
+mysql&amp;gt; show collation like &#39;gbk%&#39;; +----------------+---------+----+---------+----------+---------+ | Collation | Charset | Id | Default | Compiled | Sortlen | +----------------+---------+----+---------+----------+---------+ | gbk_chinese_ci | gbk | 28 | Yes | Yes | 1 | | gbk_bin | gbk | 87 | | Yes | 1 | +----------------+---------+----+---------+----------+---------+ 2 rows in set (0.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mysql.html</link>
+      <pubDate>Mon, 26 Mar 2018 16:23:40 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/mysql.html</guid>
+      <description> 查看 MYSQL连接数 show processlist;  设置mysql远程连接root权限 MariaDB [(none)]&amp;gt; Grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;mysql&#39; with grant option; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt; flush privileges; Query OK, 0 rows affected (0.00 sec) MariaDB [(none)]&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Mysql Passwd</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-passwd.html</link>
+      <pubDate>Mon, 26 Mar 2018 16:18:39 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-passwd.html</guid>
+      <description>mysql插入密码 &amp;gt; INSERT INTO `factor_administrator` (`id_admin`,`name`,`pwd`,`admin`) VALUES (1,&#39;wuxuan&#39;,md5(&#39;gws20180129&#39;),1);  那么, 这时, 用户与密码就是: wuxuan, gws20180129</description>
+    </item>
+    
+    <item>
+      <title>Mysql Install 2 Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-2-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:26:59 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-2-base-centos.html</guid>
+      <description>主要参考： http://blog.csdn.net/renfufei/article/details/17616549
+过程 说明: 首先必须能链接外网. 如果不能直接访问,那也可以设置代理,请参考: 在内网机器上设置yum代理 使用 yum 的权限要求是 root 用户,如果你不是,那么可以需要 在 shell命令之前加上 sudo, 或者 su root 切换到 super 管理员进行操作. 并可能需要输入密码.
+1. 添加 yum 数据源  安装mariadb10.1 官方的通过yum安装教程
+根据不同的系统来下载repo吧，更多的MariaDB.repo
+ 建议命名为 MariaDB.repo 类似的名字：
+cd /etc/yum.repos.d/ vim /etc/yum.repos.d/MariaDB.repo  然后,写入文件内容:(建议使用 10.0)
+# MariaDB 10.0 CentOS repository list - created 2015-08-12 10:59 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/10.0/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1  该文件的内容是参考官网,并从官网上生成的，设置安装源仓库的 具体的地址为: https://downloads.mariadb.org/mariadb/repositories/ 选择好操作系统版本之后既可以查看，其他操作系统的安装源也可以在此处查看并设置。 如果服务器不支持https协议，或者gpgkey 保错，确保没问题的话，可以将 gpgcheck=1 修改为 gpgcheck=0,则不进行校验.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Length</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-length.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:14:11 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-length.html</guid>
+      <description>转载自: http://yishouce.com/mysql/func/length
+一句话说明: 获取字符串长度的mysql内置函数
+length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或字母算一个字符。
+例子1: 查看mysql字符串的长度
+SELECT LENGTH(&amp;quot;要查看长度的mysql字段/mysql字符串&amp;quot;);  例子2: 根据记录的某个字段长度排序
+SELECT * FROM table WHERE 1 ORDER BY LENGTH(name) ASC;  相关: char_length:在任何编码下, 不管汉字还是数字或者是字母都算是一个字符. CHARACTER_LENGTH(str) CHARACTER_LENGTH()是CHAR_LENGTH()的同义词。 BIT_LENGTH(str) 返回2进制长度.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Mysqlslap</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-mysqlslap.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:51:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-mysqlslap.html</guid>
+      <description>mysqlslap模拟并发测试数据库性能
+安装：简单，装了mysql就有了
+作用：模拟并发测试数据库性能。
+reference 参考网址
+命令主要参数, 示例与解析 示例:
+mysqlslap -h10.10.15.240 -P3306 --concurrency=10 --iterations=1 --create-schema=&#39;stock&#39; --query=\&#39;&amp;quot;$line&amp;quot;\&#39; --number-of-queries=100000 --debug-info -udeveloper01 -pdeveloper01
+解析:
+mysqlslap 程序名 -h10.10.15.240 mysql IP地址 -P3306 端口 --concurrency=10 并发数 --iterations=1 迭代数, 多次迭代使得数据有统计意义 --create-schema=&#39;stock&#39; 数据库名 --query=\&#39;&amp;quot;$line&amp;quot;\&#39; 要测试的sql语句, 因为sql语句, 很可能含有 `select * `, 所以这里必须使用 \&#39;&amp;quot; 和 &amp;quot;\&#39; 把 sql 语句包起来 --number-of-queries=100000 总query数 --debug-info -udeveloper01 用户名 -pdeveloper01 密码  结果, 示例及解析 示例:
+User time 3.81, System time 2.55 Maximum resident set size 3620, Integral resident set size 0 Non-physical pagefaults 1116, Physical pagefaults 0, Swaps 0 Blocks in 0 out 0, Messages in 0 out 0, Signals 0 Voluntary context switches 100269, Involuntary context switches 19 Benchmark Average number of seconds to run all queries: 5.</description>
+    </item>
+    
+    <item>
+      <title>Mysql User</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:47:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user.html</guid>
+      <description>mysql系列之MySQL查看用户权限
+reference http://www.oschina.net/code/snippet_222150_12541
+##
+show grants for 你的用户; show grants for root@&amp;lsquo;localhost&amp;rsquo;; show grants for webgametest@10.3.18.158; show create database dbname; 这个可以看到创建数据库时用到的一些参数。 show create table tickets; 可以看到创建表时用到的一些参数</description>
+    </item>
+    
+    <item>
+      <title>Mysql Navicat</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-navicat.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:46:45 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-navicat.html</guid>
+      <description>mysql系列之navicat
+reference http://blog.csdn.net/lwei_998/article/details/45560483
+http://blog.csdn.net/moneyshi/article/details/50906650
+http://mt.sohu.com/20160324/n441844650.shtml
+导出连接设置 Navicat 版本 8 1.选择文件 -&amp;gt; 导出登录数据文件。导出的文件（.reg）包含你的全部连接设置。 2.备份已导出的文件（.reg）。 3.在现有的计算机解除安装 Navicat。 4.在新的计算机重新安装 Navicat。 5.在新的计算机运行已导出的文件（.reg）。
+Navicat 版本 9 或以上 1.在 Navicat，选择文件 -&amp;gt; 导出连接。导出的文件（.ncx）包含你的全部连接设置。 2.备份已导出的文件（.ncx）。 3.在现有的计算机解除安装 Navicat。** 4.在新的计算机重新安装 Navicat。 5.在新的计算机打开 Navicat 和选择文件 -&amp;gt; 导入连接。
+** 如果你使用版本 11 或以上，请在解除安装 Navicat 前取消激活注册码。
+当创建一个新的连接，Navicat 将创建一个子文件夾（名为各数据库的名）在设置保存路径內。所有备份（.psc、.psb）、报表（.rtm）、查询（.sql）、导入/导出设置文件等都是保存在该子文件夾。要查找路径，你可以右击连接，然后选择连接属性 -&amp;gt; 高级 -&amp;gt; 设置保存路径/设置位置。
+此外，全部已保存的设置文件（批处理作业设置文件）会保存在 profiles 文件夾。要查找路径，选择工具 -&amp;gt; 选项 -&amp;gt; 其他 -&amp;gt; 设置文件保存路径/设置文件位置。
+异常收集之：navicatdesignquery.sql.bak 系统找不到指定路径 今天使用Navicat ，其他功能都正常，但是新建查询的时候，出现一个很奇葩的问题
+C:\Program Files (x86)\PremiumSoft\Navicat for MySQL8.1/_NAVICAT_DESIGNQUERY.sql.bak 系统找不到指定路径
+找了半天找不到解决办法，下载navicat 11都没用， 更改版本也没用。</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Install Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:45:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-cluster-install-base-centos.html</guid>
+      <description>mysql系列之mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Use</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-use.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:41:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-use.html</guid>
+      <description> mysql系列之mysql使用规范
+mysql使用规范
+级别说明 所有级别：
+ 级别1，必须做到 级别2，优先做到  级别：1
+ 库名，表名，字段名：使用小写 字符：utf8 表：不使用删除表（drop），而使用清空表（truncate，或者delete from） 表：记录数超过10000的情况下，加索引  级别：2
+ 库名，表名，字段名：使用下划线分割。如：day_stocka_wind 表：加主键 清空表：优先使用truncate（命令：truncate table tbl_name;），其次使用delete from(命令：delete from tbl_name;）  关于删除表 删除表：使用DROP TABLE tbl_name;， 或者DROP TABLE IF EXISTS tbl_name;
+若有业务确实需要删除表的，请联系小鱼。
+end </description>
+    </item>
+    
+    <item>
+      <title>Mysql Secure Installation</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-secure-installation.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:41:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-secure-installation.html</guid>
+      <description>mysql系列之mysql_secure_installation
+参考 http://www.myexception.cn/mysql/1902013.html
+过程 安装完mysql-server 会提示可以运行mysql_secure_installation。 运行mysql_secure_installation会执行几个设置： a)为root用户设置密码 b)删除匿名账号 c)取消root用户远程登录 d)删除test库和对test库的访问权限 e)刷新授权表使修改生效 通过这几项的设置能够提高mysql库的安全。建议生产环境中mysql安装这完成后一定要运行一次mysql_secure_installation，详细步骤请参看下面的命令:
+[root@dns ~]# mysql_secure_installation /usr/bin/mysql_secure_installation:行379: find_mysql_client: 未找到命令 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB SERVERS IN PRODUCTION USE! PLEASE READ EACH STEP CAREFULLY! In order to log into MariaDB to secure it, we&#39;ll need the current password for the root user. If you&#39;ve just installed MariaDB, and you haven&#39;t set the root password yet, the password will be blank, so you should just press enter here.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-base-centos.html</guid>
+      <description>mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>Mariadb Cluster Infile Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-infile-base-centos.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-cluster-infile-base-centos.html</guid>
+      <description>mysql-cluster
+主要参考 http://mariadb.org/
+环境  centos7-amd64 mariadb10.1（IP:10.10.13.110） + mariadb5.5(IP:192.168.31.240)  步骤 准备2台机器 安装mariadb10.1
+参考这里
+把 mariadb5.5 的数据，导出后，导入到 mariadb10.1 导出 导入 mysql主从复制 第一步，就要看这几个参考 依次看 http://blog.csdn.net/gaowenhui2008/article/details/46698321 http://blog.csdn.net/hguisu/article/details/7325124 http://blog.jobbole.com/94595/ http://www.xuejiehome.com/blread-1664.html MYSQL主从同步的管理 参考 http://blog.csdn.net/gaowenhui2008/article/details/46698321 1. 停止MYSQL同步 1. 停止MYSQL同步 STOP SLAVE IO_THREAD; #停止IO进程 STOP SLAVE SQL_THREAD; #停止SQL进程 STOP SLAVE; #停止IO和SQL进程 2. 启动MYSQL同步 START SLAVE IO_THREAD; #启动IO进程 START SLAVE SQL_THREAD; #启动SQL进程 START SLAVE; #启动IO和SQL进程 3. 重置MYSQL同步 RESET SLAVE; 用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！ 4. 查看MYSQL同步状态 SHOW SLAVE STATUS; 这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。 5.</description>
+    </item>
+    
+    <item>
+      <title>java源码找到mysql用户密码</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/find-mysql-password-with-java-source-code.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:15:19 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/find-mysql-password-with-java-source-code.html</guid>
+      <description>在有java源码的情况下，找到mysql用户密码
+进入项目查找 mysql ip 字符串 lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./bin/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./conf/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./lib/ lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ grep &amp;quot;aliyuncs&amp;quot; -rn ./webapps/ ./webapps/lcnxdata/WEB-INF/classes/applicationContext.xml:30: &amp;lt;value&amp;gt;jdbc:mysql://rm-wz95k1f761xu890f3.mysql.rds.aliyuncs.com:3306/lcnx&amp;lt;/value&amp;gt; lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$ cat ./webapps/lcnxdata/WEB-INF/classes/applicationContext.xml &amp;lt;bean id=&amp;quot;dataSource&amp;quot; class=&amp;quot;org.logicalcobwebs.proxool.ProxoolDataSource&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;driver&amp;quot;&amp;gt; &amp;lt;value&amp;gt;com.mysql.jdbc.Driver&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property name=&amp;quot;driverUrl&amp;quot;&amp;gt; &amp;lt;!-- &amp;lt;value&amp;gt;jdbc:mysql://192.168.0.188:3306/nemmp&amp;lt;/value&amp;gt; --&amp;gt; &amp;lt;value&amp;gt;jdbc:mysql://rm-wz95k1f761xu890f3.mysql.rds.aliyuncs.com:3306/lcnx&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property name=&amp;quot;user&amp;quot; value=&amp;quot;*********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;password&amp;quot; value=&amp;quot;**********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;alias&amp;quot; value=&amp;quot;*********&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;prototypeCount&amp;quot; value=&amp;quot;150&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;maximumConnectionCount&amp;quot; value=&amp;quot;1100&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;minimumConnectionCount&amp;quot; value=&amp;quot;300&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;simultaneousBuildThrottle&amp;quot; value=&amp;quot;300&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;houseKeepingTestSql&amp;quot; value=&amp;quot;select CURRENT_DATE&amp;quot; /&amp;gt; &amp;lt;property name=&amp;quot;trace&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt; lcnx@iZwz95dxhc92qtibd4f399Z:~/server/tomcat-data$  确认mysql可通后，用帐号密码连接就可以了。</description>
+    </item>
+    
+    <item>
+      <title>Mysqldump Faq</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysqldump-faq.html</link>
+      <pubDate>Wed, 28 Feb 2018 14:31:43 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysqldump-faq.html</guid>
+      <description>mysqldump中断的常见错误和解决措施</description>
+    </item>
+    
+    <item>
+      <title>Mysql Config Server.conf</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-config-server.conf.html</link>
+      <pubDate>Mon, 26 Feb 2018 17:25:30 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-config-server.conf.html</guid>
+      <description> 压缩binlog空间 在运行前, 先去数据目录文件夹下查看一下, mysql.000001的文件有多少,并看一下各文件的创建时间.也就是确认一下要删除的binlog日期.
+ 按文件序列号删除  如果想要删除mysql.000050(不包含)日期之前的binlog文件, 在mysql下运行这个purge binary logs to &#39;mysql.000050&#39;;
+运行这个后, 会将 数据目录文件夹下的 mysql.000001-mysql.000049的文件删除(如果想删除更多, 修改数字 mysql.000050 为 mysql.000120 等).
+ 按时间删除  删除2018-02-15 23:59:59 之前binlog。 purge binary logs before &#39;2018-02-15 23:59:59&#39;;
+ 通过配置文件删除8天之前的binlog  同时,在配置文件里添加这个：expire_logs_days=8,这个参数表示删除8天之前的binlog
+expire_logs_days=8  </description>
+    </item>
+    
+    <item>
+      <title>Mysql Config</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-config.html</link>
+      <pubDate>Mon, 12 Feb 2018 10:05:24 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-config.html</guid>
+      <description>MySQL5.7初始密码查看及重置 [root@localhost jlch]# grep &#39;temporary password&#39; /var/log/mysqld.log 2018-02-12T07:28:21.362804Z 1 [Note] A temporary password is generated for root@localhost: Ngu97xLjPL(S [root@localhost jlch]#  MySQL源码安装、配置、初始化及启动 mysql_secure_installation  配置mysql允许远程连接的方法 默认情况下，mysql只允许本地登录，如果要开启远程连接，则需要修改/etc/mysql/my.conf文件。 一、修改/etc/mysql/my.conf 找到bind-address = 127.0.0.1这一行 改为bind-address = 0.0.0.0即可 二、为需要远程登录的用户赋予权限 1、新建用户远程连接mysql数据库 grant all on *.* to admin@&#39;%&#39; identified by &#39;123456&#39; with grant option; flush privileges; 允许任何ip地址(%表示允许任何ip地址)的电脑用admin帐户和密码(123456)来访问这个mysql server。 注意admin账户不一定要存在。 2、支持root用户允许远程连接mysql数据库 grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;123456&#39; with grant option; flush privileges;  MySQL5.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Install Rpm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-rpm.html</link>
+      <pubDate>Mon, 12 Feb 2018 09:59:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-install-rpm.html</guid>
+      <description> mysql install by rpm on centos 官方下载地址
+在安装了perl的基本上,直接下载以下4个rpm包安装就可以了.
+mysql-community-server-5.7.21-1.el7.x86_64.rpm mysql-community-client-5.7.21-1.el7.x86_64.rpm mysql-community-common-5.7.21-1.el7.x86_64.rpm mysql-community-libs-5.7.21-1.el7.x86_64.rpm  </description>
+    </item>
+    
+    <item>
+      <title>centos install mysql (no network)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-install-mysql-no-network.html</link>
+      <pubDate>Wed, 31 Jan 2018 12:26:38 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-install-mysql-no-network.html</guid>
+      <description>env 需要在 centos 环境下安装 mysql
+192.168.31.175
+step 下载mysql的rpm安装包
+[root@localhost jlch]# rpm -ivh mysql-community-server-5.7.21-1.el7.x86_64.rpm warning: mysql-community-server-5.7.21-1.el7.x86_64.rpm: Header V3 DSA/SHA1 Signature, key ID 5072e1f5: NOKEY error: Failed dependencies: /usr/bin/perl is needed by mysql-community-server-5.7.21-1.el7.x86_64 mysql-community-client(x86-64) &amp;gt;= 5.7.9 is needed by mysql-community-server-5.7.21-1.el7.x86_64 mysql-community-common(x86-64) = 5.7.21-1.el7 is needed by mysql-community-server-5.7.21-1.el7.x86_64 net-tools is needed by mysql-community-server-5.7.21-1.el7.x86_64 perl(Getopt::Long) is needed by mysql-community-server-5.7.21-1.el7.x86_64 perl(strict) is needed by mysql-community-server-5.7.21-1.el7.x86_64 [root@localhost jlch]#  要安装 perl, 下载
+tar -zxvf perl-5.26.1.tar.gz cd perl-5.</description>
+    </item>
+    
+  </channel>
+</rss>

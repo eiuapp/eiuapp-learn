@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shop on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/shop.html</link>
+    <description>Recent content in shop on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Apr 2018 23:58:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/shop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Saleor</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-faq.html</link>
+      <pubDate>Sun, 15 Apr 2018 23:58:27 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/saleor/saleor-faq.html</guid>
+      <description>关于 saleor 项目
+env  IP: home, 192.168.31.109 OS: ubuntu, 16.04.03  step FAQ-1 pip install uwsgi==2.0.17时出错: lto1: fatal error: bytecode stream generated with LTO version 6.0 instead of the expected 4.1 见 python-install-uwsgi 一文.
+FAQ-2 这一小节是一个大大的错误, 可直接看下一小节
+export SECRET_KEY=&#39;**********&#39; export DATABASE_URL=&#39;*********&#39; sudo vi /etc/postgresql/9.6/main/pg_hba.conf ls /etc/init.d/postgresql sudo /etc/init.d/postgresql reload createuser -P -s -e saleor # 报错 createuser -P -s -e saleor -U postgres python manage.py migrate # 报错 which createdb createdb saleorBillions # 报错 createdb saleorBillions -U postgres python manage.</description>
+    </item>
+    
+  </channel>
+</rss>

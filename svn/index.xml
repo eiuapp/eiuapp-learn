@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>svn on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/svn.html</link>
+    <description>Recent content in svn on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/svn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Svn Remove User Name Passwd</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn-remove-user-name-passwd.html</link>
+      <pubDate>Thu, 28 Jun 2018 18:33:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn-remove-user-name-passwd.html</guid>
+      <description> TortoiseSVN如何去掉记住的用户名密码
+Env  svn: 1.9.7 os: win10  Step 直接看 https://jingyan.baidu.com/article/a17d5285cc80cf8099c8f25a.html
+Ref  https://jingyan.baidu.com/article/a17d5285cc80cf8099c8f25a.html  </description>
+    </item>
+    
+    <item>
+      <title>Svn Authorization Failed</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn-authorization-failed.html</link>
+      <pubDate>Thu, 28 Jun 2018 18:10:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn-authorization-failed.html</guid>
+      <description> 如何解决svn Authorization failed错误
+Env  svn: 1.9.7  Step 出现这种问题肯定是
+ SVN服务器 清除一下svn的缓存  SVN服务器 SVN服务器出现了问题，需要修改其三个配置文件：
+1、svnserve.conf:
+[general] anon-access = read auth-access = write password-db = passwd authz-db = authz  2、passwd:
+[users] admin=123  3、authz:
+[groups] [/] admin= rw  出现authorization failed异常，一般都是authz文件或者svnserve.conf里，用户组或者用户权限没有配置好，只要设置[/]就可以，代表根目录下所有的资源，如果要限定资源，可以加上 子目录即可。
+清除一下svn的缓存 右击桌面，找到TortoiseSVN下面的Settings，Saved data, Authentication data点击clear
+注意：这里不要全部清除，清除你刚才输入的那个svn地址的缓存，然后确定退出。
+Ref  https://blog.csdn.net/qq_26291823/article/details/70846732 https://blog.csdn.net/zhouchenxuan/article/details/71249655  </description>
+    </item>
+    
+    <item>
+      <title>Svn Add Projects</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn-add-projects.html</link>
+      <pubDate>Thu, 28 Jun 2018 18:02:21 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn-add-projects.html</guid>
+      <description>svn增加工程
+Env  os: ubuntu16 svn: 1.9.7  Step 下面以 ValueAddedChain 工程为例
+加工程 [root@vachain ~]# svnadmin create /application/svndata/ValueAddedChain [root@vachain ~]# cd /application/svndata/ [root@vachain svndata]# ls ValueAddedChain [root@vachain svndata]#  改配置 配置交由全局配置文件
+[root@vachain svndata]# pwd /application/svndata/ [root@vachain svndata]# vi ValueAddedChain/conf/  这里面修改的内容是
+[general] anon-access = none auth-access = write password-db = /application/svnpasswd/passwd authz-db = /application/svnpasswd/authz  这里的 password-db, authz-db可以是从其它地方copy过来，后，修改
+cd /application/svndata/sadoc/ cp authz passwd /application/svnpasswd/ cd svnpasswd/  当然，你可以直接把已经配置好的文件，copy过来就行了
+[root@vachain svndata]# cp doc/conf/svnserve.</description>
+    </item>
+    
+    <item>
+      <title>Svn Permission Configuration</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn-permission-configuration.html</link>
+      <pubDate>Thu, 28 Jun 2018 17:42:24 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn-permission-configuration.html</guid>
+      <description>svn 修改权限
+Env  os: ubuntu16 svn: 1.9.7 目录： /application/  Step 修改权限文件 authz
+[root@vachain application]# pwd /application [root@vachain application]# vi svnpasswd/authz  配置组及组员
+[groups] # harry_and_sally = harry,sally # harry_sally_and_joe = harry,sally,&amp;amp;joe # [/foo/bar] # harry = rw # &amp;amp;joe = r # * = vachain=zhaoguofen,yangqing,wutao,zengxianwen,gaojunying,liujiansen,liruizhang,huangyanya,aichao admin1=zengyunlong,liuchao,hezhengwen chainexchange=gaojunying chaintrack=zhaoguofen chainvac=yangqing,liujiansen chainpaper=zengxianwen  配置项目的权限(以ripple-1.0为例)
+[ripple-1.0:/] @admin1=rw @vachain=rw liuchao=rw zhouxiaoming=rw liujiansen=rw  配置完了，要重启哟。
+[root@vachain svndata]# netstat -tlpn | grep svn tcp 0 0 0.</description>
+    </item>
+    
+    <item>
+      <title>Svn Install Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn-install-centos.html</link>
+      <pubDate>Sat, 03 Feb 2018 14:22:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn-install-centos.html</guid>
+      <description>在 centos 下 安装SVN
+yum install subversion -y svnserve --version mkdir svn cd svn pwd rm /root/svn rm /root/svn -p rm /root/svn/ -p rm /root/svn/ cd pwd rm /root/svn/ cd /home mkdir svn cd svn pwd mkdir project svnadmin create /home/svn/project/ cd project/ ls cd conf/ ls vi passwd vi authz vi svnserve.conf svnserve -d -r /var/svn/svnrepos svnserve -d -r /home/svn/project/ ps -aux | grep svn cd home cd /home ls vi test ls svn import test svn://192.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/svn/svn.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/svn/svn.html</guid>
+      <description>svn</description>
+    </item>
+    
+  </channel>
+</rss>

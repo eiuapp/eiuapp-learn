@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>win10 on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/win10.html</link>
+    <description>Recent content in win10 on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 14 Jul 2018 17:51:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/win10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Win10 Share Files</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/win10-share-files.html</link>
+      <pubDate>Sat, 14 Jul 2018 17:51:39 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/win10-share-files.html</guid>
+      <description> 两台win10 电脑怎么共享文件夹
+Env  os: win10  Step 两台win10 电脑怎么共享文件夹
+Ref  https://jingyan.baidu.com/article/495ba841b42de438b20ede5e.html https://jingyan.baidu.com/article/358570f6633ba4ce4624fc48.html  </description>
+    </item>
+    
+    <item>
+      <title>U Shendu</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/windows/u-shendu.html</link>
+      <pubDate>Sat, 14 Jul 2018 17:49:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/windows/u-shendu.html</guid>
+      <description> 当你忘记了密码，可以使用u深度重置用户密码
+Env  os: win10  Step u深度u盘启动盘制作教程
+u深度重置用户密码
+Ref  https://jingyan.baidu.com/article/6b97984da3b9851ca2b0bfec.html http://upzxt.win7qjb.com/upzxtjc/794.html https://jingyan.baidu.com/article/90808022f724c6fd91c80fa6.html https://jingyan.baidu.com/article/6b97984da3b9851ca2b0bfec.html  </description>
+    </item>
+    
+  </channel>
+</rss>

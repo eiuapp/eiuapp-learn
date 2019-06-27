@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>erp on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/erp.html</link>
+    <description>Recent content in erp on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 02 Jul 2018 16:51:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/erp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erp Golang</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/resource/erp-golang.html</link>
+      <pubDate>Mon, 02 Jul 2018 16:51:41 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/resource/erp-golang.html</guid>
+      <description>Any ERP system written in Go
+非开源 https://www.obs2go.com/
+open source https://golanglibs.com/search?q=erp&amp;amp;sort=top
+中英文 https://getqor.com/cn https://github.com/qor/qor https://github.com/reechou/erp
+中文版 https://github.com/hexiaoyun128/ERP.git https://www.ctolib.com/hexiaoyun128-ERP.html
+hexya 无中文 http://hexya.io/
+中文版 https://github.com/JoyiSystem/goerp
+golang-erp https://github.com/odenktools/golang-erp</description>
+    </item>
+    
+  </channel>
+</rss>

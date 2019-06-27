@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>user on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/user.html</link>
+    <description>Recent content in user on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 12:47:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/user/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mysql User</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:47:29 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user.html</guid>
+      <description>mysql系列之MySQL查看用户权限
+reference http://www.oschina.net/code/snippet_222150_12541
+##
+show grants for 你的用户; show grants for root@&amp;lsquo;localhost&amp;rsquo;; show grants for webgametest@10.3.18.158; show create database dbname; 这个可以看到创建数据库时用到的一些参数。 show create table tickets; 可以看到创建表时用到的一些参数</description>
+    </item>
+    
+  </channel>
+</rss>

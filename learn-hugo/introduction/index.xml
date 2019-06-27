@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>介绍 on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/introduction.html</link>
+    <description>Recent content in 介绍 on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 09 Sep 2018 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/learn-hugo/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>资料</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/introduction/information.html</link>
+      <pubDate>Sun, 09 Sep 2018 21:07:13 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/introduction/information.html</guid>
+      <description> 官方资料  Hugo官网 官方文档 官方主题 官方展示案例  社区资料  Hugo中文网站： 貌似有段时间没有更新了？  学习资料  Hogo handbook: 宋净超(Jimmy Song)同学整理的hugo使用资料 Hugo❤️ China User Group: 宋净超(Jimmy Song)同学组织，有个微信群可以申请加入  </description>
+    </item>
+    
+  </channel>
+</rss>

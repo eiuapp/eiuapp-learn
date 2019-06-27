@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ERP on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/ERP.html</link>
+    <description>Recent content in ERP on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 02 Jul 2018 16:32:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/ERP/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qor Example Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/qor/qor-example-install.html</link>
+      <pubDate>Mon, 02 Jul 2018 16:32:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/qor/qor-example-install.html</guid>
+      <description>qor-example 安装启动
+Env  os: ubuntu16 go: 1.10.2  Step 设置 GOPATH 添加 /home/tom/golang/qor为GOPATH
+root@tom-w10vbud16:/home/tom/ztom/bits/pem/aws/aws-account-b/pem# export | grep go declare -x GOPATH=&amp;quot;/home/tom/golang/lib:/home/tom/golang/goc2p:/home/tom/ztom/project/github/ERP/goERP:/home/tom/golang/qor&amp;quot; declare -x GOROOT=&amp;quot;/usr/local/go&amp;quot; declare -x PATH=&amp;quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin:/home/tom/golang/lib/bin&amp;quot; root@tom-w10vbud16:/home/tom/ztom/bits/pem/aws/aws-account-b/pem#  安装 # Get example app $ go get -u github.com/qor/qor-example # Setup database $ mysql -uroot -p mysql&amp;gt; CREATE DATABASE IF NOT EXISTS qor_example DEFAULT CHARSET utf8 COLLATE utf8_general_ci; # Run Application $ cd $GOPATH/src/github.com/qor/qor-example $ go run main.go  注意，这里不能直接使用 mysql&amp;gt; CREATE DATABASE qor_example;因为这样会使用默认字符集latin1，导致中文无法输入，且会报错。</description>
+    </item>
+    
+  </channel>
+</rss>

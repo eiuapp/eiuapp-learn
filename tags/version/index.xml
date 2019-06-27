@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>version on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/version.html</link>
+    <description>Recent content in version on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 29 May 2018 10:11:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/version/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centos Release</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/centos-release.html</link>
+      <pubDate>Tue, 29 May 2018 10:11:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/centos-release.html</guid>
+      <description>前言
+记下CentOS 7查看系统版本及查看机器位数x86-64的方法，由于不经常使用Linux，每当使用的时候就是安装软件，安装软件的时候就要选择安装包平台，是32位的还是64位的。这时候突然发现不知道怎么查，于是百度。虽然轻而易举百度出来，但仍旧没有自己的笔记看起来舒服。所以，还是记录下来。
+辨识标准 首先要清楚什么样标识是32位的，什么样的是64位的。
+PC server X86 系列
+ I386&amp;ndash;I686 都是32位 x86_64 是 64位  查看位数命令 命令实在是不要太多，为了防止选择性障碍，一致选择第一种方式，后面的仅作为补充。
+方法1： [root@linuxidc ~]# uname -a Linux linuxidc 3.10.0-327.18.2.el7.x86_64 #1 SMP Thu May 12 11:03:55 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux  方法2：显示系统程序信息 [root@linuxidc ~]# file /bin/ls /bin/ls: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=aa7ff68f13de25936a098016243ce57c3c982e06, stripped  方法3： [root@linuxidc ~]# cat /proc/version Linux version 3.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs Version</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-version.html</link>
+      <pubDate>Fri, 02 Mar 2018 15:08:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/nodejs/nodejs-version.html</guid>
+      <description>nodejs系列之使用n管理nodejs版本
+ref  http://blog.csdn.net/jiangbo_phd/article/details/51476155  主要点 npm -g XXX :安装的XXX软件，在linux下的目录 /usr/lib/node_modules/
+sudo n :切换node版本
+n 切换之后的 node 默认装在 /usr/local/bin/node，你最好用 which node 检查一下当前使用的 node 是否是这个路径下的。
+问题  如果安装过程中因为某原因（主要是网络原因），未安装成功，则删除对应的目录，重新安装就可以了。
+tom@adata:~/Projects/OpenX/lib$ sudo n latest [sudo] password for tom:
+ install : node-v7.2.0 mkdir : /usr/local/n/versions/node/7.2.0 fetch : https://nodejs.org/dist/v7.2.0/node-v7.2.0-linux-x64.tar.gz  ###################################################### 75.1% curl: (56) GnuTLS recv error (-54): Error in the pull function.
+gzip: stdin: unexpected end of file tar: Unexpected EOF in archive tar: Unexpected EOF in archive tar: Error is not recoverable: exiting now cp: cannot stat &amp;lsquo;/usr/local/n/versions/node/7.</description>
+    </item>
+    
+  </channel>
+</rss>

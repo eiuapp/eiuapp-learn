@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cheatsheets on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets.html</link>
+    <description>Recent content in cheatsheets on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Jan 2019 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cheatsheet</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/cheatsheet.html</link>
+      <pubDate>Wed, 21 Mar 2018 10:56:42 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/cheatsheet.html</guid>
+      <description> cheetsheat  cheat-sheets.org  linux  unix-linux-cheat-sheet linux-commands-cheat-sheet linux-command-shelf  docker  docker-command-manual docker-cli-to-kubectl  kubernetes  kubernetes(不全) Kubernetes核心概念总结  bash  jimmysong.io/cheatsheets/bash  nginx ops  运维不仅仅是Linux，居然还要知道这么多？ 史上最全互联网运维工作规划！十分钟找到职业方向！ 建设DevOps统一运维监控平台，先从日志监控说起  mysql  cheat-sheets/mysql overapi.com/mysql cheat-sheets/mysql 不全  python  PQRC-2.4-A4-latest cheat-sheets/python/  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/efficient-command.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/efficient-command.html</guid>
+      <description>高效命令
+env os: linux or mac
+step .zshrc or .bashrc alias ip=&#39;osascript -e &amp;quot;IPv4 address of (system info)&amp;quot;&#39; # Mac 下命令行查看本机 IP alias cls=&#39;clear&#39; alias ll=&#39;ls -l&#39; alias la=&#39;ls -a&#39; alias vi=&#39;vim&#39; alias javac=&amp;quot;javac -J-Dfile.encoding=utf8&amp;quot; alias grep=&amp;quot;grep --color=auto&amp;quot; alias -s html=mate # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开 alias -s rb=mate # 在命令行直接输入 ruby 文件，会在 TextMate 中打开 alias -s py=vi # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似 alias -s js=vi alias -s c=vi alias -s java=vi alias -s txt=vi alias -s gz=&#39;tar -xzvf&#39; alias -s tgz=&#39;tar -xzvf&#39; alias -s zip=&#39;unzip&#39; alias -s bz2=&#39;tar -xjvf&#39; # alias cdhome=&#39;cd ~&#39; alias cdroot=&#39;cd /&#39; alias gpull=&#39;git pull&#39; alias gci=&#39;git commit -a&#39; alias gpush=&#39;git push origin HEAD:refs/for/master&#39; alias gst=&#39;git status&#39; alias sublime=&#39;open -a &amp;quot;Sublime Text&amp;quot;&#39; # 加入Sublime Text  ref  https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mount on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/mount.html</link>
+    <description>Recent content in mount on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 06 Jun 2018 16:57:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/mount/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mount Ntfs Base Centos</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/centos/mount-ntfs-base-centos.html</link>
+      <pubDate>Wed, 06 Jun 2018 16:57:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/centos/mount-ntfs-base-centos.html</guid>
+      <description>centos挂载ntfs硬盘
+Env  os: centos6.9  当前状态
+[root@bitspace ~]# lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 931.5G 0 disk ├─sda1 8:1 0 220G 0 part ├─sda2 8:2 0 238G 0 part ├─sda3 8:3 0 237G 0 part └─sda4 8:4 0 236.5G 0 part sdb 8:16 0 111.8G 0 disk ├─sdb1 8:17 0 500M 0 part /boot └─sdb2 8:18 0 111.3G 0 part ├─vg_bitspace-lv_root (dm-0) 253:0 0 50G 0 lvm / ├─vg_bitspace-lv_swap (dm-1) 253:1 0 7.</description>
+    </item>
+    
+    <item>
+      <title>Mount</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/mount.html</link>
+      <pubDate>Thu, 22 Feb 2018 10:20:04 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/mount.html</guid>
+      <description>通过 shell root@ud-31-193:~# mkdir /mnt/31.10.share root@ud-31-193:~# mount -t cifs -o username=share,password=&amp;quot;&amp;quot; //192.168.31.10/share /mnt/31.10.share/ root@ud-31-193:~#  通过 auto.misc [jlch@check conf.d]$ sudo cat /etc/auto.misc [sudo] password for jlch: # # This is an automounter map and it has the following format # key [ -mount-options-separated-by-comma ] location # Details may be found in the autofs(5) manpage #cd	-fstype=iso9660,ro,nosuid,nodev	:/dev/cdrom #dbf -fstype=cifs,rw,username=administrator,password=jlch@2016 ://10.10.14.11/hq share -fstype=cifs,rw,username=share,password= ://192.168.31.10/share 31245share -fstype=cifs,rw,username=share,password=Jlch1234 ://192.168.31.245/share 319share -fstype=cifs,rw,username=user01,password=User01 ://192.168.31.9/DataVol2/ dbf -fstype=cifs,rw,username=administrator,password=jlch333 ://10.</description>
+    </item>
+    
+  </channel>
+</rss>

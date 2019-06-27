@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/linux.html</link>
+    <description>Recent content in linux on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux 关闭SSH 连接用户</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-close-ssh-connection-user.html</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-close-ssh-connection-user.html</guid>
+      <description>1.查明登陆端口；
+$ who root pts/1 Apr 8 00:06 (172.29.0.29) root pts/2 Apr 8 04:15 (172.29.0.21)  2.通知该用户将要关闭他：
+$ echo &amp;quot;I will close your connection&amp;quot; &amp;gt; /dev/pts/2  这样他的终端将显示该信息。
+3.关闭用户连接
+$ fuser -k /dev/pts/2  这个在某些命令，导致ssh后续无法操作时，我们就可以使用这个方式。
+疑问：当有多个ssh 连接时，那怎么知道我们要kill 的是哪个 pts 呢？</description>
+    </item>
+    
+    <item>
+      <title>linux 软连接 不能加/号</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-ln-s-make-soft-link.html</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-ln-s-make-soft-link.html</guid>
+      <description> 对某个目录创建符号连接
+[root@A home]# ln -s /home/kk /home/abc
+此命令表示在/home目录下创建一个链接到/home/kk目录的名字为abc的符号连接。
+注意：
+ 目标是一个软连接符号，所以不要带上 / 号。带上后，就是指把 软连接放在这个目录下  ➜ org git:(master) ✗ ln -s /home/ubuntu/tom/jinweilai/blog-jwl/org-jwl/org/ ~/org ➜ org git:(master) ✗ ln -s /home/ubuntu/tom/jinweilai/blog-jwl/org-jwl/org/ ~/org/ ➜ org git:(master) ✗ ls ~/org gtd.org org ➜ org git:(master) ✗  Ref  https://blog.csdn.net/liuzhenwen/article/details/8152764  </description>
+    </item>
+    
+    <item>
+      <title>ubuntu 获取 系统版本信息</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-get-os-lsb-release.html</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-get-os-lsb-release.html</guid>
+      <description>(oscar) ➜ proxy-os git:(master) ✗ lsb_release --help Usage: lsb_release [options] Options: -h, --help show this help message and exit -v, --version show LSB modules this system supports -i, --id show distributor ID -d, --description show description of this distribution -r, --release show release number of this distribution -c, --codename show code name of this distribution -a, --all show all of the above information -s, --short show requested information in short format (oscar) ➜ proxy-os git:(master) ✗ lsb_release -a No LSB modules are available.</description>
+    </item>
+    
+    <item>
+      <title>ssh登录时如何直接在参数中加入登录密码</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/ssh/sshpass-let-ssh-login-with-password.html</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/ssh/sshpass-let-ssh-login-with-password.html</guid>
+      <description>sshpass: 用于非交互的ssh 密码验证
+　ssh登陆不能在命令行中指定密码，也不能以shell中随处可见的，sshpass 的出现，解决了这一问题。它允许你用 -p 参数指定明文密码，然后直接登录远程服务器。 它支持密码从命令行,文件,环境变量中读取。
+　办法找到了，现在先在自己机器上安装。
+　对于debian/ubuntu系统来说，安装方式很简单：
+sudo apt-get install sshpass  　对于其他系统来说，可以通过编译源码：
+wget http://sourceforge.net/projects/sshpass/files/sshpass/1.05/sshpass-1.05.tar.gz tar xvzf sshpass-1.05.tar.gz ./configure make sudo make install  　./configure 后可以添加参数指定安装目录，比如：
+./configure --prefix=/usr/local/Cellar/sshpass/1.05  　来把sshpass安装到自己喜欢的位置，如果没有这个参数，则安装到默认位置。
+　安装好了后，输入sshpass来查看是否安装好了：
+➜ ~ git:(master) ✗ sshpass -V sshpass 1.05 (C) 2006-2011 Lingnu Open Source Consulting Ltd. This program is free software, and can be distributed under the terms of the GPL See the COPYING file for more information.</description>
+    </item>
+    
+    <item>
+      <title>mkfs.xfs command not found</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/mkfs-xfs-command-not-found.html</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/mkfs-xfs-command-not-found.html</guid>
+      <description> 如果 mkfs.xfs /dev/sdb1 出现 mkfs.xfs command not found , 则运行下面命令安装 mkfs.xfs
+apt-get install xfsprogs  ref  http://blog.51cto.com/yangzhiming/2117942  </description>
+    </item>
+    
+    <item>
+      <title>Linux No Passwd Login</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-no-passwd-login.html</link>
+      <pubDate>Sat, 14 Jul 2018 17:44:08 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-no-passwd-login.html</guid>
+      <description>关闭SSH传统密码登陆方式
+Env  os: linux  Step 加入登录公钥 自己创建 或 从其它地方导入 .ssh/authorized_keys 文件
+root@ubuntu:/home/ubuntu# mv ssh/ .ssh/ root@ubuntu:/home/ubuntu# chmod 600 .ssh/authorized_keys  修改SSH的配置文件/etc/ssh/sshd_config root@ubuntu:/home/ubuntu# vi /etc/ssh/sshd_config root@ubuntu:/home/ubuntu# grep PasswordAuthentication -rn /etc/ssh/sshd_config 52:#PasswordAuthentication yes 53:PasswordAuthentication no 83:# PasswordAuthentication. Depending on your PAM configuration, 87:# PAM authentication, then enable this but set PasswordAuthentication root@ubuntu:/home/ubuntu#  注意，这个地方，一定要把 .ssh 文件夹的属性设置正确，然后重启sshd服务，否则会有如下错误
+ubuntu@ubuntu:~$ sudo systemctl status sshd ● ssh.service - OpenBSD Secure Shell server Loaded: loaded (/lib/systemd/system/ssh.</description>
+    </item>
+    
+    <item>
+      <title>Linux Add Format Mount Harddisk</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-add-format-mount-harddisk.html</link>
+      <pubDate>Thu, 28 Jun 2018 14:16:58 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-add-format-mount-harddisk.html</guid>
+      <description>替 Linux 新增硬碟（磁碟分割、格式化與掛載）
+最近要替我的 Linux Server 增加一顆硬碟，一般若是在安裝 Linux 時就將硬碟裝上去的話，就可以直接在安裝時設定好硬碟的格式化與掛載，但若是後來要加掛新的硬碟，就要自己動手設定了。
+這裡示範在 Ubuntu Linux 下面新增加硬碟的做法，首先當然是買一顆新硬碟囉。
+Env  os: ubuntu16 新硬盘: sdb  Step 查看 root@ubuntu:~# fdisk -l Disk /dev/sda: 111.8 GiB, 120034123776 bytes, 234441648 sectors Units: sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disklabel type: gpt Disk identifier: 846C81DB-5DB9-4853-94E9-CC1192592FC9 Device Start End Sectors Size Type /dev/sda1 2048 1050623 1048576 512M EFI System /dev/sda2 1050624 2050047 999424 488M Linux filesystem /dev/sda3 2050048 234440703 232390656 110.</description>
+    </item>
+    
+    <item>
+      <title>Linux Swap</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-swap.html</link>
+      <pubDate>Fri, 22 Jun 2018 18:56:28 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-swap.html</guid>
+      <description> Env  os: linux  Step 有时运行大量的进程后swap大量占用，达到30%的话机器会变得很慢
+可以用以下两个命令清除刷新swap
+swapoff -a swapon -a  这样swap就还原到初始状态
+Ref  http://blog.163.com/zhao_jw/blog/static/18058736620121027102932108/  </description>
+    </item>
+    
+    <item>
+      <title>Linux Kill Tty</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-kill-tty.html</link>
+      <pubDate>Tue, 19 Jun 2018 17:41:03 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-kill-tty.html</guid>
+      <description>linux 如何杀掉 tty终端
+Step 1、用w -s命令可以得到终端名 root@bitzone:~# w 17:37:05 up 164 days, 1:13, 2 users, load average: 1.47, 0.83, 0.66 USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT root pts/0 121.34.147.224 17:36 0.00s 0.02s 0.00s w root pts/2 121.34.147.224 11:58 5:37m 0.04s 0.04s -bash root@bitzone:~# w -s 17:38:38 up 164 days, 1:15, 2 users, load average: 0.65, 0.69, 0.62 USER TTY FROM IDLE WHAT root pts/0 121.34.147.224 2.00s w -s root pts/2 121.</description>
+    </item>
+    
+    <item>
+      <title>Python Faq Openssl</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-faq-openssl.html</link>
+      <pubDate>Wed, 13 Jun 2018 13:00:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-faq-openssl.html</guid>
+      <description>Env  os: ubuntu16  出错 /alg -Iscrypt-1.2.1/libcperciva/util -Iscrypt-1.2.1/libcperciva/crypto -I/usr/local/include -I/usr/include -I/usr/include/python2.7 -c scrypt-1.2.1/libcperciva/crypto/crypto_aes.c -o build/temp.linux-x86_64-2.7/scrypt-1.2.1/libcperciva/crypto/crypto_aes.o -O2 scrypt-1.2.1/libcperciva/crypto/crypto_aes.c:6:25: fatal error: openssl/aes.h: No such file or directory compilation terminated. error: command &#39;x86_64-linux-gnu-gcc&#39; failed with exit status 1 ---------------------------------------- Command &amp;quot;/usr/bin/python -u -c &amp;quot;import setuptools, tokenize;__file__=&#39;/tmp/pip-install-qN0XHo/scrypt/setup.py&#39;;f=getattr(tokenize, &#39;open&#39;, open)(__file__);code=f.read().replace(&#39;\r\n&#39;, &#39;\n&#39;);f.close();exec(compile(code, __file__, &#39;exec&#39;))&amp;quot; install --record /tmp/pip-record-8LxwEK/install-record.txt --single-version-externally-managed --compile&amp;quot; failed with error code 1 in /tmp/pip-install-qN0XHo/scrypt/ root@ip-172-31-23-102:/home/ubuntu/rpc#  Step 看错误。这里看的错误，不应该是error: command &#39;x86_64-linux-gnu-gcc&#39; failed with exit status 1,而应该是fatal error: openssl/aes.</description>
+    </item>
+    
+    <item>
+      <title>Linux Http Proxy</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-http-proxy.html</link>
+      <pubDate>Thu, 24 May 2018 11:30:50 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-http-proxy.html</guid>
+      <description>linux-proxy 相关
+proxy FQ root@km:~# cat proxy.sh #!/bin/bash NO_PROXY=localhost,127.0.0.1/8,192.168.31.1/24 export NO_PROXY export http_proxy=http://192.168.31.10:1080/ export https_proxy=http://192.168.31.10:1080/ root@km:~#  这个问题，可以参考 https://blog.finsoft.info/posts/ubuntu-apt-http-proxy/#%E5%8F%96%E6%B6%88apt%E4%BB%A3%E7%90%86
+终端： [tom@mpro Desktop]$ export http_proxy=http://192.168.31.10:8031 # 这个 http://192.168.31.10:8031 是在 192.168.31.10的机器提供出来的 地址。 192.168.31.10的机器 是代理服务器。 [tom@mpro Desktop]$ export https_proxy=http://192.168.31.10:8031 [tom@mpro Desktop]$ ping www.google.com.hk # 代理后，ping 依然是不行的。呵呵 PING www.google.com.hk (93.46.8.89) 56(84) bytes of data. ^C --- www.google.com.hk ping statistics --- 6 packets transmitted, 0 received, 100% packet loss, time 4999ms [tom@mpro Desktop]$ wget www.</description>
+    </item>
+    
+    <item>
+      <title>Linux Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/linux.html</link>
+      <pubDate>Mon, 26 Mar 2018 16:21:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/linux.html</guid>
+      <description> 查看 机器的连接数 netstat -n | awk &#39;/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}&#39;  </description>
+    </item>
+    
+    <item>
+      <title>Linux Port Process</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-port-process.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:47:57 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-port-process.html</guid>
+      <description> linux系列之端口与进程
+linux如何查看端口被哪个进程占用 使用netstat 和lsof命令，并用grep来过滤你需要查看的端口。 例如查看tcp有哪些端口打开了：
+netstat -a| grep tcp  然后查看哪个进程占用了这些端口：
+lsof -i  如果要查看某个端口，比如80端口是哪个进程：
+lsof -i | grep :80  如果说，tom用户查到了一些端口号被占用，但是，用lsof却查不到。怎么办？ 则要考虑，是不是端口被root用户占用，没有权限。所以要再一次用sudo lsof来查一查。
+示例 netstat -ant | grep 8060 ps -aux | grep node lsof -i:8060 man lsof lsof -i lsof -i -n lsof -iTCP sudo lsof -i  </description>
+    </item>
+    
+    <item>
+      <title>Linux Install Ab Httpd Tools</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-install-ab-httpd-tools.html</link>
+      <pubDate>Thu, 01 Mar 2018 17:30:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-install-ab-httpd-tools.html</guid>
+      <description> env 长城证券 压力测试 要安装 ab
+step 离线安装 下载
+ httpd-tools libapr-1.so.0 libaprutil-1.so.0  安装
+rpm -ivh *.rpm which ab  </description>
+    </item>
+    
+    <item>
+      <title>Linux Change Disklabel</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/linux-change-disklabel.html</link>
+      <pubDate>Wed, 28 Feb 2018 23:01:56 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/linux-change-disklabel.html</guid>
+      <description> parted 來手動改變硬碟為 GPT(或msdos等) [anaconda root@localhost /]# parted /dev/sda GUN Parted 2.1 Using /dev/sda Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands. (parted) mklabel New disk label type?gpt Warning: The existing disk label on /dev/sda will be destroyed and all data on this disk will be lost. Do you want to continue? Yes/No?Yes (parted) q Information: You may need to update /etc/fstab.  </description>
+    </item>
+    
+    <item>
+      <title>Route</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/route.html</link>
+      <pubDate>Fri, 23 Feb 2018 12:25:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/route.html</guid>
+      <description>env 192.168.31.181 上 加一条 wifi 192.168.33.0/24 的路由规则
+ref Linux下route add 命令加入路由列表
+step [root@check ~]# ip a 1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet 127.0.0.1/8 scope host lo valid_lft forever preferred_lft forever inet6 ::1/128 scope host valid_lft forever preferred_lft forever 2: em1: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP qlen 1000 link/ether 44:a8:42:2b:e5:e3 brd ff:ff:ff:ff:ff:ff inet 192.168.31.181/24 brd 192.168.31.255 scope global em1 valid_lft forever preferred_lft forever inet6 fe80::46a8:42ff:fe2b:e5e3/64 scope link valid_lft forever preferred_lft forever 3: em2: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP qlen 1000 link/ether 44:a8:42:2b:e5:e4 brd ff:ff:ff:ff:ff:ff inet 10.</description>
+    </item>
+    
+  </channel>
+</rss>

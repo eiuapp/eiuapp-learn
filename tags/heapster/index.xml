@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>heapster on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/heapster.html</link>
+    <description>Recent content in heapster on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 28 Mar 2018 10:46:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/heapster/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes Heapster Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-heapster-install.html</link>
+      <pubDate>Wed, 28 Mar 2018 10:46:26 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-heapster-install.html</guid>
+      <description>env 192.168.31.120 master
+step root@km:~/heapster# git remote -v origin	https://github.com/kubernetes/heapster.git (fetch) origin	https://github.com/kubernetes/heapster.git (push) root@km:~/heapster# git status On branch master Your branch is up-to-date with &#39;origin/master&#39;. Changes not staged for commit: (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed) (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory) modified: deploy/kube-config/influxdb/grafana.yaml modified: deploy/kube-config/influxdb/heapster.yaml modified: deploy/kube-config/influxdb/influxdb.yaml no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;) root@km:~/heapster# git diff deploy/kube-config/influxdb/grafana.</description>
+    </item>
+    
+  </channel>
+</rss>

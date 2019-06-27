@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sshpass on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/sshpass.html</link>
+    <description>Recent content in sshpass on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 30 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/sshpass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac 上安装 sshpass</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/linux/ssh/how-to-install-sshpass-on-mac.html</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/linux/ssh/how-to-install-sshpass-on-mac.html</guid>
+      <description> brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb  Ref  https://stackoverflow.com/questions/32255660/how-to-install-sshpass-on-mac fs  </description>
+    </item>
+    
+  </channel>
+</rss>

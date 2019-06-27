@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oscar on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/oscar.html</link>
+    <description>Recent content in oscar on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 24 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/oscar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>django-oscar(笔记)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-django-oscar.html</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-django-oscar.html</guid>
+      <description>(oscar) ➜ django-oscar git:(master) make sandbox pip install -r requirements.txt Collecting Werkzeug==0.14.1 (from -r requirements.txt (line 4)) Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB) 100% |████████████████████████████████| 327kB 8.8MB/s Collecting django-debug-toolbar==1.11 (from -r requirements.txt (line 5)) Downloading https://files.pythonhosted.org/packages/01/9a/3db232bd15882d90d3c53de1f34ce0a522327849593c9198899713267cfe/django_debug_toolbar-1.11-py2.py3-none-any.whl (201kB) 100% |████████████████████████████████| 204kB 24.9MB/s Collecting django-extensions==2.1.4 (from -r requirements.txt (line 6)) Downloading https://files.pythonhosted.org/packages/e4/56/6a854a56732f7cb6a0393b8a32ae8a37b82b004e638b7b2f153b66733ce5/django_extensions-2.1.4-py2.py3-none-any.whl (217kB) 100% |████████████████████████████████| 225kB 4.8MB/s Collecting psycopg2&amp;lt;2.8,&amp;gt;=2.7 (from -r requirements.txt (line 7)) Downloading https://files.pythonhosted.org/packages/63/54/c039eb0f46f9a9406b59a638415c2012ad7be9b4b97bfddb1f48c280df3a/psycopg2-2.7.7.tar.gz (427kB) 100% |████████████████████████████████| 430kB 4.1MB/s Complete output from command python setup.</description>
+    </item>
+    
+  </channel>
+</rss>

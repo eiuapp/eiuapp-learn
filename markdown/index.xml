@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/markdown.html</link>
+    <description>Recent content in markdown on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Style Guide</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/markdown/markdown-style-guide.html</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:23 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/markdown/markdown-style-guide.html</guid>
+      <description> Step http://einverne.github.io/markdown-style-guide/zh.html
+Ref  http://einverne.github.io/markdown-style-guide/zh.html  </description>
+    </item>
+    
+    <item>
+      <title>Convert Rst to Gfm Document Style</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/markdown/convert-rst-to-gfm-document-style.html</link>
+      <pubDate>Thu, 21 Jun 2018 22:02:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/markdown/convert-rst-to-gfm-document-style.html</guid>
+      <description>RST(reStructuredText) 转换为 MD(Markdown)
+Env  os: ubuntu16.04 ip: 192.168.31.199  Step 准备
+安装 restbuilder https://pythonhosted.org/sphinxcontrib-restbuilder/
+pip install sphinxcontrib-restbuilder  安装 pandoc https://pandoc.org/installing.html https://github.com/jgm/pandoc/releases/latest
+我这里选择二进制安装包
+wget https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb dpkg -i ./pandoc-2.2.1-1-amd64.deb  操作 生成 rst 文件：
+make -e SPHINXOPTS=&amp;quot;-D language=&#39;zh_CN&#39;&amp;quot; rst  转换 rst 到 gfm或markdown 文件, 写成一个脚本。
+root@ud-b:~# cat convert-doc-style.sh #!/usr/bin/env bash export pandoc=&amp;quot;pandoc +RTS -V0 -RTS&amp;quot; cd $1 FILES=&amp;quot;*.rst&amp;quot; for f in $FILES do filename=&amp;quot;${f%.*}&amp;quot; echo &amp;quot;Converting &#39;$f&#39; to &#39;$filename.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Comments</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/markdown/markdown-comments.html</link>
+      <pubDate>Sat, 16 Jun 2018 23:01:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/markdown/markdown-comments.html</guid>
+      <description>概述 下面是我整理的在Markdown中写注释的几种方法，供自己开发时参考，相信对其他人也有用。
+Step html标签 既然Markdown内嵌html语法，那么就可以用可以用隐藏的html标签。
+注意：需要在前面空一行
+&amp;lt;div style=&#39;display: none&#39;&amp;gt; 哈哈我是注释，不会在浏览器中显示。 我也是注释。 &amp;lt;/div&amp;gt;  html注释 既然支持html语法，那也支持html注释。
+&amp;lt;!--哈哈我是注释，不会在浏览器中显示。--&amp;gt; &amp;lt;!-- 哈哈我是多段 注释， 不会在浏览器中显示。 --&amp;gt;  hack方法 hack方法就是利用markdown的解析原理来实现注释的。
+一般有的markdown解析器不支持上面的注释方法，这个时候就可以用hack方法。
+hack方法比上面2种方法稳定得多，但是语义化太差。
+[comment]: &amp;lt;&amp;gt; (哈哈我是注释，不会在浏览器中显示。) [comment]: &amp;lt;&amp;gt; (哈哈我是注释，不会在浏览器中显示。) [comment]: &amp;lt;&amp;gt; (哈哈我是注释，不会在浏览器中显示。) [//]: &amp;lt;&amp;gt; (哈哈我是注释，不会在浏览器中显示。) [//]: # (哈哈我是注释，不会在浏览器中显示。)  其中，这种方法最稳定，适用性最强：
+[//]: # (哈哈我是注释，不会在浏览器中显示。)  这种最可爱，超级无敌萌啊：
+[^_^]: # (哈哈我是注释，不会在浏览器中显示。)  更为关键的是，这种方法最强，支持多行注释，
+[^_^]: commentted-out contents should be shift to right by four spaces (`&amp;gt;&amp;gt;`).  示例测试 1.html标签（你如果看不到下面的注释说明已经成功注释）
+2.html注释（你如果看不到下面的注释说明已经成功注释）</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/markdown/markdown.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:49:46 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/markdown/markdown.html</guid>
+      <description> Markdown转HTML 在线版：
+ 在一起（这个网站还有很多其实转换工具） 带了样式，但是不能用于 表格
+ 作业部落 不带样式，但是可用于 表格
+  HTML转Markdown 在线版：
+ 在线工具 （这个网站还有很多其实转换工具） *  Markdown 快速生成表格 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/markdown/convert-html-to-markdown.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/markdown/convert-html-to-markdown.html</guid>
+      <description> Convert HTML to Markdown
+step method 1, online  http://domchristie.github.io/turndown/ https://tool.lu/markdown/  nodejs turndown Convert HTML to Markdown with Node.js Start by installing Turndown:
+ https://davidwalsh.name/convert-html-markdown  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/markdown/convert-markdown-to-org-with-pandoc.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/markdown/convert-markdown-to-org-with-pandoc.html</guid>
+      <description> convert-markdown-to-org-with-pandoc
+pandoc 检查是否有 pandoc 命令
+install docker pull dalibo/pandocker alias pandoc=&amp;quot;docker run --rm -u `id -u`:`id -g` -v `pwd`:/pandoc dalibo/pandocker&amp;quot;  CRLF or LF 查看文件类型 使用vim打开文件，输入:set ff?。根据返回结果可以文件类型
+ https://www.cnblogs.com/jiangz/p/4231279.html  LR 把文档全转成 unix end-of-line
+dos2unix ./*/*.md   https://github.com/greenrobot/greenDAO/issues/71  to org docker run --rm -u `id -u`:`id -g` -v `pwd`:/pandoc dalibo/pandocker README.md -o README.org  或者
+pandoc README.md -o README.org  ref  https://pandoc.org/demos.html https://hub.docker.com/r/dalibo/pandocker  </description>
+    </item>
+    
+  </channel>
+</rss>

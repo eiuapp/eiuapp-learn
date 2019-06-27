@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/redis.html</link>
+    <description>Recent content in redis on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 05 Feb 2018 17:23:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/redis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redis Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/redis/redis-install.html</link>
+      <pubDate>Mon, 05 Feb 2018 17:23:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/redis/redis-install.html</guid>
+      <description>CENTOS7下安装REDIS
+CentOS下Redis的安装
+内含 开机自启动</description>
+    </item>
+    
+    <item>
+      <title>Redis History</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/redis/redis-history.html</link>
+      <pubDate>Sat, 03 Feb 2018 13:41:32 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/redis/redis-history.html</guid>
+      <description>之前 31.240 的 redis 的history
+[tom@kube-node-15 redis-3.0.7]$ src/redis-cli Could not connect to Redis at 127.0.0.1:6379: Connection refused not connected&amp;gt; exit [tom@kube-node-15 redis-3.0.7]$ sudo make install cd src &amp;amp;&amp;amp; make install make[1]: Entering directory `/opt/redis-3.0.7/src&#39; Hint: It&#39;s a good idea to run &#39;make test&#39; ;) INSTALL install INSTALL install INSTALL install INSTALL install INSTALL install make[1]: Leaving directory `/opt/redis-3.0.7/src&#39; [tom@kube-node-15 redis-3.0.7]$ pwd /opt/redis-3.0.7 [tom@kube-node-15 redis-3.0.7]$ [tom@kube-node-15 redis-3.0.7]$ redis-cli Could not connect to Redis at 127.</description>
+    </item>
+    
+  </channel>
+</rss>

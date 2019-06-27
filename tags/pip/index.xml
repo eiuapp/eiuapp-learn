@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pip on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/pip.html</link>
+    <description>Recent content in pip on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 13 Jun 2018 13:12:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/pip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Install Pip With Get Pip Py</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip-with-get-pip-py.html</link>
+      <pubDate>Wed, 13 Jun 2018 13:12:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip-with-get-pip-py.html</guid>
+      <description> 通过 get-pip.py 安装 pip
+Env  os: ubuntu16  Step curl https://bootstrap.pypa.io/get-pip.py | sudo python  Ref  https://pip.pypa.io/en/stable/installing/  </description>
+    </item>
+    
+    <item>
+      <title>Python Pip Install Ssl Module Not Available</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-pip-install-ssl-module-not-available.html</link>
+      <pubDate>Mon, 04 Jun 2018 15:08:37 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-pip-install-ssl-module-not-available.html</guid>
+      <description>先看报错
+[root@bitspace pip-10.0.1]# python -m pip install virtualenv virtualenvwrapper pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available. Collecting virtualenv Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;SSLError(&amp;quot;Can&#39;t connect to HTTPS URL because the SSL module is not available.&amp;quot;,)&#39;: /simple/virtualenv/ Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;SSLError(&amp;quot;Can&#39;t connect to HTTPS URL because the SSL module is not available.</description>
+    </item>
+    
+    <item>
+      <title>Python Install Pip</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip.html</link>
+      <pubDate>Mon, 04 Jun 2018 14:22:12 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-pip.html</guid>
+      <description>Env  os: centos6.9 python: 2.7.9  step 首先安装Python 我安装了两个版本:
+　Python-2.7.10.tgz
+首先看一下系统自带的Python版本：
+[root@zk src]# python -V Python 2.6.6  安装Python2.7版本：
+参考 在centos中python从2.6升级到2.7
+开始安装pip 打开 https://pypi.org/search/?q=pip, 点击 pip 10.0.1， 点击 Download files, 右键Copy link address
+下载pip [root@zk src]# wget &amp;quot;https://files.pythonhosted.org/packages/ae/e8/2340d46ecadb1692a1e455f13f75e596d4eab3d11a57446f08259dee8f02/pip-10.0.1.tar.gz&amp;quot; [root@zk src]# tar -zxvf pip-1.5.4.tar.gz [root@zk src]# cd pip-1.5.4 [root@zk pip-1.5.4]# python setup.py install  如果出现下面错误
+[root@zk pip-1.5.4]# python setup.py install Traceback (most recent call last): File &amp;quot;setup.py&amp;quot;, line 6, in &amp;lt;module&amp;gt; from setuptools import setup, find_packages ImportError: No module named setuptools  看到ImportError: No module named setuptools，缺少setuptools模块</description>
+    </item>
+    
+    <item>
+      <title>Python Install Uwsgi</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-install-uwsgi.html</link>
+      <pubDate>Tue, 17 Apr 2018 23:51:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-install-uwsgi.html</guid>
+      <description>env  IP: home, 192.168.31.109 OS: ubuntu, 16.04.03  step pip install uwsgi==2.0.17时出错: lto1: fatal error: bytecode stream generated with LTO version 6.0 instead of the expected 4.1 (saleor-a-1) tom@saleor-a:~/saleor$ pip install uwsgi==2.0.17 _offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -rdynamic -ldl -L/home/tom/anaconda3/lib -lpcre -L/home/tom/anaconda3/lib -lxml2 -L/home/tom/anaconda3/lib -lz -L/home/tom/anaconda3/lib -llzma -L/home/tom/anaconda3/lib -L/home/tom/anaconda3/lib -licui18n -licuuc -licudata -lm -ldl -lpthread -ldl -lutil -lrt -lm /home/tom/anaconda3/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6m.a -lutil -lcrypt lto1: fatal error: bytecode stream generated with LTO version 6.</description>
+    </item>
+    
+  </channel>
+</rss>

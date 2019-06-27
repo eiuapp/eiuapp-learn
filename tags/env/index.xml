@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>env on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/env.html</link>
+    <description>Recent content in env on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Mar 2018 11:35:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/env/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Environment About It</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/dev/environment-about-it.html</link>
+      <pubDate>Fri, 02 Mar 2018 11:35:16 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/dev/environment-about-it.html</guid>
+      <description>生产环境、测试环境、开发环境、 https://my.oschina.net/sancuo/blog/214904
+开发环境 production environment;
+测试环境 testing environment;
+开发环境 development environment;
+开发环境：开发环境是程序猿们专门用于开发的服务器，配置可以比较随意， 为了开发调试方便，一般打开全部错误报告。 测试环境：一般是克隆一份生产环境的配置，一个程序在测试环境工作不正常，那么肯定不能把它发布到生产机上。 生产环境：是值正式提供对外服务的，一般会关掉错误报告，打开错误日志。  三个环境也可以说是系统开发的三个阶段：开发-&amp;gt;测试-&amp;gt;上线，其中生产环境也就是通常说的真实环境。</description>
+    </item>
+    
+  </channel>
+</rss>

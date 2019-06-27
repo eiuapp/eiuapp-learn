@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statefulset on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/statefulset.html</link>
+    <description>Recent content in statefulset on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Nov 2018 17:32:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/statefulset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用 cephfs 完成 statefulset 的练习</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-stateful.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-stateful.html</guid>
+      <description>环境 k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 cephfs-admin 192.168.31.115 cephfs-monitor 192.168.31.114 cephfs-client 192.168.31.172  各 k8s-node 安装完 ceph-common(sudo apt install ceph-common -y)
+准备 在进行操作前，请完成下面的操作：
+1）阅读
+http://www.cnblogs.com/iiiiher/p/7159810.html
+https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+注意：
+https://github.com/kubernetes-incubator/external-storage 这个仓库，是官方提供之外的 External storage plugins, provisioners, and helper libraries ，因为我们在官方文档 中看到了 nfs 是不支持 provisioners 的，所以要来这里了哟&amp;gt;。
+2）git clone
+ git clone https://github.com/kubernetes-incubator/external-storage
+cd external-storage/nfs-client/deploy/
+ 3）按步骤来进行。
+现在打开 https://github.com/kubernetes-incubator/external-storage/tree/master/ceph/cephfs
+开始动手了
+step Compile the provisioner 见 cephfs-k8s-make-by-go-get.rst
+这个地方，请参看 http://blogtt.</description>
+    </item>
+    
+  </channel>
+</rss>

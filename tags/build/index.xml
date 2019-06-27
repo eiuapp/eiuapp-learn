@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/build.html</link>
+    <description>Recent content in build on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 24 Nov 2018 09:58:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubeadm build</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-build.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:58:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-build.html</guid>
+      <description>build kubeadm 修改 Kubeadm 使得 etc/kubernetes/manifests 下的 *.yaml 文件带有 imagePullPolicy: IfNotPresent
+env 192.168.31.114 jlch
+gopath cd ~/gopath/src/github.com/kubernetes/ git clone https://github.com/kubernetes/kubernetes.git cd kubernetes  修改吧 jlch@mon1:~/gopath/src/github.com/kubernetes/kubernetes$ git status Not currently on any branch. Changes not staged for commit: (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed) (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory) modified: cmd/kubeadm/app/phases/controlplane/manifests.go modified: cmd/kubeadm/app/phases/etcd/local.go no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;) jlch@mon1:~/gopath/src/github.</description>
+    </item>
+    
+  </channel>
+</rss>

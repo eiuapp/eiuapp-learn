@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubernetes on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/kubernetes.html</link>
+    <description>Recent content in kubernetes on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 15:15:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jd.com从openstack转到kubernetes</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/jd-kubernetes-openstack.html</link>
+      <pubDate>Thu, 29 Nov 2018 12:17:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/jd-kubernetes-openstack.html</guid>
+      <description>http://www.infoq.com/cn/news/2017/03/jd-kubernetes-openstack
+http://blog.kubernetes.io/2017/02/inside-jd-com-shift-to-kubernetes-from-openstack.html</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 使用 nfs 存储</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-nfs-yaml.html</link>
+      <pubDate>Sun, 25 Nov 2018 18:11:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-nfs-yaml.html</guid>
+      <description>test-claim.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/StatefulSet-Basics/v# cat test-claim.yaml kind: PersistentVolumeClaim apiVersion: v1 metadata: name: test-claim annotations: volume.beta.kubernetes.io/storage-class: &amp;quot;managed-nfs-storage&amp;quot; spec: accessModes: - ReadWriteMany resources: requests: storage: 1Mi  class.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/StatefulSet-Basics/v# cat class.yaml apiVersion: storage.k8s.io/v1beta1 kind: StorageClass metadata: name: managed-nfs-storage provisioner: fuseim.pri/ifs # or choose another name, must match deployment&#39;s env PROVISIONER_NAME&#39;  deployment.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/StatefulSet-Basics/v# cat deployment.yaml kind: Deployment apiVersion: extensions/v1beta1 metadata: name: nfs-client-provisioner spec: replicas: 1 strategy: type: Recreate template: metadata: labels: app: nfs-client-provisioner spec: containers: - name: nfs-client-provisioner image: quay.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes cephfs intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-intro.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:31:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-intro.html</guid>
+      <description>REAEME cephfs-stateful cephfs-k8s-make-by-go-get cephfs-k8s-deployment-faq cephfs-k8s-yaml cephfs-k8s-make cephfs-k8s-faq</description>
+    </item>
+    
+    <item>
+      <title>kubernetes storage</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-storage-practise.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:19:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-storage-practise.html</guid>
+      <description>nfs 环境：192.168.31.232
+成功
+cephfs http://tonybai.com/2017/05/08/mount-cephfs-acrossing-nodes-in-kubernetes-cluster/
+成功
+ceph rbd Glusterfs rook 存储 http://dockone.io/article/2156</description>
+    </item>
+    
+    <item>
+      <title>更新kubeadm clusters 从v1.7.3至v1.8.3</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-clusters-upgrade-from-v173-to-v183.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:05:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-clusters-upgrade-from-v173-to-v183.html</guid>
+      <description>Upgrading kubeadm clusters from 1.7 to 1.8
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm-upgrade-1-8/
+env 192.168.31.120 km, master 192.168.31.119 kn1 192.168.31.118 kn2  下载 kubeadm  https://dl.k8s.io/release/v1.8.2/bin/linux/amd64/kubeadm
+ root@km:~# sudo chmod a+rx /usr/bin/kubeadm root@km:~# kubeadm version kubeadm version: &amp;amp;version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;8&amp;quot;, GitVersion:&amp;quot;v1.8.2&amp;quot;, GitCommit:&amp;quot;bdaeafa71f6c7c04636251031f93464384d54963&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2017-10-24T19:38:10Z&amp;quot;, GoVersion:&amp;quot;go1.8.3&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} root@km:~#  上传 root@km:~# kubeadm config upload from-file --config ./admin.conf unable to decode config from &amp;quot;./admin.conf&amp;quot; [no kind &amp;quot;Config&amp;quot; is registered for version &amp;quot;v1&amp;quot;]  不是这样的 conf 文件呀。</description>
+    </item>
+    
+    <item>
+      <title>kubeadm-kubelet-cni</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</link>
+      <pubDate>Sun, 25 Nov 2018 13:34:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-faq-kubelet-cni.html</guid>
+      <description>问题1 kubelet 没有初始化 cni 现场 root@km:~# cat k8.export.sh sudo cp /etc/kubernetes/admin.conf $HOME/ sudo chown $(id -u):$(id -g) $HOME/admin.conf export KUBECONFIG=$HOME/admin.conf root@km:~# export KUBECONFIG=$HOME/admin.conf root@km:~# k get nodes NAME STATUS ROLES AGE VERSION km NotReady master 18h v1.8.4 kn1 Ready &amp;lt;none&amp;gt; 29s v1.8.4 kn2 Ready &amp;lt;none&amp;gt; 29s v1.8.4  出错了。
+descibe root@km:~# k describe node km Name: km Roles: master Labels: beta.kubernetes.io/arch=amd64 beta.kubernetes.io/os=linux kubernetes.io/hostname=km node-role.kubernetes.io/master= Annotations: node.alpha.kubernetes.io/ttl=0 volumes.kubernetes.io/controller-managed-attach-detach=true Taints: node-role.kubernetes.io/master:NoSchedule CreationTimestamp: Tue, 21 Nov 2017 17:36:14 +0800 Conditions: Type Status LastHeartbeatTime LastTransitionTime Reason Message ---- ------ ----------------- ------------------ ------ ------- OutOfDisk False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientDisk kubelet has sufficient disk space available MemoryPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasSufficientMemory kubelet has sufficient memory available DiskPressure False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletHasNoDiskPressure kubelet has no disk pressure Ready False Wed, 22 Nov 2017 11:58:45 +0800 Tue, 21 Nov 2017 17:36:14 +0800 KubeletNotReady runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized Addresses: InternalIP: 192.</description>
+    </item>
+    
+    <item>
+      <title>k8s安装系列</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-install-intro.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-install-intro.html</guid>
+      <description>env  kubeadm: v1.8.4 os: ubuntu 16.04  step kubernetes-before-install kubeadm-init-before-v1.8.3 kubeadm-install-ubuntu-v1.8.4 kubeadm-join upgrade-v1.8.3-failure-install-v1.8.3 kubeadm-install-v1.8.3 kubeadm-init-use-local-image kubeadm-build delete-node kubeadm-install-FAQ</description>
+    </item>
+    
+    <item>
+      <title>kubernetes系列</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes.html</guid>
+      <description>Contents:
+install/index upgrade/index storage cephfs/index nfs-k8s source</description>
+    </item>
+    
+    <item>
+      <title>kubernetes cephfs README</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-readme.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:28:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-readme.html</guid>
+      <description>本次, k8s cephfs 结合, 前前后后, 花了差不多1个月的时间, 终于是有结果了.
+主要大过程是:
+安装 k8s.v1.7.3 flannel 网络 成功 安装 ceph 安装 cephfs 然后 k8s + cephfs make &amp;amp;&amp;amp; make push deployment.yaml 失败 docker 成功 test-pod 成功 检查 SUCCESS 失败 Input/Output Error 发现不对, 升级内核 升级 k8s.v1.7.3 至 k8s.v1.8.3 升级失败 科学上网 XX-net 失败 加速度 成功 全新安装 k8s.v1.8.4 remove kube* 成功 install kube* 成功 init 成功 apply -f kube-flannel.yml 然后 k8s + cephfs docker 成功, 关闭 重新设置 cni0 secret 成功 configmap.</description>
+    </item>
+    
+    <item>
+      <title>flannel网络模式下ping出错</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</link>
+      <pubDate>Sun, 25 Nov 2018 16:53:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-flannel-ping-wrong.html</guid>
+      <description>Environment 所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  问题 网络出了问题了，ping 不了 kn1, kn2 中的pod的IP
+解决 https://github.com/coreos/flannel/blob/476abd9ef37e7111a1268c41afbd7154046b492a/Documentation/troubleshooting.md#firewalls
+root@km:~# k get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE default cephfs-provisioner-cff8d95c-6tgcs 1/1 Running 2 11d 10.244.1.90 kn1 default mysql-0 2/2 Running 2 22h 10.244.1.87 kn1 default mysql-1 2/2 Running 0 22h 10.244.2.243 kn2 default mysql-2 2/2 Running 2 22h 10.</description>
+    </item>
+    
+    <item>
+      <title>使用 cephfs 完成 statefulset 的练习</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-stateful.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-stateful.html</guid>
+      <description>环境 k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 cephfs-admin 192.168.31.115 cephfs-monitor 192.168.31.114 cephfs-client 192.168.31.172  各 k8s-node 安装完 ceph-common(sudo apt install ceph-common -y)
+准备 在进行操作前，请完成下面的操作：
+1）阅读
+http://www.cnblogs.com/iiiiher/p/7159810.html
+https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+注意：
+https://github.com/kubernetes-incubator/external-storage 这个仓库，是官方提供之外的 External storage plugins, provisioners, and helper libraries ，因为我们在官方文档 中看到了 nfs 是不支持 provisioners 的，所以要来这里了哟&amp;gt;。
+2）git clone
+ git clone https://github.com/kubernetes-incubator/external-storage
+cd external-storage/nfs-client/deploy/
+ 3）按步骤来进行。
+现在打开 https://github.com/kubernetes-incubator/external-storage/tree/master/ceph/cephfs
+开始动手了
+step Compile the provisioner 见 cephfs-k8s-make-by-go-get.rst
+这个地方，请参看 http://blogtt.</description>
+    </item>
+    
+    <item>
+      <title>运行 kubeadm init 之前</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-before-v1_8_3.html</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-before-v1_8_3.html</guid>
+      <description>在运行 kubeadm init 之前的动作
+kubelet 服务检查 后来发现，在这里应该测试一下 kubelet.service。
+原来，虽然我 apt install kubelet , 但是， 遗留了之前 kubeadm 的一些配置.(应该把它们清空的.) 如: /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+让我们来吧。
+删除这个新安装的 kubelet root@km:/etc/cni/net.d# root@km:/etc/cni/net.d# apt remove kubelet Reading package lists... Done Building dependency tree Reading state information... Done The following packages were automatically installed and are no longer required: ebtables golang-1.8-go golang-1.8-race-detector-runtime golang-1.8-src kubernetes-cni socat Use &#39;apt autoremove&#39; to remove them. The following packages will be REMOVED: kubeadm kubelet 0 upgraded, 0 newly installed, 2 to remove and 11 not upgraded.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes-cephfs-make-by-go-get</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make-by-go-get.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:35:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make-by-go-get.html</guid>
+      <description>ENV k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 ceph-client 192.168.31.172 ceph-mon1 192.168.31.114  这次的make, 可以在任何地方完成，只要满足：golang 1.7 以上的版本
+我在 km,ceph-client,ceph-mon1 上都完成过
+安装golang 如果已有安装，请忽略这一步
+安装 golang 1.7 以上的版本。 我们这里安装 1.9.1
+ cd home/jlch tar -xvf go1.9.2.linux-amd64.tar ls go export PATH=$PATH:/home/jlch/go/bin
+ 验证go go version  配置 GOPATH mkdir gopath export GOPATH=/home/jlch/gopath/  go get go get github.com/kubernetes-incubator/external-storage  配置 Dockerfile 后来发现 docker image 的文件不对。
+这个地方的 ENV CEPH_VERSION &amp;ldquo;jewel&amp;rdquo; 应该修改成 ENV CEPH_VERSION &amp;ldquo;luminous&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装kubeadm</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-base-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-base-ubuntu.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu中安装kubeadm v1.8.4</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-v184-install-base-ubuntu.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-v184-install-base-ubuntu.html</guid>
+      <description>Environment  kubeadm: v1.8.4
+所有节点都要安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node   加代理 准备FQ网络
+ 命令行  加代理原因：kubeadm init 会去检查最新版本，及最新版本镜像是什么，镜像是否要更新。 如果本地有了相同的docker image id，就不会下载，不会更新。 这意味着，我们前几天的手工build kubeadm，达成 在 etc/kubernetes/mainfest 下的 *.yaml 文件 加上 &amp;ldquo;imagePullPolicy: IfNotPresent&amp;rdquo; , 没有意义了。
+root@km:~# export http_proxy=&amp;quot;http://192.168.31.239:8118/&amp;quot; root@km:~# export https_proxy=&amp;quot;http://192.168.31.239:8118/&amp;quot; root@km:~# export no_proxy=&amp;quot;localhost,127.0.0.1,192.168.31.120,10.96.0.10,github.com,ubuntu.com&amp;quot;   apt  加代理原因： apt update 要去 google.com 下载
+root@km:~# cat /etc/apt/apt.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes中cephfs的deployment的FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-deployment-faq.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:41:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-deployment-faq.html</guid>
+      <description>k8s cephfs 在 deployment.yaml 中的使用 Environment k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2  配置 deployment.yaml apiVersion: extensions/v1beta1 kind: Deployment metadata: name: cephfs-provisioner spec: replicas: 1 strategy: type: Recreate template: metadata: labels: app: cephfs-provisioner spec: containers: - name: cephfs-provisioner image: &amp;quot;quay.io/external_storage/cephfs-provisioner:latest&amp;quot; # 对应 镜像 imagePullPolicy: IfNotPresent env: - name: PROVISIONER_NAME valueFrom: configMapKeyRef: key: provisioner.name name: cephfs-provisioner command: # 这里对应 命令 - &amp;quot;/usr/local/bin/cephfs-provisioner&amp;quot; args: # 这里对应三个参数 - &amp;quot;-id=cephfs-provisioner-1&amp;quot; - &amp;quot;-master=https://10.</description>
+    </item>
+    
+    <item>
+      <title>kubeadm join</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-join.html</link>
+      <pubDate>Fri, 23 Nov 2018 17:17:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-join.html</guid>
+      <description>Environment 已安装 kubeadm, kubelet, kubectl
+安装时，全使用 root 用户。直到 kubeadm join 成功后，全使用 非root用户
+192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  kubeadm join /etc/kubernetes/pki/ca.crt already exists sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d  这个来自于 master节点， kubeadm init 后的提示。
+jlch@kn1:~$ sudo kubeadm join --token ce4253.8322cc2590378260 192.168.31.120:6443 --discovery-token-ca-cert-hash sha256:bb0b9ef27e5ffef06776ca10a87ed548cefedc703ddaf904316c87d4a7f3655d [kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters. [preflight] Running pre-flight checks [preflight] WARNING: docker version is greater than the most recently validated version.</description>
+    </item>
+    
+    <item>
+      <title>k8s 中 cephfs 成功的 yaml 文件</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-yaml.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:47:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-yaml.html</guid>
+      <description>https://github.com/kubernetes-incubator/external-storage/tree/master/ceph/cephfs
+对 我们好不容易成功安装的 k8s-cephfs 进行一个记录呀！
+环境 k8s-master 192.168.31.120 km master k8s-node1 192.168.31.119 kn1 node1 k8s-node2 192.168.31.118 kn2 node2 cephfs-admin 192.168.31.115 cephfs-monitor 192.168.31.114 cephfs-client 192.168.31.172  git remote jlch@km:~/cephfs$ git remote -v origin https://github.com/kubernetes-incubator/external-storage (fetch) origin https://github.com/kubernetes-incubator/external-storage (push) jlch@km:~/cephfs$ git log | head commit f1eb2a4ddf944fdd35a16e686ae104c1db8753b2 Merge: 06aaf46 52a4da4 Author: Matthew Wong &amp;lt;mawong@redhat.com&amp;gt; Date: Tue Nov 21 01:48:43 2017 -0500 Merge pull request #468 from sathieu/patch-1 flex: Fix file shbang commit 06aaf46950c9f6f741b34afc1d9f7807bdbe078c jlch@km:~/cephfs$  git status 记录一下主要的修改点</description>
+    </item>
+    
+    <item>
+      <title>kubeadm从v1.8.3更新至v1.8.4失败</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-upgrade-failure-from-v183-to-v184.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-upgrade-failure-from-v183-to-v184.html</guid>
+      <description>Installing Docker root@km:~# cat /etc/apt/sources.list.d/docker.list deb https://apt.dockerproject.org/repo ubuntu-xenial main root@km:~# cat /etc/docker/daemon.json { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2y.mirror.aliyuncs.com&amp;quot;] } root@km:~# vi /etc/docker/daemon.json root@km:~# cat /etc/docker/daemon.json { &amp;quot;exec-opts&amp;quot;: [&amp;quot;native.cgroupdriver=systemd&amp;quot;], &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;https://0d6wdn2y.mirror.aliyuncs.com&amp;quot;] } root@km:~# apt-get install -y curl apt-transport-https Reading package lists... Done Building dependency tree Reading state information... Done apt-transport-https is already the newest version (1.2.24). curl is already the newest version (7.47.0-1ubuntu2.4). The following packages were automatically installed and are no longer required: golang-1.</description>
+    </item>
+    
+    <item>
+      <title>cephfs-k8s 中的 make</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:52:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-make.html</guid>
+      <description>下载 make ，报错了。
+root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful# cd external-storage/ceph/cephfs/ root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful/external-storage/ceph/cephfs# ls cephfs_provisioner cephfs-provisioner.go ceph-secret-admin.yaml CHANGELOG.md claim.yaml class.yaml configmap.yaml deployment.yaml Dockerfile local-start.sh Makefile OWNERS README.md test-pod.yaml root@km:~/kubernetes.io/TUTORIALS/Stateful-Applications/cephfs-stateful/external-storage/ceph/cephfs# make CGO_ENABLED=0 GOOS=linux go build -a -ldflags &#39;-extldflags &amp;quot;-static&amp;quot;&#39; -o cephfs-provisioner cephfs-provisioner.go cephfs-provisioner.go:28:2: cannot find package &amp;quot;github.com/golang/glog&amp;quot; in any of: /usr/lib/go-1.8/src/github.com/golang/glog (from $GOROOT) /root/go/src/github.com/golang/glog (from $GOPATH) cephfs-provisioner.go:29:2: cannot find package &amp;quot;github.com/kubernetes-incubator/external-storage/lib/controller&amp;quot; in any of: /usr/lib/go-1.8/src/github.com/kubernetes-incubator/external-storage/lib/controller (from $GOROOT) /root/go/src/github.com/kubernetes-incubator/external-storage/lib/controller (from $GOPATH) cephfs-provisioner.go:30:2: cannot find package &amp;quot;k8s.io/api/core/v1&amp;quot; in any of: /usr/lib/go-1.</description>
+    </item>
+    
+    <item>
+      <title>kubeadm v1.8.3 安装</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-v183.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:36:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-install-v183.html</guid>
+      <description>https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+env 192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  Initializing your master kubeadm init --pod-network-cidr=10.244.0.0/16  如果遇到类似下面错误
+- [preflight] Some fatal errors occurred: :: Port 10250 is in use /etc/kubernetes/manifests is not empty /var/lib/kubelet is not empty  则，参考 https://github.com/kubernetes/kubernetes/issues/37063 运行下面命令：
+kubeadm reset systemctl start kubelet.service  之后，再次运行
+kubeadm init --pod-network-cidr=10.244.0.0/16  被墙了，出不去，我了个去，怎么办？
+https://mritd.me/2016/10/29/set-up-kubernetes-cluster-by-kubeadm/#21安装包从哪来
+好吧，那就去 hub.docker.com 中配置吧
+找到所有要配置的 image 找 etc/kubernetes/manifests root@km:~# cd /etc/kubernetes/manifests/ root@km:/etc/kubernetes/manifests# ls etcd.</description>
+    </item>
+    
+    <item>
+      <title>k8s 与 cephfs 相关的FAQ</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-faq.html</link>
+      <pubDate>Sun, 25 Nov 2018 17:58:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-cephfs-faq.html</guid>
+      <description>Input/output error cephu@ceph-client:/mnt/mycephfs/volumes/kubernetes$ ll kubernetes-dynamic-pvc-a2c667ad-d0c7-11e7-b656-0a580af40148/ ls: reading directory &#39;kubernetes-dynamic-pvc-a2c667ad-d0c7-11e7-b656-0a580af40148/&#39;: Input/output error total 0 drwxr-xr-x 1 root root 0 Nov 24 11:36 ./ drwxr-xr-x 1 root root 0 Nov 24 11:29 ../ cephu@ceph-client:/mnt/mycephfs/volumes/kubernetes$  这个问题，看了一下，https://github.com/kubernetes-incubator/external-storage/issues/345，
+最后，有用户是这样回复的
+I tried to update my ubuntu kernel from 4.4.0 to 4.10.0 (sudo apt install linux-image-4.10.0-28-generic) and after a reboot, the error is gone, everything works fine from now on :)  所以就是升级内核了。升级去吧。 升级一下，果然成功了。</description>
+    </item>
+    
+    <item>
+      <title>使用本地镜像进行kubeadm init</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-use-local-image.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:48:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-init-use-local-image.html</guid>
+      <description>因为 kubeadm 安装 要提前下载好docker images, 并使用 这些个 docker images. 但是，我们公司的网络FQ的下载速度太慢，时不时会断了。所以，我们考虑使用本地下载好的这些 images。
+要使用 local images, 那就要去修改 kubeadm 的代码，并重新build。好吧，我们build 吧。
+env 192.168.31.120 km master 192.168.31.119 kn1 node 192.168.31.118 kn2 node  kubeadm-build 见 kubeadm-build 部分
+加代理 root@km:/etc/kubernetes/manifests# export declare -x HOME=&amp;quot;/root&amp;quot; declare -x LANG=&amp;quot;en_US.UTF-8&amp;quot; declare -x LANGUAGE=&amp;quot;en_US:en&amp;quot; declare -x LESSCLOSE=&amp;quot;/usr/bin/lesspipe %s %s&amp;quot; declare -x LESSOPEN=&amp;quot;| /usr/bin/lesspipe %s&amp;quot; declare -x LOGNAME=&amp;quot;root&amp;quot; declare -x LS_COLORS=&amp;quot;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:&amp;quot; declare -x MAIL=&amp;quot;/var/mail/root&amp;quot; declare -x NO_PROXY=&amp;quot;localhost,127.0.0.1/8,192.168.31.1/24&amp;quot; declare -x OLDPWD=&amp;quot;/etc/kubernetes&amp;quot; declare -x PATH=&amp;quot;/home/jlch/.</description>
+    </item>
+    
+    <item>
+      <title>kubeadm build</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-build.html</link>
+      <pubDate>Sat, 24 Nov 2018 09:58:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubeadm-build.html</guid>
+      <description>build kubeadm 修改 Kubeadm 使得 etc/kubernetes/manifests 下的 *.yaml 文件带有 imagePullPolicy: IfNotPresent
+env 192.168.31.114 jlch
+gopath cd ~/gopath/src/github.com/kubernetes/ git clone https://github.com/kubernetes/kubernetes.git cd kubernetes  修改吧 jlch@mon1:~/gopath/src/github.com/kubernetes/kubernetes$ git status Not currently on any branch. Changes not staged for commit: (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed) (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory) modified: cmd/kubeadm/app/phases/controlplane/manifests.go modified: cmd/kubeadm/app/phases/etcd/local.go no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;) jlch@mon1:~/gopath/src/github.</description>
+    </item>
+    
+    <item>
+      <title>kubernetes delete node</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-delete-node.html</link>
+      <pubDate>Sat, 24 Nov 2018 23:32:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-delete-node.html</guid>
+      <description>clear cat k8.export.sh export KUBECONFIG=$HOME/admin.conf ls k get node kubectl drain kn1 --delete-local-data --force --ignore-daemonsets kubectl delete node kn1 kubectl drain kn2 --delete-local-data --force --ignore-daemonsets kubectl delete node kn2 k get node clear kubectl drain km --delete-local-data --force --ignore-daemonsets kubeadm reset k get pod --all-namespaces docker ps  </description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Role</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-role.html</link>
+      <pubDate>Sun, 01 Jul 2018 20:50:36 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-role.html</guid>
+      <description> Env  kubernetes: 1.10  Step &amp;ldquo;我打你&amp;rdquo;,
+ 动作执行对象是 我, 动作是 打 动作被执行对象是 你  在namespace级别：
+role: 是`动作`与`动作被执行对象`的规则，比如：&amp;quot;打你&amp;quot; rolebing: 是绑定`动作`与`动作对象`，比如：指定 &amp;quot;我&amp;quot;与&amp;quot;打你&amp;quot; 相绑定。  在cluster级别：
+clusterrole clusterrolebing  Ref  https://live.vhall.com/829906699  </description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Heapster Install</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-heapster-install.html</link>
+      <pubDate>Wed, 28 Mar 2018 10:46:26 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-heapster-install.html</guid>
+      <description>env 192.168.31.120 master
+step root@km:~/heapster# git remote -v origin	https://github.com/kubernetes/heapster.git (fetch) origin	https://github.com/kubernetes/heapster.git (push) root@km:~/heapster# git status On branch master Your branch is up-to-date with &#39;origin/master&#39;. Changes not staged for commit: (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed) (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory) modified: deploy/kube-config/influxdb/grafana.yaml modified: deploy/kube-config/influxdb/heapster.yaml modified: deploy/kube-config/influxdb/influxdb.yaml no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;) root@km:~/heapster# git diff deploy/kube-config/influxdb/grafana.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Deployment Rollingupdate</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-deployment-rollingupdate.html</link>
+      <pubDate>Sun, 04 Feb 2018 13:21:25 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes-deployment-rollingupdate.html</guid>
+      <description>使用kubernetes的deployment进行RollingUpdate</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/k8s.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/k8s.html</guid>
+      <description>kubernetes kubernetes对象 pod kubernetes的最小单位，共享网络和存储
+pod中多个container通过localhost进行通信
+通常情况下pod不会运行一个应用的多个实例
+previleged：特权模式，容器内可以获得等同容器外进程的权限
+pod状态  pending：pod已在kube API中创建，但还在准备阶段（拉取镜像、启动） running：pod已正产运行 successed：pod已运行结束并成功推出，不再重启 failed：pod中有容器异常终止 unknown：因为一些原因无法获知pod状态  init容器 pod启动过程中， init容器会按顺序依次启动，并且只有在一个init容器启动并成功退出后，才会启动下一个容器；如果启动失败，则按照restartPolicy规则重启
+只有在所有init容器正常退出后，pod才会变成ready
+apiVersion: v1 kind: Pod metadata: name: myapp-pod labels: app: myapp spec: containers: - name: myapp-container image: busybox command: [&#39;sh&#39;, &#39;-c&#39;, &#39;echo The app is running! &amp;amp;&amp;amp; sleep 3600&#39;] initContainers: - name: init-myservice image: busybox command: [&#39;sh&#39;, &#39;-c&#39;, &#39;until nslookup myservice; do echo waiting for myservice; sleep 2; done;&#39;] - name: init-mydb image: busybox command: [&#39;sh&#39;, &#39;-c&#39;, &#39;until nslookup mydb; do echo waiting for mydb; sleep 2; done;&#39;]  pause容器  在pod中担任命名空间共享的基础 启用pid命名空间，开启init进程  pause容器启动后，创建一个命名空间，pod中其他应用通过加入相同的命名空间获得共享的网络和存储</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/kubernetes%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86.html</guid>
+      <description>kubernetes核心原理 kubernetes API 提供各种资源对象（Pod、RC、Service、deployment、HPA、PV等等的）增删改查及watch等REST接口，成为集群内各个功能模块之间的数据交互和通信的中心枢纽，是整个系统的数据总线和数据中心。
+ 集群管理的API入口 是资源配额控制的入口 提供了完备的集群安全机制  集群功能模块之间的通信 集群所有模块都只和kubeAPI通信，不直接操作etcd数据库
+如kubelet：kubelet每个一个周期就与api通信报告自身状态，api收到信息后，将节点状态存入etcd中；kubelet通过watch api监听pod信息，如果坚挺到新的pod副本被调度到本节点，则执行pod相应的创建和启动逻辑。删除亦如此
+一个完整的pod创建过程
+ kubectl创建一个pod，将pod信息传递给api api将pod信息写入etcd kube-controller-maneger通过api watch接口实时监控pod变化信息，做相关操作 kube-schduler与api交互，监控到pod新建信息，检索符合pod要求的node列表，开始执行pod调度逻辑，将pod绑定到目标节点 kubelet与API交互，检测到pod创建信息，开始创建pod  Controller Manager 负责集群内node、pod、endpoint、namespace、serviceaccount、资源配额等管理，当某个node宕机时，controller manager会及时发现故障并执行自动化修复流程
+ ReplicationController  控制pod副本数量符合预期 通过调整spec.replicas来实现系统扩容和缩容 实现滚动升级  NodeController  设置CIDR，防止节点间CIDR冲突 逐个读取节点信息，实时修改nodeStatusMap，状态没变化则修改nodestatusmap的时间，否则修改nodestatusmap的信息  ResourceQuotaController NamespaceController ServiceAccountController TokenController ServiceController EndpointController  controller通过api实施监控整个集群里的每个资源对象的当前状态，当发生故障时会尝试将系统修复至期望状态
+Scheduler 将待调度的pod按照特定的调度算法和调度策略绑定到集群中的某个特定的node，并将绑定信息写入etcd。
+默认调度流程分如下两步：
+ 预选调度过程，便利所有目标node，筛选出符合要求的候选节点 确定最优节点，在第一步的基础上，采用优选策略计算出每一个候选节点的积分，积分最高者胜出  预选调度策略 NoDiskConflict 读取备选pod的所有volume信息（Pod.Spec.Volumes），如果volume是GCE或者AWS，且所要调度的节点上存在已挂载相同volume的pod，则存在磁盘冲突，不适合备选pod
+PodFitsResources 检测备选pod和备选node是否存在资源需求冲突
+PodSelectorMatches 判断备选node是否包含备选pod的标签指定的标签（spec.nodeSelector）
+PodFitsHost 判断Pod的spec.nodeName所指定的节点名称是否和备选节点的名称是否一致
+CheckNodeLablePresence scheduler会通过RegisterCustomfitPredicate注册该策略，判定判断策略列出的标签存在时是否选择该备选节点
+如果presence为false，存在标签时为false
+如果presence为true，存在标签使为true
+CheckServiceAffinity PodFitsPorts 判断备选pod所用的端口列表是否在备选节点被占用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/notes.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/notes.html</guid>
+      <description> kubernetes权威指南读书笔记 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/pod%E8%AF%A6%E8%A7%A3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/pod%E8%AF%A6%E8%A7%A3.html</guid>
+      <description>pod详解 pod配置文件示例 # API版本 apiVersion: v1 # 控制器类型 kind: pod # 元数据 metadata: # pod名 name: string # pod所属的命名空间 namespace: string # pod的label键值对，列表 labels: - name: string # 自定义注解键值对，列表 annotations: - name: string # pod详细定义 spec: # 容器列表 containers: # 第1个容器名称 - name: string # 容器镜像 image: string # 镜像拉取的策略，always每次都重新下载镜像；IfNotPresent如果本地有就用本地，没有时下载镜像；never只使用本地镜像 imagePullPolicy: [ Always | Never | IfNotPresent ] # 容器启动命令，不指定则使用镜像打包是使用的启动命令 command: [string] # 启动参数 args: [string] # 容器工作目录 workingDir: string # 容器存储卷配置列表 volumeMounts: # 卷1 - name: string # 挂载的容器目录 mountPath: string # 是否只读，默认为读写 readonly: boolean # 容器需要暴露的端口列表 ports: # 第一个端口配置 - name: string # 容器监听的端口 containerPort: int # 容器所在node需要监听的端口，默认与containerPort相同，设置后，同一node不可以存在多副本 hostPort: int # 端口协议，TCP/UDP protocol: string # 容器的环境变量，列表 env: # 第一个环境变量，变量名和值 - name: string value: string # 容器资源配置 resources: # 资源限制 limits: cpu: string memory: string # 资源请求 requests: cpu: string memory: string # 容器存活探针 livenessProbe: # 执行命令检测是否存活 exec: command: [string] # 发起HTTP请求检测是否存活 httpGet: path: string port: number host: string scheme: string httpHeaders: - name: string value: string # 检测端口监听 tcpSocket: port: number initialDelaySeconds: 0 timeoutSeconds: 0 periodSeconds: 0 successThreshould: 0 failureThreshould: 0 securityContext: privileged: false # 重启策略 restartPolicy: [ Always | Never | Onfailure ] # 选择启动pod的node标签 nodeSelector: object # imagePullsecrets: - name: string # hostNetwork: false # pod共享存储配置，列表 volumes: - name: string # emptyDir模式，占用内存，跟随pod生命周期 emptyDir: {} # node本地路径 hostPath: path: string # 类型为secret的存储卷，表示挂载集群预定义的secret对象到容器内部 secret: secretName: string items: - key: string path: string # configMap configMap: name: string items: - key: string path: string  pod基本用法  与docker一样，前台执行（后台nohup执行后，pod认为nohup执行结束，会关闭pod，若定义了rc则无限重启）,无法前台的应用可以使用supervisor 紧耦合的应用建议放置在同一个pod 同一pod的容器可以通过localhost通信  静态pod 由kubelet运行在特定node上的pod，不受API管理，无法与RC、deployment、daemonset关联</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/service%E8%AF%A6%E8%A7%A3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/service%E8%AF%A6%E8%A7%A3.html</guid>
+      <description>service详解 service 配置文件详解 # 版本 apiVersion: v1 # 类型service kind: Service # 元数据 metadata: # service name name: string # 所属namespace namespace: string # 标签键值对，列表 labels: - name: string # 注解 annotations: - name: string # 详解 spec: # pod选择的标签列表 selector: [] # service类型，指定service访问类型，默认clusterIP，还有NodePort(直接采用宿主机IP+端口)，LoadBalance（指定外部负载器的IP地址，并同时定义nodePort和clusterIP） type: string # service的cluster IP clusterIP: string sessionsAffinity: 是否支持session # 端口配置 ports: - name: string protocol: string port: int # pod端口 targetPort: int # 宿主机端口 nodePort: int # 当spec.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E4%BC%81%E4%B8%9A%E5%AE%9E%E8%B7%B5%E6%95%B4%E7%90%86.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E4%BC%81%E4%B8%9A%E5%AE%9E%E8%B7%B5%E6%95%B4%E7%90%86.html</guid>
+      <description>企业实践整理 资源管理 计算资源管理 多集群管理 ##### federation
+资源分区管理 ##### namespace
+实现逻辑隔离，默认权限下不可跨namespace访问资源
+namespace可以看做一级域名，不同的namespace下解析各自的service（search domain）
+/ # cat /etc/resolv.conf nameserver 10.254.0.2 search default.svc.cluster.local. svc.cluster.local. cluster.local. options ndots:5  ##### node调度
+#### 资源配额和资源限制
+ pod：limit，request，limitrange namespace：ResourceQuota  #### service端口管理
+   namespace service name service IP NodePort     default webservice1 10.1.1.1 8089   partition1 webservice1 10.1.1.2 8090    外部服务可以作为虚拟service纳入kubernetes集群，不设置selector，统一管理
+网络资源管理 flannel  VxLAN 对数据进行二次封装
+ DUP</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E5%9F%BA%E4%BA%8ERBAC%E5%AE%9E%E7%8E%B0dashboard%E5%8F%AA%E8%AF%BB-view%E6%9D%83%E9%99%90.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E5%9F%BA%E4%BA%8ERBAC%E5%AE%9E%E7%8E%B0dashboard%E5%8F%AA%E8%AF%BB-view%E6%9D%83%E9%99%90.html</guid>
+      <description>基于RBAC实现dashboard只读——view权限 只是简单利用默认的clusterrole - view实现了只读所有namespace下的对象(除去secret、role、rolebinding)，不支持读取集群信息，后期深入了解resource后再重新梳理role和rule
+kind: ServiceAccount apiVersion: v1 metadata: name: view namespace: kube-system --- kind: ClusterRoleBinding apiVersion: rbac.authorization.k8s.io/v1beta1 metadata: name: dashboard-dev-rolebinding subjects: - kind: ServiceAccount name: view namespace: kube-system roleRef: kind: ClusterRole name: view apiGroup: rbac.authorization.k8s.io  使用默认的clusterrole：view(Allows read-only access to see most objects in a namespace. It does not allow viewing roles or rolebindings. It does not allow viewing secrets, since those are escalating. )
+https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+拿token
+kubectl describe secret -n kube-system `kubectl describe sa view -n kube-system | grep &amp;quot;Mountable secrets&amp;quot; | awk &#39;{print $3}&#39;` | grep -E ^token | awk &#39;{print $2}&#39;  登录dashboard即可</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html</guid>
+      <description>基础概念 基本组件 master  kubernetes API server：集群的控制入口，提供rest接口，对集群进行增删查改 kubernetes Controller Manager：管理集群资源对象，rc，service，deployment等等对象 kubernetes Scheduler：集群资源调度（Pod），建立相应任务，比如讲某个pod通过算法指定到某个node etcd：存储集群信息，与kubenetes API server进行交互  node  kubelet：负责启停pod，并与API server通信 kube-proxy：实现service通信和负载 docker engine：docker引擎，负责容器创建（也可以是其他的容器引擎）  ## 基本术语
+pod pod是kubernetes的最小单元
+每个pod都有pause容器，用来解决pod网络、存储资源共享问题，
+pod内部通过localhost通信，pod与pod通过pause的IP通信
+两种类型
+ 普通pod，etcd中存储相关信息，受API server管理，可以运行在集群中任意node
+ 静态pod（static pod），etcd中不存在pod的任何信息，不受API server管理，只运行在特定的node上
+  label key:value格式，对不同的资源对象，根据不同的场景打上相应的label，可以打任意个label
+RC（replicas controller） 实现pod多副本，高可用
+API接收到RC创建请求后，controller manager就会定期检查pod副本数是否匹配RC，发现pod数据异常就会通知scheduler，scheduler通知kubelet，增删pod
+apiVersion: v1 #api版本 kind: ReplicationController # 类型 rc metadata: # 元数据 name: nginx # RC名称 nginx spec: # 详细信息 replicas: 3 # 期望的副本数，3个 selector: # 选择pod的label，app=nginx app: nginx template: # pod模板 metadata: # 元数据 name: nginx # pod名称 nginx labels: # pod标签 app=nginx app: nginx spec: # 详细信息 containers: - name: nginx # 容器1 image: nginx # docker镜像 ports: # 容器端口 80 - containerPort: 80  命令行修改RC副本数量</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86.html</guid>
+      <description>日志收集 翻译自k8s官方文档：https://kubernetes.io/docs/concepts/cluster-administration/logging/
+应用和系统日志可以帮助我们理解我们的集群发生了什么。对于排插问题和监控集群活动也非常有用。大多数应用都有某种日志机制；同样的，大部分容器引擎设计时也支持多种日志记录。对于容器应用，最容易并且最受欢迎的记录方式是写标准输出和标准错误输出。
+然而，容器引擎原生的方法通常不足以完全的解决日志记录问题。比如，如果container故障，或者pod移除，或者node不可用，你仍然希望接收应用的日志。因此，日志应该有不依赖与node、pod、或者container的生命周期和独立存储。这个概念被称之为*cluster-level-logging* *cluster-level-logging* 要求一个独立的后台去存储，分析并且查询日志。k8s提供非远程的存储解决方案给日志数据，你可以集群很多已经存在的日志记录方案在k8s集群
+## Basic logging in Kubernetes
+在这个部分，你可以看到一些*Basic logging in Kubernetes*的例子：输出数据到stdout，这个实力用一个pod指定一个container每秒一次输出一些文本到stdout。
+apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  启动pod后，通过kubectl logs获取日志信息
+$ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001 .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E9%9B%86%E7%BE%A4%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/kubernetes/%E9%9B%86%E7%BE%A4%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6.html</guid>
+      <description>集群安全机制  挨批server的认证授权 保证容器与其所在的宿主机的隔离 限制容器给基础设施及其他容器带来消极影响的能力 最小权限原则——合理限制所有组件的权限 划分普通用户和管理员的角色 明确组件间边界的划分 在必要的时候云讯将管理员权限付给普通用户 允许拥有secret数据的应用在集群中运行  APIserver认证 所有资源的访问都是通过APIserver的REST API实现的，所以集群安全的关键点在于如何识别并认证客户端身份，以及访问权限控制
+三种级别的客户端身份认证方式
+ HTTPS证书双向认证  通过CA根证书签发服务器证书，客户端证书，客户端请求服务器时互相验证对方的证书
+ HTTP token认证  私钥签发一个很长的特殊编码方式且难以模仿的字符串，HTTP访问时在header里携带token
+ HTTPbase认证  HTTP基础认证，将用户名明码放在request中的header authorization域里发送给服务器
+APIserver授权  AlwaysDeny 默认拒绝所有
+ AlwaysAllow 默认允许所有且不需要授权
+ ABAC attribute-base access control 基于属性的访问控制
+ 用户名 是否是只读请求 被访问的是哪一类资源 被访问对象所属的namespace   使用abac需要在授权文件中写入json格式的访问策略对象
+{&amp;quot;user&amp;quot;:&amp;quot;alice&amp;quot;} # 允许Alice做所有事情 {&amp;quot;user&amp;quot;:&amp;quot;kubelet&amp;quot;,&amp;quot;resource&amp;quot;:&amp;quot;pods&amp;quot;,&amp;quot;readonly&amp;quot;:&amp;quot;true&amp;quot;} # 允许kubelet只读pod {&amp;quot;user&amp;quot;:&amp;quot;bob&amp;quot;,&amp;quot;resource&amp;quot;:&amp;quot;pods&amp;quot;,&amp;quot;readonly&amp;quot;:&amp;quot;true&amp;quot;,&amp;quot;ns&amp;quot;:&amp;quot;myNamespace&amp;quot;} # 允许Bob只读myNamespace的pod  客户端发起APIserver调用，先进行用户认证，再执行鉴权
+admission control准入控制？？ ServiceAccount 用于pod访问APIserver时的身份认证
+客户端访问APIserver时需要对客户端进行身份认证
+pod中的客户端访问apiserver时是以service方式访问kubernetes这个service
+service account就是pod访问kubernetesAPI时的认证机制，访问的时候，在header中传递一个token</description>
+    </item>
+    
+  </channel>
+</rss>

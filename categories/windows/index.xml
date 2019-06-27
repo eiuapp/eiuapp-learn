@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/windows.html</link>
+    <description>Recent content in windows on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 28 Feb 2018 17:26:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Command</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/windows.html</link>
+      <pubDate>Wed, 28 Feb 2018 17:26:01 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/cheatsheets/command/windows.html</guid>
+      <description> windows 后台运行 使用start /b +命令即可，具体方法如下：
+ 按windows和r组合键打开运行面板； 在运行框内输入cmd，再按回车键进入命令提示符中； 在命令提示符中输入“ start /b 命令 &amp;ldquo; 再按回车，即可后台运行该命令。  </description>
+    </item>
+    
+  </channel>
+</rss>

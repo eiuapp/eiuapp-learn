@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pyenv on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/pyenv.html</link>
+    <description>Recent content in pyenv on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac中python安装pyenv</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-pyenv-install-with-mac.html</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-pyenv-install-with-mac.html</guid>
+      <description>pyenv 用于同时管理多个python版本，它可以为每个工作目录设定使用指定的py版本，在不同目录下使用不同的版本可以同时开发不同版本的项目。
+Ubuntu安装 ➜ oscar git:(master) ✗ git clone https://github.com/pyenv/pyenv ~/.pyenv Cloning into &#39;/Users/tomtsang/.pyenv&#39;... remote: Enumerating objects: 63, done. remote: Counting objects: 100% (63/63), done. remote: Compressing objects: 100% (37/37), done. remote: Total 16547 (delta 24), reused 50 (delta 20), pack-reused 16484 Receiving objects: 100% (16547/16547), 3.24 MiB | 497.00 KiB/s, done. Resolving deltas: 100% (11211/11211), done. ➜ oscar git:(master) ✗ git clone https://github.com/pyenv/pyenv-virtualenv ~/.pyenv/plugins/pyenv-virtualenv Cloning into &#39;/Users/tomtsang/.pyenv/plugins/pyenv-virtualenv&#39;... remote: Enumerating objects: 2027, done.</description>
+    </item>
+    
+  </channel>
+</rss>

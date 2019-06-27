@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn-Hugo on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo.html</link>
+    <description>Recent content in Learn-Hugo on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 08 Sep 2018 21:07:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/learn-hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>前言</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/learn-hugo/_index.zh.html</link>
+      <pubDate>Sat, 08 Sep 2018 21:07:13 +0100</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/learn-hugo/_index.zh.html</guid>
+      <description>内容介绍 Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+Hugo以速度快著称，号称是世界上最快的网站生成框架。
+The world’s fastest framework for building websites
+访问方式 这是个人学习Hugo的笔记，请点击下面的链接阅读:
+ 在线阅读：hugo格式，界面清爽。托管于腾讯云香港节点，速度快，偶尔抽风 @github：源码托管于github，如有谬误或需讨论，请提issue，欢迎提交PR  版权申明 本笔记内容可以任意转载，但请注明来源并提供链接，请勿用于商业出版。</description>
+    </item>
+    
+  </channel>
+</rss>

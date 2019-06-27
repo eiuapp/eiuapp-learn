@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spacemacs on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/categories/spacemacs.html</link>
+    <description>Recent content in spacemacs on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/categories/spacemacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>spacemacs(笔记)</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/note/note-about-spacemacs.html</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/note/note-about-spacemacs.html</guid>
+      <description>load-themes(SPC T s) org-cycle(TAB)
+spacemacs打开org文件时默认没有自动折行。想要自动折行，则运行：
+M-x spacemacs/toggle-visual-line-navigation-on 现在发现下面这个也可以自动折行：
+M-x toggle-truncate-lines M-x toggle-truncate-lines-on M-x toggle-truncate-lines-off
+最后，其实都是查看 SPC h d v truncate-lines 这个变量的值是t 还是 nil</description>
+    </item>
+    
+    <item>
+      <title>spacemacs key binding</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-key-binding.html</link>
+      <pubDate>Fri, 16 Nov 2018 00:20:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-key-binding.html</guid>
+      <description>Table  | Key | Function | 中文解释 | 其它 | |&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| | SPC t n | linum-mode | 显示行号 | | | SPC j l | goto-line | 跳转到行号 | | | C-c &amp;gt; | python-indent-region | 代码块右移 | python leyer | | C-c &amp;lt; | python-indent-region | 代码块左移 | python leyer |
+有一些网址已经帮我们总结了很多的快捷键，罗列在这里：
+https://blog.csdn.net/u011729865/article/details/52793134</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 0, Intro</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-0-notes.html</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-0-notes.html</guid>
+      <description>本spacemacs rocks day系列是针对子龙山人的 spacemacs rocks season 1 的 11个优酷视频教程而整理的笔记。 相应的子龙山人的本人对教程的介绍，请看：https://zilongshanren.com/blog/2015-12-06-spacemacs-rocks.html
+因为我本人之前已有相关的spacemacs的使用经历，所以，我在看的时候，次序有点不对。 新人可以按下面的次序观看视频。
+ 了解: 10, 11, 9 入门: 1, 2, 3, 4, 5, 6, 7, 8  注意：视频中的很多命令，早已不能再使用，且有一些我也没有摸索出来，如有知道的请留言探讨。</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 1, Features &amp; Workflow</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-1-notes.html</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-1-notes.html</guid>
+      <description>spacemacs-rocks(1)
+跳到函数定义，并返回  , g g 然后 C-o
+ Navigation functions in current file  SPC s l （已经失效，因为没有找到这个快捷键）
+ 替换成
+ M-x helm-jump-in-buffer
+ 这样，就可以把它们绑定一下。</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 3, Emacs as a C/C&#43;&#43; IDE</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-3-notes.html</link>
+      <pubDate>Thu, 15 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-3-notes.html</guid>
+      <description>emacs-as-c-ide(youku)
+先看 github的 README.org
+因为我并没有开发C/C++, 所以我这里只记录一下。
+代码跳转 tag 跳转
+ , g d
+ 精确 跳转
+ , g g
+ 还有一个
+ , g a
+ 返回到跳转前
+ C-o
+ 生成 .ycm_extra_conf.py 文件 TODO 自动生成.ycm_extra_conf.py 文件的程序，会在其github中放出 python config_gen.py ~/Github/Spacemacs-rocks/c++-project  安装ycmd  https://github.com/Valloric/ycmd  Compile?? 推荐使用shell
+Debugging?? 推荐使用 shell + lldb</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 4, Magit workflow</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-4-notes.html</link>
+      <pubDate>Thu, 15 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-4-notes.html</guid>
+      <description>如果magit状态下，不知道按键，则 SPC g s 后按 ? 号，查看。
+Magit init, commit and commit messages  SPC g i(magit-init) SPC u S(所有文件加入版本库) 按TAB查看文件的修改 SPC g s(magit-status) s-1 (goto unstaged section) press tab to view diffs(code review) s to stage all changes c c -&amp;gt; c-c c-c to commit editing the commit message and the diff on the right  Commits in Action  Ammend ( c a) 就是把之前的commit作修改。把最近的修改，加入到上一次的 commit 之中。 write good commit messages squash unpushed commits (r l) reset commits (l l #) select a few line to commits discard changes, file wide or line wide revert commits  git push  SPC g s M a(remote name, remote url) P 第一次的话，按 - u(git push) 按提示，一般是 p或u  git rebase squash 把2个或者多个 commit ，合并成一个。  SPC g s 多个commit, 但是没有 push 找到最前的一个commit(commit 1) 按r i，进入一个commit 列表。 C-c, C-c 按 r 再按s , 表示进入到 squash 状态 按 , c 进入最终的commit Message 编辑 C-c C-c 退出。这时，观察到，2个commit已经合并成一个了。 git push 吧。  git reset  https://magit.</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 5, Find, Search and replace</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-5-notes.html</link>
+      <pubDate>Thu, 15 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-5-notes.html</guid>
+      <description>Evil search  Use / and * to start search. Use n &amp;amp; N to search forward and backward  进入 iedit 批量修改  * e
+ 修改的时候，按S则删除原单词，修改完成后，按ESC，2次，退出iedit模式回到Normal模式。
+选择匹配范围。 多次按 r 切换匹配区域（当前buffer, 当前屏幕，当前函数）
+ * r
+ 按 e 进入编辑模式，按 f 进入函数区域，按S开始修改。
+清除搜索下的高亮：evil-search-clear-highlight  SPC s c
+ Swiper  C-s to start search.  搜索到结果后，C-j, C-k, C-n, C-p 可以跳转
+ C-c C-o to enter ivy-occur  可以把当前的搜索项，罗列在另一个buffer中。
+Helm-swoop SPC s s/S to search search C-c C-e to enter edit mode SPC h l(helm-resume)</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 6, Org-mode as a blogging engine</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-6-notes.html</link>
+      <pubDate>Fri, 16 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-6-notes.html</guid>
+      <description>youku
+Start to blogging any place and any time. Press F1 to launch a menu and type blog to choose. Navigation all the blog posts
+https://github.com/CodeFalling/blog-admin
+这里的配置，主要是针对 hexo
+Press W to new post Enter the title of your new post
+快速生成一个draft blog
+下面这个在另一篇博文中已经提过。  C-c t h
+ 使用 yasnippet 模板，快速生成一个draft hugo 文章信息模板
+Start writing You could use all the Org syntax here. But org table is not well supported.</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 7, Spacemacs buffer, file, project and layout management</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-7-notes.html</link>
+      <pubDate>Sat, 17 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-7-notes.html</guid>
+      <description>youku
+SPC f &amp;mdash;&amp;gt; file related operations SPC f f --&amp;gt; helm-find-file SPC f r --&amp;gt; open recent file SPC f R --&amp;gt; rename file SPC f c --&amp;gt; copy file SPC f j --&amp;gt; jump to dired SPC f t --&amp;gt; open neo tree SPC f o --&amp;gt; open in external application  在 SPC f f的时候，可以通过 TAB 和 C-h 补充和回退文件夹名。
+SPC b &amp;mdash;&amp;gt; buffer related operations SPC b b &amp;amp; SPC b B(i) SPC b h (spacemacs home buffer) SPC b s (scratch buffer) SPC b f (reveal in finder) SPC b w in dired buffer.</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 8, Spacemacs as a JavaScript/Node.js IDE</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-8-notes.html</link>
+      <pubDate>Sat, 17 Nov 2018 11:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-8-notes.html</guid>
+      <description>Autocompletion  company-etags vs company-tern hippie-expand   M-x hippie-expand
+ 或者
+ M-/
+ Jump to definition  SPC s l to jump to function definitions. ctags. SPC m g d/ etags-select SPC s p / SPC o s to search keywords SPC m g g if use tern.js  jump to function definitions. ctags&amp;gt; SPC s l 已经失效了
+etags-select etags, 基于正则表达式的补全 &amp;gt; SPC m g d 和 &amp;gt; , g d 相同</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 9, spacemacs as a life style</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-9-notes.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-9-notes.html</guid>
+      <description> spacemacs as a life style 视频中的命令，还没有找到
+进入不同的项目，使用layer切换：
+ SPC l l
+ 一般先进入 @org 查看当天的任务
+只有单你，确切地需要功能时，才去写elisp函数，实现自动化。
+TODO 在 day 周期下，如何把任务设置成 done? TODO 开启ERC 在 SPC f e d 中安装 erc layer.
+TODO 通过 ispell 语法检查 experience
+osx-dictionary 英英翻译 光标处翻译 比如，我们现在有ball这个单词，把光标放在ball上（b,l上都可以）,然后
+ M-x osx-dictionary-search-word-at-point
+ 或者
+ SPC x w d
+ 然后，就给出了英文翻译，这时在这个临时buffer中有 s, o, r, q 提示，我们按r就有发音了。
+翻译一个输入的单词  M-x osx-dictionary-search-input
+ </description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 10, spacemacs tutor</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-10-notes.html</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-10-notes.html</guid>
+      <description>youku spacemacs tutor
+安装 各文件夹功能 core 方便加载layer的配置
+使用 proxychains4 打开 emacs $ proxychains4 open /Applications/Emacs.app  这样的话，就会让emacs翻墙，这样下载melpa.org中的packages就会比较快。
+介绍 spacemacs home page change-log Evil tutor  SPC h T
+ universal arguments  SPC u
+ 配置启动全屏 在buffer中快速跳转  M-x jump-in-buffer
+ 现在有2种
+ M-x helm-jump-in-buffer
+ 和
+ M-x counsel-jump-in-buffer
+ 不需要安装layer，只单独安装某package 在 ~/.spacemacs.d/init.el 中的
+dotspacemacs-additional-packages 中添加packages名就可以了。
+行号  SPC t n
+ 相对行号
+ SPC t r
+ 这时，向下跳转9行，则只要：</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 11, spacemacs use daily</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-11-notes.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-11-notes.html</guid>
+      <description>youku spacemacs
+开启 org-pomodoro  M-x org-pomodoro
+ 或者
+ , C p
+ 插入chrome tab 且有title 无title可以使用
+ C-c l
+ 但是视频中的是有title的，命令
+ C-c G c
+ 已经失效。
+记笔记主要用 deft 代码跳转至定义  , g
+ 返回到跳转前
+ C-o
+ python 语法检查错误列表  SPC e L
+ 查看函数文件  , h h
+ REPL环境 打开  , s i
+ 发送选中区块代码至 REPL环境  , s r
+ 在emacs中直接调用搜索引擎进行搜索  SPC a /</description>
+    </item>
+    
+    <item>
+      <title>emacs中启动markdown preview</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-markdown-preview.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/emacs/emacs-markdown-preview.html</guid>
+      <description> zilongshanren/markdown-to-html 开启
+ , p
+ 使用 grip 程序preview markdown-to-html 文件。子龙说，这里的预览效果与 github上的md文件的效果是一模一样的。
+grip安装 https://github.com/joeyespo/grip
+brew install grip  Ref  https://emacs-china.org/t/topic/1549/17  </description>
+    </item>
+    
+    <item>
+      <title>在win10上安装spacemacs</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-install-with-win10.html</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-install-with-win10.html</guid>
+      <description>在win10上安装spacemacs
+env  os: win10 emacs: 26.1 spacemacs: develop分支  step 安装 emacs 参考这里
+备份 cd ~ mv .emacs.d .emacs.d.bak mv .emacs .emacs.bak  官网下载 spacemacs 包 git clone https://github.com/syl20bnr/spacemacs -b develop ~/.emacs.d  Launch Emacs Spacemacs will automatically install the packages it requires. If you get an error regarding package downloads then you may try to disable the HTTPS protocol by starting Emacs with
+emacs --insecure  第一次运行，请选择默认选择项目（1. vim; 2.</description>
+    </item>
+    
+    <item>
+      <title>在win10上安装spacemacs的常见问题</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-install-faq-with-win10.html</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-install-faq-with-win10.html</guid>
+      <description>在win10上安装spacemacs后，出现的问题
+Warning 提示如下： Error (use-package): Cannot load highlight-global Warning (magit): Magit no longer uses Magit-Popup. It now uses Transient. See https://emacsair.me/2019/02/14/transient-0.1. However your configuration and/or some third-party package that you use still depends on the `magit-popup&#39; package. But because `magit&#39; no longer depends on that, `package&#39; has removed it from your system. If some package that you use still depends on `magit-popup&#39; but does not declare it as a dependency, then please contact its maintainer about that and install `magit-popup&#39; explicitly.</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Use Zilongshanren Spacemacs Private</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-use-zilongshanren-spacemacs-private.html</link>
+      <pubDate>Tue, 28 Aug 2018 23:53:02 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-use-zilongshanren-spacemacs-private.html</guid>
+      <description>想直接使用，zilongshanren的 配置
+Env  os: mac os 10.13.3 emacs: 26.1 spacemacs： 0.200.13@26.1  prepare 在使用前，我们可以安装一些软件
+brew install emacs brew install ispell brew install trash brew tap caskroom/fonts &amp;amp;&amp;amp; brew cask install font-source-code-pro brew install ctags-exuberant  Step 现在直接就报了一个错误。见 https://github.com/zilongshanren/spacemacs-private/issues/180
+然后，这个时候，从各地方，获知，要用 spacemacs 源码的 devlop分支，而不是master分支。所以。要重新clone一下。
+➜ .emacs.d git:(develop) pwd /Users/tomtsang/.emacs.d ➜ .emacs.d git:(develop) git remote -v origin	https://github.com/syl20bnr/spacemacs.git (fetch) origin	https://github.com/syl20bnr/spacemacs.git (push) ➜ .emacs.d git:(develop) git branch -v * develop c122eb6a0 lsp-layer configuration and building blocks for derived layers.</description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Qa 1</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-qa-1.html</link>
+      <pubDate>Sat, 25 Aug 2018 12:33:47 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-qa-1.html</guid>
+      <description> Env  os: mac os 10.13.3 emacs: 26.1 spacemacs： 0.200.13@26.1  Step QA Q:
+Description :octocat:
+Error (use-package): org-projectile :config: Symbol&#39;s function definition is void: org-projectile-per-project  A:
+参考 https://github.com/syl20bnr/spacemacs/issues/9374 知道
+I also faced this issue today after updating all packages.
+find ~/.emacs.d/elpa/org-projectile-20180601.242/ -name &amp;quot;*elc&amp;quot; -delete and restarting fixed it.
+Ref  https://github.com/syl20bnr/spacemacs/issues/9374  </description>
+    </item>
+    
+    <item>
+      <title>Spacemacs Rocks Day 2, Use Org-mode to Management Your Time</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-2-notes.html</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/spacemacs/spacemacs-rocks-season-1-day-2-notes.html</guid>
+      <description>进入 agenda
+ C-c a
+ 进入天，再进入周，再返回至天
+ C-c a a 选中项目 Rtn w d
+ 这样，就可以把它们绑定一下。那怎么绑定呢？
+子龙山人的 `org-agenda-dir` 相关配置，在`~/.spacemacs.d/layers/zilongshanren/config.el`
+org-agenda-dir &amp;quot;~/org-notes&amp;quot; deft-dir &amp;quot;~/org-notes&amp;quot; blog-admin-dir &amp;quot;~/zilongshanren.com&amp;quot;))  所以，这里要替换成自己的。</description>
+    </item>
+    
+  </channel>
+</rss>
