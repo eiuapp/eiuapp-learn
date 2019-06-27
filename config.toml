@@ -22,7 +22,7 @@ disablePathToLower = true
 googleAnalytics = "c7442f5794ea2abb71c6ff05dc0b8779"
 
 [params]
-  editURL = "https://github.com/eiuapp/eiuapp-learn/edit/master/eiuapp-learn/"
+  editURL = "https://github.com/eiuapp/eiuapp-learn/edit/master/content/"
   description = "Documentation for Learn"
   # author = "Mathieu Cornic"
   showVisitedLinks = true
