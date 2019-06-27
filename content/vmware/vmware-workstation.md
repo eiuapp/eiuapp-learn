@@ -1,0 +1,27 @@
+---
+title: "Vmware Workstation"
+date: 2018-02-24T10:40:36+08:00
+draft: false
+tags: ["vmware"]
+categories: ["vmware"]
+subtitle: ""
+descriptions: ""
+bigimg:
+---
+
+序列号:
+
+ver 11:
+
+1F04Z-6D111-7Z029-AV0Q4-3AEH8
+
+ver 12:
+
+1F04Z-6D111-7Z029-AV0Q4-3AEH8
+
+5A02H-AU243-TZJ49-GTC7K-3C61N
+
+VF5XA-FNDDJ-085GZ-4NXZ9-N20E6
+UC5MR-8NE16-H81WY-R7QGV-QG2D8
+ZG1WH-ATY96-H80QP-X7PEX-Y30V4
+AA3E0-0VDE1-0893Z-KGZ59-QGAVF
