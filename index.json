@@ -3563,6 +3563,13 @@
 	"content": "TDD开发容器化的Python微服务应用\n"
 },
 {
+	"uri": "https://eiuapp.github.io/eiuapp-learn/python/python-sqlalchemy-faq.html",
+	"title": "Python sqlalchemy 使用",
+	"tags": ["sqlalchemy", "python"],
+	"description": "",
+	"content": " sqlalchemy 如何在查询的时候排除掉数据库字段为 null的 python语句\nUnReadMsg = session.query(MainMongodbfile).filter_by(id=481) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = \u0026quot;年烧煤--吨\u0026quot;) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = None) UnReadMsg = session.query(MainMongodbfile).filter(MainMongodbfile.indicator_title1 != None)  能正常使用, 但是 使用下面2行,来查询为 null的, 却会报错\nUnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 == None) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(None)) UnReadMsg = session.query(MainMongodbfile).filter(indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(null())) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1.isnot(null())) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(MainMongodbfile.indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1.isnot(None))  报错信息如下:\nTraceback (most recent call last): File \u0026quot;mysql_esa_task_indicator.py\u0026quot;, line 112, in \u0026lt;module\u0026gt; UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(None)) NameError: name 'indicator_title1' is not defined (py373) DESKTOP-APB1HCJ%  或者\nTraceback (most recent call last): File \u0026quot;mysql_esa_task_indicator.py\u0026quot;, line 123, in \u0026lt;module\u0026gt; UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1.isnot(None)) TypeError: filter_by() takes 1 positional argument but 2 were given  所以,\n 选null, 则用  UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = None)   not null的, 则用  UnReadMsg = session.query(MainMongodbfile).filter(MainMongodbfile.indicator_title1 != None)  "
+},
+{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/golang/golang-install.html",
 	"title": "Golang Install",
 	"tags": ["golang", "install"],
@@ -4536,14 +4543,14 @@
 	"content": "在 编写 ~/.zshrc 的过程中，请不要使用 ~而改为使用 $HOME。\n请直接看下面示例：\n➜ ~ git:(master) ✗ tail -25 ~/.zshrc if [ -f \u0026quot;$HOME/.zshrc.local\u0026quot; ]; then echo \u0026quot;hello\u0026quot; else echo \u0026quot;no .zshrc.local\u0026quot; fi if [ -f \u0026quot;~/.zshrc.local\u0026quot; ]; then echo \u0026quot;hello \u0026quot; else echo \u0026quot;no .zshrc.local\u0026quot; fi echo `pwd` ➜ ~ git:(master) ✗ source ~/.zshrc hello no .zshrc.local /home/ubuntu ➜ ~ git:(master) ✗  使用 $HOME，正确。使用 ~，出错。\n"
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/CA.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/CA.html",
 	"title": "CA",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/CA.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/CA.html",
 	"title": "CA",
 	"tags": [],
 	"description": "",
@@ -4564,13 +4571,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ERP.html",
-	"title": "ERP",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ERP.html",
 	"title": "ERP",
 	"tags": [],
@@ -4578,14 +4578,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/R.html",
-	"title": "R",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ERP.html",
+	"title": "ERP",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/R.html",
+	"title": "R",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/R.html",
 	"title": "R",
 	"tags": [],
 	"description": "",
@@ -4620,14 +4627,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/apple.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/apple.html",
 	"title": "apple",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/apple.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/apple.html",
 	"title": "apple",
 	"tags": [],
 	"description": "",
@@ -4641,14 +4648,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/architect.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/architect.html",
 	"title": "architect",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/architect.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/architect.html",
 	"title": "architect",
 	"tags": [],
 	"description": "",
@@ -4662,13 +4669,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/autohotkey.html",
-	"title": "autohotkey",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/autohotkey.html",
 	"title": "autohotkey",
 	"tags": [],
@@ -4676,14 +4676,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/aws.html",
-	"title": "aws",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/autohotkey.html",
+	"title": "autohotkey",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/aws.html",
+	"title": "aws",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/aws.html",
 	"title": "aws",
 	"tags": [],
 	"description": "",
@@ -4718,13 +4725,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/bitbucket.html",
-	"title": "bitbucket",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/bitbucket.html",
 	"title": "bitbucket",
 	"tags": [],
@@ -4732,8 +4732,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/blockchain.html",
-	"title": "blockchain",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/bitbucket.html",
+	"title": "bitbucket",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -4746,14 +4746,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/blog.html",
-	"title": "blog",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/blockchain.html",
+	"title": "blockchain",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/blog.html",
+	"title": "blog",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/blog.html",
 	"title": "blog",
 	"tags": [],
 	"description": "",
@@ -4767,14 +4774,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/bundle.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/bundle.html",
 	"title": "bundle",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/bundle.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/bundle.html",
 	"title": "bundle",
 	"tags": [],
 	"description": "",
@@ -4788,13 +4795,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/centos.html",
-	"title": "centos",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/centos.html",
 	"title": "centos",
 	"tags": [],
@@ -4802,14 +4802,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ceph.html",
-	"title": "ceph",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/centos.html",
+	"title": "centos",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ceph.html",
+	"title": "ceph",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ceph.html",
 	"title": "ceph",
 	"tags": [],
 	"description": "",
@@ -4837,13 +4844,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/charts.html",
-	"title": "charts",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/charts.html",
 	"title": "charts",
 	"tags": [],
@@ -4851,14 +4851,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/cheatsheet.html",
-	"title": "cheatsheet",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/charts.html",
+	"title": "charts",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/cheatsheet.html",
+	"title": "cheatsheet",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/cheatsheet.html",
 	"title": "cheatsheet",
 	"tags": [],
 	"description": "",
@@ -4872,14 +4879,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/chrome.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/chrome.html",
 	"title": "chrome",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/chrome.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/chrome.html",
 	"title": "chrome",
 	"tags": [],
 	"description": "",
@@ -4907,14 +4914,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/code.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/code.html",
 	"title": "code",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/code.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/code.html",
 	"title": "code",
 	"tags": [],
 	"description": "",
@@ -4956,13 +4963,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/curl.html",
-	"title": "curl",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/curl.html",
 	"title": "curl",
 	"tags": [],
@@ -4970,14 +4970,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ddos.html",
-	"title": "ddos",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/curl.html",
+	"title": "curl",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ddos.html",
+	"title": "ddos",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ddos.html",
 	"title": "ddos",
 	"tags": [],
 	"description": "",
@@ -5005,14 +5012,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/devops.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/devops.html",
 	"title": "devops",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/devops.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/devops.html",
 	"title": "devops",
 	"tags": [],
 	"description": "",
@@ -5033,13 +5040,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/django.html",
-	"title": "django",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/django.html",
 	"title": "django",
 	"tags": [],
@@ -5047,14 +5047,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/docker.html",
-	"title": "docker",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/django.html",
+	"title": "django",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/docker.html",
+	"title": "docker",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/docker.html",
 	"title": "docker",
 	"tags": [],
 	"description": "",
@@ -5082,13 +5089,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/emacs.html",
-	"title": "emacs",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/emacs.html",
 	"title": "emacs",
 	"tags": [],
@@ -5096,8 +5096,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/enterprise.html",
-	"title": "enterprise",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/emacs.html",
+	"title": "emacs",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5110,8 +5110,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/env.html",
-	"title": "env",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/enterprise.html",
+	"title": "enterprise",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5124,14 +5124,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/erp.html",
-	"title": "erp",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/env.html",
+	"title": "env",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/erp.html",
+	"title": "erp",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/erp.html",
 	"title": "erp",
 	"tags": [],
 	"description": "",
@@ -5145,14 +5152,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/eslint.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/eslint.html",
 	"title": "eslint",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/eslint.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/eslint.html",
 	"title": "eslint",
 	"tags": [],
 	"description": "",
@@ -5222,13 +5229,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/framework.html",
-	"title": "framework",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/framework.html",
 	"title": "framework",
 	"tags": [],
@@ -5236,14 +5236,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ftp.html",
-	"title": "ftp",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/framework.html",
+	"title": "framework",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ftp.html",
+	"title": "ftp",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ftp.html",
 	"title": "ftp",
 	"tags": [],
 	"description": "",
@@ -5264,14 +5271,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/gem.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/gem.html",
 	"title": "gem",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/gem.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/gem.html",
 	"title": "gem",
 	"tags": [],
 	"description": "",
@@ -5285,13 +5292,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/git.html",
-	"title": "git",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/git.html",
 	"title": "git",
 	"tags": [],
@@ -5299,8 +5299,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/gitbook.html",
-	"title": "gitbook",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/git.html",
+	"title": "git",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5313,8 +5313,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/github.html",
-	"title": "github",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/gitbook.html",
+	"title": "gitbook",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5327,14 +5327,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/gitlab.html",
-	"title": "gitlab",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/github.html",
+	"title": "github",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/gitlab.html",
+	"title": "gitlab",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/gitlab.html",
 	"title": "gitlab",
 	"tags": [],
 	"description": "",
@@ -5355,14 +5362,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/golang.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/golang.html",
 	"title": "golang",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/golang.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/golang.html",
 	"title": "golang",
 	"tags": [],
 	"description": "",
@@ -5383,14 +5390,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/grep.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/grep.html",
 	"title": "grep",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/grep.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/grep.html",
 	"title": "grep",
 	"tags": [],
 	"description": "",
@@ -5404,14 +5411,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/health.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/health.html",
 	"title": "health",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/health.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/health.html",
 	"title": "health",
 	"tags": [],
 	"description": "",
@@ -5432,14 +5439,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/hedge-fund.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/hedge-fund.html",
 	"title": "hedge-fund",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/hedge-fund.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/hedge-fund.html",
 	"title": "hedge-fund",
 	"tags": [],
 	"description": "",
@@ -5453,14 +5460,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/hexo.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/hexo.html",
 	"title": "hexo",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/hexo.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/hexo.html",
 	"title": "hexo",
 	"tags": [],
 	"description": "",
@@ -5474,14 +5481,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/html.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/html.html",
 	"title": "html",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/html.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/html.html",
 	"title": "html",
 	"tags": [],
 	"description": "",
@@ -5495,14 +5502,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/hugo.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/hugo.html",
 	"title": "hugo",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/hugo.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/hugo.html",
 	"title": "hugo",
 	"tags": [],
 	"description": "",
@@ -5565,13 +5572,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/install.html",
-	"title": "install",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/install.html",
 	"title": "install",
 	"tags": [],
@@ -5579,14 +5579,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/interview.html",
-	"title": "interview",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/install.html",
+	"title": "install",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/interview.html",
+	"title": "interview",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/interview.html",
 	"title": "interview",
 	"tags": [],
 	"description": "",
@@ -5600,14 +5607,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ip.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ip.html",
 	"title": "ip",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ip.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ip.html",
 	"title": "ip",
 	"tags": [],
 	"description": "",
@@ -5628,14 +5635,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/iterm2.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/iterm2.html",
 	"title": "iterm2",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/iterm2.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/iterm2.html",
 	"title": "iterm2",
 	"tags": [],
 	"description": "",
@@ -5663,14 +5670,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/javascript.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/javascript.html",
 	"title": "javascript",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/javascript.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/javascript.html",
 	"title": "javascript",
 	"tags": [],
 	"description": "",
@@ -5698,14 +5705,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/keyboard.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/keyboard.html",
 	"title": "keyboard",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/keyboard.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/keyboard.html",
 	"title": "keyboard",
 	"tags": [],
 	"description": "",
@@ -5719,13 +5726,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/kubernetes.html",
-	"title": "kubernetes",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/kubernetes.html",
 	"title": "kubernetes",
 	"tags": [],
@@ -5733,8 +5733,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/learn.html",
-	"title": "learn",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/kubernetes.html",
+	"title": "kubernetes",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5747,14 +5747,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/life.html",
-	"title": "life",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/learn.html",
+	"title": "learn",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/life.html",
+	"title": "life",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/life.html",
 	"title": "life",
 	"tags": [],
 	"description": "",
@@ -5768,14 +5775,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/linux.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/linux.html",
 	"title": "linux",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/linux.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/linux.html",
 	"title": "linux",
 	"tags": [],
 	"description": "",
@@ -5789,14 +5796,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mac.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mac.html",
 	"title": "mac",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mac.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mac.html",
 	"title": "mac",
 	"tags": [],
 	"description": "",
@@ -5810,14 +5817,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mail.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mail.html",
 	"title": "mail",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mail.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mail.html",
 	"title": "mail",
 	"tags": [],
 	"description": "",
@@ -5831,13 +5838,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mariadb.html",
-	"title": "mariadb",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mariadb.html",
 	"title": "mariadb",
 	"tags": [],
@@ -5845,8 +5845,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/markdown.html",
-	"title": "markdown",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mariadb.html",
+	"title": "mariadb",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5859,14 +5859,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mastercard.html",
-	"title": "mastercard",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/markdown.html",
+	"title": "markdown",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mastercard.html",
+	"title": "mastercard",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mastercard.html",
 	"title": "mastercard",
 	"tags": [],
 	"description": "",
@@ -5880,14 +5887,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/microservices.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/microservices.html",
 	"title": "microservices",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/microservices.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/microservices.html",
 	"title": "microservices",
 	"tags": [],
 	"description": "",
@@ -5908,13 +5915,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mongodb.html",
-	"title": "mongodb",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mongodb.html",
 	"title": "mongodb",
 	"tags": [],
@@ -5922,8 +5922,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mount.html",
-	"title": "mount",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mongodb.html",
+	"title": "mongodb",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -5936,14 +5936,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mysql.html",
-	"title": "mysql",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mount.html",
+	"title": "mount",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/mysql.html",
+	"title": "mysql",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/mysql.html",
 	"title": "mysql",
 	"tags": [],
 	"description": "",
@@ -5985,13 +5992,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/nginx.html",
-	"title": "nginx",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/nginx.html",
 	"title": "nginx",
 	"tags": [],
@@ -5999,8 +5999,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ngrok.html",
-	"title": "ngrok",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/nginx.html",
+	"title": "nginx",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6013,14 +6013,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/nodejs.html",
-	"title": "nodejs",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ngrok.html",
+	"title": "ngrok",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/nodejs.html",
+	"title": "nodejs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/nodejs.html",
 	"title": "nodejs",
 	"tags": [],
 	"description": "",
@@ -6069,13 +6076,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/org.html",
-	"title": "org",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/org.html",
 	"title": "org",
 	"tags": [],
@@ -6083,14 +6083,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/oscar.html",
-	"title": "oscar",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/org.html",
+	"title": "org",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/oscar.html",
+	"title": "oscar",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/oscar.html",
 	"title": "oscar",
 	"tags": [],
 	"description": "",
@@ -6132,13 +6139,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/perl.html",
-	"title": "perl",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/perl.html",
 	"title": "perl",
 	"tags": [],
@@ -6146,14 +6146,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/php.html",
-	"title": "php",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/perl.html",
+	"title": "perl",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/php.html",
+	"title": "php",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/php.html",
 	"title": "php",
 	"tags": [],
 	"description": "",
@@ -6188,13 +6195,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/privoxy.html",
-	"title": "privoxy",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/privoxy.html",
 	"title": "privoxy",
 	"tags": [],
@@ -6202,8 +6202,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/project.html",
-	"title": "project",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/privoxy.html",
+	"title": "privoxy",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6216,8 +6216,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/protection.html",
-	"title": "protection",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/project.html",
+	"title": "project",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6230,14 +6230,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/proxy.html",
-	"title": "proxy",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/protection.html",
+	"title": "protection",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/proxy.html",
+	"title": "proxy",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/proxy.html",
 	"title": "proxy",
 	"tags": [],
 	"description": "",
@@ -6251,13 +6258,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/python.html",
-	"title": "python",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/python.html",
 	"title": "python",
 	"tags": [],
@@ -6265,8 +6265,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/qor.html",
-	"title": "qor",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/python.html",
+	"title": "python",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6279,14 +6279,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/rancher.html",
-	"title": "rancher",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/qor.html",
+	"title": "qor",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/rancher.html",
+	"title": "rancher",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/rancher.html",
 	"title": "rancher",
 	"tags": [],
 	"description": "",
@@ -6300,14 +6307,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/react.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/react.html",
 	"title": "react",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/react.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/react.html",
 	"title": "react",
 	"tags": [],
 	"description": "",
@@ -6321,13 +6328,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/realtek.html",
-	"title": "realtek",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/realtek.html",
 	"title": "realtek",
 	"tags": [],
@@ -6335,14 +6335,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/redis.html",
-	"title": "redis",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/realtek.html",
+	"title": "realtek",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/redis.html",
+	"title": "redis",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/redis.html",
 	"title": "redis",
 	"tags": [],
 	"description": "",
@@ -6370,14 +6377,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/resource.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/resource.html",
 	"title": "resource",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/resource.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/resource.html",
 	"title": "resource",
 	"tags": [],
 	"description": "",
@@ -6405,13 +6412,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ruby.html",
-	"title": "ruby",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ruby.html",
 	"title": "ruby",
 	"tags": [],
@@ -6419,14 +6419,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/saleor.html",
-	"title": "saleor",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ruby.html",
+	"title": "ruby",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/saleor.html",
+	"title": "saleor",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/saleor.html",
 	"title": "saleor",
 	"tags": [],
 	"description": "",
@@ -6454,14 +6461,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/sed.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/sed.html",
 	"title": "sed",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/sed.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/sed.html",
 	"title": "sed",
 	"tags": [],
 	"description": "",
@@ -6496,13 +6503,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/shell.html",
-	"title": "shell",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/shell.html",
 	"title": "shell",
 	"tags": [],
@@ -6510,14 +6510,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/shop.html",
-	"title": "shop",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/shell.html",
+	"title": "shell",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/shop.html",
+	"title": "shop",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/shop.html",
 	"title": "shop",
 	"tags": [],
 	"description": "",
@@ -6538,13 +6545,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/spacemacs.html",
-	"title": "spacemacs",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/spacemacs.html",
 	"title": "spacemacs",
 	"tags": [],
@@ -6552,14 +6552,28 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ssh.html",
-	"title": "ssh",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/spacemacs.html",
+	"title": "spacemacs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/sqlalchemy.html",
+	"title": "sqlalchemy",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ssh.html",
+	"title": "ssh",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ssh.html",
 	"title": "ssh",
 	"tags": [],
 	"description": "",
@@ -6580,14 +6594,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/stock.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/stock.html",
 	"title": "stock",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/stock.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/stock.html",
 	"title": "stock",
 	"tags": [],
 	"description": "",
@@ -6608,14 +6622,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/svn.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/svn.html",
 	"title": "svn",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/svn.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/svn.html",
 	"title": "svn",
 	"tags": [],
 	"description": "",
@@ -6629,13 +6643,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/teamviewer.html",
-	"title": "teamviewer",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/teamviewer.html",
 	"title": "teamviewer",
 	"tags": [],
@@ -6643,14 +6650,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/telnet.html",
-	"title": "telnet",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/teamviewer.html",
+	"title": "teamviewer",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/telnet.html",
+	"title": "telnet",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/telnet.html",
 	"title": "telnet",
 	"tags": [],
 	"description": "",
@@ -6664,14 +6678,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tmux.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/tmux.html",
 	"title": "tmux",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/tmux.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tmux.html",
 	"title": "tmux",
 	"tags": [],
 	"description": "",
@@ -6685,13 +6699,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tom.html",
-	"title": "tom",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/tom.html",
 	"title": "tom",
 	"tags": [],
@@ -6699,8 +6706,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tomcat.html",
-	"title": "tomcat",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tom.html",
+	"title": "tom",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6713,14 +6720,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tools.html",
-	"title": "tools",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tomcat.html",
+	"title": "tomcat",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/tools.html",
+	"title": "tools",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/tools.html",
 	"title": "tools",
 	"tags": [],
 	"description": "",
@@ -6734,13 +6748,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/trade.html",
-	"title": "trade",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/trade.html",
 	"title": "trade",
 	"tags": [],
@@ -6748,14 +6755,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/travis.html",
-	"title": "travis",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/trade.html",
+	"title": "trade",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/travis.html",
+	"title": "travis",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/travis.html",
 	"title": "travis",
 	"tags": [],
 	"description": "",
@@ -6776,14 +6790,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ubuntu.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ubuntu.html",
 	"title": "ubuntu",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/ubuntu.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/ubuntu.html",
 	"title": "ubuntu",
 	"tags": [],
 	"description": "",
@@ -6839,13 +6853,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/vi.html",
-	"title": "vi",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/vi.html",
 	"title": "vi",
 	"tags": [],
@@ -6853,8 +6860,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/virtualbox.html",
-	"title": "virtualbox",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/vi.html",
+	"title": "vi",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6867,8 +6874,8 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/vmware.html",
-	"title": "vmware",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/virtualbox.html",
+	"title": "virtualbox",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -6881,14 +6888,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/vscode.html",
-	"title": "vscode",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/vmware.html",
+	"title": "vmware",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/vscode.html",
+	"title": "vscode",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/vscode.html",
 	"title": "vscode",
 	"tags": [],
 	"description": "",
@@ -6902,14 +6916,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/wechat.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/wechat.html",
 	"title": "wechat",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/wechat.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/wechat.html",
 	"title": "wechat",
 	"tags": [],
 	"description": "",
@@ -6930,14 +6944,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/win10.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/win10.html",
 	"title": "win10",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/win10.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/win10.html",
 	"title": "win10",
 	"tags": [],
 	"description": "",
@@ -6951,14 +6965,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/windows.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/windows.html",
 	"title": "windows",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/windows.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/windows.html",
 	"title": "windows",
 	"tags": [],
 	"description": "",
@@ -6972,14 +6986,14 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/works.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/works.html",
 	"title": "works",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/works.html",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/works.html",
 	"title": "works",
 	"tags": [],
 	"description": "",
@@ -7014,13 +7028,6 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/yapi.html",
-	"title": "yapi",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/yapi.html",
 	"title": "yapi",
 	"tags": [],
@@ -7028,14 +7035,21 @@
 	"content": ""
 },
 {
-	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/yarn.html",
-	"title": "yarn",
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/yapi.html",
+	"title": "yapi",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/categories/yarn.html",
+	"title": "yarn",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://eiuapp.github.io/eiuapp-learn/tags/yarn.html",
 	"title": "yarn",
 	"tags": [],
 	"description": "",

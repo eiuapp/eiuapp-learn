@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sqlalchemy on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/sqlalchemy.html</link>
+    <description>Recent content in sqlalchemy on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 06 Feb 2018 00:08:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/sqlalchemy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python sqlalchemy 使用</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-sqlalchemy-faq.html</link>
+      <pubDate>Tue, 06 Feb 2018 00:08:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-sqlalchemy-faq.html</guid>
+      <description>sqlalchemy 如何在查询的时候排除掉数据库字段为 null的 python语句
+UnReadMsg = session.query(MainMongodbfile).filter_by(id=481) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = &amp;quot;年烧煤--吨&amp;quot;) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = None) UnReadMsg = session.query(MainMongodbfile).filter(MainMongodbfile.indicator_title1 != None)  能正常使用, 但是 使用下面2行,来查询为 null的, 却会报错
+UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 == None) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(None)) UnReadMsg = session.query(MainMongodbfile).filter(indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(null())) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1.isnot(null())) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(MainMongodbfile.indicator_title1.is_(None))) UnReadMsg = session.</description>
+    </item>
+    
+  </channel>
+</rss>

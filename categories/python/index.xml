@@ -232,5 +232,16 @@ ipython - bpython 一直用的是 ipython，感觉比 bpython 好些，
 关于它们之间对比可以参看 http://stackoverflow.com/questions/4232923/ipython-or-bpython</description>
     </item>
     
+    <item>
+      <title>Python sqlalchemy 使用</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/python/python-sqlalchemy-faq.html</link>
+      <pubDate>Tue, 06 Feb 2018 00:08:44 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/python/python-sqlalchemy-faq.html</guid>
+      <description>sqlalchemy 如何在查询的时候排除掉数据库字段为 null的 python语句
+UnReadMsg = session.query(MainMongodbfile).filter_by(id=481) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = &amp;quot;年烧煤--吨&amp;quot;) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 = None) UnReadMsg = session.query(MainMongodbfile).filter(MainMongodbfile.indicator_title1 != None)  能正常使用, 但是 使用下面2行,来查询为 null的, 却会报错
+UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 == None) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(None)) UnReadMsg = session.query(MainMongodbfile).filter(indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1 != None) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by(indicator_title1.isnot(null())) UnReadMsg = session.query(MainMongodbfile).filter_by(MainMongodbfile.indicator_title1.isnot(null())) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(indicator_title1.is_(None))) UnReadMsg = session.query(MainMongodbfile).filter_by( not_(MainMongodbfile.indicator_title1.is_(None))) UnReadMsg = session.</description>
+    </item>
+    
   </channel>
 </rss>
