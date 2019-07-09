@@ -120,6 +120,16 @@ User time 3.81, System time 2.55 Maximum resident set size 3620, Integral reside
     </item>
     
     <item>
+      <title>Mysql随机获取一条或者多条数据</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-random-get-one-or-multi-records.html</link>
+      <pubDate>Fri, 02 Mar 2018 12:51:05 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-random-get-one-or-multi-records.html</guid>
+      <description>https://www.cnblogs.com/leezhxing/p/3951801.html
+select id, name, image from device_rent_manage whereselect id, name, image from device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39; and id &amp;gt;= ((SELECT MAX(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39;)-(SELECT MIN(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39;)) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39; ) LIMIT 3;  </description>
+    </item>
+    
+    <item>
       <title>Mysql User</title>
       <link>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-user.html</link>
       <pubDate>Fri, 02 Mar 2018 12:47:29 +0800</pubDate>
