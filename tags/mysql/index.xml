@@ -139,7 +139,7 @@ User time 3.81, System time 2.55 Maximum resident set size 3620, Integral reside
       
       <guid>https://eiuapp.github.io/eiuapp-learn/mysql/mysql-random-get-one-or-multi-records.html</guid>
       <description>https://www.cnblogs.com/leezhxing/p/3951801.html
-select id, name, image from device_rent_manage whereselect id, name, image from device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39; and id &amp;gt;= ((SELECT MAX(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39;)-(SELECT MIN(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39;)) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39; ) LIMIT 3;  </description>
+select id, name, image from device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39; and id &amp;gt;= ((SELECT MAX(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39;)-(SELECT MIN(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39;)) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = &#39;JCSB&#39; and type = &#39;YNSBXLJC&#39; ) LIMIT 3;  </description>
     </item>
     
     <item>

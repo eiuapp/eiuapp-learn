@@ -3070,7 +3070,7 @@
 	"title": "Mysql随机获取一条或者多条数据",
 	"tags": ["mysql"],
 	"description": "",
-	"content": "https://www.cnblogs.com/leezhxing/p/3951801.html\nselect id, name, image from device_rent_manage whereselect id, name, image from device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' and id \u0026gt;= ((SELECT MAX(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')-(SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' ) LIMIT 3;  "
+	"content": "https://www.cnblogs.com/leezhxing/p/3951801.html\nselect id, name, image from device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' and id \u0026gt;= ((SELECT MAX(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')-(SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' ) LIMIT 3;  "
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/mariadb/mariadb-galera-from-docker-to-bare.html",
