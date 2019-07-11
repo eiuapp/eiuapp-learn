@@ -12,6 +12,6 @@ bigimg:
 https://www.cnblogs.com/leezhxing/p/3951801.html
 
 ```mysql
-select id, name, image from device_rent_manage whereselect id, name, image from device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' and  id >= ((SELECT MAX(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')-(SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' )  LIMIT 3;
+select id, name, image from device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' and  id >= ((SELECT MAX(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')-(SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC')) * RAND() + (SELECT MIN(id) FROM device_rent_manage where functionType = 'JCSB' and type = 'YNSBXLJC' )  LIMIT 3;
 ```
 
