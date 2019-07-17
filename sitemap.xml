@@ -2899,6 +2899,10 @@
   </url>
   
   <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/network/git-use-socks5h-as-proxy.html</loc>
+  </url>
+  
+  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/network/network.html</loc>
   </url>
   
@@ -3149,13 +3153,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/CA.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/CA.html</loc>
     <lastmod>2018-06-21T22:32:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/CA.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/CA.html</loc>
     <lastmod>2018-06-21T22:32:14+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3173,25 +3177,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ERP.html</loc>
-    <lastmod>2018-07-02T16:32:56+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/ERP.html</loc>
     <lastmod>2018-07-02T16:32:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/R.html</loc>
-    <lastmod>2018-02-03T14:38:19+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ERP.html</loc>
+    <lastmod>2018-07-02T16:32:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/R.html</loc>
+    <lastmod>2018-02-03T14:38:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/R.html</loc>
     <lastmod>2018-02-03T14:38:19+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3221,13 +3225,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/apple.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/apple.html</loc>
     <lastmod>2018-06-24T10:42:55+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/apple.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/apple.html</loc>
     <lastmod>2018-06-24T10:42:55+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3239,13 +3243,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/architect.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/architect.html</loc>
     <lastmod>2018-02-13T21:14:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/architect.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/architect.html</loc>
     <lastmod>2018-02-13T21:14:59+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3257,25 +3261,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/autohotkey.html</loc>
-    <lastmod>2019-02-12T18:09:25-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/autohotkey.html</loc>
     <lastmod>2019-02-12T18:09:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/aws.html</loc>
-    <lastmod>2018-06-07T17:22:31+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/autohotkey.html</loc>
+    <lastmod>2019-02-12T18:09:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/aws.html</loc>
+    <lastmod>2018-06-07T17:22:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/aws.html</loc>
     <lastmod>2018-06-07T17:22:31+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3305,20 +3309,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/bitbucket.html</loc>
-    <lastmod>2018-07-07T16:29:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/bitbucket.html</loc>
     <lastmod>2018-07-07T16:29:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/blockchain.html</loc>
-    <lastmod>2018-06-13T15:43:40+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/bitbucket.html</loc>
+    <lastmod>2018-07-07T16:29:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3329,13 +3327,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/blog.html</loc>
-    <lastmod>2018-11-09T23:32:18+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/blockchain.html</loc>
+    <lastmod>2018-06-13T15:43:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/blog.html</loc>
+    <lastmod>2018-11-09T23:32:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/blog.html</loc>
     <lastmod>2018-11-09T23:32:18+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3347,13 +3351,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/bundle.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/bundle.html</loc>
     <lastmod>2018-02-24T09:24:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/bundle.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/bundle.html</loc>
     <lastmod>2018-02-24T09:24:48+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3365,25 +3369,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/centos.html</loc>
-    <lastmod>2018-11-30T09:09:03+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/centos.html</loc>
     <lastmod>2018-11-30T09:09:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ceph.html</loc>
-    <lastmod>2018-11-30T17:44:21+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/centos.html</loc>
+    <lastmod>2018-11-30T09:09:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/ceph.html</loc>
+    <lastmod>2018-11-30T17:44:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ceph.html</loc>
     <lastmod>2018-11-30T17:44:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3407,25 +3411,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/charts.html</loc>
-    <lastmod>2018-06-14T16:30:19+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/charts.html</loc>
     <lastmod>2018-06-14T16:30:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/cheatsheet.html</loc>
-    <lastmod>2018-03-21T10:56:42+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/charts.html</loc>
+    <lastmod>2018-06-14T16:30:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/cheatsheet.html</loc>
+    <lastmod>2018-03-21T10:56:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/cheatsheet.html</loc>
     <lastmod>2018-03-21T10:56:42+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3437,13 +3441,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/chrome.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/chrome.html</loc>
     <lastmod>2018-06-14T20:53:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/chrome.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/chrome.html</loc>
     <lastmod>2018-06-14T20:53:57+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3467,13 +3471,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/code.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/code.html</loc>
     <lastmod>2018-12-01T08:38:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/code.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/code.html</loc>
     <lastmod>2018-12-01T08:38:22+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3509,25 +3513,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/curl.html</loc>
-    <lastmod>2018-03-08T17:47:28+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/curl.html</loc>
     <lastmod>2018-03-08T17:47:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ddos.html</loc>
-    <lastmod>2018-06-19T19:45:28+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/curl.html</loc>
+    <lastmod>2018-03-08T17:47:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/ddos.html</loc>
+    <lastmod>2018-06-19T19:45:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ddos.html</loc>
     <lastmod>2018-06-19T19:45:28+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3551,13 +3555,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/devops.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/devops.html</loc>
     <lastmod>2018-12-01T08:53:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/devops.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/devops.html</loc>
     <lastmod>2018-12-01T08:53:13+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3575,25 +3579,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/django.html</loc>
-    <lastmod>2019-01-09T09:53:06+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/django.html</loc>
     <lastmod>2019-01-25T18:29:17-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/docker.html</loc>
-    <lastmod>2019-01-27T19:20:34-08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/django.html</loc>
+    <lastmod>2019-01-09T09:53:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/docker.html</loc>
+    <lastmod>2019-01-27T19:20:34-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/docker.html</loc>
     <lastmod>2019-01-27T19:20:34-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3617,20 +3621,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/emacs.html</loc>
-    <lastmod>2018-12-22T10:11:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/emacs.html</loc>
     <lastmod>2018-12-22T10:11:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/enterprise.html</loc>
-    <lastmod>2018-02-13T21:12:06+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/emacs.html</loc>
+    <lastmod>2018-12-22T10:11:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3641,8 +3639,8 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/env.html</loc>
-    <lastmod>2018-03-02T11:35:16+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/enterprise.html</loc>
+    <lastmod>2018-02-13T21:12:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3653,13 +3651,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/erp.html</loc>
-    <lastmod>2018-07-02T16:51:41+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/env.html</loc>
+    <lastmod>2018-03-02T11:35:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/erp.html</loc>
+    <lastmod>2018-07-02T16:51:41+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/erp.html</loc>
     <lastmod>2018-07-02T16:51:41+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3671,13 +3675,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/eslint.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/eslint.html</loc>
     <lastmod>2019-02-10T18:31:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/eslint.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/eslint.html</loc>
     <lastmod>2019-02-10T18:31:05+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3737,25 +3741,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/framework.html</loc>
-    <lastmod>2018-11-30T00:11:16+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/framework.html</loc>
     <lastmod>2018-11-30T00:11:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ftp.html</loc>
-    <lastmod>2018-05-30T09:59:54+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/framework.html</loc>
+    <lastmod>2018-11-30T00:11:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/ftp.html</loc>
+    <lastmod>2018-05-30T09:59:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ftp.html</loc>
     <lastmod>2018-05-30T09:59:54+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3773,13 +3777,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/gem.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/gem.html</loc>
     <lastmod>2018-02-27T17:56:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/gem.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/gem.html</loc>
     <lastmod>2018-02-27T17:56:15+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3791,20 +3795,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/git.html</loc>
-    <lastmod>2019-01-28T21:07:13-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/git.html</loc>
     <lastmod>2019-01-28T21:07:13-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/gitbook.html</loc>
-    <lastmod>2019-02-17T22:48:36+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/git.html</loc>
+    <lastmod>2019-01-28T21:07:13-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3815,8 +3813,8 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/github.html</loc>
-    <lastmod>2018-04-12T09:39:07+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/gitbook.html</loc>
+    <lastmod>2019-02-17T22:48:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3827,13 +3825,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/gitlab.html</loc>
-    <lastmod>2018-07-12T11:07:08+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/github.html</loc>
+    <lastmod>2018-04-12T09:39:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/gitlab.html</loc>
+    <lastmod>2018-07-12T11:07:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/gitlab.html</loc>
     <lastmod>2018-07-12T11:07:08+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3851,13 +3855,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/golang.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/golang.html</loc>
     <lastmod>2018-12-04T00:07:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/golang.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/golang.html</loc>
     <lastmod>2018-12-04T00:07:40+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3875,13 +3879,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/grep.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/grep.html</loc>
     <lastmod>2018-07-03T11:20:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/grep.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/grep.html</loc>
     <lastmod>2018-07-03T11:20:35+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3893,13 +3897,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/health.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/health.html</loc>
     <lastmod>2019-02-16T22:21:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/health.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/health.html</loc>
     <lastmod>2019-02-16T22:21:16+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3917,13 +3921,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/hedge-fund.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/hedge-fund.html</loc>
     <lastmod>2018-03-07T10:48:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/hedge-fund.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/hedge-fund.html</loc>
     <lastmod>2018-03-07T10:48:37+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3935,13 +3939,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/hexo.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/hexo.html</loc>
     <lastmod>2018-03-02T15:11:32+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/hexo.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/hexo.html</loc>
     <lastmod>2018-03-02T15:11:32+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3953,13 +3957,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/html.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/html.html</loc>
     <lastmod>2018-03-08T15:51:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/html.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/html.html</loc>
     <lastmod>2018-03-08T15:51:23+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3971,13 +3975,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/hugo.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/hugo.html</loc>
     <lastmod>2018-11-28T00:17:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/hugo.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/hugo.html</loc>
     <lastmod>2018-11-28T00:17:36+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4031,20 +4035,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/install.html</loc>
-    <lastmod>2018-05-24T09:32:16+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/install.html</loc>
     <lastmod>2019-02-15T23:00:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/interview.html</loc>
-    <lastmod>2018-03-20T15:54:48+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/install.html</loc>
+    <lastmod>2018-05-24T09:32:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4055,19 +4053,25 @@
   </url>
   
   <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/interview.html</loc>
+    <lastmod>2018-03-20T15:54:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/intro.html</loc>
     <lastmod>2018-11-30T17:44:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ip.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/ip.html</loc>
     <lastmod>2018-06-16T21:52:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/ip.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ip.html</loc>
     <lastmod>2018-06-16T21:52:43+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4085,13 +4089,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/iterm2.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/iterm2.html</loc>
     <lastmod>2018-06-13T16:15:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/iterm2.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/iterm2.html</loc>
     <lastmod>2018-06-13T16:15:59+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4115,13 +4119,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/javascript.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/javascript.html</loc>
     <lastmod>2018-03-21T09:57:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/javascript.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/javascript.html</loc>
     <lastmod>2018-03-21T09:57:04+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4145,14 +4149,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/keyboard.html</loc>
-    <lastmod>2018-08-08T00:28:30+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/keyboard.html</loc>
+    <lastmod>2018-08-08T00:29:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/keyboard.html</loc>
-    <lastmod>2018-08-08T00:29:31+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/keyboard.html</loc>
+    <lastmod>2018-08-08T00:28:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4163,20 +4167,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/kubernetes.html</loc>
-    <lastmod>2018-11-30T00:19:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/kubernetes.html</loc>
     <lastmod>2018-11-30T00:19:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/learn.html</loc>
-    <lastmod>2018-02-23T17:27:44+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/kubernetes.html</loc>
+    <lastmod>2018-11-30T00:19:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4187,13 +4185,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/life.html</loc>
-    <lastmod>2018-02-13T11:35:28+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/learn.html</loc>
+    <lastmod>2018-02-23T17:27:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/life.html</loc>
+    <lastmod>2018-02-13T11:35:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/life.html</loc>
     <lastmod>2018-02-13T11:35:28+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4205,13 +4209,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/linux.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/linux.html</loc>
     <lastmod>2019-01-22T00:45:09-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/linux.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/linux.html</loc>
     <lastmod>2019-01-22T00:45:09-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4223,13 +4227,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mac.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/mac.html</loc>
     <lastmod>2019-01-30T21:10:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/mac.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mac.html</loc>
     <lastmod>2019-01-30T21:10:10+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4241,13 +4245,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mail.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/mail.html</loc>
     <lastmod>2018-08-09T15:44:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/mail.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mail.html</loc>
     <lastmod>2018-08-09T15:44:37+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4259,20 +4263,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mariadb.html</loc>
-    <lastmod>2018-03-02T12:49:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/mariadb.html</loc>
     <lastmod>2018-03-02T12:49:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/markdown.html</loc>
-    <lastmod>2018-08-01T00:00:23+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mariadb.html</loc>
+    <lastmod>2018-03-02T12:49:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4283,13 +4281,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mastercard.html</loc>
-    <lastmod>2018-06-24T11:45:59+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/markdown.html</loc>
+    <lastmod>2018-08-01T00:00:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/mastercard.html</loc>
+    <lastmod>2018-06-24T11:45:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mastercard.html</loc>
     <lastmod>2018-06-24T11:45:59+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4301,13 +4305,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/microservices.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/microservices.html</loc>
     <lastmod>2018-02-06T00:08:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/microservices.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/microservices.html</loc>
     <lastmod>2018-02-06T00:08:44+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4325,20 +4329,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mongodb.html</loc>
-    <lastmod>2018-03-02T11:52:44+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/mongodb.html</loc>
     <lastmod>2018-03-02T15:07:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mount.html</loc>
-    <lastmod>2018-06-06T16:57:02+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mongodb.html</loc>
+    <lastmod>2018-03-02T11:52:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4349,13 +4347,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mysql.html</loc>
-    <lastmod>2019-02-13T18:09:25-08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mount.html</loc>
+    <lastmod>2018-06-06T16:57:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/mysql.html</loc>
+    <lastmod>2019-02-13T18:09:25-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/mysql.html</loc>
     <lastmod>2019-02-13T18:09:25-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4391,20 +4395,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/nginx.html</loc>
-    <lastmod>2018-06-25T14:13:09+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/nginx.html</loc>
     <lastmod>2018-06-25T14:13:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ngrok.html</loc>
-    <lastmod>2018-04-23T00:05:45+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/nginx.html</loc>
+    <lastmod>2018-06-25T14:13:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4415,13 +4413,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/nodejs.html</loc>
-    <lastmod>2019-02-15T23:00:03+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ngrok.html</loc>
+    <lastmod>2018-04-23T00:05:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/nodejs.html</loc>
+    <lastmod>2019-02-15T23:00:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/nodejs.html</loc>
     <lastmod>2019-02-15T23:00:03+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4463,25 +4467,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/org.html</loc>
-    <lastmod>2018-11-17T00:30:09+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/org.html</loc>
     <lastmod>2018-11-17T00:30:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/oscar.html</loc>
-    <lastmod>2019-01-25T18:29:17-08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/org.html</loc>
+    <lastmod>2018-11-17T00:30:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/oscar.html</loc>
+    <lastmod>2019-01-25T18:29:17-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/oscar.html</loc>
     <lastmod>2019-01-25T18:29:17-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4517,25 +4521,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/perl.html</loc>
-    <lastmod>2018-02-01T20:11:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/perl.html</loc>
     <lastmod>2018-02-01T20:11:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/php.html</loc>
-    <lastmod>2018-06-16T18:11:25+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/perl.html</loc>
+    <lastmod>2018-02-01T20:11:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/php.html</loc>
+    <lastmod>2018-06-16T18:11:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/php.html</loc>
     <lastmod>2018-06-16T18:11:25+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4565,20 +4569,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/privoxy.html</loc>
-    <lastmod>2018-07-15T14:16:28+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/privoxy.html</loc>
     <lastmod>2018-07-15T14:16:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/project.html</loc>
-    <lastmod>2018-03-01T16:50:13+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/privoxy.html</loc>
+    <lastmod>2018-07-15T14:16:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4589,8 +4587,8 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/protection.html</loc>
-    <lastmod>2018-06-21T17:18:24+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/project.html</loc>
+    <lastmod>2018-03-01T16:50:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4601,13 +4599,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/proxy.html</loc>
-    <lastmod>2018-08-10T09:49:28+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/protection.html</loc>
+    <lastmod>2018-06-21T17:18:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/proxy.html</loc>
+    <lastmod>2018-08-10T09:49:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/proxy.html</loc>
     <lastmod>2018-08-10T09:49:28+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4619,20 +4623,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/python.html</loc>
-    <lastmod>2019-01-31T20:45:47+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/python.html</loc>
     <lastmod>2019-01-31T20:45:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/qor.html</loc>
-    <lastmod>2018-07-04T10:53:56+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/python.html</loc>
+    <lastmod>2019-01-31T20:45:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4643,13 +4641,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/rancher.html</loc>
-    <lastmod>2018-06-30T10:22:19+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/qor.html</loc>
+    <lastmod>2018-07-04T10:53:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/rancher.html</loc>
+    <lastmod>2018-06-30T10:22:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/rancher.html</loc>
     <lastmod>2018-06-30T10:22:19+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4661,13 +4665,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/react.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/react.html</loc>
     <lastmod>2019-02-07T23:47:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/react.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/react.html</loc>
     <lastmod>2019-02-07T23:47:10+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4679,25 +4683,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/realtek.html</loc>
-    <lastmod>2018-06-07T16:03:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/realtek.html</loc>
     <lastmod>2018-06-07T16:03:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/redis.html</loc>
-    <lastmod>2018-02-05T17:23:01+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/realtek.html</loc>
+    <lastmod>2018-06-07T16:03:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/redis.html</loc>
+    <lastmod>2018-02-05T17:23:01+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/redis.html</loc>
     <lastmod>2018-02-05T17:23:01+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4721,14 +4725,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/resource.html</loc>
-    <lastmod>2018-02-04T21:59:07+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/resource.html</loc>
+    <lastmod>2018-07-02T16:51:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/resource.html</loc>
-    <lastmod>2018-07-02T16:51:41+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/resource.html</loc>
+    <lastmod>2018-02-04T21:59:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4751,25 +4755,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ruby.html</loc>
-    <lastmod>2018-02-26T09:23:11+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/ruby.html</loc>
     <lastmod>2018-02-26T09:23:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/saleor.html</loc>
-    <lastmod>2019-02-01T15:45:36+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ruby.html</loc>
+    <lastmod>2018-02-26T09:23:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/saleor.html</loc>
+    <lastmod>2019-02-01T15:45:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/saleor.html</loc>
     <lastmod>2019-02-01T15:45:36+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4793,13 +4797,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/sed.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/sed.html</loc>
     <lastmod>2018-11-27T23:17:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/sed.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/sed.html</loc>
     <lastmod>2018-11-27T23:17:56+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4829,25 +4833,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/shell.html</loc>
-    <lastmod>2019-01-19T00:44:25-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/shell.html</loc>
     <lastmod>2019-01-19T00:44:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/shop.html</loc>
-    <lastmod>2018-04-15T23:58:27+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/shell.html</loc>
+    <lastmod>2019-01-19T00:44:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/shop.html</loc>
+    <lastmod>2018-04-15T23:58:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/shop.html</loc>
     <lastmod>2018-04-15T23:58:27+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4865,13 +4869,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/spacemacs.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/spacemacs.html</loc>
     <lastmod>2019-01-23T23:40:16-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/spacemacs.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/spacemacs.html</loc>
     <lastmod>2019-01-23T23:40:16-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4883,14 +4887,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ssh.html</loc>
-    <lastmod>2018-05-24T15:22:36+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/ssh.html</loc>
+    <lastmod>2019-01-22T00:45:09-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/ssh.html</loc>
-    <lastmod>2019-01-22T00:45:09-08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ssh.html</loc>
+    <lastmod>2018-05-24T15:22:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4907,13 +4911,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/stock.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/stock.html</loc>
     <lastmod>2018-03-09T11:22:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/stock.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/stock.html</loc>
     <lastmod>2018-03-09T11:22:53+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4931,13 +4935,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/svn.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/svn.html</loc>
     <lastmod>2018-06-28T18:33:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/svn.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/svn.html</loc>
     <lastmod>2018-06-28T18:33:41+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4949,25 +4953,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/teamviewer.html</loc>
-    <lastmod>2018-06-21T16:48:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/teamviewer.html</loc>
     <lastmod>2018-06-21T16:48:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/telnet.html</loc>
-    <lastmod>2018-02-06T10:33:31+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/teamviewer.html</loc>
+    <lastmod>2018-06-21T16:48:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/telnet.html</loc>
+    <lastmod>2018-02-06T10:33:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/telnet.html</loc>
     <lastmod>2018-02-06T10:33:31+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4979,13 +4983,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tmux.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/tmux.html</loc>
     <lastmod>2019-01-29T19:29:10-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/tmux.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tmux.html</loc>
     <lastmod>2019-01-29T19:29:10-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -4997,20 +5001,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tom.html</loc>
-    <lastmod>2018-06-11T19:54:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/tom.html</loc>
     <lastmod>2018-06-11T19:54:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tomcat.html</loc>
-    <lastmod>2018-06-12T20:51:29+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tom.html</loc>
+    <lastmod>2018-06-11T19:54:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -5021,13 +5019,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tools.html</loc>
-    <lastmod>2019-02-11T15:47:44+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tomcat.html</loc>
+    <lastmod>2018-06-12T20:51:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/tools.html</loc>
+    <lastmod>2019-02-11T15:47:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/tools.html</loc>
     <lastmod>2019-02-11T15:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5039,25 +5043,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/trade.html</loc>
-    <lastmod>2018-02-07T10:15:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/trade.html</loc>
     <lastmod>2018-02-07T10:15:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/travis.html</loc>
-    <lastmod>2018-02-11T15:29:53+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/trade.html</loc>
+    <lastmod>2018-02-07T10:15:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/travis.html</loc>
+    <lastmod>2018-02-11T15:29:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/travis.html</loc>
     <lastmod>2018-02-11T15:29:53+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5075,13 +5079,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ubuntu.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/ubuntu.html</loc>
     <lastmod>2019-01-08T19:04:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/ubuntu.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/ubuntu.html</loc>
     <lastmod>2019-01-08T19:04:18+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5129,20 +5133,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/vi.html</loc>
-    <lastmod>2018-11-25T18:33:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/vi.html</loc>
     <lastmod>2018-11-25T18:33:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/virtualbox.html</loc>
-    <lastmod>2018-08-03T23:10:46+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/vi.html</loc>
+    <lastmod>2018-11-25T18:33:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -5153,8 +5151,8 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/vmware.html</loc>
-    <lastmod>2019-01-09T16:00:24+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/virtualbox.html</loc>
+    <lastmod>2018-08-03T23:10:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -5165,13 +5163,19 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/vscode.html</loc>
-    <lastmod>2018-07-11T11:21:21+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/vmware.html</loc>
+    <lastmod>2019-01-09T16:00:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/vscode.html</loc>
+    <lastmod>2018-07-11T11:21:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/vscode.html</loc>
     <lastmod>2018-07-11T11:21:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5183,13 +5187,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/wechat.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/wechat.html</loc>
     <lastmod>2018-03-10T16:05:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/wechat.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/wechat.html</loc>
     <lastmod>2018-03-10T16:05:35+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5207,13 +5211,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/win10.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/win10.html</loc>
     <lastmod>2018-07-14T17:51:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/win10.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/win10.html</loc>
     <lastmod>2018-07-14T17:51:39+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5225,14 +5229,14 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/windows.html</loc>
-    <lastmod>2018-02-28T17:26:01+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/windows.html</loc>
+    <lastmod>2019-02-12T10:09:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/windows.html</loc>
-    <lastmod>2019-02-12T10:09:25-08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/windows.html</loc>
+    <lastmod>2018-02-28T17:26:01+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -5243,13 +5247,13 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/works.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/tags/works.html</loc>
     <lastmod>2018-12-13T09:48:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/tags/works.html</loc>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/works.html</loc>
     <lastmod>2018-12-13T09:48:12+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -5279,25 +5283,25 @@
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/yapi.html</loc>
-    <lastmod>2018-06-28T18:37:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/yapi.html</loc>
     <lastmod>2018-06-28T18:37:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://eiuapp.github.io/eiuapp-learn/categories/yarn.html</loc>
-    <lastmod>2018-02-24T09:20:55+08:00</lastmod>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/yapi.html</loc>
+    <lastmod>2018-06-28T18:37:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eiuapp.github.io/eiuapp-learn/tags/yarn.html</loc>
+    <lastmod>2018-02-24T09:20:55+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eiuapp.github.io/eiuapp-learn/categories/yarn.html</loc>
     <lastmod>2018-02-24T09:20:55+08:00</lastmod>
     <priority>0</priority>
   </url>

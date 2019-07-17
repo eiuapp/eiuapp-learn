@@ -84,6 +84,16 @@ todo 在 超哥 提供的jumper机器上，实现一个科学上网吧。</descr
     
     <item>
       <title></title>
+      <link>https://eiuapp.github.io/eiuapp-learn/network/git-use-socks5h-as-proxy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/network/git-use-socks5h-as-proxy.html</guid>
+      <description>git使用socks为代理
+https://stackoverflow.com/questions/15227130/using-a-socks-proxy-with-git-for-the-http-transport</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://eiuapp.github.io/eiuapp-learn/network/network.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
