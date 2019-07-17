@@ -89,7 +89,8 @@ todo 在 超哥 提供的jumper机器上，实现一个科学上网吧。</descr
       
       <guid>https://eiuapp.github.io/eiuapp-learn/network/git-use-socks5h-as-proxy.html</guid>
       <description>git使用socks为代理
-https://stackoverflow.com/questions/15227130/using-a-socks-proxy-with-git-for-the-http-transport</description>
+https://stackoverflow.com/questions/15227130/using-a-socks-proxy-with-git-for-the-http-transport
+git config --global http.proxy socks5h://127.0.0.1:1080 git ***** git config --global --unset http.proxy  </description>
     </item>
     
     <item>

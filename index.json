@@ -4134,7 +4134,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "git使用socks为代理\nhttps://stackoverflow.com/questions/15227130/using-a-socks-proxy-with-git-for-the-http-transport\n"
+	"content": "git使用socks为代理\nhttps://stackoverflow.com/questions/15227130/using-a-socks-proxy-with-git-for-the-http-transport\ngit config --global http.proxy socks5h://127.0.0.1:1080 git ***** git config --global --unset http.proxy  "
 },
 {
 	"uri": "https://eiuapp.github.io/eiuapp-learn/network/network.html",
