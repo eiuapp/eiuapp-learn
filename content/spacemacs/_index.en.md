@@ -5,3 +5,7 @@ weight: 820
 keywords: 
 description: "spacemacs"
 ---
+
+具体内容见:
+
+http://eiuapp.github.io/spacemacs-handbook/
