@@ -22,6 +22,19 @@ http://www.kidscode.cn/</description>
     </item>
     
     <item>
+      <title>AI help your coding</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ai/ai-vs-code.html</link>
+      <pubDate>Sun, 24 Jun 2018 10:42:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ai/ai-vs-code.html</guid>
+      <description>tabnine  支持 vscode 支持 emacs 本地运行 云端运行  kite  支持 vscode 本地运行  deepcode deepcode
+deepcode github实现
+deepcode utils 论文中的程序 实例 github
+ 本地运行  aixcoder aixcoder
+ 支持 vscode 国人写的  aroma aroma</description>
+    </item>
+    
+    <item>
       <title>Code Style</title>
       <link>https://eiuapp.github.io/eiuapp-learn/dev/code-style.html</link>
       <pubDate>Tue, 06 Feb 2018 17:55:29 +0800</pubDate>

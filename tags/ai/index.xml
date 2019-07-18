@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ai on Documentation for Hugo Learn Theme</title>
+    <link>https://eiuapp.github.io/eiuapp-learn/tags/ai.html</link>
+    <description>Recent content in ai on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 Jun 2018 10:42:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://eiuapp.github.io/eiuapp-learn/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AI help your coding</title>
+      <link>https://eiuapp.github.io/eiuapp-learn/ai/ai-vs-code.html</link>
+      <pubDate>Sun, 24 Jun 2018 10:42:55 +0800</pubDate>
+      
+      <guid>https://eiuapp.github.io/eiuapp-learn/ai/ai-vs-code.html</guid>
+      <description>tabnine  支持 vscode 支持 emacs 本地运行 云端运行  kite  支持 vscode 本地运行  deepcode deepcode
+deepcode github实现
+deepcode utils 论文中的程序 实例 github
+ 本地运行  aixcoder aixcoder
+ 支持 vscode 国人写的  aroma aroma</description>
+    </item>
+    
+  </channel>
+</rss>
