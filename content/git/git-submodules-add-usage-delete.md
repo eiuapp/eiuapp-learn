@@ -22,6 +22,12 @@ weight = 3001
 添加子模块非常简单，命令如下：
 
 ```shell
+git submodule add -b <branch-name> <url> <path> --name <submodule-name>
+```
+
+在 `git submodule add` 务必加上 `--name submodule-name`
+
+```shell
 git submodule add <url> <path>
 ```
 
@@ -138,3 +144,13 @@ git mv old/submod new/submod
 ```
 
 - https://stackoverflow.com/questions/4604486/how-do-i-move-an-existing-git-submodule-within-a-git-repository
+
+但是有一个遗留问题：
+
+- `cat .gitmodules` 中的 submodule.<name>, 并没有修正成新的文件夹地址。（ [submodule "old/submod"] ，而不是 [submodule "new/submod"] ） 
+- `ls .git/modules` 也没有转移
+- `cat .git/config` 也没有变 （ [submodule "old/submod"] ，而不是 [submodule "new/submod"] ）
+  
+所以，建议在 `git submodule add` 务必加上 `--name submodule-name`
+
+
