@@ -116,7 +116,7 @@ git rm --cached 子模块名称
 
 完成删除后，提交到仓库即可。
 
-### 子模块添加了跟踪分支 
+## 子模块添加了跟踪分支 
 
 ```shell
 # add submodule to track master branch
@@ -130,3 +130,11 @@ Ref {#ref}
 
 -   <https://www.jianshu.com/p/ed0cb6c75e25>
 -   <https://blog.csdn.net/guotianqing/article/details/82391665>
+
+## change the directory name of a Git submodule in my Git superproject
+
+```shell
+git mv old/submod new/submod
+```
+
+- https://stackoverflow.com/questions/4604486/how-do-i-move-an-existing-git-submodule-within-a-git-repository
